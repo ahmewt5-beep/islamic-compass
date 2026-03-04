@@ -76,40 +76,39 @@ const searchData = [
   <body class="bg-[#FDFBF7] dark:bg-[#0B1120] text-[#1C1917] dark:text-[#F3F4F6] antialiased selection:bg-[#D4AF37] selection:text-[#0B1120] transition-colors duration-500 min-h-screen flex flex-col">
     
     <nav class="sticky top-0 z-50 bg-[#FDFBF7]/80 dark:bg-[#0B1120]/80 backdrop-blur-xl border-b border-black/5 dark:border-white/5 transition-colors duration-500">
-      <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <div class="flex items-center gap-4 md:gap-6 overflow-x-auto no-scrollbar">
-          <a href={`${langPrefix}/`} class="text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors flex items-center gap-2 text-sm font-medium tracking-wide whitespace-nowrap">
-            {t('nav.home')}
-          </a>
-          <a href={`${langPrefix}/esmaul-husna`} class="text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors flex items-center gap-2 text-sm font-medium tracking-wide whitespace-nowrap">
-            {t('nav.esma')}
-          </a>
-          <a href={`${langPrefix}/blog`} class="text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors flex items-center gap-2 text-sm font-medium tracking-wide whitespace-nowrap">
-            {t('nav.blog')}
-          </a>
-          <a href={`${langPrefix}/fihrist`} class="text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors flex items-center gap-2 text-sm font-medium tracking-wide whitespace-nowrap">
-            {t('nav.fihrist')}
-          </a>
-        </div>
-        
-        <div class={`flex items-center gap-2 md:gap-4 ${isRtl ? 'mr-auto pr-4' : 'ml-auto pl-4'}`}>
-          <VakitlerWidget />
-          
-          <button id="search-open-btn" class="p-2 text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors focus:outline-none" aria-label="Arama Yap">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-          </button>
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between gap-4">
+    
+    <a href={`${langPrefix}/`} class="text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors flex items-center gap-2 text-sm font-bold tracking-wide whitespace-nowrap shrink-0">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+      <span class="hidden sm:inline">{t('nav.home')}</span>
+    </a>
 
-          <button id="theme-toggle" class="p-2 text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors focus:outline-none" aria-label="Tema Değiştir">
-            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
-            </svg>
-            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </nav>
+    <div class="flex items-center gap-4 md:gap-6 overflow-x-auto no-scrollbar flex-grow">
+      <a href={`${langPrefix}/esmaul-husna`} class="text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors text-sm font-medium tracking-wide whitespace-nowrap">
+        {t('nav.esma')}
+      </a>
+      <a href={`${langPrefix}/blog`} class="text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors text-sm font-medium tracking-wide whitespace-nowrap">
+        {t('nav.blog')}
+      </a>
+      <a href={`${langPrefix}/fihrist`} class="text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors text-sm font-medium tracking-wide whitespace-nowrap">
+        {t('nav.fihrist')}
+      </a>
+    </div>
+    
+    <div class={`flex items-center gap-2 md:gap-4 shrink-0 ${isRtl ? 'mr-auto pr-2' : 'ml-auto pl-2'}`}>
+      <VakitlerWidget />
+      
+      <button id="search-open-btn" class="p-2 text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] transition-colors focus:outline-none">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+      </button>
+
+      <button id="theme-toggle" class="p-2 text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] transition-colors focus:outline-none">
+        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+      </button>
+    </div>
+  </div>
+</nav>
 
     <div id="search-modal" class="fixed inset-0 z-[100] hidden flex flex-col items-center justify-start pt-24 px-4 bg-[#FDFBF7]/95 dark:bg-[#0B1120]/95 backdrop-blur-md opacity-0 transition-opacity duration-300">
       <div class="w-full max-w-2xl mx-auto bg-white dark:bg-[#111827] rounded-[2rem] shadow-2xl border border-black/10 dark:border-white/10 overflow-hidden flex flex-col max-h-[80vh]">
