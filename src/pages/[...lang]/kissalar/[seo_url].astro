@@ -3,18 +3,31 @@ import Layout from '../../../layouts/Layout.astro';
 import { veriGetir } from '../../../utils/veriMotoru';
 import { useTranslations } from '../../../i18n/ui';
 
-// 7 Dil x Tüm Kıssalar için Çapraz Sayfa Üretimi
+// 7 Dil x Tüm Kıssalar için Çapraz Sayfa Üretimi (ZIRHLI VE TEKİLLEŞTİRİLMİŞ)
 export function getStaticPaths() {
   const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
-  const paths = [];
+  let paths = [];
 
   diller.forEach(dilParam => {
     const gecerliDil = dilParam || 'tr';
     const kissalarData = veriGetir('kissalar_proje_hazir', gecerliDil);
 
+    // 🚀 NETLIFY ZAMAN AŞIMI ÇÖZÜMÜ: BENZERSİZ URL FİLTRESİ
+    const benzersizKissalar = [];
+    const gorulenUrller = new Set();
+
     kissalarData.forEach((kissa) => {
-      // Aynı kategorideki diğer 3 kıssayı buluyoruz
-      const ilgiliIcerikler = kissalarData
+      // Eğer bu seo_url'yi daha önce GÖRMEDİYSEK listeye ekle
+      if (kissa.seo_url && !gorulenUrller.has(kissa.seo_url)) {
+        gorulenUrller.add(kissa.seo_url);
+        benzersizKissalar.push(kissa);
+      }
+    });
+
+    // Artık o devasa hatalı liste yerine, süzülmüş tertemiz liste üzerinde döngü kuruyoruz
+    benzersizKissalar.forEach((kissa) => {
+      // İlgili içerikleri de bu temizlenmiş listeden seçiyoruz
+      const ilgiliIcerikler = benzersizKissalar
         .filter((k) => k.seo_url !== kissa.seo_url && k.kategori === kissa.kategori)
         .slice(0, 3);
 
