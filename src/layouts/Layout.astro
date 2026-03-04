@@ -189,7 +189,7 @@ const searchData = [
       </div>
     </div>
 
-    <script is:inline define:vars={{ searchData, lang }}>
+    <script is:inline define:vars={{ searchData, lang, isRtl }}>
       // 1. TEMA ZEKASI
       const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
       const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
@@ -298,6 +298,32 @@ const searchData = [
           });
         }
       });
+      // 4. MOBİL MENÜ (DRAWER) ZEKASI
+      const mBtn = document.getElementById('mobile-menu-btn');
+      const dClose = document.getElementById('drawer-close');
+      const drawer = document.getElementById('mobile-drawer');
+      const dContent = document.getElementById('drawer-content');
+      const dOverlay = document.getElementById('drawer-overlay');
+
+      function toggleDrawer(open) {
+        if (!drawer || !dContent) return; // Güvenlik kontrolü
+        
+        if (open) {
+          drawer.classList.remove('invisible', 'opacity-0');
+          dContent.classList.remove(isRtl ? '-translate-x-full' : 'translate-x-full');
+          document.body.style.overflow = 'hidden';
+        } else {
+          dContent.classList.add(isRtl ? '-translate-x-full' : 'translate-x-full');
+          setTimeout(() => {
+            drawer.classList.add('invisible', 'opacity-0');
+            document.body.style.overflow = '';
+          }, 300);
+        }
+      }
+
+      mBtn?.addEventListener('click', () => toggleDrawer(true));
+      dClose?.addEventListener('click', () => toggleDrawer(false));
+      dOverlay?.addEventListener('click', () => toggleDrawer(false));
     </script>
   </body>
 </html>
