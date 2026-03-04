@@ -5,6 +5,8 @@ import tailwind from '@astrojs/tailwind';
 import vercel from '@astrojs/vercel';
 
 export default defineConfig({
+  output: 'server', // 🚀 BÜYÜK SİHİR BURADA: Artık sayfalar önceden üretilmeyecek!
+  adapter: vercel(),
   site: 'https://islamiccompass.org',
 
   // ÇOKLU DİL (i18n) ZEKASI EKLENDİ
