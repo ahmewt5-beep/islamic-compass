@@ -1,0 +1,111 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { veriGetir } from '../../../utils/veriMotoru';
+
+// 7 Dil ve 99 İsim için Çapraz Sayfa Üretimi (Matrix Routing)
+export function getStaticPaths() {
+  const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
+  const paths = [];
+
+  diller.forEach(dilParam => {
+    const gecerliDil = dilParam || 'tr';
+    const esmaData = veriGetir('esmaul_husna_proje_hazir', gecerliDil);
+
+    esmaData.forEach((esma, index) => {
+      const onceki = index === 0 ? esmaData[esmaData.length - 1] : esmaData[index - 1];
+      const sonraki = index === esmaData.length - 1 ? esmaData[0] : esmaData[index + 1];
+
+      paths.push({
+        params: { lang: dilParam, seo_url: esma.seo_url },
+        props: { esma, onceki, sonraki, gecerliDil },
+      });
+    });
+  });
+
+  return paths;
+}
+
+const { esma, onceki, sonraki, gecerliDil } = Astro.props;
+const lang = gecerliDil;
+const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+// Google için SEO Şeması
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "image": "https://islamiccompass.org/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Islamic Compass"
+  },
+  "datePublished": "2024-01-01T00:00:00Z",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Islamic Compass",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://islamiccompass.org/favicon.svg"
+    }
+  },
+  "headline": esma.isim,
+  "description": esma.kisa_anlam
+};
+---
+
+<Layout title={`${esma.isim} | Esmaül Hüsna`} description={esma.kisa_anlam} schema={schema} lang={lang}>
+  <main class="py-16 md:py-24 px-5">
+    <article class="max-w-4xl mx-auto">
+      
+      <header class="text-center mb-16 relative">
+        <span class="inline-block px-4 py-1 bg-[#FDFBF7] dark:bg-[#0B1120] text-[#D4AF37] text-xs font-bold tracking-[0.2em] uppercase rounded-full border border-[#D4AF37]/30 mb-8 shadow-sm">
+          {esma.sira_no}
+        </span>
+        
+        <div class="mb-8 relative flex justify-center items-center">
+          <div class="absolute w-64 h-64 bg-[#D4AF37]/5 dark:bg-[#D4AF37]/10 rounded-full blur-3xl"></div>
+          <h1 class="text-7xl md:text-9xl text-[#1C1917] dark:text-white font-['Amiri'] relative z-10 leading-tight" dir="rtl">
+            {esma.arapca_yazilis}
+          </h1>
+        </div>
+
+        <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] font-bold text-[#D4AF37] mb-4">
+          {esma.isim}
+        </h2>
+        <p class="text-[#57534E] dark:text-[#94A3B8] text-xl md:text-2xl font-light">
+          "{esma.kisa_anlam}"
+        </p>
+      </header>
+
+      <div class="grid grid-cols-2 gap-4 md:gap-8 mb-16">
+        <div class="bg-white dark:bg-[#111827] border border-black/5 dark:border-white/5 rounded-3xl p-6 text-center">
+          <span class="text-2xl md:text-4xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white">{esma.ebced_degeri}</span>
+        </div>
+        <div class="bg-white dark:bg-[#111827] border border-black/5 dark:border-white/5 rounded-3xl p-6 text-center">
+          <span class="text-2xl md:text-4xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white line-clamp-1">{esma.zikir_gunu}</span>
+        </div>
+      </div>
+
+      <section class="bg-[#F5F2E9] dark:bg-[#111827]/30 border border-[#D4AF37]/20 rounded-[3rem] p-8 md:p-16 mb-12">
+        <div class="text-[#44403C] dark:text-white/90 text-lg leading-loose font-light space-y-6">
+          <p>{esma.detayli_aciklama}</p>
+        </div>
+      </section>
+
+      <section class="bg-white dark:bg-[#111827]/50 border border-black/5 dark:border-white/5 rounded-[3rem] p-8 md:p-16 shadow-sm mb-16">
+        <p class="text-[#44403C] dark:text-white/90 text-lg leading-loose font-light">
+          {esma.fazileti}
+        </p>
+      </section>
+
+      <div class="flex items-center justify-between border-t border-black/10 dark:border-white/10 pt-10">
+        <a href={`${langPrefix}/esmaul-husna/${onceki.seo_url}`} class="group flex flex-col items-start w-1/2 pr-4 border-r border-black/10 dark:border-white/10">
+          <span class="text-lg md:text-xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white group-hover:text-[#D4AF37] transition-colors">{onceki.isim}</span>
+        </a>
+        <a href={`${langPrefix}/esmaul-husna/${sonraki.seo_url}`} class="group flex flex-col items-end w-1/2 pl-4 text-right">
+          <span class="text-lg md:text-xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white group-hover:text-[#D4AF37] transition-colors">{sonraki.isim}</span>
+        </a>
+      </div>
+
+    </article>
+  </main>
+</Layout>

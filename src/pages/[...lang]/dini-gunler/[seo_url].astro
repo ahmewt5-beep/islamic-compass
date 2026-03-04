@@ -1,0 +1,171 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { useTranslations } from '../../../i18n/ui';
+
+export function getStaticPaths() {
+  const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
+  const paths = [];
+
+  // BÜTÜN DİNİ GÜNLER VE KANDİLLER
+  const diniGunler = [
+    { ad: "Kadir Gecesi", seo_url: "kadir-gecesine-ne-kadar-kaldi", tarih: "2026-03-16T00:00:00", aciklama: "Bin aydan daha hayırlı olan Kadir Gecesi, Kur'an-ı Kerim'in indirilmeye başlandığı mübarek gecedir." },
+    { ad: "Ramazan Bayramı Arefesi", seo_url: "ramazan-bayrami-arefesine-ne-kadar-kaldi", tarih: "2026-03-19T00:00:00", aciklama: "Ramazan ayının son günü olan Arefe, bir aylık manevi arınmanın zirvesi, tutulan oruçların sonu ve bayram sevincinin ilk müjdecisidir." },
+    { ad: "Ramazan Bayramı", seo_url: "ramazan-bayramina-ne-kadar-kaldi", tarih: "2026-03-20T00:00:00", aciklama: "Müminlerin bir aylık sabır ve ibadetlerinin mükafatı olan Ramazan Bayramı, kardeşliğin, sevincin ve yardımlaşmanın zirveye ulaştığı müstesna günlerdir." },
+    { ad: "Kurban Bayramı Arefesi", seo_url: "kurban-bayrami-arefesine-ne-kadar-kaldi", tarih: "2026-05-26T00:00:00", aciklama: "Hacıların Arafat'ta vakfeye durduğu, günahların affedildiği ve Zilhicce ayının en faziletli günü olan Kurban Bayramı Arefesi, duaların en çok kabul edildiği anlardandır." },
+    { ad: "Kurban Bayramı", seo_url: "kurban-bayramina-ne-kadar-kaldi", tarih: "2026-05-27T00:00:00", aciklama: "Hz. İbrahim'in teslimiyeti ve Hz. İsmail'in itaatinin sembolü olan Kurban Bayramı, Allah'a yakınlaşmanın ve yoksulları sevindirmenin en büyük vesilesidir." },
+    { ad: "Hicri Yılbaşı", seo_url: "hicri-yilbasina-ne-kadar-kaldi", tarih: "2026-06-16T00:00:00", aciklama: "Peygamber Efendimiz'in (s.a.v) Mekke'den Medine'ye kutlu hicretini esas alan Hicri Takvimin ilk günü, İslam aleminin manevi yeni yılıdır." },
+    { ad: "Aşure Günü", seo_url: "asure-gunune-ne-kadar-kaldi", tarih: "2026-06-25T00:00:00", aciklama: "Muharrem ayının onuncu günü olan Aşure Günü, tarihte birçok peygamberin kurtuluşa erdiği, aynı zamanda Hz. Hüseyin'in Kerbela'da şehit edildiği derin manalar taşıyan bir gündür." },
+    { ad: "Mevlid Kandili", seo_url: "mevlid-kandiline-ne-kadar-kaldi", tarih: "2026-08-26T00:00:00", aciklama: "Alemlere rahmet olarak gönderilen Peygamber Efendimiz Hz. Muhammed'in (s.a.v) dünyaya teşrif ettiği bu mübarek gece, salavatlar ve dualarla idrak edilir." },
+    { ad: "Üç Ayların Başlangıcı", seo_url: "uc-aylara-ne-kadar-kaldi", tarih: "2026-12-10T00:00:00", aciklama: "Rahmet, bereket ve mağfiret iklimi olan Recep, Şaban ve Ramazan aylarının başlangıcıdır." },
+    { ad: "Regaib Kandili", seo_url: "regaib-kandiline-ne-kadar-kaldi", tarih: "2026-12-17T00:00:00", aciklama: "Üç ayların ilk kandili olan Regaib Kandili, Allah'ın rahmetinin ve lütfunun sağanak sağanak yağdığı, duaların geri çevrilmediği müstesna bir gecedir." },
+    { ad: "Miraç Kandili", seo_url: "mirac-kandiline-ne-kadar-kaldi", tarih: "2027-01-10T00:00:00", aciklama: "Peygamber Efendimiz'in Mescid-i Haram'dan Mescid-i Aksa'ya, oradan da semaya yükseltildiği Miraç Gecesi." },
+    { ad: "Berat Kandili", seo_url: "berat-kandiline-ne-kadar-kaldi", tarih: "2027-01-28T00:00:00", aciklama: "Şaban ayının 15. gecesi olan Berat Kandili, günahlardan arınma, temize çıkma ve ilahi affa mazhar olma gecesidir." },
+    { ad: "Ramazan Ayı", seo_url: "ramazan-ayina-ne-kadar-kaldi", tarih: "2027-02-14T00:00:00", aciklama: "On bir ayın sultanı, rahmet, mağfiret ve cehennemden kurtuluş ayı olan Ramazan-ı Şerif, Kur'an'ın indirildiği aydır." }
+  ];
+
+  diller.forEach(dilParam => {
+    const gecerliDil = dilParam || 'tr';
+    
+    diniGunler.forEach((gun) => {
+      const digerGunler = diniGunler.filter(g => g.seo_url !== gun.seo_url);
+      paths.push({
+        params: { lang: dilParam, seo_url: gun.seo_url },
+        props: { gun, digerGunler, gecerliDil },
+      });
+    });
+  });
+
+  return paths;
+}
+
+const { gun, digerGunler, gecerliDil } = Astro.props;
+const lang = gecerliDil;
+const t = useTranslations(lang);
+const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+// BU SAYFAYA ÖZEL MİNİ ÇEVİRİ SÖZLÜĞÜ (UI Zekası)
+const widgetUI = {
+  tr: { title: 'Geri Sayım', days: 'Gün', hours: 'Saat', mins: 'Dakika', secs: 'Saniye', over: 'Bu Mübarek Gün İdrak Edildi', overDesc: 'Allah ibadetlerinizi ve dualarınızı kabul eylesin.', other: 'İslami Takvim: Diğer Mübarek Günler' },
+  en: { title: 'Countdown', days: 'Days', hours: 'Hours', mins: 'Mins', secs: 'Secs', over: 'This Blessed Day Has Arrived', overDesc: 'May Allah accept your prayers and worship.', other: 'Islamic Calendar: Other Blessed Days' },
+  ar: { title: 'العد التنازلي', days: 'أيام', hours: 'ساعات', mins: 'دقائق', secs: 'ثواني', over: 'لقد حل هذا اليوم المبارك', overDesc: 'تقبل الله طاعاتكم ودعواتكم.', other: 'التقويم الإسلامي: أيام مباركة أخرى' },
+  id: { title: 'Hitung Mundur', days: 'Hari', hours: 'Jam', mins: 'Menit', secs: 'Detik', over: 'Hari Berkah Ini Telah Tiba', overDesc: 'Semoga Allah menerima amal ibadah dan doa Anda.', other: 'Kalender Islam: Hari Berkah Lainnya' },
+  ur: { title: 'الٹی گنتی', days: 'دن', hours: 'گھنٹے', mins: 'منٹ', secs: 'سیکنڈ', over: 'یہ مبارک دن آ گیا ہے', overDesc: 'اللہ آپ کی دعائیں اور عبادات قبول فرمائے۔', other: 'اسلامی کیلنڈر: دیگر مبارک دن' },
+  fr: { title: 'Compte à rebours', days: 'Jours', hours: 'Heures', mins: 'Minutes', secs: 'Secondes', over: 'Ce Jour Béni Est Arrivé', overDesc: 'Qu\'Allah accepte vos prières et vos adorations.', other: 'Calendrier Islamique : Autres Jours Bénis' },
+  ru: { title: 'Обратный отсчет', days: 'Дни', hours: 'Часы', mins: 'Минуты', secs: 'Секунды', over: 'Этот Благословенный День Настал', overDesc: 'Пусть Аллах примет ваши молитвы и поклонение.', other: 'Исламский календарь: Другие благословенные дни' }
+};
+
+const ui = widgetUI[lang] || widgetUI['tr'];
+
+// GOOGLE İÇİN KUSURSUZ SEO ŞEMASI (FAQPage - Zengin Sonuçlar)
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": `${gun.ad} ne zaman, ne kadar kaldı?`,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": gun.aciklama
+    }
+  }]
+};
+---
+
+<Layout title={`${gun.ad} | ${t('hero.title')}`} description={gun.aciklama} schema={schema} canonicalURL={`https://islamiccompass.org${langPrefix}/dini-gunler/${gun.seo_url}`} lang={lang}>
+  
+  <style is:global>
+    html { scroll-behavior: smooth; }
+  </style>
+
+  <main class="py-16 md:py-24 px-5">
+    <article class="max-w-4xl mx-auto text-center">
+      
+      <header class="mb-12">
+        <span class="text-[#D4AF37] text-sm font-bold tracking-[0.2em] uppercase mb-4 block">{ui.title}</span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white mb-6 transition-colors duration-500">
+          {gun.ad}
+        </h1>
+        <p class="text-[#57534E] dark:text-[#94A3B8] text-lg md:text-xl leading-relaxed font-light max-w-3xl mx-auto transition-colors duration-500">
+          {gun.aciklama}
+        </p>
+      </header>
+
+      <div class="bg-gradient-to-br from-[#F5F2E9] to-[#FDFBF7] dark:from-[#111827]/80 dark:to-[#111827]/30 border border-[#D4AF37]/30 rounded-[3rem] p-10 md:p-16 mb-20 shadow-[0_10px_40px_rgba(212,175,55,0.05)] relative overflow-hidden group">
+        
+        <div class={`absolute ${lang === 'ar' || lang === 'ur' ? '-left-10' : '-right-10'} -top-10 text-[#D4AF37] opacity-5 group-hover:opacity-10 transition-opacity duration-700 pointer-events-none`}>
+          <svg width="250" height="250" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path></svg>
+        </div>
+
+        <div class={`flex flex-wrap items-center justify-center gap-6 md:gap-10 relative z-10 ${lang === 'ar' || lang === 'ur' ? 'flex-row-reverse' : ''}`} id="dev-sayac">
+          <div class="flex flex-col items-center">
+            <div id="dev-gun" class="text-5xl md:text-7xl font-bold text-[#1C1917] dark:text-white font-['Playfair_Display'] tabular-nums">00</div>
+            <span class="text-xs md:text-sm uppercase tracking-[0.3em] text-[#D4AF37] mt-4 font-bold">{ui.days}</span>
+          </div>
+          <div class="text-4xl md:text-6xl font-light text-[#94A3B8] pb-6">:</div>
+          <div class="flex flex-col items-center">
+            <div id="dev-saat" class="text-5xl md:text-7xl font-bold text-[#1C1917] dark:text-white font-['Playfair_Display'] tabular-nums">00</div>
+            <span class="text-xs md:text-sm uppercase tracking-[0.3em] text-[#D4AF37] mt-4 font-bold">{ui.hours}</span>
+          </div>
+          <div class="text-4xl md:text-6xl font-light text-[#94A3B8] pb-6">:</div>
+          <div class="flex flex-col items-center">
+            <div id="dev-dakika" class="text-5xl md:text-7xl font-bold text-[#1C1917] dark:text-white font-['Playfair_Display'] tabular-nums">00</div>
+            <span class="text-xs md:text-sm uppercase tracking-[0.3em] text-[#D4AF37] mt-4 font-bold">{ui.mins}</span>
+          </div>
+          <div class="text-4xl md:text-6xl font-light text-[#94A3B8] pb-6 hidden md:block">:</div>
+          <div class="flex flex-col items-center w-full md:w-auto mt-6 md:mt-0">
+            <div id="dev-saniye" class="text-5xl md:text-7xl font-bold text-[#ef4444] font-['Playfair_Display'] tabular-nums">00</div>
+            <span class="text-xs md:text-sm uppercase tracking-[0.3em] text-[#ef4444] mt-4 font-bold">{ui.secs}</span>
+          </div>
+        </div>
+
+        <div id="gecmis-uyari" class="hidden relative z-10 p-8">
+          <h3 class="text-3xl text-[#D4AF37] font-['Playfair_Display'] font-bold mb-3">{ui.over}</h3>
+          <p class="text-[#57534E] dark:text-[#94A3B8] text-lg">{ui.overDesc}</p>
+        </div>
+
+      </div>
+
+      <div class="border-t border-black/10 dark:border-white/10 pt-16 mt-10">
+        <h3 class="text-2xl md:text-3xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white mb-8 transition-colors">
+          {ui.other}
+        </h3>
+        <div class="flex flex-wrap justify-center gap-3 md:gap-4">
+          {digerGunler.map((d) => (
+            <a href={`${langPrefix}/dini-gunler/${d.seo_url}`} class="px-5 py-3 rounded-xl bg-white dark:bg-[#111827]/50 border border-black/5 dark:border-white/5 hover:border-[#D4AF37] hover:bg-[#FDFBF7] dark:hover:bg-[#111827] hover:-translate-y-1 transition-all duration-300 text-sm font-medium text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37]">
+              {d.ad}
+            </a>
+          ))}
+        </div>
+      </div>
+
+    </article>
+  </main>
+
+  <script is:inline define:vars={{ gun }}>
+    document.addEventListener('DOMContentLoaded', () => {
+      const hedefTarihZamani = new Date(gun.tarih).getTime();
+      
+      const interval = setInterval(() => {
+        const suAn = new Date().getTime();
+        const fark = hedefTarihZamani - suAn;
+
+        if (fark < 0) {
+          clearInterval(interval);
+          document.getElementById("dev-sayac").classList.add("hidden");
+          document.getElementById("gecmis-uyari").classList.remove("hidden");
+          return;
+        }
+
+        const gunSayisi = Math.floor(fark / (1000 * 60 * 60 * 24));
+        const saat = Math.floor((fark % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const dakika = Math.floor((fark % (1000 * 60 * 60)) / (1000 * 60));
+        const saniye = Math.floor((fark % (1000 * 60)) / 1000);
+
+        document.getElementById("dev-gun").innerText = gunSayisi < 10 ? "0" + gunSayisi : gunSayisi;
+        document.getElementById("dev-saat").innerText = saat < 10 ? "0" + saat : saat;
+        document.getElementById("dev-dakika").innerText = dakika < 10 ? "0" + dakika : dakika;
+        document.getElementById("dev-saniye").innerText = saniye < 10 ? "0" + saniye : saniye;
+      }, 1000);
+    });
+  </script>
+</Layout>

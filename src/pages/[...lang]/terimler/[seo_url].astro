@@ -1,0 +1,135 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { veriGetir } from '../../../utils/veriMotoru';
+import { useTranslations } from '../../../i18n/ui';
+
+// 7 Dil x Tüm Terimler için Çapraz Sayfa Üretimi
+export function getStaticPaths() {
+  const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
+  const paths = [];
+
+  diller.forEach(dilParam => {
+    const gecerliDil = dilParam || 'tr';
+    const terimlerData = veriGetir('terimler_proje_hazir', gecerliDil);
+
+    terimlerData.forEach((terim) => {
+      // Çapraz Linkleme: Aynı sayfa türündeki diğer 3 terimi bul
+      const ilgiliIcerikler = terimlerData
+        .filter((t) => t.seo_url !== terim.seo_url && t.sayfa_turu === terim.sayfa_turu)
+        .slice(0, 3);
+
+      paths.push({
+        params: { lang: dilParam, seo_url: terim.seo_url },
+        props: { terim, ilgiliIcerikler, gecerliDil },
+      });
+    });
+  });
+
+  return paths;
+}
+
+const { terim, ilgiliIcerikler, gecerliDil } = Astro.props;
+const lang = gecerliDil;
+const t = useTranslations(lang);
+const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+// GOOGLE İÇİN GİZLİ SÖZLÜK ŞEMASI (Global SEO)
+const terimSchema = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": terim.terim_adi,
+  "description": terim.ham_kisa_tanim || terim.sayfa_giris_yazisi,
+  "inLanguage": lang,
+  "inDefinedTermSet": `https://islamiccompass.org${langPrefix}/terimler`
+};
+---
+
+<Layout 
+  title={`${terim.terim_adi} | ${t('section.terimler')}`} 
+  schema={terimSchema} 
+  description={terim.ham_kisa_tanim || terim.sayfa_giris_yazisi} 
+  canonicalURL={`https://islamiccompass.org${langPrefix}/terimler/${terim.seo_url}`}
+  lang={lang}
+>
+  <main class="py-16 md:py-24 px-5">
+    <article class="max-w-3xl mx-auto">
+      
+      <header class="text-center mb-16 relative">
+        <div class="text-[#D4AF37] text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mb-6">
+          {t('section.terimler')} - {terim.sayfa_turu}
+        </div>
+        
+        <div class="absolute inset-0 flex items-center justify-center -z-10 select-none opacity-5 dark:opacity-10 pointer-events-none">
+          <span class="text-9xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white uppercase tracking-tighter">
+            {terim.terim_adi.charAt(0)}
+          </span>
+        </div>
+
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-8 leading-tight transition-colors duration-500">
+          {terim.terim_adi}
+        </h1>
+        
+        <p class="text-[#57534E] dark:text-[#94A3B8] text-xl md:text-2xl leading-relaxed font-light max-w-2xl mx-auto transition-colors duration-500 bg-[#FDFBF7]/80 dark:bg-[#0B1120]/80 px-4 rounded-2xl">
+          "{terim.ham_kisa_tanim || terim.sayfa_giris_yazisi}"
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <div class="bg-gradient-to-b from-[#F3F0E6] dark:from-[#111827]/60 to-transparent rounded-[2.5rem] p-8 md:p-12 border-t border-black/5 dark:border-white/5 transition-colors duration-500">
+          <h2 class="text-[#D4AF37] text-xs font-bold tracking-[0.2em] uppercase mb-8 flex items-center justify-center md:justify-start gap-3">
+            <span class="w-2 h-2 rounded-full bg-[#D4AF37]"></span>
+            {lang === 'tr' ? 'Tasavvufi ve Derin Manası' : 'Spiritual & Deep Meaning'}
+          </h2>
+          <div class="prose prose-lg dark:prose-invert max-w-none text-[#1C1917] dark:text-white/90 font-light leading-loose transition-colors duration-500 text-lg">
+            {(terim.ham_detayli_aciklama || terim.detayli_aciklama || "").split('\n').map((paragraf) => (
+              paragraf.trim() !== '' && <p class="mb-6">{paragraf}</p>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {(terim.ham_ornek || terim.ornek) && (
+        <section class="mb-16">
+          <div class="p-8 md:p-10 rounded-[2rem] bg-[#F5F2E9] dark:bg-[#111827]/30 border border-black/5 dark:border-white/5 transition-colors duration-500 text-center">
+            <h3 class="text-[#D4AF37] text-xs font-bold tracking-[0.2em] uppercase mb-4">
+              {lang === 'tr' ? 'Örnek / Hikmetli Söz' : 'Example / Wisdom Quote'}
+            </h3>
+            <p class="text-[#44403C] dark:text-white/90 text-xl leading-relaxed font-['Playfair_Display'] italic">
+              "{terim.ham_ornek || terim.ornek}"
+            </p>
+          </div>
+        </section>
+      )}
+
+      {ilgiliIcerikler.length > 0 && (
+        <section class="mt-20 pt-16 border-t border-black/10 dark:border-white/10 transition-colors duration-500">
+          <div class="text-center mb-10">
+            <h3 class="text-2xl md:text-3xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white transition-colors duration-500">
+              {lang === 'tr' ? 'Bu Kavramla Bağlantılı Terimler' : 'Related Terms'}
+            </h3>
+            <p class="text-[#57534E] dark:text-[#94A3B8] mt-3 font-light">
+              {lang === 'tr' ? 'Manevi lügatınızı genişletmeye devam edin' : 'Continue expanding your spiritual vocabulary'}
+            </p>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-6">
+            {ilgiliIcerikler.map((ilgili) => (
+              <a href={`${langPrefix}/terimler/${ilgili.seo_url}`} class="group block p-6 md:p-8 rounded-[2rem] bg-[#F5F2E9] dark:bg-[#111827]/30 border border-black/5 dark:border-white/5 hover:bg-[#EAE5D9] dark:hover:bg-[#111827]/50 transition-all duration-500 hover:-translate-y-2">
+                <span class="text-[#D4AF37] text-[10px] font-bold tracking-[0.2em] uppercase mb-4 block">
+                  {ilgili.semantik_etiketler ? ilgili.semantik_etiketler[0] : ilgili.sayfa_turu}
+                </span>
+                <h4 class="text-lg md:text-xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-3 group-hover:text-[#D4AF37] dark:group-hover:text-[#D4AF37] transition-colors line-clamp-2">
+                  {ilgili.terim_adi}
+                </h4>
+                <p class="text-[#57534E] dark:text-[#94A3B8] text-sm line-clamp-2 font-light transition-colors duration-500">
+                  {ilgili.ham_kisa_tanim || ilgili.sayfa_giris_yazisi}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+      
+    </article>
+  </main>
+</Layout>

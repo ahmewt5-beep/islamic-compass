@@ -1,0 +1,287 @@
+﻿---
+// ÇOK DİLLİ KIRILMAZ VERİ MOTORUMUZU ÇEKİYORUZ (Statik importlar yerine)
+import { veriGetir } from '../utils/veriMotoru';
+import VakitlerWidget from '../components/VakitlerWidget.astro';
+
+// ÇOKLU DİL (i18n) ARAÇLARINI ÇEKİYORUZ
+import { getLangFromUrl, useTranslations } from '../i18n/ui';
+
+// URL'den dili tespit edip sözlüğü yüklüyoruz
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+// Arapça ve Urduca için sayfa yönünü (RTL) ayarlıyoruz
+const textDirection = (lang === 'ar' || lang === 'ur') ? 'rtl' : 'ltr';
+const isRtl = textDirection === 'rtl';
+
+const { 
+  title, 
+  description = "Gönül Pusulam - Kur'an-ı Kerim, dualar, alimler ve kıssalarla dolu dijital maneviyat rehberiniz.", 
+  canonicalURL, 
+  schema 
+} = Astro.props;
+
+// Dil öneki (Örn: "/en", "/ar"). Eğer Türkçe ise önek yok (boş string).
+const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+// YENİ: ARAMA MOTORU İÇİN O ANKİ DİLDEKİ VERİLERİ (JSON) DİNAMİK OLARAK ÇEKİYORUZ
+const kuranData = veriGetir('kuran_proje_hazir', lang);
+const dualarData = veriGetir('dualar_proje_hazir', lang);
+const alimlerData = veriGetir('alimler_proje_hazir', lang);
+const kissalarData = veriGetir('kissalar_proje_hazir', lang);
+const terimlerData = veriGetir('terimler_proje_hazir', lang);
+const esmaData = veriGetir('esmaul_husna_proje_hazir', lang); 
+
+// Verileri hafifleterek tek bir arama havuzunda birleştiriyoruz (Kategori isimleri de sözlükten çekiliyor)
+const searchData = [
+  ...kuranData.map(item => ({ title: item.sure_adi, url: `${langPrefix}/kuran/${item.seo_url}`, type: t('section.kuran') })),
+  ...dualarData.map(item => ({ title: item.baslik, url: `${langPrefix}/dualar/${item.seo_url}`, type: t('section.dualar') })),
+  ...alimlerData.map(item => ({ title: item.sayfa_basligi, url: `${langPrefix}/alimler/${item.seo_url}`, type: t('section.alimler') })),
+  ...kissalarData.map(item => ({ title: item.baslik, url: `${langPrefix}/kissalar/${item.seo_url}`, type: t('section.kissalar') })),
+  ...terimlerData.map(item => ({ title: item.terim_adi, url: `${langPrefix}/terimler/${item.seo_url}`, type: t('section.terimler') })),
+  ...esmaData.map(item => ({ title: item.isim, url: `${langPrefix}/esmaul-husna/${item.seo_url}`, type: t('section.esma') }))
+];
+---
+
+<html lang={lang} dir={textDirection}>
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {canonicalURL && <link rel="canonical" href={canonicalURL} />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    {schema && (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    )}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <script is:inline>
+      const theme = (() => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+          return localStorage.getItem('theme');
+        }
+        return 'light'; // İLK GİRİŞTE KESİNLİKLE AYDINLIK TEMA AÇILACAK
+      })();
+      if (theme === 'light') document.documentElement.classList.remove('dark');
+      else document.documentElement.classList.add('dark');
+      window.localStorage.setItem('theme', theme);
+    </script>
+  </head>
+  
+  <body class="bg-[#FDFBF7] dark:bg-[#0B1120] text-[#1C1917] dark:text-[#F3F4F6] antialiased selection:bg-[#D4AF37] selection:text-[#0B1120] transition-colors duration-500 min-h-screen flex flex-col">
+    
+    <nav class="sticky top-0 z-50 bg-[#FDFBF7]/80 dark:bg-[#0B1120]/80 backdrop-blur-xl border-b border-black/5 dark:border-white/5 transition-colors duration-500">
+      <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div class="flex items-center gap-4 md:gap-6 overflow-x-auto no-scrollbar">
+          <a href={`${langPrefix}/`} class="text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors flex items-center gap-2 text-sm font-medium tracking-wide whitespace-nowrap">
+            {t('nav.home')}
+          </a>
+          <a href={`${langPrefix}/esmaul-husna`} class="text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors flex items-center gap-2 text-sm font-medium tracking-wide whitespace-nowrap">
+            {t('nav.esma')}
+          </a>
+          <a href={`${langPrefix}/blog`} class="text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors flex items-center gap-2 text-sm font-medium tracking-wide whitespace-nowrap">
+            {t('nav.blog')}
+          </a>
+          <a href={`${langPrefix}/fihrist`} class="text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors flex items-center gap-2 text-sm font-medium tracking-wide whitespace-nowrap">
+            {t('nav.fihrist')}
+          </a>
+        </div>
+        
+        <div class={`flex items-center gap-2 md:gap-4 ${isRtl ? 'mr-auto pr-4' : 'ml-auto pl-4'}`}>
+          <VakitlerWidget />
+          
+          <button id="search-open-btn" class="p-2 text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors focus:outline-none" aria-label="Arama Yap">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          </button>
+
+          <button id="theme-toggle" class="p-2 text-[#57534E] dark:text-[#94A3B8] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors focus:outline-none" aria-label="Tema Değiştir">
+            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div id="search-modal" class="fixed inset-0 z-[100] hidden flex flex-col items-center justify-start pt-24 px-4 bg-[#FDFBF7]/95 dark:bg-[#0B1120]/95 backdrop-blur-md opacity-0 transition-opacity duration-300">
+      <div class="w-full max-w-2xl mx-auto bg-white dark:bg-[#111827] rounded-[2rem] shadow-2xl border border-black/10 dark:border-white/10 overflow-hidden flex flex-col max-h-[80vh]">
+        <div class="relative flex items-center px-6 py-5 border-b border-black/5 dark:border-white/5">
+          <svg class="w-6 h-6 text-[#D4AF37]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          <input type="text" id="search-input" placeholder={t('search.placeholder')} class="w-full bg-transparent border-none outline-none px-4 text-xl text-[#1C1917] dark:text-white placeholder-[#94A3B8]" autocomplete="off">
+          <button id="search-close-btn" class="p-2 text-[#94A3B8] hover:text-[#ef4444] transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+        </div>
+        <div id="search-results" class="overflow-y-auto p-4 space-y-2 hidden"></div>
+        <div id="search-empty" class="p-10 text-center text-[#94A3B8] font-light">
+          {t('search.empty')}
+        </div>
+        <div id="search-notfound-text" class="hidden">{t('search.notfound')}</div>
+      </div>
+    </div>
+
+    <div class="flex-grow">
+      <slot />
+    </div>
+
+    <footer class="border-t border-black/5 dark:border-white/5 py-8 mt-16 transition-colors duration-500">
+      <div class="max-w-7xl mx-auto px-5 flex flex-col items-center gap-4">
+        
+        <div class="flex flex-wrap items-center justify-center gap-2 md:gap-3 text-[#94A3B8] text-[11px] md:text-xs font-light tracking-wider">
+          <a href={`${langPrefix}/eula`} class="hover:text-[#D4AF37] transition-colors duration-300">EULA</a>
+          <span class="text-black/10 dark:text-white/10">|</span>
+          <a href={`${langPrefix}/copyright`} class="hover:text-[#D4AF37] transition-colors duration-300">Copyright</a>
+          <span class="text-black/10 dark:text-white/10">|</span>
+          <a href={`${langPrefix}/terms`} class="hover:text-[#D4AF37] transition-colors duration-300">Terms of Use</a>
+          <span class="text-black/10 dark:text-white/10">|</span>
+          <a href={`${langPrefix}/privacy`} class="hover:text-[#D4AF37] transition-colors duration-300">Privacy Policy</a>
+        </div>
+
+        <div class="w-full flex flex-col md:flex-row items-center justify-center md:justify-between gap-4 mt-2">
+          <p class="text-[#94A3B8] text-[10px] md:text-xs font-light tracking-wider">
+            &copy; {new Date().getFullYear()} Islamic Compass. {lang === 'tr' ? 'Tüm hakları saklıdır.' : 'All rights reserved.'}
+          </p>
+          
+          <a href="https://noxusweb.com" target="_blank" rel="noopener noreferrer" title="Web Tasarım ve Dijital Mimari" class="group flex items-center gap-1.5 text-[#94A3B8] hover:text-[#D4AF37] transition-all duration-500 text-[10px] md:text-xs tracking-wider">
+            <span class="font-light">{lang === 'tr' ? 'Dijital Mimari:' : 'Digital Architecture by'}</span>
+            <span class="font-bold text-[#1C1917] dark:text-white/80 group-hover:text-[#D4AF37] transition-colors">Noxusweb</span>
+            <svg class="w-3 h-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] translate-y-full transition-transform duration-700 ease-in-out">
+      <div class="bg-[#1C1917]/95 dark:bg-[#0B1120]/95 backdrop-blur-md border-t border-[#D4AF37]/30 px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-8 shadow-2xl">
+        <p class="text-[#F3F4F6] text-xs md:text-sm font-light text-center md:text-left leading-relaxed">
+          {lang === 'tr' ? 'Size en iyi manevi rehberlik deneyimini sunabilmek için çerezleri (cookies) kullanıyoruz. Sitemizi kullanarak çerez politikamızı kabul etmiş olursunuz.' : 'We use cookies to provide you with the best spiritual guidance experience. By using our site, you agree to our cookie policy.'}
+        </p>
+        <div class="flex items-center gap-3 whitespace-nowrap">
+          <a href={`${langPrefix}/privacy`} class="text-[#D4AF37] text-xs font-medium hover:underline tracking-wider">{lang === 'tr' ? 'Detaylı Bilgi' : 'Learn More'}</a>
+          <button id="accept-cookies" class="bg-[#D4AF37] text-[#1C1917] px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-white transition-colors duration-300 shadow-[0_0_15px_rgba(212,175,55,0.3)]">
+            {lang === 'tr' ? 'Kabul Et' : 'Accept'}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script is:inline define:vars={{ searchData, lang }}>
+      // 1. TEMA ZEKASI
+      const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+      const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+      const themeToggleBtn = document.getElementById('theme-toggle');
+
+      if (localStorage.getItem('theme') === 'dark') {
+        themeToggleLightIcon.classList.remove('hidden');
+      } else {
+        themeToggleDarkIcon.classList.remove('hidden');
+      }
+
+      themeToggleBtn.addEventListener('click', function() {
+        themeToggleDarkIcon.classList.toggle('hidden');
+        themeToggleLightIcon.classList.toggle('hidden');
+        if (localStorage.getItem('theme') === 'light' || (!localStorage.getItem('theme') && !document.documentElement.classList.contains('dark'))) {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('theme', 'light');
+        }
+      });
+
+      // 2. ARAMA ZEKASI
+      const searchBtn = document.getElementById('search-open-btn');
+      const closeBtn = document.getElementById('search-close-btn');
+      const modal = document.getElementById('search-modal');
+      const input = document.getElementById('search-input');
+      const resultsContainer = document.getElementById('search-results');
+      const emptyContainer = document.getElementById('search-empty');
+      const notFoundText = document.getElementById('search-notfound-text').innerText;
+
+      function openSearch() {
+        modal.classList.remove('hidden');
+        setTimeout(() => { modal.classList.remove('opacity-0'); input.focus(); }, 10);
+      }
+
+      function closeSearch() {
+        modal.classList.add('opacity-0');
+        setTimeout(() => { modal.classList.add('hidden'); input.value = ''; resultsContainer.innerHTML = ''; emptyContainer.classList.remove('hidden'); resultsContainer.classList.add('hidden'); }, 300);
+      }
+
+      searchBtn.addEventListener('click', openSearch);
+      closeBtn.addEventListener('click', closeSearch);
+      
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeSearch();
+      });
+
+      function normalizeForSearch(text) {
+        if (!text) return '';
+        const locale = lang === 'tr' ? 'tr-TR' : lang; 
+        return text.toLowerCase(locale)
+          .replace(/[âÂ]/g, 'a')
+          .replace(/[îÎ]/g, 'i')
+          .replace(/[ûÛ]/g, 'u')
+          .replace(/[-']/g, ''); 
+      }
+
+      input.addEventListener('input', (e) => {
+        const rawQuery = e.target.value;
+        const query = normalizeForSearch(rawQuery); 
+        
+        if (query.length < 2) {
+          resultsContainer.classList.add('hidden');
+          emptyContainer.classList.remove('hidden');
+          return;
+        }
+
+        const filtered = searchData.filter(item => {
+          const normalizedTitle = normalizeForSearch(item.title);
+          return normalizedTitle.includes(query);
+        }).slice(0, 8); 
+
+        if (filtered.length === 0) {
+          resultsContainer.classList.add('hidden');
+          emptyContainer.classList.remove('hidden');
+          emptyContainer.innerHTML = notFoundText;
+        } else {
+          emptyContainer.classList.add('hidden');
+          resultsContainer.classList.remove('hidden');
+          resultsContainer.innerHTML = filtered.map(item => `
+            <a href="${item.url}" class="flex items-center justify-between p-4 rounded-2xl hover:bg-[#F5F2E9] dark:hover:bg-[#1f2937] transition-colors group">
+              <span class="text-[#1C1917] dark:text-white font-medium group-hover:text-[#D4AF37] transition-colors">${item.title}</span>
+              <span class="text-[10px] uppercase tracking-widest font-bold text-[#D4AF37] px-2 py-1 rounded bg-[#D4AF37]/10">${item.type}</span>
+            </a>
+          `).join('');
+        }
+      });
+
+      // 3. ÇEREZ (COOKIE) ZEKASI
+      document.addEventListener('DOMContentLoaded', () => {
+        const cookieBanner = document.getElementById('cookie-banner');
+        const acceptCookiesBtn = document.getElementById('accept-cookies');
+        
+        if (!localStorage.getItem('cookiesAccepted') && cookieBanner) {
+          setTimeout(() => {
+            cookieBanner.classList.remove('translate-y-full');
+          }, 1500);
+        }
+
+        if(acceptCookiesBtn && cookieBanner) {
+          acceptCookiesBtn.addEventListener('click', () => {
+            localStorage.setItem('cookiesAccepted', 'true');
+            cookieBanner.classList.add('translate-y-full');
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

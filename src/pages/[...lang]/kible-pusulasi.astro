@@ -1,0 +1,238 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { useTranslations } from '../../i18n/ui';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: undefined } }, 
+    { params: { lang: 'en' } },
+    { params: { lang: 'ar' } },
+    { params: { lang: 'id' } },
+    { params: { lang: 'ur' } },
+    { params: { lang: 'fr' } },
+    { params: { lang: 'ru' } },
+  ];
+}
+
+const lang = Astro.params.lang || 'tr';
+const t = useTranslations(lang);
+const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+const isRtl = lang === 'ar' || lang === 'ur';
+
+const ui = {
+  tr: { title: 'KÄ±ble PusulasÄ±', desc: 'Telefonunuzu yere paralel tutarak KÄ±ble yÃ¶nÃ¼nÃ¼ bulabilirsiniz.', reqGeo: 'Konum Ä°zni Gerekli', reqGeoDesc: 'PusulanÄ±n Ã§alÄ±ÅŸmasÄ± iÃ§in lÃ¼tfen konum izni verin.', btnGeo: 'Konum Ä°zni Ver', qiblaFound: 'KÄ±ble YÃ¶nÃ¼ndesiniz!', distance: 'Kabe\'ye UzaklÄ±k', n:'K', e:'D', s:'G', w:'B', noSensor: 'CihazÄ±nÄ±zda Pusula/Jiroskop SensÃ¶rÃ¼ Bulunmuyor veya Ä°zin Verilmedi.' },
+  en: { title: 'Qibla Finder', desc: 'Hold your phone parallel to the ground to find the Qibla direction.', reqGeo: 'Location Access Required', reqGeoDesc: 'Please allow location access for the compass to work.', btnGeo: 'Allow Location', qiblaFound: 'You are facing the Qibla!', distance: 'Distance to Kaaba', n:'N', e:'E', s:'S', w:'W', noSensor: 'Device does not support compass/gyroscope or access denied.' },
+  ar: { title: 'Ø¨ÙˆØµÙ„Ø© Ø§Ù„Ù‚Ø¨Ù„Ø©', desc: 'Ø§Ø­Ù…Ù„ Ù‡Ø§ØªÙ Ùƒ Ù…ÙˆØ§Ø²ÙŠÙ‹Ø§ Ù„Ù„Ø£Ø±Ø¶ Ù„Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„Ù‰ Ø§ØªØ¬Ø§Ù‡ Ø§Ù„Ù‚Ø¨Ù„Ø©.', reqGeo: 'ÙŠØ·Ù„Ø¨ Ø§Ù„ÙˆØµÙˆÙ„ Ù„Ù„Ù…ÙˆÙ‚Ø¹', reqGeoDesc: 'ÙŠØ±Ø¬Ù‰ Ø§Ù„Ø³Ù…Ø§Ø­ Ø¨Ø§Ù„ÙˆØµÙˆÙ„ Ø¥Ù„Ù‰ Ø§Ù„Ù…ÙˆÙ‚Ø¹.', btnGeo: 'Ø§Ù„Ø³Ù…Ø§Ø­ Ø¨Ø§Ù„Ù…ÙˆÙ‚Ø²', qiblaFound: 'Ø£Ù†Øª ØªÙˆØ§Ø¬Ù‡ Ø§Ù„Ù‚Ø¨Ù„Ø©!', distance: 'Ø§Ù„Ù…Ø³Ø§Ù Ø© Ø¥Ù„Ù‰ Ø§Ù„ÙƒØ¹Ø¨Ø©', n:'Ø´', e:'Ù‚', s:'Ø¬', w:'Øº', noSensor: 'Ø§Ù„Ø¬Ù‡Ø§Ø² Ù„Ø§ ÙŠØ¯Ø¹Ù… Ø§Ù„Ø¨ÙˆØµÙ„Ø© Ø£Ùˆ ØªÙ… Ø±Ù Ø¶ Ø§Ù„ÙˆØµÙˆÙ„.' },
+  id: { title: 'Arah Kiblat', desc: 'Pegang ponsel Anda sejajar dengan tanah.', reqGeo: 'Izin Lokasi Diperlukan', reqGeoDesc: 'Izinkan lokasi untuk menggunakan kompas.', btnGeo: 'Izinkan Lokasi', qiblaFound: 'Arah Kiblat Tepat!', distance: 'Jarak ke Ka\'bah', n:'U', e:'T', s:'S', w:'B', noSensor: 'Perangkat tidak mendukung kompas.' },
+  ur: { title: 'Ù‚Ø¨Ù„Û  Ù†Ù…Ø§', desc: 'Ù‚Ø¨Ù„Û  Ú©Ø§ Ø±Ø® Ø¯ÛŒÚ©Ú¾Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ Ù ÙˆÙ† Ú©Ùˆ Ø²Ù…ÛŒÙ† Ú©Û’ Ù…ØªÙˆØ§Ø²ÛŒ Ø±Ú©Ú¾ÛŒÚºÛ”', reqGeo: 'Ù„ÙˆÚ©ÛŒØ´Ù† Ú©ÛŒ Ø§Ø¬Ø§Ø²Øª Ù…Ø·Ù„ÙˆØ¨', reqGeoDesc: 'Ø¨Ø±Ø§Ø¦Û’ Ù…Û Ø±Ø¨Ø§Ù†ÛŒ Ù„ÙˆÚ©ÛŒØ´Ù† Ú©ÛŒ Ø§Ø¬Ø§Ø²Øª Ø¯ÛŒÚºÛ”', btnGeo: 'Ø§Ø¬Ø§Ø²Øª Ø¯ÛŒÚº', qiblaFound: 'Ø¢Ù¾ Ù‚Ø¨Ù„Û  Ø±Ø® Û ÛŒÚº!', distance: 'Ú©Ø¹Ø¨Û  Ø³Û’ Ù Ø§ØµÙ„Û ', n:'N', e:'E', s:'S', w:'W', noSensor: 'Ø¢Ù¾ Ú©Û’ ÚˆÛŒÙˆØ§Ø¦Ø³ Ù…ÛŒÚº Ú©Ù…Ù¾Ø§Ø³ Ù†Û ÛŒÚºÛ”' },
+  fr: { title: 'Boussole de la Qibla', desc: 'Tenez votre tÃ©lÃ©phone parallÃ¨le au sol.', reqGeo: 'Position Requise', reqGeoDesc: 'Veuillez autoriser l\'accÃ¨s Ã  la position.', btnGeo: 'Autoriser', qiblaFound: 'Vous etes face a la Qibla!', distance: 'Distance Ã  la Kaaba', n:'N', e:'E', s:'S', w:'O', noSensor: 'Le capteur n\'est pas supportÃ©.' },
+  ru: { title: 'ĞšĞ¾Ğ¼Ğ¿Ğ°Ñ  ĞšĞ¸Ğ±Ğ»Ñ‹', desc: 'Ğ”ĞµÑ€Ğ¶Ğ¸Ñ‚Ğµ Ñ‚ĞµĞ»ĞµÑ„Ğ¾Ğ½ Ğ¿Ğ°Ñ€Ğ°Ğ»Ğ»ĞµĞ»ÑŒĞ½Ğ¾ Ğ·ĞµĞ¼Ğ»Ğµ.', reqGeo: 'Ğ¢Ñ€ĞµĞ±ÑƒĞµÑ‚Ñ Ñ  Ğ´Ğ¾Ñ Ñ‚ÑƒĞ¿ Ğº Ğ³ĞµĞ¾Ğ»Ğ¾ĞºĞ°Ñ†Ğ¸Ğ¸', reqGeoDesc: 'ĞŸĞ¾Ğ¶Ğ°Ğ»ÑƒĞ¹Ñ Ñ‚Ğ°, Ñ€Ğ°Ğ·Ñ€ĞµÑˆĞ¸Ñ‚Ğµ Ğ´Ğ¾Ñ Ñ‚ÑƒĞ¿.', btnGeo: 'Ğ Ğ°Ğ·Ñ€ĞµÑˆĞ¸Ñ‚ÑŒ', qiblaFound: 'Ğ’Ñ‹ Ñ Ğ¼Ğ¾Ñ‚Ñ€Ğ¸Ñ‚Ğµ Ğ½Ğ° ĞšĞ¸Ğ±Ğ»Ñƒ!', distance: 'Ğ Ğ°Ñ Ñ Ñ‚Ğ¾Ñ Ğ½Ğ¸Ğµ Ğ´Ğ¾ ĞšĞ°Ğ°Ğ±Ñ‹', n:'C', e:'B', s:'Ğ®', w:'Ğ—', noSensor: 'Ğ”Ğ°Ñ‚Ñ‡Ğ¸Ğº Ğ½Ğµ Ğ¿Ğ¾Ğ´Ğ´ĞµÑ€Ğ¶Ğ¸Ğ²Ğ°ĞµÑ‚Ñ Ñ .' }
+}[lang] || { title: 'KÄ±ble PusulasÄ±', desc: 'Telefonunuzu yere paralel tutarak KÄ±ble yÃ¶nÃ¼nÃ¼ bulabilirsiniz.', reqGeo: 'Konum Ä°zni Gerekli', reqGeoDesc: 'PusulanÄ±n Ã§alÄ±ÅŸmasÄ± iÃ§in lÃ¼tfen konum izni verin.', btnGeo: 'Konum Ä°zni Ver', qiblaFound: 'KÄ±ble YÃ¶nÃ¼ndesiniz!', distance: 'Kabe\'ye UzaklÄ±k', n:'K', e:'D', s:'G', w:'B', noSensor: 'CihazÄ±nÄ±zda Pusula/Jiroskop SensÃ¶rÃ¼ Bulunmuyor veya Ä°zin Verilmedi.' };
+---
+
+<Layout title={`${ui.title} | Islamic Compass`} canonicalURL={`https://islamiccompass.org${langPrefix}/kible-pusulasi`} description={ui.desc} lang={lang}>
+  <main class="py-16 md:py-24 px-5 min-h-[85vh] flex flex-col items-center justify-center">
+    
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-4 transition-colors">
+        {ui.title}
+      </h1>
+      <p class="text-[#94A3B8] font-light max-w-md mx-auto">
+        {ui.desc}
+      </p>
+    </div>
+
+    <div id="qibla-container" class="relative w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-[#F5F2E9] to-[#FDFBF7] dark:from-[#111827]/80 dark:to-[#111827] shadow-[0_20px_60px_-15px_rgba(212,175,55,0.2)] border-[8px] border-white dark:border-[#0B1120] flex items-center justify-center overflow-hidden transition-all duration-700 hidden">
+      <!-- DÄ±ÅŸ GÃ¶bek (Pusula KadranÄ±) DÃ–NEN KISIM -->
+      <div id="compass-dial" class="absolute w-[90%] h-[90%] rounded-full border border-[#D4AF37]/30 transition-transform duration-[400ms] ease-out flex items-center justify-center">
+         
+         <!-- KÄ±ble Ok Ä°ÅŸareti (Kabe Ä°konu sabittir) -->
+         <div id="qibla-pointer" class="absolute inset-0 flex flex-col items-center opacity-0 transition-opacity duration-1000 z-20">
+            <svg class="w-8 h-8 text-[#D4AF37] -mt-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"/></svg>
+         </div>
+
+         <!-- YÃ¶n Harfleri -->
+         <span class="absolute top-2 text-[#94A3B8] text-sm font-bold">{ui.n}</span>
+         <span class="absolute bottom-2 text-[#94A3B8] text-sm font-bold">{ui.s}</span>
+         <span class="absolute right-3 text-[#94A3B8] text-sm font-bold">{ui.e}</span>
+         <span class="absolute left-3 text-[#94A3B8] text-sm font-bold">{ui.w}</span>
+         
+         <div class="absolute w-full border-t border-black/5 dark:border-white/5"></div>
+         <div class="absolute h-full border-l border-black/5 dark:border-white/5"></div>
+      </div>
+      
+      <!-- Ä°Ã§ GÃ¶bek (TasarÄ±msal) SABÄ°T KISIM -->
+      <div class="w-32 h-32 md:w-40 md:h-40 bg-white/50 dark:bg-black/50 backdrop-blur-md rounded-full shadow-inner flex flex-col items-center justify-center relative z-30 border border-[#D4AF37]/20">
+         <span id="qibla-degree" class="text-3xl font-bold font-mono text-[#1C1917] dark:text-white mb-1">0Â°</span>
+         <span class="text-[10px] text-[#D4AF37] font-bold tracking-widest uppercase">{ui.title}</span>
+      </div>
+
+      <div id="qibla-success-beam" class="absolute inset-0 bg-[#D4AF37]/20 rounded-full scale-0 opacity-0 transition-all duration-500 z-10 pointer-events-none"></div>
+    </div>
+
+    <!-- Permission & Initialization Box -->
+    <div id="qibla-auth-box" class="bg-[#F5F2E9] dark:bg-[#111827]/50 border border-black/5 dark:border-white/5 p-8 rounded-3xl text-center max-w-sm w-full transition-all">
+       <div class="w-20 h-20 bg-[#D4AF37]/20 rounded-full flex items-center justify-center text-[#D4AF37] mx-auto mb-6">
+         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+       </div>
+       <h3 class="text-xl font-bold text-[#1C1917] dark:text-white mb-3">{ui.reqGeo}</h3>
+       <p class="text-sm text-[#94A3B8] mb-8">{ui.reqGeoDesc}</p>
+       <button id="btn-request-geo" class="w-full bg-[#1C1917] dark:bg-white text-white dark:text-[#1C1917] font-bold py-4 rounded-full hover:bg-[#D4AF37] dark:hover:bg-[#D4AF37] hover:text-white transition-colors duration-300">
+         {ui.btnGeo}
+       </button>
+    </div>
+    
+    <!-- Meta Info Box (Hidden until found) -->
+    <div id="qibla-info-box" class="mt-8 text-center hidden opacity-0 transition-opacity duration-1000">
+       <div id="qibla-found-banner" class="inline-block bg-[#22c55e]/10 text-[#22c55e] border border-[#22c55e]/30 px-6 py-2 rounded-full font-bold text-sm tracking-wide mb-4 transition-all opacity-0">
+          {ui.qiblaFound}
+       </div>
+       <div class="text-[#94A3B8] text-xs uppercase tracking-widest font-medium">
+         {ui.distance}: <span id="qibla-distance" class="text-[#D4AF37] font-bold">... km</span>
+       </div>
+    </div>
+
+    <!-- Sensor Error -->
+    <div id="qibla-error-box" class="mt-4 text-[#ef4444] text-sm text-center hidden max-w-sm">
+      {ui.noSensor}
+    </div>
+
+  </main>
+
+  <script is:inline>
+    const KAABA_LAT = 21.422487;
+    const KAABA_LNG = 39.826206;
+
+    let userLat = null;
+    let userLng = null;
+    let qiblaBearing = 0;
+    
+    const authBox = document.getElementById('qibla-auth-box');
+    const container = document.getElementById('qibla-container');
+    const dial = document.getElementById('compass-dial');
+    const degreeEl = document.getElementById('qibla-degree');
+    const infoBox = document.getElementById('qibla-info-box');
+    const distanceEl = document.getElementById('qibla-distance');
+    const pointer = document.getElementById('qibla-pointer');
+    const successBeam = document.getElementById('qibla-success-beam');
+    const foundBanner = document.getElementById('qibla-found-banner');
+    const errorBox = document.getElementById('qibla-error-box');
+
+    document.getElementById('btn-request-geo').addEventListener('click', () => {
+      // iOS 13+ DeviceOrientation Consent
+      if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
+        DeviceOrientationEvent.requestPermission()
+          .then(permissionState => {
+            if (permissionState === 'granted') {
+              getGeolocation();
+            } else {
+              showError();
+            }
+          })
+          .catch(console.error);
+      } else {
+         getGeolocation();
+      }
+    });
+
+    function getGeolocation() {
+       if ("geolocation" in navigator) {
+          navigator.geolocation.getCurrentPosition(
+             (pos) => {
+                userLat = pos.coords.latitude;
+                userLng = pos.coords.longitude;
+                calculateQibla();
+                authBox.classList.add('hidden');
+                container.classList.remove('hidden');
+                infoBox.classList.remove('hidden');
+                
+                // Show Dial slowly
+                setTimeout(() => infoBox.classList.remove('opacity-0'), 100);
+                setTimeout(() => pointer.classList.remove('opacity-0'), 500);
+                
+                initCompass();
+             },
+             (err) => {
+                showError();
+             },
+             { enableHighAccuracy: true }
+          );
+       } else {
+          showError();
+       }
+    }
+
+    function calculateQibla() {
+       const lat1 = userLat * (Math.PI / 180);
+       const lon1 = userLng * (Math.PI / 180);
+       const lat2 = KAABA_LAT * (Math.PI / 180);
+       const lon2 = KAABA_LNG * (Math.PI / 180);
+
+       const y = Math.sin(lon2 - lon1) * Math.cos(lat2);
+       const x = Math.cos(lat1) * Math.sin(lat2) - Math.sin(lat1) * Math.cos(lat2) * Math.cos(lon2 - lon1);
+       
+       let bearing = Math.atan2(y, x) * (180 / Math.PI);
+       qiblaBearing = (bearing + 360) % 360;
+
+       // Calculate Distance
+       const R = 6371; // km
+       const dLat = lat2 - lat1;
+       const dLon = lon2 - lon1;
+       const a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon/2) * Math.sin(dLon/2);
+       const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+       const d = R * c;
+       
+       distanceEl.textContent = Math.round(d).toLocaleString() + " km";
+       
+       // Sadece kullanÄ±cÄ±ya hissettir
+       pointer.style.transform = `rotate(${qiblaBearing}deg)`;
+    }
+
+    function initCompass() {
+       if (window.DeviceOrientationAbsoluteEvent || "ondeviceorientationabsolute" in window) {
+           window.addEventListener("deviceorientationabsolute", handleOrientation, true);
+       } else if ("ondeviceorientation" in window) {
+           window.addEventListener("deviceorientation", handleOrientation, true);
+       } else {
+           showError();
+       }
+    }
+
+    function handleOrientation(event) {
+       let alpha = event.alpha;
+       if (event.webkitCompassHeading) {
+          // iOS
+          alpha = event.webkitCompassHeading;
+       } else if (alpha !== null) {
+          // Android (Genellikle eksen deÄŸiÅŸtirilir)
+          alpha = 360 - alpha;
+       } else {
+          showError();
+          return;
+       }
+
+       const phoneHeading = alpha; // 0 = North
+       const diff = Math.abs(phoneHeading - qiblaBearing);
+       const isFacingQibla = diff < 10 || diff > 350;
+
+       // Döndür (Kıble yönüne sabit olması için -alpha verilir, ibre kıbleBearinge döndürülür)
+       dial.style.transform = `rotate(${-phoneHeading}deg)`;
+       degreeEl.textContent = Math.round(phoneHeading) + "Â°";
+
+       if (isFacingQibla) {
+          successBeam.classList.remove('scale-0', 'opacity-0');
+          successBeam.classList.add('scale-110', 'opacity-100');
+          foundBanner.classList.remove('opacity-0');
+          if(navigator.vibrate) navigator.vibrate(50); // Haptic feedback
+       } else {
+          successBeam.classList.add('scale-0', 'opacity-0');
+          successBeam.classList.remove('scale-110', 'opacity-100');
+          foundBanner.classList.add('opacity-0');
+       }
+    }
+
+    function showError() {
+       errorBox.classList.remove('hidden');
+    }
+  </script>
+</Layout>

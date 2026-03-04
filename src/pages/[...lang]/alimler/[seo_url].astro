@@ -1,0 +1,166 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { veriGetir } from '../../../utils/veriMotoru';
+import { useTranslations } from '../../../i18n/ui';
+
+// 7 Dil x Tüm Alimler için Çapraz Sayfa Üretimi
+export function getStaticPaths() {
+  const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
+  const paths = [];
+
+  diller.forEach(dilParam => {
+    const gecerliDil = dilParam || 'tr';
+    const alimlerData = veriGetir('alimler_proje_hazir', gecerliDil);
+
+    alimlerData.forEach((alim) => {
+      // Çapraz Linkleme: Aynı sayfa türündeki (Örn: Biyografi) diğer 3 alimi/eseri bul
+      const ilgiliIcerikler = alimlerData
+        .filter((a) => a.seo_url !== alim.seo_url && a.sayfa_turu === alim.sayfa_turu)
+        .slice(0, 3);
+
+      paths.push({
+        params: { lang: dilParam, seo_url: alim.seo_url },
+        props: { alim, ilgiliIcerikler, gecerliDil },
+      });
+    });
+  });
+
+  return paths;
+}
+
+const { alim, ilgiliIcerikler, gecerliDil } = Astro.props;
+const lang = gecerliDil;
+const t = useTranslations(lang);
+const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+// GOOGLE İÇİN GİZLİ MAKALE ŞEMASI (Global SEO)
+const alimSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "image": "https://islamiccompass.org/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Islamic Compass"
+  },
+  "datePublished": "2024-01-01T00:00:00Z",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Islamic Compass",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://islamiccompass.org/favicon.svg"
+    }
+  },
+  "headline": alim.sayfa_basligi,
+  "description": alim.seo_meta_aciklama || alim.sayfa_giris_yazisi,
+  "inLanguage": lang,
+  "author": {
+    "@type": "Organization",
+    "name": t('hero.title')
+  }
+};
+---
+
+<Layout 
+  title={`${alim.sayfa_basligi} | ${t('section.alimler')}`} 
+  schema={alimSchema} 
+  description={alim.seo_meta_aciklama || alim.sayfa_giris_yazisi} 
+  canonicalURL={`https://islamiccompass.org${langPrefix}/alimler/${alim.seo_url}`}
+  lang={lang}
+>
+  <main class="py-16 md:py-24 px-5">
+    <article class="max-w-3xl mx-auto">
+      
+      <header class="text-center mb-16">
+        <div class="text-[#D4AF37] text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mb-6">
+          {t('section.alimler')} - {alim.sayfa_turu}
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white mb-8 leading-tight transition-colors duration-500">
+          {alim.sayfa_basligi}
+        </h1>
+        {alim.sayfa_giris_yazisi && (
+          <p class="text-[#57534E] dark:text-[#94A3B8] text-lg md:text-xl leading-relaxed font-['Playfair_Display'] italic max-w-2xl mx-auto transition-colors duration-500">
+            "{alim.sayfa_giris_yazisi}"
+          </p>
+        )}
+      </header>
+
+      <section class="mb-16">
+        <div class="bg-gradient-to-b from-[#F3F0E6] dark:from-[#111827]/60 to-transparent rounded-[2.5rem] p-8 md:p-12 border-t border-black/5 dark:border-white/5 transition-colors duration-500">
+          <h2 class="text-[#D4AF37] text-xs font-bold tracking-[0.2em] uppercase mb-6 flex items-center justify-center md:justify-start gap-3">
+            <span class="w-2 h-2 rounded-full bg-[#D4AF37]"></span>
+            {alim.alim_adi} {lang === 'tr' ? 'Kimdir?' : ''}
+          </h2>
+          <div class="text-[#1C1917] dark:text-white/90 text-lg md:text-xl leading-relaxed font-light transition-colors duration-500 whitespace-pre-wrap">
+            {alim.ham_kisa_biyografi || alim.hayati || alim.biyografi}
+          </div>
+        </div>
+      </section>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-20">
+        
+        {alim.ham_soz && (
+          <div class="p-8 md:p-10 rounded-[2rem] bg-[#F5F2E9] dark:bg-[#111827]/30 border border-black/5 dark:border-white/5 hover:bg-[#EAE5D9] dark:hover:bg-[#111827]/50 transition-colors duration-500">
+            <h2 class="text-[#D4AF37] text-xs font-bold tracking-[0.2em] uppercase mb-6 flex items-center justify-center md:justify-start gap-3">
+              <span class="w-2 h-2 rounded-full bg-[#D4AF37]"></span>
+              {lang === 'tr' ? 'Hikmetli Sözü' : 'Wisdom Quote'}
+            </h2>
+            <p class="text-[#44403C] dark:text-white/90 text-lg leading-relaxed font-['Playfair_Display'] italic text-center md:text-left transition-colors duration-500">
+              "{alim.ham_soz}"
+            </p>
+          </div>
+        )}
+
+        {(alim.ham_eserler || alim.eserleri) && (
+          <div class="p-8 md:p-10 rounded-[2rem] bg-[#F5F2E9] dark:bg-[#111827]/30 border border-black/5 dark:border-white/5 hover:bg-[#EAE5D9] dark:hover:bg-[#111827]/50 transition-colors duration-500">
+            <h2 class="text-[#D4AF37] text-xs font-bold tracking-[0.2em] uppercase mb-6 flex items-center justify-center md:justify-start gap-3">
+              <span class="w-2 h-2 rounded-full bg-[#D4AF37]"></span>
+              {lang === 'tr' ? 'Önemli Eserleri' : 'Notable Works'}
+            </h2>
+            {Array.isArray(alim.ham_eserler) ? (
+              <ul class="text-[#44403C] dark:text-white/90 text-lg leading-relaxed font-light list-disc list-inside space-y-2 transition-colors duration-500">
+                {alim.ham_eserler.map((eser) => (
+                  <li>{eser}</li>
+                ))}
+              </ul>
+            ) : (
+              <p class="text-[#44403C] dark:text-white/90 text-lg leading-relaxed font-light transition-colors duration-500 whitespace-pre-wrap">
+                {alim.ham_eserler || alim.eserleri}
+              </p>
+            )}
+          </div>
+        )}
+      </div>
+
+      {ilgiliIcerikler.length > 0 && (
+        <section class="mt-16 pt-16 border-t border-black/10 dark:border-white/10 transition-colors duration-500">
+          <div class="text-center mb-10">
+            <h3 class="text-2xl md:text-3xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white transition-colors duration-500">
+              {t('section.alimler')}
+            </h3>
+            <p class="text-[#57534E] dark:text-[#94A3B8] mt-3 font-light">
+              {lang === 'tr' ? 'Okumaya devam edebileceğiniz diğer alimler ve eserler' : 'Continue reading about other scholars'}
+            </p>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-6">
+            {ilgiliIcerikler.map((ilgili) => (
+              <a href={`${langPrefix}/alimler/${ilgili.seo_url}`} class="group block p-6 md:p-8 rounded-[2rem] bg-[#F5F2E9] dark:bg-[#111827]/30 border border-black/5 dark:border-white/5 hover:bg-[#EAE5D9] dark:hover:bg-[#111827]/50 transition-all duration-500 hover:-translate-y-2">
+                <span class="text-[#D4AF37] text-[10px] font-bold tracking-[0.2em] uppercase mb-4 block">
+                  {ilgili.sayfa_turu}
+                </span>
+                <h4 class="text-lg md:text-xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-3 group-hover:text-[#D4AF37] dark:group-hover:text-[#D4AF37] transition-colors line-clamp-2">
+                  {ilgili.alim_adi}
+                </h4>
+                <p class="text-[#57534E] dark:text-[#94A3B8] text-sm line-clamp-2 font-light transition-colors duration-500">
+                  {ilgili.sayfa_giris_yazisi}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+      
+    </article>
+  </main>
+</Layout>

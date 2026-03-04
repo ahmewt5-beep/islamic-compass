@@ -1,0 +1,40 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: undefined } }, { params: { lang: 'en' } }, { params: { lang: 'ar' } },
+    { params: { lang: 'id' } }, { params: { lang: 'ur' } }, { params: { lang: 'fr' } }, { params: { lang: 'ru' } }
+  ];
+}
+const lang = Astro.params.lang || 'tr';
+const isTr = lang === 'tr';
+---
+<Layout title={isTr ? "EULA | Islamic Compass" : "EULA | Islamic Compass"}>
+  <main class="max-w-4xl mx-auto px-6 py-24 min-h-[70vh]">
+    <h1 class="text-4xl md:text-5xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-8 border-b border-[#D4AF37]/30 pb-4">
+      {isTr ? 'Son Kullanıcı Lisans Sözleşmesi (EULA)' : 'End-User License Agreement (EULA)'}
+    </h1>
+    <div class="space-y-6 text-[#57534E] dark:text-[#94A3B8] font-light leading-relaxed">
+      {isTr ? (
+        <>
+          <h2 class="text-2xl text-[#1C1917] dark:text-white font-semibold mt-8">1. Sözleşmenin Kabulü</h2>
+          <p>Islamic Compass platformunu kullanarak bu Son Kullanıcı Lisans Sözleşmesi'nin şartlarını peşinen kabul etmiş olursunuz.</p>
+          <h2 class="text-2xl text-[#1C1917] dark:text-white font-semibold mt-8">2. "Olduğu Gibi" (As-Is) Sunum</h2>
+          <p>Islamic Compass yazılımı ve barındırdığı 7 dilli veri havuzu "olduğu gibi" sunulmaktadır. Çevirilerde, dini terimlerde veya teknik altyapıda oluşabilecek istem dışı hata veya eksikliklerden platformumuz hukuki olarak sorumlu tutulamaz. Dini kararlarda daima ana kaynaklara ve yetkili alimlere danışılması tavsiye edilir.</p>
+          <h2 class="text-2xl text-[#1C1917] dark:text-white font-semibold mt-8">3. Hizmet Kesintisi</h2>
+          <p>Sistem yöneticilerimiz (Noxusweb), sunucu bakımları veya teknik nedenlerle platform erişimini geçici olarak durdurma hakkını saklı tutar. Kesintisiz erişim garantisi verilmemektedir.</p>
+        </>
+      ) : (
+        <>
+          <h2 class="text-2xl text-[#1C1917] dark:text-white font-semibold mt-8">1. Acceptance of Agreement</h2>
+          <p>By using the Islamic Compass platform, you automatically agree to the terms of this End-User License Agreement.</p>
+          <h2 class="text-2xl text-[#1C1917] dark:text-white font-semibold mt-8">2. "As-Is" Provision</h2>
+          <p>The Islamic Compass software and its 7-language data pool are provided "as is". Our platform cannot be held legally liable for any unintentional errors or omissions in translations, religious terms, or technical infrastructure. It is always recommended to consult primary sources and authorized scholars for religious rulings.</p>
+          <h2 class="text-2xl text-[#1C1917] dark:text-white font-semibold mt-8">3. Service Interruption</h2>
+          <p>Our system administrators (Noxusweb) reserve the right to temporarily suspend platform access for server maintenance or technical reasons. We do not guarantee uninterrupted access.</p>
+        </>
+      )}
+    </div>
+  </main>
+</Layout>

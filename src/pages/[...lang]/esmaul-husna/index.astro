@@ -1,0 +1,63 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { veriGetir } from '../../../utils/veriMotoru';
+import { useTranslations } from '../../../i18n/ui';
+
+// 7 Dili Tanıtıyoruz
+export function getStaticPaths() {
+  return [
+    { params: { lang: undefined } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'ar' } },
+    { params: { lang: 'id' } },
+    { params: { lang: 'ur' } },
+    { params: { lang: 'fr' } },
+    { params: { lang: 'ru' } },
+  ];
+}
+
+const lang = Astro.params.lang || 'tr';
+const t = useTranslations(lang);
+const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+// Veriyi dilden çekiyoruz
+const esmaData = veriGetir('esmaul_husna_proje_hazir', lang);
+const siraliEsma = esmaData.sort((a, b) => a.sira_no - b.sira_no);
+---
+
+<Layout title={`${t('section.esma')} | ${t('hero.title')}`} lang={lang}>
+  <main class="py-16 md:py-24 px-5 transition-colors duration-500">
+    <div class="max-w-7xl mx-auto">
+      
+      <header class="text-center mb-20">
+        <span class="text-[#D4AF37] text-sm font-bold tracking-[0.2em] uppercase mb-4 block">{t('hero.badge')}</span>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white mb-6 transition-colors duration-500">
+          {t('section.esma')}
+        </h1>
+      </header>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
+        {siraliEsma.map((esma) => (
+          <a href={`${langPrefix}/esmaul-husna/${esma.seo_url}`} class="group relative bg-white dark:bg-[#111827]/40 border border-black/5 dark:border-white/5 hover:border-[#D4AF37]/50 rounded-3xl p-6 text-center overflow-hidden hover:-translate-y-2 transition-all duration-500 shadow-sm hover:shadow-xl">
+            
+            <div class="absolute -right-4 -bottom-4 text-8xl text-[#D4AF37] opacity-[0.03] group-hover:opacity-10 transition-opacity duration-500 font-['Amiri'] pointer-events-none select-none">
+              {esma.arapca_yazilis}
+            </div>
+
+            <span class="text-[#94A3B8] text-[10px] font-bold tracking-widest block mb-4 relative z-10">{esma.sira_no}</span>
+            <div class="text-3xl md:text-4xl text-[#1C1917] dark:text-white font-['Amiri'] mb-4 relative z-10 transition-colors" dir="rtl">
+              {esma.arapca_yazilis}
+            </div>
+            <h2 class="text-lg font-['Playfair_Display'] font-bold text-[#D4AF37] mb-2 relative z-10">
+              {esma.isim}
+            </h2>
+            <p class="text-[#57534E] dark:text-[#94A3B8] text-xs line-clamp-2 font-light relative z-10">
+              {esma.kisa_anlam}
+            </p>
+          </a>
+        ))}
+      </div>
+
+    </div>
+  </main>
+</Layout>

@@ -1,0 +1,133 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { veriGetir } from '../../../utils/veriMotoru';
+import { useTranslations } from '../../../i18n/ui';
+
+// 7 Dil x Tüm Blog Yazıları için Çapraz Sayfa Üretimi
+export function getStaticPaths() {
+  const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
+  const paths = [];
+
+  diller.forEach(dilParam => {
+    const gecerliDil = dilParam || 'tr';
+    const blogData = veriGetir('blog_proje_hazir', gecerliDil);
+
+    blogData.forEach((yazi) => {
+      // Çapraz Linkleme: Rastgele 2 içerik (Kategori olmadığı için)
+      const ilgiliIcerikler = blogData
+        .filter((y) => y.seo_url !== yazi.seo_url)
+        .slice(0, 2);
+
+      paths.push({
+        params: { lang: dilParam, seo_url: yazi.seo_url },
+        props: { yazi, ilgiliIcerikler, gecerliDil },
+      });
+    });
+  });
+
+  return paths;
+}
+
+const { yazi, ilgiliIcerikler, gecerliDil } = Astro.props;
+const lang = gecerliDil;
+const t = useTranslations(lang);
+const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+// GOOGLE İÇİN GİZLİ MAKALE ŞEMASI (BlogPosting)
+const makaleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": yazi.baslik,
+  "description": yazi.meta_aciklama || yazi.seo_meta_aciklama,
+  "inLanguage": lang,
+  "author": {
+    "@type": "Person",
+    "name": yazi.yazar || t('hero.title')
+  },
+  "keywords": (yazi.semantik_etiketler || []).join(", ")
+};
+
+// İçerikteki "Giriş" başlığını kaldırıyoruz (Tüm dillerdeki varyasyonlarına karşı güvenli)
+// Not: Çeviride Introduction, مقدمة vs olabileceği için daha jenerik bir silme yapılabilir ama Türkçe için korundu.
+const temizIcerik = (yazi.icerik_html || "").replace(/<h2[^>]*>Giriş<\/h2>/i, '');
+---
+
+<Layout 
+  title={`${yazi.baslik} | ${t('nav.blog')} - ${t('hero.title')}`} 
+  schema={makaleSchema} 
+  description={yazi.seo_meta_aciklama || yazi.meta_aciklama} 
+  canonicalURL={`https://islamiccompass.org${langPrefix}/blog/${yazi.seo_url}`}
+  lang={lang}
+>
+  <main class="py-16 md:py-24 px-5">
+    
+    <article class="max-w-3xl mx-auto">
+      
+      <header class="text-center mb-16 border-b border-black/5 dark:border-white/5 pb-12 transition-colors duration-500">
+        <a href={`${langPrefix}/blog`} class="text-[#D4AF37] text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mb-6 inline-block hover:text-[#1C1917] dark:hover:text-white transition-colors">
+          &larr; {t('nav.blog')}
+        </a>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white mb-8 leading-tight transition-colors duration-500">
+          {yazi.baslik}
+        </h1>
+        
+        <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-[#94A3B8]">
+            <span class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-[#D4AF37]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+              {yazi.yazar || t('hero.title')}
+            </span>
+            <span>•</span>
+            <span class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-[#D4AF37]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              {yazi.okuma_suresi || (lang === 'tr' ? '5 dk' : '5 min')}
+            </span>
+        </div>
+      </header>
+
+      <div 
+        class="prose prose-lg dark:prose-invert max-w-none text-[#44403C] dark:text-white/90 font-light leading-loose transition-colors duration-500 text-lg md:text-xl mb-16" 
+        style="line-height: 2;" 
+        dir={lang === 'ar' || lang === 'ur' ? 'rtl' : 'ltr'}
+        set:html={temizIcerik}>
+      </div>
+
+      {yazi.semantik_etiketler && yazi.semantik_etiketler.length > 0 && (
+        <div class="flex flex-wrap gap-2 mb-16">
+          {yazi.semantik_etiketler.map((etiket) => (
+              <span class="px-3 py-1 bg-[#F5F2E9] dark:bg-[#111827] text-[#57534E] dark:text-[#94A3B8] text-xs font-medium rounded-full border border-black/5 dark:border-white/5 uppercase tracking-wider">#{etiket}</span>
+          ))}
+        </div>
+      )}
+
+      {ilgiliIcerikler.length > 0 && (
+        <section class="mt-20 pt-16 border-t border-black/10 dark:border-white/10 transition-colors duration-500">
+          <div class="text-center mb-10">
+             <span class="text-[#D4AF37] text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
+               {lang === 'tr' ? 'Gönül Damlaları' : 'Similar Articles'}
+             </span>
+             <h3 class="text-2xl md:text-3xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white transition-colors duration-500">
+               {lang === 'tr' ? 'Benzer Yazılarımız' : 'Read Next'}
+             </h3>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            {ilgiliIcerikler.map((ilgili) => (
+              <a href={`${langPrefix}/blog/${ilgili.seo_url}`} class="group block p-6 md:p-8 rounded-[2rem] bg-[#F5F2E9] dark:bg-[#111827]/30 border border-black/5 dark:border-white/5 hover:bg-[#EAE5D9] dark:hover:bg-[#111827]/50 transition-all duration-500 hover:-translate-y-2">
+                <span class="text-[#D4AF37] text-[10px] font-bold tracking-[0.2em] uppercase mb-4 block">
+                  {t('nav.blog')}
+                </span>
+                <h4 class="text-lg md:text-xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-3 group-hover:text-[#D4AF37] dark:group-hover:text-[#D4AF37] transition-colors line-clamp-2">
+                  {ilgili.baslik}
+                </h4>
+                <p class="text-[#57534E] dark:text-[#94A3B8] text-sm line-clamp-2 font-light transition-colors duration-500">
+                  {ilgili.seo_meta_aciklama || ilgili.meta_aciklama}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+      
+    </article>
+  </main>
+</Layout>

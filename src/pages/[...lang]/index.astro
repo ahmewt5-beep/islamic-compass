@@ -1,0 +1,234 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import GununIcerigi from '../../components/GununIcerigi.astro';
+import GeriSayimWidget from '../../components/GeriSayimWidget.astro';
+
+// Kırılmaz Veri Motorunu ve Çeviri Sözlüğünü içeri çekiyoruz
+import { veriGetir } from '../../utils/veriMotoru';
+import { useTranslations } from '../../i18n/ui';
+
+// Astro'ya 7 dilin tamamını dinamik olarak öğretiyoruz
+export function getStaticPaths() {
+  return [
+    { params: { lang: undefined } }, // Türkçe (Varsayılan - URL'de görünmez)
+    { params: { lang: 'en' } },
+    { params: { lang: 'ar' } },
+    { params: { lang: 'id' } },
+    { params: { lang: 'ur' } },
+    { params: { lang: 'fr' } },
+    { params: { lang: 'ru' } },
+  ];
+}
+
+// URL'den dili tespit edip, linklerin başına eklenecek öneki hazırlıyoruz (Örn: "/en")
+const lang = Astro.params.lang || 'tr';
+const t = useTranslations(lang);
+const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+// Verileri doğrudan dosyadan değil, "Zeki Veri Motorumuzdan" O DİLE ÖZEL çekiyoruz
+const kuranData = veriGetir('kuran_proje_hazir', lang);
+const dualarData = veriGetir('dualar_proje_hazir', lang);
+const alimlerData = veriGetir('alimler_proje_hazir', lang);
+const kissalarData = veriGetir('kissalar_proje_hazir', lang);
+const terimlerData = veriGetir('terimler_proje_hazir', lang);
+const esmaData = veriGetir('esmaul_husna_proje_hazir', lang);
+const hadisData = veriGetir('hadisler_proje_hazir', lang);
+
+// Vitrin için verileri hazırlıyoruz
+const vitrinKuran = kuranData
+  .sort((a, b) => Number(a.sure_no || 0) - Number(b.sure_no || 0))
+  .slice(0, 3);
+const vitrinDualari = dualarData.slice(0, 3);
+const vitrinAlimleri = alimlerData.filter(a => a?.sayfa_turu === 'Biyografi' || a?.sayfa_turu === 'Biography' || a?.sayfa_turu === 'السيرة الذاتية').slice(0, 3);
+const vitrinKissalar = kissalarData.slice(0, 3);
+const vitrinTerimler = terimlerData.slice(0, 3);
+const vitrinEsma = esmaData.slice(0, 4); 
+const vitrinHadis = hadisData.slice(0, 3); 
+---
+
+<Layout title={`${t('hero.title')} | ${t('hero.badge')}`} canonicalURL="https://islamiccompass.org/" lang={lang}>
+  <div class="flex flex-col items-center pt-16 pb-12 transition-colors duration-500">
+    
+    <div class="max-w-4xl mx-auto text-center px-6 mb-16">
+      <span class="text-[#D4AF37] text-sm font-semibold tracking-widest uppercase mb-4 block">{t('hero.badge')}</span>
+      <h1 class="text-5xl md:text-7xl font-['Playfair_Display'] font-bold mb-6 tracking-tight text-[#1C1917] dark:text-white transition-colors duration-500">{t('hero.title')}</h1>
+      <p class="text-[#57534E] dark:text-[#94A3B8] text-lg md:text-xl leading-relaxed font-['Playfair_Display'] mb-10 transition-colors duration-500">
+        {t('hero.desc')}
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-6 w-full mb-20 cursor-pointer" onclick={`window.location.href='${langPrefix}/dini-gunler/kadir-gecesine-ne-kadar-kaldi'`}>
+      <GeriSayimWidget />
+      <p class="text-center text-xs text-[#94A3B8] mt-3 font-light tracking-wide uppercase">{t('widget.countdown')}</p>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 w-full mb-24">
+      <GununIcerigi lang={lang} />
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 w-full">
+      <div class="flex items-center justify-between mb-8 border-b border-black/10 dark:border-white/10 pb-4 transition-colors duration-500">
+        <h2 class="text-3xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white transition-colors duration-500">{t('section.esma')}</h2>
+        <a href={`${langPrefix}/esmaul-husna`} class="text-[#D4AF37] hover:text-[#1C1917] dark:hover:text-white transition-colors text-sm font-medium uppercase tracking-wider">{t('section.esma.link')} &rarr;</a>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        {vitrinEsma.map((esma) => (
+          <a href={`${langPrefix}/esmaul-husna/${esma.seo_url}`} class="group relative bg-[#F5F2E9] dark:bg-[#111827]/30 border border-black/5 dark:border-white/5 hover:border-[#D4AF37]/50 rounded-[2rem] p-6 text-center overflow-hidden hover:-translate-y-1 transition-all duration-500">
+            <div class="absolute -right-4 -bottom-4 text-7xl text-[#D4AF37] opacity-[0.03] group-hover:opacity-10 transition-opacity duration-500 font-['Amiri'] pointer-events-none">
+              {esma.arapca_yazilis}
+            </div>
+            <div class="text-3xl text-[#1C1917] dark:text-white font-['Amiri'] mb-3 relative z-10 transition-colors" dir="rtl">
+              {esma.arapca_yazilis}
+            </div>
+            <h3 class="text-lg font-['Playfair_Display'] font-bold text-[#D4AF37] mb-2 relative z-10">
+              {esma.isim}
+            </h3>
+            <p class="text-[#57534E] dark:text-[#94A3B8] text-xs line-clamp-2 font-light relative z-10">
+              {esma.kisa_anlam}
+            </p>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 w-full mt-24">
+      <div class="flex items-center justify-between mb-8 border-b border-black/10 dark:border-white/10 pb-4 transition-colors duration-500">
+        <h2 class="text-3xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white transition-colors duration-500">{t('section.hadis')}</h2>
+        <a href={`${langPrefix}/hadisler`} class="text-[#D4AF37] hover:text-[#1C1917] dark:hover:text-white transition-colors text-sm font-medium uppercase tracking-wider">{t('section.hadis.link')} &rarr;</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {vitrinHadis.map((kategori) => (
+          <a href={`${langPrefix}/hadisler/${kategori.seo_url}`} class="group block bg-[#F5F2E9] dark:bg-[#111827]/30 border border-black/5 dark:border-white/5 hover:border-[#D4AF37]/50 rounded-[2rem] p-8 hover:-translate-y-1 transition-all duration-500 shadow-sm">
+            <span class="inline-block px-3 py-1 bg-[#FDFBF7] dark:bg-[#0B1120] text-[#D4AF37] text-[10px] font-bold tracking-[0.2em] uppercase rounded-full mb-6 border border-[#D4AF37]/20">
+              {t('section.hadis')}
+            </span>
+            <h3 class="text-xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-4 group-hover:text-[#D4AF37] transition-colors">
+              {kategori.kategori}
+            </h3>
+            <p class="text-[#57534E] dark:text-[#94A3B8] text-sm line-clamp-3 leading-relaxed font-light">
+              {kategori.kategori_giris_yazisi}
+            </p>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 w-full mt-24">
+      <div class="flex items-center justify-between mb-8 border-b border-black/10 dark:border-white/10 pb-4 transition-colors duration-500">
+        <h2 class="text-3xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white transition-colors duration-500">{t('section.kuran')}</h2>
+        <a href={`${langPrefix}/kuran`} class="text-[#D4AF37] hover:text-[#1C1917] dark:hover:text-white transition-colors text-sm font-medium uppercase tracking-wider">{t('section.kuran.link')} &rarr;</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {vitrinKuran.map((sure) => (
+          <a href={`${langPrefix}/kuran/${sure.seo_url}`} class="group block bg-[#F5F2E9] dark:bg-[#111827]/30 border border-black/5 dark:border-white/5 rounded-[2rem] p-8 hover:bg-[#EAE5D9] dark:hover:bg-[#111827]/50 transition-all duration-500 hover:-translate-y-1">
+            <span class="inline-block px-3 py-1 bg-[#FDFBF7] dark:bg-[#0B1120] text-[#D4AF37] text-[10px] font-bold tracking-[0.2em] uppercase rounded-full mb-6 border border-[#D4AF37]/20">
+              {sure.sure_no ? `SURE ${sure.sure_no}` : t('section.kuran')}
+            </span>
+            <h3 class="text-xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-4 group-hover:text-[#D4AF37] dark:group-hover:text-[#D4AF37] transition-colors line-clamp-2">
+              {sure.sure_adi || sure.baslik || sure.isim || "Sure Adı"}
+            </h3>
+            <p class="text-[#57534E] dark:text-[#94A3B8] text-sm line-clamp-3 leading-relaxed transition-colors duration-500 font-light">
+              {sure.sayfa_giris_yazisi || sure.seo_meta_aciklama || (sure.tamami_meal && sure.tamami_meal.length > 150 ? sure.tamami_meal.substring(0, 150) + "..." : sure.tamami_meal) || "Kur'an-ı Kerim'in bu eşsiz suresini keşfedin..."}
+            </p>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 w-full mt-24">
+      <div class="flex items-center justify-between mb-8 border-b border-black/10 dark:border-white/10 pb-4 transition-colors duration-500">
+        <h2 class="text-3xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white transition-colors duration-500">{t('section.dualar')}</h2>
+        <a href={`${langPrefix}/dualar`} class="text-[#D4AF37] hover:text-[#1C1917] dark:hover:text-white transition-colors text-sm font-medium uppercase tracking-wider">{t('section.dualar.link')} &rarr;</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {vitrinDualari.map((dua) => (
+          <a href={`${langPrefix}/dualar/${dua.seo_url}`} class="group block bg-[#F5F2E9] dark:bg-[#111827]/30 border border-black/5 dark:border-white/5 rounded-[2rem] p-8 hover:bg-[#EAE5D9] dark:hover:bg-[#111827]/50 transition-all duration-500 hover:-translate-y-1">
+            <span class="inline-block px-3 py-1 bg-[#FDFBF7] dark:bg-[#0B1120] text-[#D4AF37] text-[10px] font-bold tracking-[0.2em] uppercase rounded-full mb-6 border border-[#D4AF37]/20">
+              {dua.kategori}
+            </span>
+            <h3 class="text-xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-4 group-hover:text-[#D4AF37] dark:group-hover:text-[#D4AF37] transition-colors line-clamp-2">
+              {dua.baslik}
+            </h3>
+            <p class="text-[#57534E] dark:text-[#94A3B8] text-sm line-clamp-3 leading-relaxed transition-colors duration-500 font-light">
+              {dua.sayfa_giris_yazisi || dua.turkce_anlam}
+            </p>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 w-full mt-24">
+      <div class="flex items-center justify-between mb-8 border-b border-black/10 dark:border-white/10 pb-4 transition-colors duration-500">
+        <h2 class="text-3xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white transition-colors duration-500">{t('section.alimler')}</h2>
+        <a href={`${langPrefix}/alimler`} class="text-[#D4AF37] hover:text-[#1C1917] dark:hover:text-white transition-colors text-sm font-medium uppercase tracking-wider">{t('section.alimler.link')} &rarr;</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {vitrinAlimleri.map((alim) => (
+          <a href={`${langPrefix}/alimler/${alim.seo_url}`} class="group block bg-[#F5F2E9] dark:bg-[#111827]/30 border border-black/5 dark:border-white/5 rounded-[2rem] p-8 hover:bg-[#EAE5D9] dark:hover:bg-[#111827]/50 transition-all duration-500 hover:-translate-y-1">
+            <span class="inline-block px-3 py-1 bg-[#FDFBF7] dark:bg-[#0B1120] text-[#D4AF37] text-[10px] font-bold tracking-[0.2em] uppercase rounded-full mb-6 border border-[#D4AF37]/20">
+              {alim.alim_adi}
+            </span>
+            <h3 class="text-xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-4 group-hover:text-[#D4AF37] dark:group-hover:text-[#D4AF37] transition-colors line-clamp-2">
+              {alim.sayfa_basligi}
+            </h3>
+            <p class="text-[#57534E] dark:text-[#94A3B8] text-sm line-clamp-3 leading-relaxed transition-colors duration-500 font-light">
+              {alim.sayfa_giris_yazisi}
+            </p>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 w-full mt-24">
+      <div class="flex items-center justify-between mb-8 border-b border-black/10 dark:border-white/10 pb-4 transition-colors duration-500">
+        <h2 class="text-3xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white transition-colors duration-500">{t('section.kissalar')}</h2>
+        <a href={`${langPrefix}/kissalar`} class="text-[#D4AF37] hover:text-[#1C1917] dark:hover:text-white transition-colors text-sm font-medium uppercase tracking-wider">{t('section.kissalar.link')} &rarr;</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {vitrinKissalar.map((kissa) => (
+          <a href={`${langPrefix}/kissalar/${kissa.seo_url}`} class="group block bg-[#F5F2E9] dark:bg-[#111827]/30 border border-black/5 dark:border-white/5 rounded-[2rem] p-8 hover:bg-[#EAE5D9] dark:hover:bg-[#111827]/50 transition-all duration-500 hover:-translate-y-1">
+            <span class="inline-block px-3 py-1 bg-[#FDFBF7] dark:bg-[#0B1120] text-[#D4AF37] text-[10px] font-bold tracking-[0.2em] uppercase rounded-full mb-6 border border-[#D4AF37]/20">
+              {kissa.kategori}
+            </span>
+            <h3 class="text-xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-4 group-hover:text-[#D4AF37] dark:group-hover:text-[#D4AF37] transition-colors line-clamp-2">
+              {kissa.baslik}
+            </h3>
+            <p class="text-[#57534E] dark:text-[#94A3B8] text-sm line-clamp-3 leading-relaxed transition-colors duration-500 font-light">
+              {kissa.sayfa_giris_yazisi || kissa.alinacak_ders}
+            </p>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 w-full mt-24">
+      <div class="flex items-center justify-between mb-8 border-b border-black/10 dark:border-white/10 pb-4 transition-colors duration-500">
+        <h2 class="text-3xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white transition-colors duration-500">{t('section.terimler')}</h2>
+        <a href={`${langPrefix}/terimler`} class="text-[#D4AF37] hover:text-[#1C1917] dark:hover:text-white transition-colors text-sm font-medium uppercase tracking-wider">{t('section.terimler.link')} &rarr;</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {vitrinTerimler.map((terim) => (
+          <a href={`${langPrefix}/terimler/${terim.seo_url}`} class="group block bg-[#F5F2E9] dark:bg-[#111827]/30 border border-black/5 dark:border-white/5 rounded-[2rem] p-8 hover:bg-[#EAE5D9] dark:hover:bg-[#111827]/50 transition-all duration-500 hover:-translate-y-1">
+            <span class="inline-block px-3 py-1 bg-[#FDFBF7] dark:bg-[#0B1120] text-[#D4AF37] text-[10px] font-bold tracking-[0.2em] uppercase rounded-full mb-6 border border-[#D4AF37]/20">
+              {terim.sayfa_turu}
+            </span>
+            <h3 class="text-xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-4 group-hover:text-[#D4AF37] dark:group-hover:text-[#D4AF37] transition-colors line-clamp-2">
+              {terim.terim_adi}
+            </h3>
+            <p class="text-[#57534E] dark:text-[#94A3B8] text-sm line-clamp-3 leading-relaxed transition-colors duration-500 font-light">
+              {terim.ham_kisa_tanim || terim.sayfa_giris_yazisi}
+            </p>
+          </a>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</Layout>

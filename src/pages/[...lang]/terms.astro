@@ -1,0 +1,38 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: undefined } }, { params: { lang: 'en' } }, { params: { lang: 'ar' } },
+    { params: { lang: 'id' } }, { params: { lang: 'ur' } }, { params: { lang: 'fr' } }, { params: { lang: 'ru' } }
+  ];
+}
+const lang = Astro.params.lang || 'tr';
+const isTr = lang === 'tr';
+---
+<Layout title={isTr ? "Kullanım Koşulları | Islamic Compass" : "Terms of Use | Islamic Compass"}>
+  <main class="max-w-4xl mx-auto px-6 py-24 min-h-[70vh]">
+    <h1 class="text-4xl md:text-5xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-8 border-b border-[#D4AF37]/30 pb-4">
+      {isTr ? 'Kullanım Koşulları' : 'Terms of Use'}
+    </h1>
+    <div class="space-y-6 text-[#57534E] dark:text-[#94A3B8] font-light leading-relaxed">
+      {isTr ? (
+        <>
+          <p>Sitemizi ziyaret ederek aşağıdaki kullanım koşullarını kabul etmiş sayılırsınız:</p>
+          <h2 class="text-2xl text-[#1C1917] dark:text-white font-semibold mt-8">1. İçeriğin Niteliği</h2>
+          <p>Islamic Compass'ta yer alan Kur'an, Hadis, Dua ve Kıssa içerikleri manevi rehberlik ve genel bilgi verme amacı taşır. Bu içerikler, resmi bir dini fetva veya hukuki bir karar niteliğinde değildir.</p>
+          <h2 class="text-2xl text-[#1C1917] dark:text-white font-semibold mt-8">2. Kullanım Sınırları</h2>
+          <p>Sitemizdeki içerikleri kişisel, manevi ve eğitimsel amaçlarla okuyabilir ve paylaşabilirsiniz. Ancak, sitenin yazılım mimarisi ve veri derlemesi izinsiz olarak ticari amaçlarla kopyalanamaz veya otomatik botlarla (scraping) çekilemez.</p>
+        </>
+      ) : (
+        <>
+          <p>By visiting our site, you agree to the following terms of use:</p>
+          <h2 class="text-2xl text-[#1C1917] dark:text-white font-semibold mt-8">1. Nature of Content</h2>
+          <p>The Quran, Hadith, Prayers, and Parables on Islamic Compass are intended for spiritual guidance and general information. They do not constitute official religious fatwas or legal rulings.</p>
+          <h2 class="text-2xl text-[#1C1917] dark:text-white font-semibold mt-8">2. Limitations of Use</h2>
+          <p>You may read and share our content for personal, spiritual, and educational purposes. However, the software architecture and data compilation of the site may not be copied for commercial purposes or extracted by automated bots (scraping) without permission.</p>
+        </>
+      )}
+    </div>
+  </main>
+</Layout>

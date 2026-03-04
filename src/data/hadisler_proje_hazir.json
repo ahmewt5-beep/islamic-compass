@@ -1,0 +1,762 @@
+[
+    {
+        "kategori": "Sabır ve Tevekkül",
+        "seo_meta_aciklama": "Sabır ve tevekkülün İslam'daki önemini anlatan sahih hadislerle dolu bir derleme.",
+        "kategori_giris_yazisi": "Sabır ve tevekkül, İslam'ın temel erdemlerinden olup, müminlerin Allah'a olan güvenlerini ve teslimiyetlerini ifade eder. Sabır, zorluklar karşısında metanetli olmayı ve Allah'ın takdirine rıza göstermeyi içerirken, tevekkül ise her türlü çabayı gösterdikten sonra sonucu Allah'a bırakmayı ifade eder. Bu iki kavram, müminlerin dünya hayatında karşılaştıkları sıkıntılarla başa çıkmalarını ve ahiret saadetini kazanmalarını sağlar. İslam alimleri, sabır ve tevekkülün müminlerin kalplerinde kök salması gereken derin bir iman göstergesi olduğunu belirtmişlerdir. Bu bağlamda, sahih hadisler, sabır ve tevekkülün önemini ve bu erdemlerin nasıl yaşanması gerektiğini bizlere öğretir.",
+        "hadisler": [
+            {
+                "arapca": "إِنَّمَا الصَّبْرُ عِنْدَ الصَّدْمَةِ الأُولَى",
+                "turkce_anlam": "Sabır, ancak ilk şok anında gösterilendir.",
+                "kaynak": "Sahih-i Buhari, Cenâiz 31",
+                "kisa_aciklama": "Gerçek sabır, olayın ilk anında gösterilen tepkidir. Müminler, ani olaylar karşısında metanetli olmalıdır."
+            },
+            {
+                "arapca": "مَنْ يَتَصَبَّرْ يُصَبِّرْهُ اللَّهُ",
+                "turkce_anlam": "Kim sabırlı olmaya çalışırsa, Allah ona sabır verir.",
+                "kaynak": "Sahih-i Buhari, Rikak 20",
+                "kisa_aciklama": "Sabır, çaba gösterilerek elde edilebilir ve Allah, bu çabayı karşılıksız bırakmaz."
+            },
+            {
+                "arapca": "وَمَنْ يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ",
+                "turkce_anlam": "Kim Allah'a tevekkül ederse, O ona yeter.",
+                "kaynak": "Sahih-i Tirmizi, Tefsir 9",
+                "kisa_aciklama": "Allah'a güvenen kimse, başka hiçbir şeye ihtiyaç duymaz. Tevekkül, Allah'ın yardımını celbeder."
+            },
+            {
+                "arapca": "عَجَبًا لأَمْرِ المُؤْمِنِ، إِنَّ أَمْرَهُ كُلَّهُ خَيْرٌ",
+                "turkce_anlam": "Müminin işi ne kadar da hayret vericidir! Onun her işi hayırdır.",
+                "kaynak": "Sahih-i Müslim, Zühd 64",
+                "kisa_aciklama": "Mümin, karşılaştığı her durumda hayır bulur; zira sabır ve şükürle her durumu lehine çevirir."
+            },
+            {
+                "arapca": "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
+                "turkce_anlam": "Şüphesiz Allah, sabredenlerle beraberdir.",
+                "kaynak": "Sahih-i Buhari, Cihad 4",
+                "kisa_aciklama": "Allah, sabreden kullarına yardım eder ve onları asla yalnız bırakmaz."
+            }
+        ],
+        "seo_url": "sabir-ve-tevekkul"
+    },
+    {
+        "kategori": "Güzel Ahlak ve Edep",
+        "seo_meta_aciklama": "Güzel ahlak ve edep konusundaki sahih hadislerle İslam'ın bu konudaki öğretilerini keşfedin.",
+        "kategori_giris_yazisi": "Güzel ahlak ve edep, İslam'ın temel taşlarından biri olup, Müslümanların günlük yaşamlarında rehberlik eden önemli bir ilkedir. İslam, bireylerin hem Allah'a hem de diğer insanlara karşı sorumluluklarını yerine getirirken güzel ahlak ve edep ile hareket etmelerini teşvik eder. Bu, sadece bireysel bir erdem değil, aynı zamanda toplumsal huzurun ve barışın sağlanmasında da kritik bir rol oynar. \n\nPeygamber Efendimiz (s.a.v.), güzel ahlakın en güzel örneği olarak, Müslümanlara bu konuda rehberlik etmiş ve onları güzel ahlaklı olmaya teşvik etmiştir. Hadis-i şeriflerde, güzel ahlakın ve edebin önemi sıkça vurgulanmış, bu erdemlerin hem dünya hem de ahiret saadeti için ne denli önemli olduğu belirtilmiştir. Bu hadisler, Müslümanların hayatlarına yön vermeleri ve ahlaki değerlerini güçlendirmeleri için birer rehber niteliğindedir.",
+        "hadisler": [
+            {
+                "arapca": "إِنَّمَا بُعِثْتُ لِأُتَمِّمَ صَالِحَ الأَخْلاَقِ",
+                "turkce_anlam": "Ben ancak güzel ahlakı tamamlamak için gönderildim.",
+                "kaynak": "Sahih-i Buhari, Edeb 18",
+                "kisa_aciklama": "Peygamber Efendimiz (s.a.v.), gönderiliş amacının güzel ahlakı tamamlamak olduğunu belirtmiştir. Bu, ahlakın İslam'daki önemini vurgular."
+            },
+            {
+                "arapca": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+                "turkce_anlam": "Kim Allah'a ve ahiret gününe inanıyorsa ya hayır söylesin ya da sussun.",
+                "kaynak": "Sahih-i Buhari, Edeb 31",
+                "kisa_aciklama": "Sözlerimizde dikkatli olmalı, ya hayır konuşmalı ya da susmalıyız. Bu, dilimizi kontrol etmenin önemini gösterir."
+            },
+            {
+                "arapca": "إِنَّ مِنْ خِيَارِكُمْ أَحْسَنَكُمْ أَخْلاَقًا",
+                "turkce_anlam": "Sizin en hayırlınız, ahlakı en güzel olanınızdır.",
+                "kaynak": "Sahih-i Buhari, Edeb 39",
+                "kisa_aciklama": "Güzel ahlak, bir Müslümanın en değerli özelliğidir. Ahlakımızı güzelleştirmek, Allah katında değerimizi artırır."
+            },
+            {
+                "arapca": "لَيْسَ الشَّدِيدُ بِالصُّرَعَةِ، إِنَّمَا الشَّدِيدُ الَّذِي يَمْلِكُ نَفْسَهُ عِنْدَ الْغَضَبِ",
+                "turkce_anlam": "Güçlü olan, güreşte galip gelen değildir. Asıl güçlü olan, öfkelendiğinde kendini kontrol edebilendir.",
+                "kaynak": "Sahih-i Buhari, Edeb 76",
+                "kisa_aciklama": "Öfke anında kendimizi kontrol edebilmek, gerçek gücün ve güzel ahlakın bir göstergesidir."
+            },
+            {
+                "arapca": "مَنْ لَا يَرْحَمُ النَّاسَ لَا يَرْحَمُهُ اللَّهُ",
+                "turkce_anlam": "İnsanlara merhamet etmeyene Allah da merhamet etmez.",
+                "kaynak": "Sahih-i Müslim, Birr 66",
+                "kisa_aciklama": "Merhamet, güzel ahlakın temel taşlarından biridir. Başkalarına merhamet gösterdiğimizde, Allah'ın merhametine nail oluruz."
+            }
+        ],
+        "seo_url": "guzel-ahlak-ve-edep"
+    },
+    {
+        "kategori": "Namazın Faziletleri",
+        "seo_meta_aciklama": "Namazın faziletleri üzerine sahih hadislerden derlenmiş kısa ve öz bilgilerle İslam'da namazın önemini keşfedin.",
+        "kategori_giris_yazisi": "Namaz, İslam'ın beş temel şartından biri olup, Müslümanlar için günlük hayatın vazgeçilmez bir parçasıdır. Namaz, Allah'a olan bağlılığın ve kulluğun en önemli göstergelerinden biridir. Namaz kılan kişi, Allah'a yakınlaşır, ruhunu arındırır ve manevi huzura kavuşur. İslam alimleri, namazın sadece bireysel bir ibadet olmadığını, aynı zamanda toplumsal bir dayanışma ve birliktelik vesilesi olduğunu belirtmişlerdir. Namazın faziletleri üzerine birçok sahih hadis bulunmaktadır ve bu hadisler, namazın Müslümanlar için ne denli önemli olduğunu açıkça ortaya koymaktadır. Bu hadisler, namazın kişisel gelişim, toplumsal barış ve manevi yükseliş açısından ne denli değerli olduğunu gözler önüne sermektedir.",
+        "hadisler": [
+            {
+                "arapca": "مَنْ تَوَضَّأَ نَحْوَ وُضُوئِي هَذَا ثُمَّ صَلَّى رَكْعَتَيْنِ لَا يُحَدِّثُ فِيهِمَا نَفْسَهُ غُفِرَ لَهُ مَا تَقَدَّمَ مِنْ ذَنْبِهِ",
+                "turkce_anlam": "Kim benim abdest aldığım gibi abdest alır ve iki rekat namaz kılar, bu namazda kendi kendine konuşmazsa, geçmiş günahları bağışlanır.",
+                "kaynak": "Sahih-i Buhari, Vudu 24",
+                "kisa_aciklama": "Namaz, günahların bağışlanmasına vesile olan bir ibadettir. Samimi bir şekilde kılınan namaz, kişinin manevi temizliğine katkıda bulunur."
+            },
+            {
+                "arapca": "الصَّلَوَاتُ الْخَمْسُ وَالْجُمْعَةُ إِلَى الْجُمْعَةِ كَفَّارَةٌ لِمَا بَيْنَهُنَّ مَا لَمْ تُغْشَ الْكَبَائِرُ",
+                "turkce_anlam": "Beş vakit namaz ve bir cuma namazı diğer cuma namazına kadar, büyük günahlardan kaçınıldığı sürece, aralarındaki günahlara kefarettir.",
+                "kaynak": "Sahih-i Müslim, Taharet 16",
+                "kisa_aciklama": "Namaz, küçük günahların affedilmesine vesile olur. Düzenli olarak kılınan namaz, kişinin manevi hayatını temizler ve güçlendirir."
+            },
+            {
+                "arapca": "إِنَّ أَوَّلَ مَا يُحَاسَبُ بِهِ الْعَبْدُ يَوْمَ الْقِيَامَةِ مِنْ عَمَلِهِ صَلَاتُهُ",
+                "turkce_anlam": "Kıyamet günü kulun ilk hesaba çekileceği amel, namazıdır.",
+                "kaynak": "Sünen-i Tirmizi, Salat 188",
+                "kisa_aciklama": "Namaz, hesap gününde ilk sorgulanacak ibadettir. Bu, namazın İslam'daki merkezi rolünü ve önemini vurgular."
+            },
+            {
+                "arapca": "مَنْ حَافَظَ عَلَى الصَّلَوَاتِ كَانَتْ لَهُ نُورًا وَبُرْهَانًا وَنَجَاةً يَوْمَ الْقِيَامَةِ",
+                "turkce_anlam": "Kim namazlarına devam ederse, kıyamet günü ona nur, delil ve kurtuluş olur.",
+                "kaynak": "Sünen-i İbn Mace, İkame 193",
+                "kisa_aciklama": "Namaz, kıyamet günü kişinin kurtuluşuna vesile olacak bir ibadettir. Düzenli kılınan namaz, kişinin ahiret hayatını aydınlatır."
+            },
+            {
+                "arapca": "الصَّلَاةُ نُورٌ",
+                "turkce_anlam": "Namaz bir nurdur.",
+                "kaynak": "Sahih-i Müslim, Taharet 1",
+                "kisa_aciklama": "Namaz, kişinin hayatına manevi bir aydınlık getirir. Düzenli namaz kılan kişi, hem bu dünyada hem de ahirette huzur bulur."
+            }
+        ],
+        "seo_url": "namazin-faziletleri"
+    },
+    {
+        "kategori": "Anne Baba Hakkı",
+        "seo_meta_aciklama": "Anne baba hakkı ile ilgili sahih hadisler, İslam'da ebeveynlere saygı ve itaatin önemini vurgular.",
+        "kategori_giris_yazisi": "Anne baba hakkı, İslam dininde büyük bir öneme sahiptir. Ebeveynler, çocuklarının dünyaya gelmesine vesile olan ve onların yetişmesinde büyük emek sarf eden kişilerdir. Bu nedenle, İslam dini, anne babaya saygı göstermeyi ve onlara iyi davranmayı emreder. Kur'an-ı Kerim'de ve sahih hadislerde, anne babaya itaatin ve onlara karşı iyi davranmanın önemi sıkça vurgulanmıştır. Peygamber Efendimiz (s.a.v.), anne babaya iyi davranmanın Allah'a olan kulluğun bir parçası olduğunu belirtmiş ve bu konuda ümmetine çeşitli tavsiyelerde bulunmuştur. Anne baba hakkı, sadece onlara iyi davranmakla sınırlı kalmayıp, onların rızasını kazanmayı ve hayır dualarını almayı da kapsar. Bu nedenle, Müslümanlar için anne baba hakkı, ihmal edilmemesi gereken önemli bir sorumluluktur.",
+        "hadisler": [
+            {
+                "arapca": "عَنْ أَبِي هُرَيْرَةَ قَالَ: جَاءَ رَجُلٌ إِلَى رَسُولِ اللَّهِ ﷺ فَقَالَ: يَا رَسُولَ اللَّهِ، مَنْ أَحَقُّ النَّاسِ بِحُسْنِ صَحَابَتِي؟ قَالَ: أُمُّكَ. قَالَ: ثُمَّ مَنْ؟ قَالَ: أُمُّكَ. قَالَ: ثُمَّ مَنْ؟ قَالَ: أُمُّكَ. قَالَ: ثُمَّ مَنْ؟ قَالَ: أَبُوكَ.",
+                "turkce_anlam": "Ebu Hureyre'den rivayet edildiğine göre, bir adam Rasulullah'a (s.a.v.) gelerek, 'Ey Allah'ın Resulü, insanlar arasında iyi davranmam gereken kimdir?' diye sordu. Rasulullah (s.a.v.), 'Annen' buyurdu. Adam, 'Sonra kim?' diye sordu. Rasulullah (s.a.v.) tekrar 'Annen' buyurdu. Adam tekrar sordu, 'Sonra kim?' Rasulullah (s.a.v.) yine 'Annen' buyurdu. Adam tekrar sordu, 'Sonra kim?' Rasulullah (s.a.v.) 'Baban' buyurdu.",
+                "kaynak": "Sahih-i Buhari, Edeb 18",
+                "kisa_aciklama": "Bu hadis, annelerin İslam'da ne kadar önemli bir yere sahip olduğunu ve onlara iyi davranmanın önemini vurgular."
+            },
+            {
+                "arapca": "عَنْ عَبْدِ اللَّهِ بْنِ عَمْرٍو قَالَ: قَالَ رَسُولُ اللَّهِ ﷺ: رِضَا الرَّبِّ فِي رِضَا الْوَالِدِ، وَسَخَطُ الرَّبِّ فِي سَخَطِ الْوَالِدِ.",
+                "turkce_anlam": "Abdullah bin Amr'dan rivayet edildiğine göre, Rasulullah (s.a.v.) şöyle buyurdu: 'Rabbin rızası, babanın rızasındadır. Rabbin gazabı ise babanın gazabındadır.'",
+                "kaynak": "Tirmizi, Birr 3",
+                "kisa_aciklama": "Bu hadis, ebeveynlerin rızasını kazanmanın Allah'ın rızasını kazanmakla eşdeğer olduğunu gösterir."
+            },
+            {
+                "arapca": "عَنْ أَبِي هُرَيْرَةَ أَنَّ رَسُولَ اللَّهِ ﷺ قَالَ: لَا يَجْزِي وَلَدٌ وَالِدَهُ إِلَّا أَنْ يَجِدَهُ مَمْلُوكًا فَيَشْتَرِيَهُ فَيُعْتِقَهُ.",
+                "turkce_anlam": "Ebu Hureyre'den rivayet edildiğine göre, Rasulullah (s.a.v.) şöyle buyurdu: 'Bir evlat, babasının hakkını, onu köle olarak bulup satın alıp azat etmedikçe ödeyemez.'",
+                "kaynak": "Sahih-i Müslim, Birr 1510",
+                "kisa_aciklama": "Bu hadis, ebeveynlerin çocukları üzerindeki haklarının ne kadar büyük olduğunu ve onların hakkını ödemenin zorluğunu ifade eder."
+            },
+            {
+                "arapca": "عَنْ أَبِي الدَّرْدَاءِ قَالَ: سَمِعْتُ رَسُولَ اللَّهِ ﷺ يَقُولُ: الْوَالِدُ أَوْسَطُ أَبْوَابِ الْجَنَّةِ، فَإِنْ شِئْتَ فَأَضِعْ ذَلِكَ الْبَابَ أَوِ احْفَظْهُ.",
+                "turkce_anlam": "Ebu'd-Derda'dan rivayet edildiğine göre, Rasulullah (s.a.v.) şöyle buyurdu: 'Baba, cennetin orta kapılarından biridir. İstersen o kapıyı kaybet, istersen koru.'",
+                "kaynak": "Tirmizi, Birr 3",
+                "kisa_aciklama": "Bu hadis, babaya iyi davranmanın cennete giden yolda önemli bir kapı olduğunu belirtir."
+            },
+            {
+                "arapca": "عَنْ أَبِي هُرَيْرَةَ قَالَ: قَالَ رَسُولُ اللَّهِ ﷺ: إِنَّ اللَّهَ يُوصِيكُمْ بِأُمَّهَاتِكُمْ، ثُمَّ يُوصِيكُمْ بِأُمَّهَاتِكُمْ، ثُمَّ يُوصِيكُمْ بِآبَائِكُمْ، ثُمَّ يُوصِيكُمْ بِالْأَقْرَبِ فَالْأَقْرَبِ.",
+                "turkce_anlam": "Ebu Hureyre'den rivayet edildiğine göre, Rasulullah (s.a.v.) şöyle buyurdu: 'Allah size annelerinize iyi davranmanızı tavsiye eder, sonra yine annelerinize, sonra babalarınıza, sonra yakın akrabalarınıza.'",
+                "kaynak": "Sahih-i Müslim, Birr 2548",
+                "kisa_aciklama": "Bu hadis, ebeveynlere ve yakın akrabalara iyi davranmanın Allah'ın bir tavsiyesi olduğunu vurgular."
+            }
+        ],
+        "seo_url": "anne-baba-hakki"
+    },
+    {
+        "kategori": "Tövbe ve İstiğfar",
+        "seo_meta_aciklama": "Tövbe ve istiğfarın İslam'daki önemini anlatan sahih hadisler ile ruhsal arınma ve Allah'a yönelme üzerine derinlemesine bir bakış.",
+        "kategori_giris_yazisi": "Tövbe ve istiğfar, İslam dininde müminlerin Allah'a yönelerek günahlarından arınma ve bağışlanma dileme sürecidir. Bu süreç, kişinin manevi olarak temizlenmesine ve Allah'ın rahmetine mazhar olmasına vesile olur. İslam, her insanın hata yapabileceğini kabul eder ve tövbe kapısının her zaman açık olduğunu öğretir. Bu bağlamda, tövbe ve istiğfar, Allah'ın rahmet ve mağfiretinin genişliğini ve insanın her zaman doğru yola dönme imkânına sahip olduğunu gösterir.\n\nHadis-i şerifler, tövbe ve istiğfarın önemini ve faziletini vurgulayan pek çok örnek sunar. Bu hadisler, müminlerin kalplerini temizlemeleri ve Allah'a yönelmeleri için bir rehber niteliğindedir. Tövbe eden bir kişi, Allah katında değer kazanır ve günahlarından arınarak yeni bir başlangıç yapma fırsatı bulur. Bu nedenle, tövbe ve istiğfar, İslam'da ruhsal bir yenilenme ve Allah'a yakınlaşma vesilesidir.",
+        "hadisler": [
+            {
+                "arapca": "كُلُّ بَنِي آدَمَ خَطَّاءٌ وَخَيْرُ الْخَطَّائِينَ التَّوَّابُونَ",
+                "turkce_anlam": "Ademoğlunun her biri hata yapar, hata yapanların en hayırlısı ise tövbe edenlerdir.",
+                "kaynak": "Tirmizi, Kıyamet 49",
+                "kisa_aciklama": "İnsanlar hata yapabilir, önemli olan hatalardan ders alıp tövbe etmektir."
+            },
+            {
+                "arapca": "إِنَّ اللَّهَ يَبْسُطُ يَدَهُ بِاللَّيْلِ لِيَتُوبَ مُسِيءُ النَّهَارِ وَيَبْسُطُ يَدَهُ بِالنَّهَارِ لِيَتُوبَ مُسِيءُ اللَّيْلِ",
+                "turkce_anlam": "Allah, gündüz günah işleyenin tövbe etmesi için gece elini açar; gece günah işleyenin tövbe etmesi için de gündüz elini açar.",
+                "kaynak": "Müslim, Tevbe 31",
+                "kisa_aciklama": "Allah'ın rahmeti geniştir ve tövbe kapısı her zaman açıktır."
+            },
+            {
+                "arapca": "وَالَّذِي نَفْسِي بِيَدِهِ لَوْ لَمْ تُذْنِبُوا لَذَهَبَ اللَّهُ بِكُمْ وَلَجَاءَ بِقَوْمٍ يُذْنِبُونَ فَيَسْتَغْفِرُونَ اللَّهَ فَيَغْفِرُ لَهُمْ",
+                "turkce_anlam": "Nefsim elinde olan Allah'a yemin ederim ki, eğer günah işlemeseydiniz, Allah sizi götürür ve yerinize günah işleyip Allah'tan bağışlanma dileyen bir kavim getirirdi.",
+                "kaynak": "Müslim, Tevbe 9",
+                "kisa_aciklama": "Allah, tövbe eden kullarını sever ve bağışlamaya hazırdır."
+            },
+            {
+                "arapca": "مَنْ تَابَ قَبْلَ أَنْ تَطْلُعَ الشَّمْسُ مِنْ مَغْرِبِهَا تَابَ اللَّهُ عَلَيْهِ",
+                "turkce_anlam": "Güneş batıdan doğmadan önce tövbe eden kişinin tövbesi kabul edilir.",
+                "kaynak": "Müslim, Zikr 43",
+                "kisa_aciklama": "Kıyamet alametleri gerçekleşmeden önce tövbe etmek için fırsat vardır."
+            },
+            {
+                "arapca": "إِنَّ اللَّهَ يَفْرَحُ بِتَوْبَةِ عَبْدِهِ أَشَدَّ فَرَحٍ يَفْرَحُهُ أَحَدُكُمْ بِضَالَّتِهِ إِذَا وَجَدَهَا",
+                "turkce_anlam": "Allah, kulunun tövbesine, sizden birinizin kaybolmuş devesini bulduğunda sevindiği kadar sevinir.",
+                "kaynak": "Buhari, Daavat 4",
+                "kisa_aciklama": "Allah, tövbe eden kullarına büyük bir sevinçle karşılık verir."
+            }
+        ],
+        "seo_url": "tovbe-ve-istigfar"
+    },
+    {
+        "kategori": "Helal Lokma ve Ticaret",
+        "seo_meta_aciklama": "Helal lokma ve ticaretin İslam'daki önemi üzerine sahih hadislerle derlenmiş bir inceleme.",
+        "kategori_giris_yazisi": "İslam dini, bireylerin hayatlarının her alanında helal ve haram kavramlarına dikkat etmelerini öğütler. Helal lokma kazanmak ve ticaret yapmak, Müslümanların günlük yaşamlarının önemli bir parçasıdır. Bu konudaki hassasiyet, kişinin hem dünya hem de ahiret hayatını etkiler. Helal kazanç, kişinin ibadetlerinin kabulüne ve manevi huzuruna katkıda bulunurken, haram kazanç ise kalbin kararmasına ve ibadetlerin kabul olmamasına yol açabilir. Bu nedenle, ticaret yaparken dürüstlük, adalet ve helal kazanç sağlama gayreti, Müslümanlar için vazgeçilmez bir ilkedir. Bu hadis derlemesi, helal lokma ve ticaretin İslam'daki yerini ve önemini sahih kaynaklardan hadislerle ortaya koymaktadır.",
+        "hadisler": [
+            {
+                "arapca": "إِنَّ اللَّهَ طَيِّبٌ لَا يَقْبَلُ إِلَّا طَيِّبًا",
+                "turkce_anlam": "Şüphesiz Allah temizdir, ancak temiz olanı kabul eder.",
+                "kaynak": "Sahih-i Müslim, Zekat 65",
+                "kisa_aciklama": "Allah'ın kabul ettiği sadece helal ve temiz olan şeylerdir. Bu, kazancımızın helal olmasına dikkat etmemiz gerektiğini gösterir."
+            },
+            {
+                "arapca": "مَنْ غَشَّنَا فَلَيْسَ مِنَّا",
+                "turkce_anlam": "Bizi aldatan bizden değildir.",
+                "kaynak": "Sahih-i Müslim, İman 164",
+                "kisa_aciklama": "Ticarette dürüstlük esastır. Aldatmak, Müslümanların ahlaki değerlerine aykırıdır ve toplumsal güveni zedeler."
+            },
+            {
+                "arapca": "الْبَيِّعَانِ بِالْخِيَارِ مَا لَمْ يَتَفَرَّقَا",
+                "turkce_anlam": "Alıcı ve satıcı, birbirlerinden ayrılmadıkları sürece muhayyerdirler.",
+                "kaynak": "Sahih-i Buhari, Büyü 50",
+                "kisa_aciklama": "Ticaretin her iki taraf için de adil ve şeffaf olması gerektiğini vurgular. Alıcı ve satıcı, anlaşma sağlanana kadar kararlarını gözden geçirme hakkına sahiptir."
+            },
+            {
+                "arapca": "إِنَّ أَفْضَلَ الْكَسْبِ كَسْبُ يَدِ الرَّجُلِ إِذَا نَصَحَ",
+                "turkce_anlam": "En iyi kazanç, kişinin kendi el emeğiyle kazandığı ve dürüst olduğu kazançtır.",
+                "kaynak": "Müsned-i Ahmed, 4/141",
+                "kisa_aciklama": "Kendi emeğimizle ve dürüst bir şekilde kazanmak, İslam'da en değerli kazanç olarak kabul edilir."
+            },
+            {
+                "arapca": "التَّاجِرُ الصَّدُوقُ الْأَمِينُ مَعَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَاءِ",
+                "turkce_anlam": "Doğru ve güvenilir tüccar, peygamberler, sıddıklar ve şehitlerle beraberdir.",
+                "kaynak": "Tirmizi, Büyü 4",
+                "kisa_aciklama": "Ticarette doğruluk ve güvenilirlik, kişiyi yüksek manevi derecelere ulaştırır."
+            }
+        ],
+        "seo_url": "helal-lokma-ve-ticaret"
+    },
+    {
+        "kategori": "Kardeşlik ve Dostluk",
+        "seo_meta_aciklama": "Kardeşlik ve dostluk üzerine sahih hadislerle İslam'da kardeşlik ve dostluğun önemini keşfedin.",
+        "kategori_giris_yazisi": "İslam, müminler arasında güçlü bir kardeşlik ve dostluk bağı kurmayı teşvik eder. Bu bağ, sadece kan bağı ile sınırlı olmayıp, iman ve ahlak temelinde inşa edilir. Kardeşlik ve dostluk, Müslümanların birbirlerine karşı sorumluluklarını yerine getirmelerini ve toplumsal dayanışmayı güçlendirmelerini sağlar. Peygamber Efendimiz (s.a.v.), sahih hadislerinde kardeşlik ve dostluğun önemine sıkça vurgu yapmış, müminlerin birbirlerine karşı sevgi, merhamet ve saygı ile yaklaşmalarını öğütlemiştir. İslam'da kardeşlik ve dostluk, sadece dünyevi ilişkileri değil, aynı zamanda ahiret saadetini de etkileyen önemli bir unsurdur. Müslümanlar, bu bağları güçlendirerek hem dünya hem de ahiret mutluluğuna erişebilirler.",
+        "hadisler": [
+            {
+                "arapca": "لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
+                "turkce_anlam": "Sizden biriniz, kendisi için sevdiğini kardeşi için de sevmedikçe iman etmiş olmaz.",
+                "kaynak": "Sahih-i Buhari, İman 7",
+                "kisa_aciklama": "Gerçek iman, kardeşlik ve dostlukta kendisi için istediğini başkası için de istemekle ölçülür."
+            },
+            {
+                "arapca": "الْمُسْلِمُ أَخُو الْمُسْلِمِ لَا يَظْلِمُهُ وَلَا يُسْلِمُهُ",
+                "turkce_anlam": "Müslüman, Müslümanın kardeşidir; ona zulmetmez ve onu düşmana teslim etmez.",
+                "kaynak": "Sahih-i Buhari, Mezalim 3",
+                "kisa_aciklama": "Müslümanlar arasında kardeşlik, birbirine haksızlık yapmamak ve zor durumda bırakmamaktır."
+            },
+            {
+                "arapca": "مَثَلُ الْمُؤْمِنِينَ فِي تَوَادِّهِمْ وَتَرَاحُمِهِمْ وَتَعَاطُفِهِمْ مَثَلُ الْجَسَدِ إِذَا اشْتَكَى مِنْهُ عُضْوٌ تَدَاعَى لَهُ سَائِرُ الْجَسَدِ بِالسَّهَرِ وَالْحُمَّى",
+                "turkce_anlam": "Müminler, birbirlerini sevmekte, birbirlerine merhamet etmekte ve birbirlerine şefkat göstermekle bir beden gibidirler. Bedenin bir uzvu rahatsızlanınca, diğer uzuvlar da onun rahatsızlığına katılır.",
+                "kaynak": "Sahih-i Müslim, Birr 66",
+                "kisa_aciklama": "Müminler arasındaki bağ, bir bedenin organları gibi olmalı; biri acı çektiğinde diğeri de aynı acıyı hissetmelidir."
+            },
+            {
+                "arapca": "لَا تَدْخُلُونَ الْجَنَّةَ حَتَّى تُؤْمِنُوا وَلَا تُؤْمِنُوا حَتَّى تَحَابُّوا",
+                "turkce_anlam": "İman etmedikçe cennete giremezsiniz; birbirinizi sevmedikçe de iman etmiş olamazsınız.",
+                "kaynak": "Sahih-i Müslim, İman 93",
+                "kisa_aciklama": "Cennete giden yol, iman ve sevgi dolu bir kalpten geçer; bu da kardeşlik ve dostlukla mümkündür."
+            },
+            {
+                "arapca": "مَنْ لَا يَرْحَمُ النَّاسَ لَا يَرْحَمُهُ اللَّهُ",
+                "turkce_anlam": "İnsanlara merhamet etmeyene Allah da merhamet etmez.",
+                "kaynak": "Sahih-i Müslim, Fedail 66",
+                "kisa_aciklama": "Merhamet, kardeşlik ve dostluğun temelidir; Allah'ın rahmetine erişmek için insanlara merhamet göstermeliyiz."
+            }
+        ],
+        "seo_url": "kardeslik-ve-dostluk"
+    },
+    {
+        "kategori": "Komşu Hakkı",
+        "seo_meta_aciklama": "Komşu hakkı, İslam'da büyük öneme sahiptir. Komşulara iyi davranmak ve haklarını gözetmek, Müslümanların temel görevlerindendir.",
+        "kategori_giris_yazisi": "İslam dini, sosyal ilişkilerde adalet ve merhameti ön planda tutar. Bu bağlamda, komşu hakkı İslam'ın önemli konularından biridir. Komşular, bir Müslümanın günlük yaşamında sıkça karşılaştığı kişiler arasında yer alır ve onlarla iyi ilişkiler kurmak, İslam'ın tavsiye ettiği güzel ahlakın bir parçasıdır. Peygamber Efendimiz (s.a.v.), komşulara iyi davranmayı teşvik etmiş ve onların haklarını gözetmenin önemine dikkat çekmiştir. Komşu hakkı, sadece iyi ilişkiler kurmakla sınırlı kalmayıp, aynı zamanda komşuların ihtiyaçlarını gözetmeyi ve onlara yardım etmeyi de içerir. İslam'da komşulara karşı sorumluluklarımız, toplumsal barış ve huzurun sağlanmasında önemli bir rol oynar.",
+        "hadisler": [
+            {
+                "arapca": "عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ ﷺ: مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلَا يُؤْذِي جَارَهُ",
+                "turkce_anlam": "Ebu Hureyre (r.a.)'den rivayet edildiğine göre, Resulullah (s.a.v.) şöyle buyurdu: 'Kim Allah'a ve ahiret gününe iman ediyorsa, komşusuna eziyet etmesin.'",
+                "kaynak": "Sahih-i Buhari, Edeb 18",
+                "kisa_aciklama": "Komşularımıza zarar vermemek, imanımızın bir gereğidir. Onlara karşı daima iyi ve nazik olmalıyız."
+            },
+            {
+                "arapca": "عَنْ عَائِشَةَ رَضِيَ اللَّهُ عَنْهَا قَالَتْ: قَالَ رَسُولُ اللَّهِ ﷺ: مَا زَالَ جِبْرِيلُ يُوصِينِي بِالْجَارِ حَتَّى ظَنَنْتُ أَنَّهُ سَيُوَرِّثُهُ",
+                "turkce_anlam": "Aişe (r.a.)'den rivayet edildiğine göre, Resulullah (s.a.v.) şöyle buyurdu: 'Cebrail bana komşu hakkında o kadar çok tavsiyede bulundu ki, onu mirasçı kılacağını sandım.'",
+                "kaynak": "Sahih-i Buhari, Edeb 28",
+                "kisa_aciklama": "Komşularımıza karşı sorumluluklarımız, aile bireylerimize olan sorumluluklarımız kadar önemlidir."
+            },
+            {
+                "arapca": "عَنْ أَبِي ذَرٍّ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ النَّبِيُّ ﷺ: يَا أَبَا ذَرٍّ إِذَا طَبَخْتَ مَرَقَةً فَأَكْثِرْ مَاءَهَا وَتَعَاهَدْ جِيرَانَكَ",
+                "turkce_anlam": "Ebu Zer (r.a.)'den rivayet edildiğine göre, Peygamber (s.a.v.) şöyle buyurdu: 'Ey Ebu Zer! Çorba pişirdiğinde suyunu bolca koy ve komşularını gözet.'",
+                "kaynak": "Sahih-i Müslim, Birr 143",
+                "kisa_aciklama": "Komşularımızla paylaşmak, onlara olan sevgimizi ve bağlılığımızı gösterir. İhtiyaç anında yardımlaşmak önemlidir."
+            },
+            {
+                "arapca": "عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ ﷺ: لَا يَدْخُلُ الْجَنَّةَ مَنْ لَا يَأْمَنُ جَارُهُ بَوَائِقَهُ",
+                "turkce_anlam": "Ebu Hureyre (r.a.)'den rivayet edildiğine göre, Resulullah (s.a.v.) şöyle buyurdu: 'Komşusu, kötülüğünden emin olmayan kimse cennete giremez.'",
+                "kaynak": "Sahih-i Müslim, İman 73",
+                "kisa_aciklama": "Komşularımıza güven vermek, imanımızın bir göstergesidir. Onlara zarar vermekten kaçınmalıyız."
+            },
+            {
+                "arapca": "عَنْ عَبْدِ اللَّهِ بْنِ عَمْرٍو رَضِيَ اللَّهُ عَنْهُمَا قَالَ: قَالَ رَسُولُ اللَّهِ ﷺ: خَيْرُ الْأَصْحَابِ عِنْدَ اللَّهِ تَعَالَى خَيْرُهُمْ لِصَاحِبِهِ وَخَيْرُ الْجِيرَانِ عِنْدَ اللَّهِ تَعَالَى خَيْرُهُمْ لِجَارِهِ",
+                "turkce_anlam": "Abdullah bin Amr (r.a.)'den rivayet edildiğine göre, Resulullah (s.a.v.) şöyle buyurdu: 'Allah katında en hayırlı arkadaş, arkadaşına karşı en hayırlı olandır. Allah katında en hayırlı komşu ise komşusuna karşı en hayırlı olandır.'",
+                "kaynak": "Sünen-i Tirmizi, Birr 28",
+                "kisa_aciklama": "Komşularımıza karşı iyi ve hayırlı olmak, Allah katında değerimizi artırır. Onlara karşı daima iyi niyetli ve yardımsever olmalıyız."
+            }
+        ],
+        "seo_url": "komsu-hakki"
+    },
+    {
+        "kategori": "Gıybetten ve Kötü Sözden Sakınmak",
+        "seo_meta_aciklama": "Gıybet ve kötü sözden sakınmanın önemini anlatan sahih hadisler ile İslam'da bu konunun yeri ve önemi.",
+        "kategori_giris_yazisi": "Gıybet ve kötü söz, İslam ahlakında ciddi bir yer tutar ve Müslümanların birbirleriyle olan ilişkilerinde dikkat etmeleri gereken önemli hususlardandır. Gıybet, bir kişinin arkasından hoşlanmayacağı bir şeyi söylemek olarak tanımlanır ve Kur'an-ı Kerim'de de bu davranış şiddetle kınanmıştır. Peygamber Efendimiz (s.a.v.), gıybetin ve kötü sözün Müslümanlar arasındaki kardeşlik bağlarını zedelediğini ve toplumsal huzuru bozduğunu belirtmiştir. \n\nKötü söz ise, kişinin dilini kontrol edememesi sonucu başkalarına zarar veren ifadeler kullanmasıdır. İslam, dilin kontrol edilmesini ve güzel sözler söylenmesini teşvik eder. Peygamber Efendimiz (s.a.v.), dilin insanın cennete veya cehenneme gitmesinde önemli bir rol oynadığını vurgulamıştır. Bu nedenle, Müslümanlar olarak dilimizi kontrol etmeli ve kötü sözden sakınmalıyız.",
+        "hadisler": [
+            {
+                "arapca": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+                "turkce_anlam": "Kim Allah'a ve ahiret gününe iman ediyorsa ya hayır söylesin ya da sussun.",
+                "kaynak": "Sahih-i Buhari, Edeb 31",
+                "kisa_aciklama": "Bu hadis, dilimizi kontrol etmenin ve gereksiz konuşmalardan kaçınmanın önemini vurgular."
+            },
+            {
+                "arapca": "إِنَّ أَحَدَكُمْ لَيَتَكَلَّمُ بِالْكَلِمَةِ مِنْ رِضْوَانِ اللَّهِ مَا يَظُنُّ أَنْ تَبْلُغَ مَا بَلَغَتْ، فَيَكْتُبُ اللَّهُ لَهُ بِهَا رِضْوَانَهُ إِلَى يَوْمِ يَلْقَاهُ",
+                "turkce_anlam": "Kişi, Allah'ın rızasına uygun bir söz söyler ve bu sözün nereye varacağını düşünmez, Allah onun için kıyamete kadar rızasını yazar.",
+                "kaynak": "Sahih-i Müslim, Zühd 49",
+                "kisa_aciklama": "İyi sözlerin, Allah katında ne kadar değerli olduğunu hatırlatır."
+            },
+            {
+                "arapca": "يَا مَعْشَرَ مَنْ آمَنَ بِلِسَانِهِ وَلَمْ يُؤْمِنْ بِقَلْبِهِ، لَا تَغْتَابُوا الْمُسْلِمِينَ وَلَا تَتَّبِعُوا عَوْرَاتِهِمْ",
+                "turkce_anlam": "Ey diliyle iman edip kalbiyle iman etmeyenler! Müslümanların gıybetini yapmayın ve onların kusurlarını araştırmayın.",
+                "kaynak": "Sünen-i Ebu Davud, Edeb 35",
+                "kisa_aciklama": "Gıybetin ve başkalarının kusurlarını araştırmanın imanla bağdaşmadığını belirtir."
+            },
+            {
+                "arapca": "الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ",
+                "turkce_anlam": "Müslüman, diğer Müslümanların dilinden ve elinden emin olduğu kimsedir.",
+                "kaynak": "Sahih-i Buhari, İman 4",
+                "kisa_aciklama": "Gerçek bir Müslümanın, başkalarına zarar vermemesi gerektiğini öğretir."
+            },
+            {
+                "arapca": "لَا يَدْخُلُ الْجَنَّةَ نَمَّامٌ",
+                "turkce_anlam": "Koğuculuk yapan cennete giremez.",
+                "kaynak": "Sahih-i Müslim, İman 102",
+                "kisa_aciklama": "Koğuculuğun, cennete girmeye engel olacak kadar büyük bir günah olduğunu gösterir."
+            }
+        ],
+        "seo_url": "giybetten-ve-kotu-sozden-sakinmak"
+    },
+    {
+        "kategori": "Öfke Kontrolü ve Hilm",
+        "seo_meta_aciklama": "Öfke kontrolü ve hilmin İslam'daki önemi üzerine sahih hadislerle derlenmiş bir inceleme.",
+        "kategori_giris_yazisi": "Öfke, insanın duygusal tepkilerinden biri olup, kontrol edilmediğinde birey ve toplum üzerinde olumsuz etkiler yaratabilir. İslam, öfkeyi kontrol etmeyi ve sabırlı olmayı teşvik eder. Hilm, yani yumuşak huyluluk ve öfkeyi yenme, Peygamber Efendimiz (s.a.v.) tarafından da sıkça vurgulanan bir erdemdir. Hadis-i şeriflerde, öfkenin zararlarından korunmak ve hilmi benimsemek için çeşitli tavsiyeler sunulmuştur. Bu hadisler, Müslümanların günlük yaşamlarında daha huzurlu ve dengeli bir hayat sürmelerine yardımcı olacak önemli dersler içermektedir.",
+        "hadisler": [
+            {
+                "arapca": "لَيْسَ الشَّدِيدُ بِالصُّرَعَةِ، إِنَّمَا الشَّدِيدُ الَّذِي يَمْلِكُ نَفْسَهُ عِنْدَ الْغَضَبِ",
+                "turkce_anlam": "Güçlü kişi, güreşte rakibini yenen değil, öfke anında kendini kontrol edebilendir.",
+                "kaynak": "Sahih-i Buhari, Edeb 18",
+                "kisa_aciklama": "Gerçek güç, fiziksel kuvvetten ziyade, öfke anında kendini kontrol edebilmekte yatar."
+            },
+            {
+                "arapca": "مَنْ كَظَمَ غَيْظًا وَهُوَ قَادِرٌ عَلَى أَنْ يُنَفِّذَهُ، دَعَاهُ اللَّهُ عَلَى رُءُوسِ الْخَلَائِقِ يَوْمَ الْقِيَامَةِ حَتَّى يُخَيِّرَهُ مِنَ الْحُورِ الْعِينِ مَا شَاءَ",
+                "turkce_anlam": "Öfkesini yutan ve bunu uygulamaya gücü yettiği halde yapmayan kimseyi Allah, kıyamet günü mahlûkatın önünde çağırır ve ona hurilerden dilediğini seçmesini söyler.",
+                "kaynak": "Sünen-i Tirmizi, Birr 58",
+                "kisa_aciklama": "Öfkesini kontrol edenlere ahirette büyük mükafatlar vaat edilmiştir."
+            },
+            {
+                "arapca": "إِذَا غَضِبَ أَحَدُكُمْ فَلْيَسْكُتْ",
+                "turkce_anlam": "Sizden biri öfkelendiğinde sussun.",
+                "kaynak": "Sünen-i Ebu Davud, Edeb 3",
+                "kisa_aciklama": "Öfke anında susmak, yanlış söz ve davranışlardan korunmanın bir yoludur."
+            },
+            {
+                "arapca": "إِذَا غَضِبَ أَحَدُكُمْ وَهُوَ قَائِمٌ فَلْيَجْلِسْ، فَإِنْ ذَهَبَ عَنْهُ الْغَضَبُ وَإِلَّا فَلْيَضْطَجِعْ",
+                "turkce_anlam": "Sizden biri ayakta iken öfkelenirse otursun; öfkesi geçmezse uzansın.",
+                "kaynak": "Sünen-i Ebu Davud, Edeb 4",
+                "kisa_aciklama": "Fiziksel pozisyon değişikliği, öfkenin yatışmasına yardımcı olabilir."
+            },
+            {
+                "arapca": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+                "turkce_anlam": "Allah'a ve ahiret gününe iman eden kimse ya hayır söylesin ya da sussun.",
+                "kaynak": "Sahih-i Buhari, Edeb 31",
+                "kisa_aciklama": "Konuşmadan önce düşünmek ve hayırlı sözler söylemek, öfkenin zararlarından korunmanın yollarındandır."
+            }
+        ],
+        "seo_url": "ofke-kontrolu-ve-hilm"
+    },
+    {
+        "kategori": "Sadaka ve Yardımlaşma",
+        "seo_meta_aciklama": "Sadaka ve yardımlaşmanın İslam'daki önemini anlatan sahih hadislerle dolu bir kategori.",
+        "kategori_giris_yazisi": "Sadaka ve yardımlaşma, İslam'ın sosyal adalet ve toplumsal dayanışma ilkelerinin temel taşlarından biridir. Müslümanlar arasında kardeşlik bağlarını güçlendiren ve toplumsal huzuru sağlayan bu değerler, Kur'an-ı Kerim'de ve Peygamber Efendimiz'in (s.a.v.) hadislerinde sıkça vurgulanmıştır. Sadaka vermek, sadece maddi yardımda bulunmak değil, aynı zamanda manevi bir arınma ve Allah'a yakınlaşma vesilesidir. İslam, sadaka ve yardımlaşmayı teşvik ederek, bireylerin ve toplumların refahını artırmayı hedefler. Bu bağlamda, sadaka ve yardımlaşmanın önemi üzerine Peygamber Efendimiz'in (s.a.v.) sahih hadislerinden derlenen bu seçki, Müslümanlar için yol gösterici niteliktedir.",
+        "hadisler": [
+            {
+                "arapca": "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى",
+                "turkce_anlam": "Ameller niyetlere göredir. Herkes için ancak niyet ettiği vardır.",
+                "kaynak": "Sahih-i Buhari, Bed'ül-Vahy 1",
+                "kisa_aciklama": "Sadaka verirken niyetin önemi büyüktür. Allah, niyetimize göre bizi değerlendirir."
+            },
+            {
+                "arapca": "مَنْ تَصَدَّقَ بِعَدْلِ تَمْرَةٍ مِنْ كَسْبٍ طَيِّبٍ وَلَا يَقْبَلُ اللَّهُ إِلَّا الطَّيِّبَ فَإِنَّ اللَّهَ يَتَقَبَّلُهَا بِيَمِينِهِ",
+                "turkce_anlam": "Kim helal kazancından bir hurma kadar sadaka verirse, Allah onu sağ eliyle kabul eder.",
+                "kaynak": "Sahih-i Buhari, Zekat 8",
+                "kisa_aciklama": "Helal kazançtan verilen sadaka, Allah katında büyük değer taşır."
+            },
+            {
+                "arapca": "السَّاعِي عَلَى الأَرْمَلَةِ وَالْمِسْكِينِ كَالْمُجَاهِدِ فِي سَبِيلِ اللَّهِ",
+                "turkce_anlam": "Dul ve yoksulun ihtiyaçlarını karşılayan, Allah yolunda cihad eden gibidir.",
+                "kaynak": "Sahih-i Buhari, Nafaka 1",
+                "kisa_aciklama": "Yardıma muhtaçlara destek olmak, Allah yolunda cihad etmek kadar değerlidir."
+            },
+            {
+                "arapca": "مَا نَقَصَتْ صَدَقَةٌ مِنْ مَالٍ",
+                "turkce_anlam": "Sadaka vermek malı eksiltmez.",
+                "kaynak": "Sahih-i Müslim, Birr 69",
+                "kisa_aciklama": "Sadaka, malı eksiltmez; aksine bereketini artırır."
+            },
+            {
+                "arapca": "كُلُّ سُلَامَى مِنَ النَّاسِ عَلَيْهِ صَدَقَةٌ كُلَّ يَوْمٍ تَطْلُعُ فِيهِ الشَّمْسُ",
+                "turkce_anlam": "Her gün güneş doğduğunda, insanın her bir eklemi için bir sadaka vermesi gerekir.",
+                "kaynak": "Sahih-i Buhari, Cihad 72",
+                "kisa_aciklama": "Her gün, Allah'ın verdiği nimetlere şükretmek için sadaka vermek gerekir."
+            }
+        ],
+        "seo_url": "sadaka-ve-yardimlasma"
+    },
+    {
+        "kategori": "Zamanın Kıymeti ve Ömür",
+        "seo_meta_aciklama": "Zamanın kıymeti ve ömür konusundaki sahih hadislerle İslam'da bu kavramların önemini keşfedin.",
+        "kategori_giris_yazisi": "İslam'da zamanın kıymeti ve ömür, insan hayatının en değerli unsurlarından biri olarak kabul edilir. Zaman, Allah'ın insana verdiği en büyük nimetlerden biridir ve bu nimetin doğru kullanılması, kişinin hem dünya hem de ahiret saadeti için büyük önem taşır. Peygamber Efendimiz (s.a.v.), zamanın ve ömrün kıymetini bilmemiz gerektiğini, bu nimetlerin hesabının sorulacağını çeşitli hadislerinde vurgulamıştır. Müslümanlar olarak, zamanı verimli kullanmak, boş ve faydasız işlerden kaçınmak, ömrümüzü Allah'ın rızasına uygun bir şekilde değerlendirmekle yükümlüyüz. Bu bağlamda, sahih hadisler bizlere zamanın ve ömrün değerini hatırlatmakta ve bu konuda bilinçlenmemizi sağlamaktadır.",
+        "hadisler": [
+            {
+                "arapca": "نِعْمَتَانِ مَغْبُونٌ فِيهِمَا كَثِيرٌ مِنَ النَّاسِ: الصِّحَّةُ وَالْفَرَاغُ",
+                "turkce_anlam": "İki nimet vardır ki insanların çoğu bunda aldanmıştır: Sağlık ve boş vakit.",
+                "kaynak": "Sahih-i Buhari, Rikak 1",
+                "kisa_aciklama": "Sağlık ve boş vakit, çoğu insanın değerini bilmediği iki büyük nimettir. Bu nimetleri iyi değerlendirmeliyiz."
+            },
+            {
+                "arapca": "اغْتَنِمْ خَمْسًا قَبْلَ خَمْسٍ: شَبَابَكَ قَبْلَ هَرَمِكَ، وَصِحَّتَكَ قَبْلَ سَقَمِكَ، وَغِنَاكَ قَبْلَ فَقْرِكَ، وَفَرَاغَكَ قَبْلَ شُغْلِكَ، وَحَيَاتَكَ قَبْلَ مَوْتِكَ",
+                "turkce_anlam": "Beş şey gelmeden önce beş şeyi değerlendir: İhtiyarlığından önce gençliğini, hastalığından önce sağlığını, fakirliğinden önce zenginliğini, meşguliyetinden önce boş vaktini ve ölümünden önce hayatını.",
+                "kaynak": "Sünen-i Tirmizi, Zühd 25",
+                "kisa_aciklama": "Hayatımızdaki fırsatları değerlendirmek, gelecekte pişman olmamak için önemlidir. Zamanı iyi kullanmalıyız."
+            },
+            {
+                "arapca": "لَا تَزُولُ قَدَمَا عَبْدٍ يَوْمَ الْقِيَامَةِ حَتَّى يُسْأَلَ عَنْ أَرْبَعٍ: عَنْ عُمُرِهِ فِيمَا أَفْنَاهُ، وَعَنْ عِلْمِهِ مَاذَا عَمِلَ فِيهِ، وَعَنْ مَالِهِ مِنْ أَيْنَ اكْتَسَبَهُ وَفِيمَا أَنْفَقَهُ، وَعَنْ جِسْمِهِ فِيمَا أَبْلَاهُ",
+                "turkce_anlam": "Kıyamet günü, kulun ayakları dört şeyden sorguya çekilmedikçe yerinden ayrılmaz: Ömrünü nerede tükettiği, ilmiyle ne yaptığı, malını nereden kazandığı ve nereye harcadığı, bedenini nerede yıprattığı.",
+                "kaynak": "Sünen-i Tirmizi, Kıyamet 1",
+                "kisa_aciklama": "Ömrümüzün her anı, Allah katında bir hesap konusudur. Zamanımızı ve kaynaklarımızı iyi değerlendirmeliyiz."
+            },
+            {
+                "arapca": "إِنَّ اللَّهَ تَعَالَى يَقُولُ: يَا ابْنَ آدَمَ، تَفَرَّغْ لِعِبَادَتِي أَمْلَأْ قَلْبَكَ غِنًى وَأَسُدَّ فَقْرَكَ، وَإِلَّا تَفْعَلْ مَلَأْتُ يَدَيْكَ شُغْلًا وَلَمْ أَسُدَّ فَقْرَكَ",
+                "turkce_anlam": "Allah Teâlâ buyurur ki: Ey Âdemoğlu! Bana ibadet için vakit ayır ki kalbini zenginlikle doldurayım ve fakirliğini gidereyim. Aksi halde ellerini meşguliyetle doldururum ve fakirliğini gidermem.",
+                "kaynak": "Sünen-i Tirmizi, Zühd 38",
+                "kisa_aciklama": "Allah'a ibadet için zaman ayırmak, kalbimizi huzur ve zenginlikle doldurur. İbadet, hayatımızın merkezinde olmalıdır."
+            },
+            {
+                "arapca": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+                "turkce_anlam": "Kim Allah'a ve ahiret gününe inanıyorsa ya hayır söylesin ya da sussun.",
+                "kaynak": "Sahih-i Buhari, Edeb 31",
+                "kisa_aciklama": "Zamanımızı ve dilimizi hayırlı işlerde kullanmak, imanımızın bir göstergesidir. Boş ve zararlı sözlerden kaçınmalıyız."
+            }
+        ],
+        "seo_url": "zamanin-kiymeti-ve-omur"
+    },
+    {
+        "kategori": "Şükür ve Kanaat",
+        "seo_meta_aciklama": "Şükür ve kanaat konusundaki sahih hadislerle İslam'da bu değerlerin önemini keşfedin.",
+        "kategori_giris_yazisi": "İslam dini, müminlerin hayatında şükrün ve kanaatin önemli bir yer tuttuğunu vurgular. Şükür, Allah'a olan minnettarlığımızı ifade ederken, kanaat ise elimizde olanla yetinmeyi ve bununla mutlu olmayı öğretir. Bu iki değer, Müslümanların dünya hayatında huzurlu ve dengeli bir yaşam sürmelerine yardımcı olur. Şükür ve kanaat, insanın kalbini tatmin eder ve onu daha büyük nimetlere ulaştırır. Peygamber Efendimiz (s.a.v), bu konularda ümmetine pek çok tavsiyede bulunmuş ve bu değerlerin önemini hadislerle açıklamıştır.",
+        "hadisler": [
+            {
+                "arapca": "مَنْ لاَ يَشْكُرُ النَّاسَ لاَ يَشْكُرُ اللَّهَ",
+                "turkce_anlam": "İnsanlara teşekkür etmeyen, Allah'a da şükretmez.",
+                "kaynak": "Sahih-i Buhari, Edeb 18",
+                "kisa_aciklama": "İnsanlara teşekkür etmek, Allah'a olan şükrümüzün bir yansımasıdır."
+            },
+            {
+                "arapca": "إِنَّ اللَّهَ لاَ يَرْضَى لِلْعَبْدِ الْمُؤْمِنِ إِذَا جَاءَهُ الْخَيْرُ أَنْ يَحْمَدَهُ وَيَشْكُرَهُ",
+                "turkce_anlam": "Allah, mümin kuluna bir iyilik geldiğinde O'na hamd etmesini ve şükretmesini sever.",
+                "kaynak": "Sahih-i Müslim, Zikir 4",
+                "kisa_aciklama": "İyilik gördüğümüzde Allah'a şükretmek, O'nun rızasını kazanmamıza vesile olur."
+            },
+            {
+                "arapca": "مَنْ أَصْبَحَ مِنْكُمْ آمِنًا فِي سِرْبِهِ مُعَافًى فِي جَسَدِهِ عِنْدَهُ قُوتُ يَوْمِهِ فَكَأَنَّمَا حِيزَتْ لَهُ الدُّنْيَا",
+                "turkce_anlam": "Sizden kim sabaha güven içinde, bedeni sağlıklı ve günlük yiyeceği yanında olarak başlarsa, sanki bütün dünya ona verilmiş gibidir.",
+                "kaynak": "Tirmizi, Zühd 34",
+                "kisa_aciklama": "Güven, sağlık ve rızık, dünya nimetlerinin en değerlilerindendir."
+            },
+            {
+                "arapca": "لَيْسَ الْغِنَى عَنْ كَثْرَةِ الْعَرَضِ وَلَكِنَّ الْغِنَى غِنَى النَّفْسِ",
+                "turkce_anlam": "Zenginlik, mal çokluğu ile değildir; asıl zenginlik gönül zenginliğidir.",
+                "kaynak": "Sahih-i Buhari, Rikak 15",
+                "kisa_aciklama": "Gerçek zenginlik, iç huzur ve gönül zenginliğidir."
+            },
+            {
+                "arapca": "انْظُرُوا إِلَى مَنْ هُوَ أَسْفَلَ مِنْكُمْ وَلَا تَنْظُرُوا إِلَى مَنْ هُوَ فَوْقَكُمْ",
+                "turkce_anlam": "Sizden aşağıda olanlara bakın, sizden yukarıda olanlara bakmayın.",
+                "kaynak": "Sahih-i Müslim, Zühd 9",
+                "kisa_aciklama": "Kanaat, sahip olduklarımızla mutlu olmayı ve başkalarının sahip olduklarına imrenmemeyi öğretir."
+            }
+        ],
+        "seo_url": "sukur-ve-kanaat"
+    },
+    {
+        "kategori": "Dua Adabı ve Sırları",
+        "seo_meta_aciklama": "Dua adabı ve sırları hakkında sahih hadislerle İslam'da duanın önemi ve etkili dua etme yöntemleri.",
+        "kategori_giris_yazisi": "Dua, Müslümanların Allah ile olan en samimi ve doğrudan iletişim yollarından biridir. İslam'da dua, sadece bir ibadet şekli değil, aynı zamanda Allah'a olan bağlılığın ve teslimiyetin bir ifadesidir. Dua, kulun Rabbine olan ihtiyacını dile getirdiği, yardım ve rehberlik istediği bir anıdır. Peygamber Efendimiz (s.a.v.), duanın önemini vurgulamış ve Müslümanlara dua etmenin adabını öğretmiştir. Sahih hadislerde, duanın kabul edilme şartları, hangi zamanlarda ve hangi hallerde dua etmenin daha faziletli olduğu gibi konular detaylı bir şekilde ele alınmıştır. Bu hadisler, Müslümanlara dua ederken nelere dikkat etmeleri gerektiğini ve dualarının nasıl daha etkili olabileceğini öğretmektedir.",
+        "hadisler": [
+            {
+                "arapca": "إِنَّ اللَّهَ حَيِيٌّ كَرِيمٌ يَسْتَحْيِي إِذَا رَفَعَ الرَّجُلُ إِلَيْهِ يَدَيْهِ أَنْ يَرُدَّهُمَا صِفْرًا خَائِبَتَيْنِ",
+                "turkce_anlam": "Allah, kulunun ellerini kendisine açıp dua ettiğinde, onları boş çevirmekten haya eder.",
+                "kaynak": "Sahih-i Tirmizi, Daavat 3556",
+                "kisa_aciklama": "Allah, samimi bir şekilde dua eden kulunu geri çevirmez. Dua ederken içten olmak önemlidir."
+            },
+            {
+                "arapca": "الدُّعَاءُ هُوَ الْعِبَادَةُ",
+                "turkce_anlam": "Dua, ibadetin özüdür.",
+                "kaynak": "Sahih-i Tirmizi, Daavat 3372",
+                "kisa_aciklama": "Dua, ibadetin en temel ve önemli parçasıdır. Allah'a yakınlaşmanın bir yoludur."
+            },
+            {
+                "arapca": "لَا يَزَالُ يُسْتَجَابُ لِلْعَبْدِ مَا لَمْ يَدْعُ بِإِثْمٍ أَوْ قَطِيعَةِ رَحِمٍ مَا لَمْ يَسْتَعْجِلْ",
+                "turkce_anlam": "Kul, günah veya akraba ilişkisini kesme isteği ile dua etmediği ve acele etmediği sürece duası kabul edilir.",
+                "kaynak": "Sahih-i Müslim, Zikir 2735",
+                "kisa_aciklama": "Dua ederken sabırlı olmak ve acele etmemek gerekir. Günah içeren dualardan kaçınılmalıdır."
+            },
+            {
+                "arapca": "إِذَا دَعَا أَحَدُكُمْ فَلْيَعْزِمِ الْمَسْأَلَةَ وَلَا يَقُولَنَّ اللَّهُمَّ إِنْ شِئْتَ فَأَعْطِنِي فَإِنَّهُ لَا مُسْتَكْرِهَ لَهُ",
+                "turkce_anlam": "Biriniz dua ettiğinde, isteğini kesin bir şekilde dile getirsin ve 'Allah'ım, eğer dilersen bana ver' demesin. Çünkü Allah'ı zorlayacak bir güç yoktur.",
+                "kaynak": "Sahih-i Buhari, Daavat 6338",
+                "kisa_aciklama": "Dua ederken kararlı ve kesin olmak gerekir. Allah'ın gücünü sınırlayıcı ifadelerden kaçınılmalıdır."
+            },
+            {
+                "arapca": "إِذَا سَأَلْتَ فَاسْأَلِ اللَّهَ وَإِذَا اسْتَعَنْتَ فَاسْتَعِنْ بِاللَّهِ",
+                "turkce_anlam": "Bir şey istediğinde Allah'tan iste ve yardım dilediğinde Allah'tan yardım dile.",
+                "kaynak": "Sahih-i Tirmizi, Sıfatü'l-Kıyame 2516",
+                "kisa_aciklama": "Her türlü istekte ve yardım talebinde yalnızca Allah'a yönelmek gerekir. O, her şeyin sahibidir."
+            }
+        ],
+        "seo_url": "dua-adabi-ve-sirlari"
+    },
+    {
+        "kategori": "Hastalık ve Şifa",
+        "seo_meta_aciklama": "Hastalık ve şifa konusundaki sahih hadislerle İslam'ın bu konudaki öğretilerini keşfedin.",
+        "kategori_giris_yazisi": "İslam, hastalık ve şifa konularına büyük önem verir. Hastalıklar, Allah'ın kullarını sınamak ve onlara sabır öğretmek için gönderdiği imtihanlardır. Aynı zamanda, hastalıklar günahların affına vesile olabilir. Şifa ise Allah'ın bir lütfu ve rahmetidir. Peygamber Efendimiz (s.a.v), hastalık ve şifa konularında ümmetine birçok tavsiyede bulunmuş, dua ve tedavi yöntemlerini öğretmiştir. Bu hadisler, Müslümanların hem manevi hem de fiziksel sağlıklarına dikkat etmeleri gerektiğini vurgular.",
+        "hadisler": [
+            {
+                "arapca": "إِنَّ اللَّهَ أَنْزَلَ الدَّاءَ وَالدَّوَاءَ وَجَعَلَ لِكُلِّ دَاءٍ دَوَاءً فَتَدَاوَوْا وَلَا تَدَاوَوْا بِحَرَامٍ",
+                "turkce_anlam": "Allah, hastalığı ve şifayı indirmiştir. Her hastalık için bir şifa yaratmıştır. O halde tedavi olun, ancak haramla tedavi olmayın.",
+                "kaynak": "Sahih-i Müslim, Selam 69",
+                "kisa_aciklama": "Bu hadis, her hastalığın bir çaresi olduğunu ve tedavi arayışında haram yollardan kaçınılması gerektiğini öğretir."
+            },
+            {
+                "arapca": "مَا أَنْزَلَ اللَّهُ دَاءً إِلَّا أَنْزَلَ لَهُ شِفَاءً",
+                "turkce_anlam": "Allah, her hastalık için bir şifa indirmiştir.",
+                "kaynak": "Sahih-i Buhari, Tıb 1",
+                "kisa_aciklama": "Bu hadis, Allah'ın her hastalık için bir şifa yarattığını ve ümmetin bu şifayı araması gerektiğini hatırlatır."
+            },
+            {
+                "arapca": "عَلَيْكُمْ بِالشِّفَاءَيْنِ: الْعَسَلِ وَالْقُرْآنِ",
+                "turkce_anlam": "İki şifayı kullanın: Bal ve Kur'an.",
+                "kaynak": "Sünen-i İbn Mace, Tıb 7",
+                "kisa_aciklama": "Bu hadis, hem fiziksel hem de manevi şifa kaynakları olan bal ve Kur'an'ı tavsiye eder."
+            },
+            {
+                "arapca": "إِنَّ فِي الْحَبَّةِ السَّوْدَاءِ شِفَاءً مِنْ كُلِّ دَاءٍ إِلَّا السَّامَ",
+                "turkce_anlam": "Çörek otunda ölüm dışında her hastalığa şifa vardır.",
+                "kaynak": "Sahih-i Buhari, Tıb 7",
+                "kisa_aciklama": "Bu hadis, çörek otunun sağlık üzerindeki olumlu etkilerini vurgular."
+            },
+            {
+                "arapca": "لَا يُصِيبُ الْمُؤْمِنَ مِنْ نَصَبٍ وَلَا وَصَبٍ وَلَا هَمٍّ وَلَا حَزَنٍ وَلَا أَذًى وَلَا غَمٍّ حَتَّى الشَّوْكَةِ يُشَاكُهَا إِلَّا كَفَّرَ اللَّهُ بِهَا مِنْ خَطَايَاهُ",
+                "turkce_anlam": "Müminin başına gelen hiçbir yorgunluk, hastalık, üzüntü, keder, eziyet ve sıkıntı, hatta bir diken batması bile yoktur ki, Allah onunla günahlarını affetmesin.",
+                "kaynak": "Sahih-i Buhari, Marda 1",
+                "kisa_aciklama": "Bu hadis, müminin yaşadığı sıkıntıların günahlarına kefaret olabileceğini ve sabrın önemini vurgular."
+            }
+        ],
+        "seo_url": "hastalik-ve-sifa"
+    },
+    {
+        "kategori": "Evlilik ve Aile Huzuru",
+        "seo_meta_aciklama": "Evlilik ve aile huzurunun İslam'daki önemini anlatan sahih hadisler ve bu hadislerden çıkarılacak dersler.",
+        "kategori_giris_yazisi": "Evlilik, İslam dininde büyük bir öneme sahiptir ve aile, toplumun temel yapı taşı olarak kabul edilir. İslam, eşler arasında sevgi, saygı ve merhamet üzerine kurulu bir ilişkiyi teşvik eder. Peygamber Efendimiz (s.a.v.), evlilik ve aile hayatı konusunda ümmetine birçok tavsiyede bulunmuş ve bu konudaki rehberliği, Müslümanların huzurlu bir aile hayatı sürdürmelerine yardımcı olmuştur. Aile huzuru, sadece eşler arasında değil, aynı zamanda çocuklar ve geniş aile bireyleri arasında da sağlanması gereken bir durumdur. İslam, aile bireylerinin birbirlerine karşı sorumluluklarını ve haklarını belirleyerek, huzurlu bir aile yapısının oluşmasına katkıda bulunur.",
+        "hadisler": [
+            {
+                "arapca": "إِنَّ مِنْ أَكْمَلِ الْمُؤْمِنِينَ إِيمَانًا أَحْسَنُهُمْ خُلُقًا وَأَلْطَفُهُمْ بِأَهْلِهِ",
+                "turkce_anlam": "Müminlerin iman bakımından en mükemmeli, ahlakı en güzel olan ve ailesine en nazik davranandır.",
+                "kaynak": "Sünen-i Tirmizi, Rada 11",
+                "kisa_aciklama": "Aile içindeki güzel ahlak ve nazik davranışlar, imanımızın kemale ermesine vesile olur."
+            },
+            {
+                "arapca": "خَيْرُكُمْ خَيْرُكُمْ لِأَهْلِهِ وَأَنَا خَيْرُكُمْ لِأَهْلِي",
+                "turkce_anlam": "Sizin en hayırlınız, ailesine karşı en hayırlı olanınızdır. Ben de aileme karşı en hayırlı olanınızım.",
+                "kaynak": "Sünen-i Tirmizi, Menakıb 63",
+                "kisa_aciklama": "Aileye karşı iyi davranmak, kişinin hayırlı bir Müslüman olduğunun göstergesidir."
+            },
+            {
+                "arapca": "إِذَا أَنْفَقَ الرَّجُلُ عَلَى أَهْلِهِ نَفَقَةً وَهُوَ يَحْتَسِبُهَا كَانَتْ لَهُ صَدَقَةً",
+                "turkce_anlam": "Bir adam ailesine harcama yaparken bunu Allah rızası için yaparsa, bu harcama onun için sadaka olur.",
+                "kaynak": "Sahih-i Buhari, İman 41",
+                "kisa_aciklama": "Aileye yapılan harcamalar, Allah rızası için yapıldığında sadaka sevabı kazandırır."
+            },
+            {
+                "arapca": "مَا أَكَلَ أَحَدٌ طَعَامًا قَطُّ خَيْرًا مِنْ أَنْ يَأْكُلَ مِنْ عَمَلِ يَدِهِ وَإِنَّ نَبِيَّ اللَّهِ دَاوُدَ عَلَيْهِ السَّلَام كَانَ يَأْكُلُ مِنْ عَمَلِ يَدِهِ",
+                "turkce_anlam": "Hiç kimse, kendi elinin emeğinden daha hayırlı bir yiyecek yememiştir. Allah'ın Nebisi Davud (a.s.) da kendi elinin emeğinden yerdi.",
+                "kaynak": "Sahih-i Buhari, Büyü 15",
+                "kisa_aciklama": "Kendi emeğimizle kazandığımız rızık, ailemize helal lokma sunmanın en güzel yoludur."
+            },
+            {
+                "arapca": "إِنَّ الرَّجُلَ إِذَا سَقَى امْرَأَتَهُ مِنَ الْمَاءِ أُجِرَ",
+                "turkce_anlam": "Bir adam, eşine su içirdiğinde bile sevap kazanır.",
+                "kaynak": "Sünen-i İbn Mace, Nikah 50",
+                "kisa_aciklama": "Eşler arasındaki küçük iyilikler bile Allah katında büyük sevaplara vesile olabilir."
+            }
+        ],
+        "seo_url": "evlilik-ve-aile-huzuru"
+    },
+    {
+        "kategori": "Yetim Hakkı ve Merhamet",
+        "seo_meta_aciklama": "Yetim hakkı ve merhamet konusundaki sahih hadisler, İslam'da yetimlere karşı merhametli olmanın önemini vurgular.",
+        "kategori_giris_yazisi": "İslam dini, yetimlere karşı merhametli ve adaletli olmayı teşvik eder. Yetimlerin haklarının korunması, onlara sevgi ve şefkat gösterilmesi, toplumun huzuru ve Allah'ın rızasını kazanmak için önemlidir. Peygamber Efendimiz (s.a.v.), yetimlere iyi davranmanın ve onların haklarına riayet etmenin, cennete girmeye vesile olacağını belirtmiştir. Yetimlerin korunması ve gözetilmesi, İslam toplumunun temel değerlerinden biridir ve bu konuda birçok sahih hadis bulunmaktadır. Bu hadisler, Müslümanların yetimlere karşı sorumluluklarını hatırlatır ve onları bu konuda teşvik eder.",
+        "hadisler": [
+            {
+                "arapca": "أَنَا وَكَافِلُ الْيَتِيمِ فِي الْجَنَّةِ هَكَذَا - وَأَشَارَ بِالسَّبَّابَةِ وَالْوُسْطَى وَفَرَّجَ بَيْنَهُمَا قَلِيلًا",
+                "turkce_anlam": "Ben ve yetime bakan kimse cennette şöyleyiz - işaret parmağı ve orta parmağıyla işaret etti ve aralarını biraz açtı.",
+                "kaynak": "Sahih-i Buhari, Edeb 24",
+                "kisa_aciklama": "Yetimlere bakan kimse, Peygamberimizle cennette yakın bir konumda olacaktır."
+            },
+            {
+                "arapca": "مَنْ مَسَحَ رَأْسَ يَتِيمٍ لَمْ يَمْسَحْهُ إِلَّا لِلَّهِ كَانَ لَهُ بِكُلِّ شَعْرَةٍ مَرَّتْ عَلَيْهَا يَدُهُ حَسَنَةٌ",
+                "turkce_anlam": "Kim Allah rızası için bir yetimin başını okşarsa, elinin değdiği her saç teli için bir sevap kazanır.",
+                "kaynak": "Müsned-i Ahmed, 5/250",
+                "kisa_aciklama": "Yetimlere sevgi göstermek, Allah katında büyük sevaplara vesile olur."
+            },
+            {
+                "arapca": "خَيْرُ بَيْتٍ فِي الْمُسْلِمِينَ بَيْتٌ فِيهِ يَتِيمٌ يُحْسَنُ إِلَيْهِ وَشَرُّ بَيْتٍ فِي الْمُسْلِمِينَ بَيْتٌ فِيهِ يَتِيمٌ يُسَاءُ إِلَيْهِ",
+                "turkce_anlam": "Müslümanlar arasında en hayırlı ev, içinde yetime iyi davranılan evdir. En kötü ev ise, içinde yetime kötü davranılan evdir.",
+                "kaynak": "İbn Mace, Edeb 3679",
+                "kisa_aciklama": "Yetimlere iyi davranmak, bir evi Allah katında en hayırlı kılar."
+            },
+            {
+                "arapca": "إِنَّ الَّذِينَ يَأْكُلُونَ أَمْوَالَ الْيَتَامَى ظُلْمًا إِنَّمَا يَأْكُلُونَ فِي بُطُونِهِمْ نَارًا وَسَيَصْلَوْنَ سَعِيرًا",
+                "turkce_anlam": "Yetimlerin mallarını haksız yere yiyenler, karınlarına ateş doldurmuş olurlar ve alevli bir ateşe gireceklerdir.",
+                "kaynak": "Sahih-i Buhari, Vesaya 23",
+                "kisa_aciklama": "Yetim malına haksız yere el uzatmak, büyük bir günah ve ahirette azaba sebep olur."
+            },
+            {
+                "arapca": "مَنْ ضَمَّ يَتِيمًا بَيْنَ مُسْلِمِينَ فِي طَعَامِهِ وَشَرَابِهِ حَتَّى يُغْنِيَهُ اللَّهُ عَزَّ وَجَلَّ أَوْجَبَ اللَّهُ لَهُ الْجَنَّةَ إِلَّا أَنْ يَعْمَلَ ذَنْبًا لَا يُغْفَرُ لَهُ",
+                "turkce_anlam": "Kim bir yetimi, Allah onu zenginleştirene kadar yiyecek ve içeceğinde Müslümanlar arasında barındırırsa, Allah ona cenneti vacip kılar. Ancak bağışlanmayan bir günah işlemedikçe.",
+                "kaynak": "Tirmizi, Birr 14",
+                "kisa_aciklama": "Yetimlere sahip çıkmak, cenneti kazanmanın yollarından biridir."
+            }
+        ],
+        "seo_url": "yetim-hakki-ve-merhamet"
+    },
+    {
+        "kategori": "İlim Öğrenmenin Fazileti",
+        "seo_meta_aciklama": "İslam'da ilim öğrenmenin önemi ve faziletine dair sahih hadislerle dolu bir derleme.",
+        "kategori_giris_yazisi": "İslam, ilim öğrenmeye büyük önem vermiştir. İlim, insanı cehaletten kurtarır ve ona doğru yolu gösterir. Peygamber Efendimiz (s.a.v.), ilim öğrenmenin her Müslüman erkek ve kadın için farz olduğunu belirtmiştir. İlim, sadece dünya hayatında değil, ahiret hayatında da kişiye fayda sağlar. İslam alimleri, ilmin insanı Allah'a daha yakın kıldığını ve kişinin imanını güçlendirdiğini ifade etmişlerdir. İlim öğrenmek, kişinin hem kendisine hem de topluma fayda sağlamasına vesile olur. Bu nedenle, İslam'da ilim öğrenmek, ibadetlerin en faziletlilerinden biri olarak kabul edilmiştir.",
+        "hadisler": [
+            {
+                "arapca": "طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ",
+                "turkce_anlam": "İlim öğrenmek, her Müslüman erkek ve kadın üzerine farzdır.",
+                "kaynak": "Sünen-i İbn Mace, Mukaddime 17",
+                "kisa_aciklama": "İlim öğrenmek, her Müslümanın sorumluluğundadır ve bu, kişinin dini ve dünyevi hayatını aydınlatır."
+            },
+            {
+                "arapca": "مَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ",
+                "turkce_anlam": "Kim ilim öğrenmek için bir yola girerse, Allah ona cennete giden yolu kolaylaştırır.",
+                "kaynak": "Sahih-i Müslim, Zikr 38",
+                "kisa_aciklama": "İlim yolunda çaba göstermek, kişinin ahiret saadetine ulaşmasına vesile olur."
+            },
+            {
+                "arapca": "إِنَّ الْعُلَمَاءَ وَرَثَةُ الْأَنْبِيَاءِ",
+                "turkce_anlam": "Alimler, peygamberlerin varisleridir.",
+                "kaynak": "Sünen-i Ebu Davud, İlim 1",
+                "kisa_aciklama": "Alimler, peygamberlerin bıraktığı ilmi mirası taşır ve toplumları aydınlatır."
+            },
+            {
+                "arapca": "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ",
+                "turkce_anlam": "Sizin en hayırlınız, Kur'an'ı öğrenen ve öğreteninizdir.",
+                "kaynak": "Sahih-i Buhari, Fezailü'l-Kur'an 21",
+                "kisa_aciklama": "Kur'an ilmi, en üstün ilimdir ve onu öğrenmek ve öğretmek büyük bir fazilettir."
+            },
+            {
+                "arapca": "إِنَّ اللَّهَ لَا يَقْبِضُ الْعِلْمَ انْتِزَاعًا يَنْتَزِعُهُ مِنَ النَّاسِ وَلَكِنْ يَقْبِضُ الْعِلْمَ بِقَبْضِ الْعُلَمَاءِ",
+                "turkce_anlam": "Allah, ilmi insanların kalbinden çekip almaz; fakat alimlerin vefatı ile ilmi alır.",
+                "kaynak": "Sahih-i Buhari, İlim 34",
+                "kisa_aciklama": "Alimlerin değeri, ilmin devamlılığı açısından çok büyüktür; onların kaybı, ilmin azalmasına sebep olur."
+            }
+        ],
+        "seo_url": "ilim-ogrenmenin-fazileti"
+    },
+    {
+        "kategori": "Cennet Müjdeleri",
+        "seo_meta_aciklama": "Cennet müjdeleri konusundaki sahih hadisler, Müslümanlara cenneti kazanmanın yollarını ve önemini anlatır.",
+        "kategori_giris_yazisi": "Cennet, İslam inancında müminlerin ebedi saadet yurdu olarak tanımlanır. Kur'an-ı Kerim ve hadis-i şeriflerde cennet, güzellikleri ve nimetleriyle sıkça tasvir edilir. Müslümanlar için cenneti kazanmak, dünya hayatındaki en büyük hedeflerden biridir. Bu nedenle, cennetin müjdeleri ve ona götüren yollar, İslam'ın temel öğretileri arasında yer alır. Peygamber Efendimiz (s.a.v.), sahih hadislerinde cenneti kazanmanın yollarını ve cennetin güzelliklerini detaylı bir şekilde açıklamıştır. Bu hadisler, Müslümanlara hem bir motivasyon kaynağı hem de bir rehber niteliğindedir. Cennet müjdeleri, iman edenlerin kalplerine huzur verir ve onları salih ameller işlemeye teşvik eder.",
+        "hadisler": [
+            {
+                "arapca": "مَنْ كَانَ آخِرُ كَلَامِهِ لَا إِلَهَ إِلَّا اللَّهُ دَخَلَ الْجَنَّةَ",
+                "turkce_anlam": "Kimin son sözü 'La ilahe illallah' olursa, o cennete girer.",
+                "kaynak": "Sahih-i Ebu Davud, Cenaiz 20",
+                "kisa_aciklama": "Bu hadis, iman kelimesinin önemini ve son nefeste bu kelimeyi söylemenin cennete girmeye vesile olacağını vurgular."
+            },
+            {
+                "arapca": "مَنْ صَلَّى الْبَرْدَيْنِ دَخَلَ الْجَنَّةَ",
+                "turkce_anlam": "Kim sabah ve ikindi namazlarını kılarsa, cennete girer.",
+                "kaynak": "Sahih-i Buhari, Mevakit 26",
+                "kisa_aciklama": "Bu hadis, namazın özellikle sabah ve ikindi vakitlerinde kılınmasının cennete girmeye vesile olacağını belirtir."
+            },
+            {
+                "arapca": "مَنْ بَنَى مَسْجِدًا يَبْتَغِي بِهِ وَجْهَ اللَّهِ بَنَى اللَّهُ لَهُ مِثْلَهُ فِي الْجَنَّةِ",
+                "turkce_anlam": "Kim Allah rızası için bir mescit inşa ederse, Allah da ona cennette benzeri bir ev inşa eder.",
+                "kaynak": "Sahih-i Buhari, Salat 65",
+                "kisa_aciklama": "Bu hadis, Allah rızası için yapılan hayır işlerinin cennette karşılıksız kalmayacağını ve mükafatlandırılacağını gösterir."
+            },
+            {
+                "arapca": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+                "turkce_anlam": "Kim Allah'a ve ahiret gününe iman ediyorsa, ya hayır söylesin ya da sussun.",
+                "kaynak": "Sahih-i Buhari, Edeb 31",
+                "kisa_aciklama": "Bu hadis, dilin kontrol edilmesinin ve hayırlı sözlerin cennete girmede önemli bir rol oynadığını belirtir."
+            },
+            {
+                "arapca": "مَنْ صَامَ رَمَضَانَ إِيمَانًا وَاحْتِسَابًا غُفِرَ لَهُ مَا تَقَدَّمَ مِنْ ذَنْبِهِ",
+                "turkce_anlam": "Kim Ramazan orucunu imanla ve sevabını Allah'tan umarak tutarsa, geçmiş günahları bağışlanır.",
+                "kaynak": "Sahih-i Buhari, İman 28",
+                "kisa_aciklama": "Bu hadis, Ramazan ayında oruç tutmanın günahlardan arınmaya ve cennete yaklaşmaya vesile olduğunu vurgular."
+            }
+        ],
+        "seo_url": "cennet-mujdeleri"
+    },
+    {
+        "kategori": "Kıyamet Alametleri ve Ahiret",
+        "seo_meta_aciklama": "Kıyamet alametleri ve ahiret hayatı ile ilgili sahih hadisler, İslam'da bu konuların önemini ve ibretlik derslerini açıklar.",
+        "kategori_giris_yazisi": "Kıyamet alametleri ve ahiret hayatı, İslam inancında önemli bir yere sahiptir. Müslümanlar, dünya hayatının geçici olduğunu ve ahiret hayatının ebedi olduğunu bilirler. Kıyamet alametleri, bu geçici dünyanın son bulacağını ve ahiret hayatının başlayacağını hatırlatan işaretlerdir. Bu alametler, Müslümanların dünya hayatında daha dikkatli ve bilinçli yaşamalarını teşvik eder. Ahiret inancı, insanları adaletli, dürüst ve erdemli bir yaşam sürmeye yönlendirir. Sahih hadislerde kıyamet alametleri ve ahiret hayatı hakkında verilen bilgiler, Müslümanların bu konularda daha fazla bilgi sahibi olmalarını ve ibret almalarını sağlar.",
+        "hadisler": [
+            {
+                "arapca": "إِنَّ مِنْ أَشْرَاطِ السَّاعَةِ أَنْ يُوَلَّى الأَمْرُ لِغَيْرِ أَهْلِهِ",
+                "turkce_anlam": "Kıyamet alametlerinden biri, işlerin ehil olmayan kimselere verilmesidir.",
+                "kaynak": "Sahih-i Buhari, İlim 2",
+                "kisa_aciklama": "İşlerin ehil kişilere verilmemesi, toplumun düzenini bozar ve kıyametin yaklaşmasına işaret eder."
+            },
+            {
+                "arapca": "لاَ تَقُومُ السَّاعَةُ حَتَّى تَكُونَ السَّاعَةُ كَالشَّهْرِ وَالشَّهْرُ كَالْجُمُعَةِ وَالْجُمُعَةُ كَالْيَوْمِ وَالْيَوْمُ كَالسَّاعَةِ وَالسَّاعَةُ كَاحْتِرَاقِ السَّعَفَةِ",
+                "turkce_anlam": "Kıyamet kopmadan önce zaman hızla geçecek; yıl ay gibi, ay hafta gibi, hafta gün gibi, gün saat gibi ve saat de hurma yaprağının yanması gibi olacak.",
+                "kaynak": "Tirmizi, Zühd 24",
+                "kisa_aciklama": "Zamanın hızla geçmesi, insanların gaflet içinde yaşadıklarının bir göstergesidir."
+            },
+            {
+                "arapca": "إِنَّ مِنْ أَشْرَاطِ السَّاعَةِ أَنْ يَظْهَرَ الْجَهْلُ وَيَقِلَّ الْعِلْمُ",
+                "turkce_anlam": "Kıyamet alametlerinden biri, cehaletin yayılması ve ilmin azalmasıdır.",
+                "kaynak": "Sahih-i Buhari, İlim 23",
+                "kisa_aciklama": "Cehaletin artması, toplumların manevi ve ahlaki çöküşüne neden olur."
+            },
+            {
+                "arapca": "لاَ تَقُومُ السَّاعَةُ حَتَّى يُقْبَضَ الْعِلْمُ وَتَكْثُرَ الزَّلاَزِلُ وَيَتَقَارَبَ الزَّمَانُ وَتَظْهَرَ الْفِتَنُ",
+                "turkce_anlam": "Kıyamet kopmadan önce ilim alınacak, depremler artacak, zaman kısalacak ve fitneler ortaya çıkacak.",
+                "kaynak": "Sahih-i Buhari, Fiten 25",
+                "kisa_aciklama": "Depremlerin artması ve fitnelerin çoğalması, insanların manevi değerlerden uzaklaşmasının bir sonucudur."
+            },
+            {
+                "arapca": "إِنَّ مِنْ أَشْرَاطِ السَّاعَةِ أَنْ تَتَقَارَبَ الأَسْوَاقُ",
+                "turkce_anlam": "Kıyamet alametlerinden biri, pazarların birbirine yaklaşmasıdır.",
+                "kaynak": "Sahih-i Müslim, Fiten 18",
+                "kisa_aciklama": "Ticaretin ve pazarların yaygınlaşması, insanların maddi değerlere daha fazla önem vermesine işaret eder."
+            }
+        ],
+        "seo_url": "kiyamet-alametleri-ve-ahiret"
+    }
+]

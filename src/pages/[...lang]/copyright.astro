@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: undefined } }, { params: { lang: 'en' } }, { params: { lang: 'ar' } },
+    { params: { lang: 'id' } }, { params: { lang: 'ur' } }, { params: { lang: 'fr' } }, { params: { lang: 'ru' } }
+  ];
+}
+const lang = Astro.params.lang || 'tr';
+const isTr = lang === 'tr';
+---
+<Layout title={isTr ? "Telif Hakkı | Islamic Compass" : "Copyright | Islamic Compass"}>
+  <main class="max-w-4xl mx-auto px-6 py-24 min-h-[70vh]">
+    <h1 class="text-4xl md:text-5xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-8 border-b border-[#D4AF37]/30 pb-4">
+      {isTr ? 'Telif Hakkı (Copyright)' : 'Copyright Notice'}
+    </h1>
+    <div class="space-y-6 text-[#57534E] dark:text-[#94A3B8] font-light leading-relaxed">
+      {isTr ? (
+        <>
+          <p>&copy; {new Date().getFullYear()} Islamic Compass. Tüm hakları saklıdır.</p>
+          <p>Islamic Compass projesindeki tüm <strong>dijital mimari, arayüz tasarımı (Noxusweb) ve çok dilli derlenmiş veri yapısı</strong> telif haklarıyla korunmaktadır.</p>
+          <p>Kur'an-ı Kerim, Hadisler ve tarihi İslami metinlerin asılları tüm insanlığın ve kamuoyunun malıdır (Public Domain). Ancak, bu metinlerin platformumuzdaki spesifik derlenme biçimi, akıllı arama yapısı, algoritmaları ve görsel şablonları izinsiz olarak alınıp başka ticari platformlarda kullanılamaz.</p>
+          <p>Olası DMCA veya telif hakkı bildirimleriniz için iletişim kanallarımızdan bize ulaşabilirsiniz.</p>
+        </>
+      ) : (
+        <>
+          <p>&copy; {new Date().getFullYear()} Islamic Compass. All rights reserved.</p>
+          <p>All <strong>digital architecture, interface design (by Noxusweb), and multi-language compiled data structure</strong> in the Islamic Compass project are protected by copyright.</p>
+          <p>The original texts of the Holy Quran, Hadiths, and historical Islamic texts are public domain. However, the specific compilation format, smart search structure, algorithms, and visual templates of these texts on our platform may not be copied or used on other commercial platforms without permission.</p>
+          <p>For potential DMCA or copyright notices, please contact us through our communication channels.</p>
+        </>
+      )}
+    </div>
+  </main>
+</Layout>

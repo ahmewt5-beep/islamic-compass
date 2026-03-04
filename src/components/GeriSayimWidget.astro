@@ -1,0 +1,92 @@
+﻿---
+// Dil zekasını çekiyoruz (Eğer ana sayfadan prop olarak gönderilmezse URL'den bulur)
+import { getLangFromUrl } from '../i18n/ui';
+const lang = Astro.props.lang || getLangFromUrl(Astro.url);
+
+// Mini Çeviri Sözlüğü (Statik Kelimeler)
+const ui = {
+  tr: { title: 'Yaklaşan Mübarek Gün', wait: 'Hesaplanıyor...', days: 'Gün', hours: 'Saat', mins: 'Dakika' },
+  en: { title: 'Upcoming Blessed Day', wait: 'Calculating...', days: 'Days', hours: 'Hours', mins: 'Mins' },
+  ar: { title: 'اليوم المبارك القادم', wait: 'جارٍ الحساب...', days: 'أيام', hours: 'ساعات', mins: 'دقائق' },
+  id: { title: 'Hari Berkah Mendatang', wait: 'Menghitung...', days: 'Hari', hours: 'Jam', mins: 'Menit' },
+  ur: { title: 'آنے والا مبارک دن', wait: 'حساب ہو رہا ہے...', days: 'دن', hours: 'گھنٹے', mins: 'منٹ' },
+  fr: { title: 'Jour Béni à Venir', wait: 'Calcul...', days: 'Jours', hours: 'Heures', mins: 'Mins' },
+  ru: { title: 'Предстоящий священный день', wait: 'Вычисление...', days: 'Дни', hours: 'Часы', mins: 'Мин' }
+}[lang] || { title: 'Yaklaşan Mübarek Gün', wait: 'Hesaplanıyor...', days: 'Gün', hours: 'Saat', mins: 'Dakika' };
+
+// Arapça ve Urduca için RTL kontrolü
+const isRtl = lang === 'ar' || lang === 'ur';
+---
+<div class={`bg-gradient-to-br from-[#F5F2E9] to-[#FDFBF7] dark:from-[#111827]/80 dark:to-[#111827]/30 border border-[#D4AF37]/30 rounded-[2rem] p-6 md:p-8 flex flex-col items-center justify-center relative overflow-hidden shadow-sm hover:shadow-md transition-all duration-500 group ${isRtl ? 'flex-row-reverse text-right' : ''}`} dir={isRtl ? 'rtl' : 'ltr'}>
+  
+  <div class={`absolute ${isRtl ? '-left-6' : '-right-6'} -top-6 text-[#D4AF37] opacity-10 group-hover:opacity-20 transition-opacity duration-500 pointer-events-none`}>
+    <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path></svg>
+  </div>
+
+  <span class="text-[#D4AF37] text-[10px] font-bold tracking-[0.2em] uppercase mb-2 block relative z-10">{ui.title}</span>
+  <h3 id="hedef-gun-adi" class="text-2xl md:text-3xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-6 text-center relative z-10 transition-colors">
+    {ui.wait}
+  </h3>
+
+  <div class={`flex items-center gap-3 md:gap-5 relative z-10 ${isRtl ? 'flex-row-reverse' : ''}`}>
+    <div class="flex flex-col items-center">
+      <div id="sayac-gun" class="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center bg-white dark:bg-[#0B1120] rounded-2xl text-2xl md:text-3xl font-bold text-[#1C1917] dark:text-white shadow-inner border border-black/5 dark:border-white/5 transition-colors">00</div>
+      <span class="text-[10px] uppercase tracking-widest text-[#94A3B8] mt-2 font-medium">{ui.days}</span>
+    </div>
+    <div class="text-xl md:text-2xl font-bold text-[#D4AF37] pb-6">:</div>
+    <div class="flex flex-col items-center">
+      <div id="sayac-saat" class="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center bg-white dark:bg-[#0B1120] rounded-2xl text-2xl md:text-3xl font-bold text-[#1C1917] dark:text-white shadow-inner border border-black/5 dark:border-white/5 transition-colors">00</div>
+      <span class="text-[10px] uppercase tracking-widest text-[#94A3B8] mt-2 font-medium">{ui.hours}</span>
+    </div>
+    <div class="text-xl md:text-2xl font-bold text-[#D4AF37] pb-6">:</div>
+    <div class="flex flex-col items-center">
+      <div id="sayac-dakika" class="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center bg-white dark:bg-[#0B1120] rounded-2xl text-2xl md:text-3xl font-bold text-[#1C1917] dark:text-white shadow-inner border border-black/5 dark:border-white/5 transition-colors">00</div>
+      <span class="text-[10px] uppercase tracking-widest text-[#94A3B8] mt-2 font-medium">{ui.mins}</span>
+    </div>
+  </div>
+</div>
+
+<script is:inline define:vars={{ lang }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    // 2026 Mübarek Günler - 7 Dil İçin Dinamik Çeviri Havuzu
+    const isimler = {
+      tr: ["Kadir Gecesi", "Ramazan Bayramı", "Kurban Bayramı", "Aşure Günü", "Mevlid Kandili"],
+      en: ["Laylat al-Qadr", "Eid al-Fitr", "Eid al-Adha", "Day of Ashura", "Mawlid an-Nabi"],
+      ar: ["ليلة القدر", "عيد الفطر", "عيد الأضحى", "يوم عاشوراء", "المولد النبوي"],
+      id: ["Lailatul Qadar", "Idul Fitri", "Idul Adha", "Hari Asyura", "Maulid Nabi"],
+      ur: ["لیلتہ القدر", "عید الفطر", "عید الاضحی", "یوم عاشورہ", "عید میلاد النبی"],
+      fr: ["Nuit du Destin", "Aïd al-Fitr", "Aïd al-Adha", "Jour d'Achoura", "Mawlid"],
+      ru: ["Ночь Могущества", "Ураза-байрам", "Курбан-байрам", "День Ашура", "Мавлид"]
+    };
+    
+    const adlar = isimler[lang] || isimler['tr'];
+
+    const diniGunler = [
+      { ad: adlar[0], tarih: "2026-03-16T00:00:00" },
+      { ad: adlar[1], tarih: "2026-03-20T00:00:00" },
+      { ad: adlar[2], tarih: "2026-05-27T00:00:00" },
+      { ad: adlar[3], tarih: "2026-06-25T00:00:00" },
+      { ad: adlar[4], tarih: "2026-08-26T00:00:00" }
+    ];
+
+    function sayaciGuncelle() {
+      const suAn = new Date().getTime();
+      let siradakiGun = null;
+      for (let i = 0; i < diniGunler.length; i++) {
+        const hedefTarih = new Date(diniGunler[i].tarih).getTime();
+        if (hedefTarih > suAn) { siradakiGun = diniGunler[i]; break; }
+      }
+
+      if (!siradakiGun) return;
+      document.getElementById("hedef-gun-adi").innerText = siradakiGun.ad;
+      
+      const fark = new Date(siradakiGun.tarih).getTime() - suAn;
+      document.getElementById("sayac-gun").innerText = Math.floor(fark / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
+      document.getElementById("sayac-saat").innerText = Math.floor((fark % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+      document.getElementById("sayac-dakika").innerText = Math.floor((fark % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+    }
+
+    sayaciGuncelle();
+    setInterval(sayaciGuncelle, 60000); 
+  });
+</script>

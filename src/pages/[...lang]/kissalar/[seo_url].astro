@@ -1,0 +1,152 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { veriGetir } from '../../../utils/veriMotoru';
+import { useTranslations } from '../../../i18n/ui';
+
+// 7 Dil x Tüm Kıssalar için Çapraz Sayfa Üretimi
+export function getStaticPaths() {
+  const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
+  const paths = [];
+
+  diller.forEach(dilParam => {
+    const gecerliDil = dilParam || 'tr';
+    const kissalarData = veriGetir('kissalar_proje_hazir', gecerliDil);
+
+    kissalarData.forEach((kissa) => {
+      // Aynı kategorideki diğer 3 kıssayı buluyoruz
+      const ilgiliIcerikler = kissalarData
+        .filter((k) => k.seo_url !== kissa.seo_url && k.kategori === kissa.kategori)
+        .slice(0, 3);
+
+      paths.push({
+        params: { lang: dilParam, seo_url: kissa.seo_url },
+        props: { kissa, ilgiliIcerikler, gecerliDil },
+      });
+    });
+  });
+
+  return paths;
+}
+
+const { kissa, ilgiliIcerikler, gecerliDil } = Astro.props;
+const lang = gecerliDil;
+const t = useTranslations(lang);
+const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+// GOOGLE MAKALE ŞEMASI (SEO GÜCÜ)
+const kissaSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "image": "https://islamiccompass.org/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Islamic Compass"
+  },
+  "datePublished": "2024-01-01T00:00:00Z",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Islamic Compass",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://islamiccompass.org/favicon.svg"
+    }
+  },
+  "headline": kissa.baslik,
+  "description": kissa.seo_meta_aciklama || kissa.sayfa_giris_yazisi,
+  "inLanguage": lang,
+  "author": {
+    "@type": "Organization",
+    "name": t('hero.title')
+  }
+};
+---
+
+<Layout 
+  title={`${kissa.baslik} | ${t('section.kissalar')}`} 
+  schema={kissaSchema} 
+  description={kissa.seo_meta_aciklama || kissa.sayfa_giris_yazisi} 
+  canonicalURL={`https://islamiccompass.org${langPrefix}/kissalar/${kissa.seo_url}`}
+  lang={lang}
+>
+  <main class="py-16 md:py-24 px-5">
+    <article class="max-w-3xl mx-auto">
+      
+      <header class="text-center mb-16">
+        <div class="text-[#D4AF37] text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mb-6">
+          {t('section.kissalar')} - {kissa.kategori}
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white mb-8 leading-tight transition-colors duration-500">
+          {kissa.baslik}
+        </h1>
+        {kissa.sayfa_giris_yazisi && (
+          <p class="text-[#57534E] dark:text-[#94A3B8] text-lg md:text-xl leading-relaxed font-['Playfair_Display'] italic max-w-2xl mx-auto transition-colors duration-500">
+            "{kissa.sayfa_giris_yazisi}"
+          </p>
+        )}
+      </header>
+
+      <section class="mb-16">
+        <div class="prose prose-lg dark:prose-invert max-w-none text-[#1C1917] dark:text-white/90 font-light leading-loose transition-colors duration-500 text-lg md:text-xl" style="line-height: 2;">
+          {(kissa.kissa_metni || kissa.hikaye_metni || "").split('\n').map((paragraf) => (
+            paragraf.trim() !== '' && <p class="mb-6">{paragraf}</p>
+          ))}
+        </div>
+      </section>
+
+      {kissa.alinacak_ders && (
+        <section class="mb-16">
+          <div class="relative p-8 md:p-12 rounded-[2.5rem] bg-gradient-to-br from-[#F5F2E9] to-[#FDFBF7] dark:from-[#111827]/80 dark:to-[#111827]/30 border border-[#D4AF37]/30 transition-colors duration-500 shadow-[0_10px_40px_rgba(212,175,55,0.05)] overflow-hidden">
+            <div class={`absolute top-4 ${lang === 'ar' || lang === 'ur' ? 'right-6' : 'left-6'} text-[#D4AF37] opacity-20 text-8xl font-serif leading-none rotate-180 select-none`}>"</div>
+            
+            <div class="relative z-10">
+              <h2 class="text-[#D4AF37] text-sm font-bold tracking-[0.2em] uppercase mb-6 flex items-center justify-center gap-3">
+                <span class="w-2 h-2 rounded-full bg-[#D4AF37]"></span>
+                Hikmet & Ders
+                <span class="w-2 h-2 rounded-full bg-[#D4AF37]"></span>
+              </h2>
+              <p class="text-[#44403C] dark:text-white/90 text-xl md:text-2xl leading-relaxed font-['Playfair_Display'] italic text-center transition-colors duration-500">
+                {kissa.alinacak_ders}
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {kissa.kaynak && (
+        <footer class="mt-10 pt-10 border-t border-black/5 dark:border-white/10 text-center transition-colors duration-500">
+          <h3 class="text-[#D4AF37] font-bold mb-4 text-xs tracking-[0.2em] uppercase">Source</h3>
+          <p class="text-[#57534E] dark:text-[#94A3B8] leading-relaxed text-base max-w-2xl mx-auto transition-colors duration-500">
+            {kissa.kaynak}
+          </p>
+        </footer>
+      )}
+
+      {ilgiliIcerikler.length > 0 && (
+        <section class="mt-20 pt-16 border-t border-black/10 dark:border-white/10 transition-colors duration-500">
+          <div class="text-center mb-10">
+            <h3 class="text-2xl md:text-3xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white transition-colors duration-500">
+              {t('section.kissalar')}
+            </h3>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-6">
+            {ilgiliIcerikler.map((ilgili) => (
+              <a href={`${langPrefix}/kissalar/${ilgili.seo_url}`} class="group block p-6 md:p-8 rounded-[2rem] bg-[#F5F2E9] dark:bg-[#111827]/30 border border-black/5 dark:border-white/5 hover:bg-[#EAE5D9] dark:hover:bg-[#111827]/50 transition-all duration-500 hover:-translate-y-2">
+                <span class="text-[#D4AF37] text-[10px] font-bold tracking-[0.2em] uppercase mb-4 block">
+                  {ilgili.kategori}
+                </span>
+                <h4 class="text-lg md:text-xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-3 group-hover:text-[#D4AF37] dark:group-hover:text-[#D4AF37] transition-colors line-clamp-2">
+                  {ilgili.baslik}
+                </h4>
+                <p class="text-[#57534E] dark:text-[#94A3B8] text-sm line-clamp-2 font-light transition-colors duration-500">
+                  {ilgili.sayfa_giris_yazisi || ilgili.alinacak_ders}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+      
+    </article>
+  </main>
+</Layout>

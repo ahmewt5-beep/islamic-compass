@@ -1,0 +1,98 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { veriGetir } from '../../../utils/veriMotoru';
+
+export function getStaticPaths() {
+  const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
+  const paths = [];
+
+  diller.forEach(dilParam => {
+    const gecerliDil = dilParam || 'tr';
+    const hadisData = veriGetir('hadisler_proje_hazir', gecerliDil);
+
+    hadisData.forEach((kategori) => {
+      paths.push({
+        params: { lang: dilParam, seo_url: kategori.seo_url },
+        props: { kategori, gecerliDil },
+      });
+    });
+  });
+
+  return paths;
+}
+
+const { kategori, gecerliDil } = Astro.props;
+const lang = gecerliDil;
+const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "image": "https://islamiccompass.org/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Islamic Compass"
+  },
+  "datePublished": "2024-01-01T00:00:00Z",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Islamic Compass",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://islamiccompass.org/favicon.svg"
+    }
+  },
+  "headline": kategori.kategori,
+  "description": kategori.seo_meta_aciklama
+};
+---
+
+<Layout title={`${kategori.kategori} | Hadis-i Şerifler`} description={kategori.seo_meta_aciklama} schema={schema} lang={lang}>
+  <main class="py-16 md:py-24 px-5">
+    <article class="max-w-4xl mx-auto">
+      
+      <header class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white mb-8 transition-colors">
+          {kategori.kategori}
+        </h1>
+        <div class="text-[#57534E] dark:text-[#94A3B8] text-lg leading-relaxed font-light max-w-3xl mx-auto bg-[#F5F2E9] dark:bg-[#111827]/30 p-8 rounded-3xl border border-black/5 dark:border-white/5">
+          <p>{kategori.kategori_giris_yazisi}</p>
+        </div>
+      </header>
+
+      <div class="space-y-12">
+        {kategori.hadisler.map((hadis, index) => (
+          <section class="bg-white dark:bg-[#111827]/50 border border-black/5 dark:border-white/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+            
+            <div class="absolute -left-4 -top-4 text-8xl font-['Playfair_Display'] font-bold text-[#D4AF37] opacity-5 pointer-events-none select-none">
+              0{index + 1}
+            </div>
+
+            <div class="mb-8 border-b border-black/5 dark:border-white/5 pb-8 relative z-10">
+              <p class="text-3xl md:text-4xl text-[#1C1917] dark:text-white font-['Amiri'] leading-loose text-right" dir="rtl">
+                {hadis.arapca}
+              </p>
+            </div>
+
+            <div class="mb-8 relative z-10">
+              <p class="text-xl md:text-2xl text-[#1C1917] dark:text-white font-['Playfair_Display'] leading-relaxed font-medium">
+                "{hadis.turkce_anlam}"
+              </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 bg-[#FDFBF7] dark:bg-[#0B1120] p-6 rounded-2xl border border-black/5 dark:border-white/5 relative z-10">
+              <div class="flex items-center gap-3">
+                <span class="text-[#D4AF37] font-bold text-sm tracking-wide">{hadis.kaynak}</span>
+              </div>
+              <p class="text-[#57534E] dark:text-[#94A3B8] text-sm md:text-right font-light italic">
+                {hadis.kisa_aciklama}
+              </p>
+            </div>
+
+          </section>
+        ))}
+      </div>
+
+    </article>
+  </main>
+</Layout>

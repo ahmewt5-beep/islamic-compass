@@ -1,0 +1,49 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { veriGetir } from '../../../utils/veriMotoru';
+import { useTranslations } from '../../../i18n/ui';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: undefined } }, { params: { lang: 'en' } }, { params: { lang: 'ar' } },
+    { params: { lang: 'id' } }, { params: { lang: 'ur' } }, { params: { lang: 'fr' } }, { params: { lang: 'ru' } },
+  ];
+}
+
+const lang = Astro.params.lang || 'tr';
+const t = useTranslations(lang);
+const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+const kissalarData = veriGetir('kissalar_proje_hazir', lang);
+---
+
+<Layout title={`${t('section.kissalar')} | ${t('hero.title')}`} lang={lang}>
+  <main class="py-16 md:py-24 px-5 transition-colors duration-500">
+    <div class="max-w-6xl mx-auto">
+      
+      <header class="text-center mb-16">
+        <span class="text-[#D4AF37] text-sm font-bold tracking-[0.2em] uppercase mb-4 block">{t('hero.badge')}</span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white mb-6 transition-colors duration-500">
+          {t('section.kissalar')}
+        </h1>
+      </header>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {kissalarData.map((kissa) => (
+          <a href={`${langPrefix}/kissalar/${kissa.seo_url}`} class="group block bg-white dark:bg-[#111827]/40 border border-black/5 dark:border-white/5 hover:border-[#D4AF37]/50 rounded-[2rem] p-8 hover:-translate-y-2 transition-all duration-500 shadow-sm hover:shadow-xl">
+            <span class="inline-block px-3 py-1 bg-[#FDFBF7] dark:bg-[#0B1120] text-[#D4AF37] text-[10px] font-bold tracking-[0.2em] uppercase rounded-full mb-6 border border-[#D4AF37]/20">
+              {kissa.kategori}
+            </span>
+            <h2 class="text-2xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-4 group-hover:text-[#D4AF37] transition-colors">
+              {kissa.baslik}
+            </h2>
+            <p class="text-[#57534E] dark:text-[#94A3B8] text-sm line-clamp-3 leading-relaxed transition-colors duration-500 font-light">
+              {kissa.sayfa_giris_yazisi || kissa.alinacak_ders}
+            </p>
+          </a>
+        ))}
+      </div>
+
+    </div>
+  </main>
+</Layout>

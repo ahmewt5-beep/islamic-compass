@@ -1,0 +1,123 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { veriGetir } from '../../utils/veriMotoru';
+import { useTranslations, getLangFromUrl } from '../../i18n/ui';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: undefined } }, { params: { lang: 'en' } }, { params: { lang: 'ar' } },
+    { params: { lang: 'id' } }, { params: { lang: 'ur' } }, { params: { lang: 'fr' } }, { params: { lang: 'ru' } },
+  ];
+}
+
+const lang = Astro.params.lang || 'tr';
+const t = useTranslations(lang);
+const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+// RTL (Sağdan Sola) diller için tasarım kontrolü
+const isRtl = lang === 'ar' || lang === 'ur';
+
+// Verileri Çok Dilli Motorumuzdan Çekiyoruz
+const kuranData = veriGetir('kuran_proje_hazir', lang);
+const dualarData = veriGetir('dualar_proje_hazir', lang);
+const alimlerData = veriGetir('alimler_proje_hazir', lang);
+const kissalarData = veriGetir('kissalar_proje_hazir', lang);
+const terimlerData = veriGetir('terimler_proje_hazir', lang);
+
+// Tüm verileri o anki dildeki URL önekleriyle bir havuzda toplayalım
+const allItems = [
+  ...kuranData.map(item => ({ title: item.sure_adi, url: `${langPrefix}/kuran/${item.seo_url}`, type: t('section.kuran') })),
+  ...dualarData.map(item => ({ title: item.baslik, url: `${langPrefix}/dualar/${item.seo_url}`, type: t('section.dualar') })),
+  ...alimlerData.map(item => ({ title: item.sayfa_basligi, url: `${langPrefix}/alimler/${item.seo_url}`, type: t('section.alimler') })),
+  ...kissalarData.map(item => ({ title: item.baslik, url: `${langPrefix}/kissalar/${item.seo_url}`, type: t('section.kissalar') })),
+  ...terimlerData.map(item => ({ title: item.terim_adi, url: `${langPrefix}/terimler/${item.seo_url}`, type: t('section.terimler') }))
+];
+
+// O DİLE ÖZEL ALFABETİK SIRALAMA (Örn: Rusça için Kiril, Arapça için Elifba)
+const localeForSort = lang === 'tr' ? 'tr-TR' : lang;
+allItems.sort((a, b) => a.title.localeCompare(b.title, localeForSort));
+
+// Baş harflere göre gruplama (A, B, C veya الأبجدية)
+const groupedItems = {};
+allItems.forEach(item => {
+  // İlk harfi al, o dilde büyük harfe çevir
+  let firstLetter = item.title.charAt(0).toLocaleUpperCase(localeForSort);
+  
+  // Eğer karakter harf değilse (Sayı vs) '#' altına atalım
+  // Farklı alfabeler (Arapça, Kiril vb) için genişletilmiş regex
+  if (!firstLetter.match(/[\p{L}]/u)) firstLetter = '#';
+  
+  if (!groupedItems[firstLetter]) {
+    groupedItems[firstLetter] = [];
+  }
+  groupedItems[firstLetter].push(item);
+});
+
+// Harfleri sıralayalım (O dildeki sıraya göre)
+const sortedLetters = Object.keys(groupedItems).sort((a, b) => a.localeCompare(b, localeForSort));
+
+// Fihrist sayfası için özel çeviriler
+const ui = {
+  tr: { badge: 'Kapsamlı İndeks', desc: "Gönül Pusulam'da yer alan tüm sureler, dualar, alimler, kıssalar ve tasavvufi kavramların alfabetik tam listesi." },
+  en: { badge: 'Comprehensive Index', desc: "The complete alphabetical list of all surahs, prayers, scholars, stories, and concepts available on Islam's Compass." },
+  ar: { badge: 'الفهرس الشامل', desc: 'القائمة الأبجدية الكاملة لجميع السور والأدعية والعلماء والقصص والمفاهيم.' },
+  // Diğer diller varsayılan olarak İngilizceyi kullanabilir
+}[lang] || { badge: 'Comprehensive Index', desc: "The complete alphabetical list of all content." };
+---
+
+<Layout title={`${t('nav.fihrist')} | ${t('hero.title')}`} description={ui.desc} canonicalURL={`https://islamiccompass.org${langPrefix}/fihrist`} lang={lang}>
+  
+  <style is:global>
+    html { scroll-behavior: smooth; }
+  </style>
+
+  <main class={`py-16 md:py-24 px-5 transition-colors duration-500 ${isRtl ? 'text-right' : 'text-left'}`}>
+    <div class="max-w-5xl mx-auto">
+      
+      <header class="text-center mb-16">
+        <span class="text-[#D4AF37] text-sm font-bold tracking-[0.2em] uppercase mb-4 block">{ui.badge}</span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white mb-6 transition-colors duration-500" dir="ltr">
+          {t('nav.fihrist')} 
+        </h1>
+        <p class="text-[#57534E] dark:text-[#94A3B8] text-lg max-w-2xl mx-auto font-light transition-colors duration-500">
+          {ui.desc}
+        </p>
+      </header>
+
+      <div class={`flex flex-wrap justify-center gap-2 mb-16 ${isRtl ? 'flex-row-reverse' : ''}`}>
+        {sortedLetters.map(letter => (
+          <a href={`#harf-${letter}`} class="w-10 h-10 flex items-center justify-center rounded-full bg-[#F5F2E9] dark:bg-[#111827] text-[#1C1917] dark:text-white font-bold hover:bg-[#D4AF37] hover:text-white transition-colors duration-300 shadow-sm border border-black/5 dark:border-white/5">
+            {letter}
+          </a>
+        ))}
+      </div>
+
+      <div class="space-y-16">
+        {sortedLetters.map(letter => (
+          <section id={`harf-${letter}`} class="scroll-mt-24">
+            
+            <div class={`flex items-center gap-6 mb-8 ${isRtl ? 'flex-row-reverse' : ''}`}>
+              <h2 class="text-5xl font-['Playfair_Display'] font-bold text-[#D4AF37]">{letter}</h2>
+              <div class="h-[1px] flex-grow bg-black/10 dark:bg-white/10"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
+              {groupedItems[letter].map(item => (
+                <a href={item.url} class={`group flex flex-col py-2 border-b border-black/5 dark:border-white/5 border-dashed hover:border-[#D4AF37]/50 transition-colors ${isRtl ? 'items-end' : 'items-start'}`}>
+                  <span class="text-[#1C1917] dark:text-white/90 font-medium group-hover:text-[#D4AF37] transition-colors truncate w-full" dir="auto">
+                    {item.title}
+                  </span>
+                  <span class="text-[#94A3B8] text-[10px] font-bold tracking-widest uppercase mt-1">
+                    {item.type}
+                  </span>
+                </a>
+              ))}
+            </div>
+
+          </section>
+        ))}
+      </div>
+
+    </div>
+  </main>
+</Layout>

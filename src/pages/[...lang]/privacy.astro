@@ -1,0 +1,44 @@
+---
+import Layout from '../../layouts/Layout.astro'; // Yolunuzu gerekirse ayarlayın
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: undefined } }, { params: { lang: 'en' } }, { params: { lang: 'ar' } },
+    { params: { lang: 'id' } }, { params: { lang: 'ur' } }, { params: { lang: 'fr' } }, { params: { lang: 'ru' } }
+  ];
+}
+const lang = Astro.params.lang || 'tr';
+const isTr = lang === 'tr';
+---
+<Layout title={isTr ? "Gizlilik Politikası | Islamic Compass" : "Privacy Policy | Islamic Compass"}>
+  <main class="max-w-4xl mx-auto px-6 py-24 min-h-[70vh]">
+    <h1 class="text-4xl md:text-5xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-8 border-b border-[#D4AF37]/30 pb-4">
+      {isTr ? 'Gizlilik Politikası' : 'Privacy Policy'}
+    </h1>
+    <div class="space-y-6 text-[#57534E] dark:text-[#94A3B8] font-light leading-relaxed">
+      {isTr ? (
+        <>
+          <p><strong>Son Güncelleme:</strong> {new Date().toLocaleDateString('tr-TR')}</p>
+          <p>Islamic Compass olarak gizliliğinize saygı duyuyoruz. Bu sayfa, sitemizi ziyaret ettiğinizde verilerinizin nasıl işlendiğini açıklar.</p>
+          <h2 class="text-2xl text-[#1C1917] dark:text-white font-semibold mt-8">1. Toplanan Veriler ve Çerezler (Cookies)</h2>
+          <p>Sitemiz, size daha iyi bir manevi rehberlik deneyimi sunmak, tercihlerinizi (Karanlık/Aydınlık tema gibi) hatırlamak ve anonim trafik analizi yapmak için çerezleri kullanır. Hiçbir kişisel veriniz (ad, e-posta, kredi kartı vb.) sitemiz tarafından talep edilmez veya sunucularımızda saklanmaz.</p>
+          <h2 class="text-2xl text-[#1C1917] dark:text-white font-semibold mt-8">2. Üçüncü Taraf Hizmetleri</h2>
+          <p>Sitemizin trafiğini analiz etmek ve hizmetlerimizi iyileştirmek amacıyla Google Analytics veya reklam ortakları (Google AdSense) gibi üçüncü taraf servisler kullanılabilir. Bu servisler kendi çerez politikalarına sahiptir.</p>
+          <h2 class="text-2xl text-[#1C1917] dark:text-white font-semibold mt-8">3. Veri Güvenliği</h2>
+          <p>Sitemiz %100 statik mimariyle inşa edilmiş olup, sunucu tarafında hiçbir kullanıcı verisi barındırmaz. Gezinmeniz tamamen güvenli ve şifrelenmiş (SSL) bir bağlantı üzerinden gerçekleşir.</p>
+        </>
+      ) : (
+        <>
+          <p><strong>Last Updated:</strong> {new Date().toLocaleDateString('en-US')}</p>
+          <p>At Islamic Compass, we respect your privacy. This page explains how your data is handled when you visit our site.</p>
+          <h2 class="text-2xl text-[#1C1917] dark:text-white font-semibold mt-8">1. Data Collection and Cookies</h2>
+          <p>Our site uses cookies to provide you with a better spiritual guidance experience, remember your preferences (such as Dark/Light theme), and conduct anonymous traffic analysis. No personal data (name, email, credit card, etc.) is requested or stored on our servers.</p>
+          <h2 class="text-2xl text-[#1C1917] dark:text-white font-semibold mt-8">2. Third-Party Services</h2>
+          <p>We may use third-party services like Google Analytics or advertising partners (Google AdSense) to analyze our traffic and improve our services. These services have their own privacy and cookie policies.</p>
+          <h2 class="text-2xl text-[#1C1917] dark:text-white font-semibold mt-8">3. Data Security</h2>
+          <p>Our site is built with a 100% static architecture and does not host any user data on the server side. Your browsing is completely secure and encrypted via SSL.</p>
+        </>
+      )}
+    </div>
+  </main>
+</Layout>
