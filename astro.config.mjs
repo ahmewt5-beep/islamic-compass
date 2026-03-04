@@ -2,9 +2,11 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 
+import vercel from '@astrojs/vercel';
+
 export default defineConfig({
-  site: 'https://islamiccompass.org', 
-  
+  site: 'https://islamiccompass.org',
+
   // ÇOKLU DİL (i18n) ZEKASI EKLENDİ
   i18n: {
     defaultLocale: 'tr',
@@ -16,4 +18,5 @@ export default defineConfig({
   },
 
   integrations: [tailwind(), sitemap()],
+  adapter: vercel(),
 });
