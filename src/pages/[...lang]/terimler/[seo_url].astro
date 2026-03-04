@@ -3,35 +3,24 @@ import Layout from '../../../layouts/Layout.astro';
 import { veriGetir } from '../../../utils/veriMotoru';
 import { useTranslations } from '../../../i18n/ui';
 
-// 7 Dil x Tüm Terimler için Çapraz Sayfa Üretimi
-export function getStaticPaths() {
-  const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
-  const paths = [];
-
-  diller.forEach(dilParam => {
-    const gecerliDil = dilParam || 'tr';
-    const terimlerData = veriGetir('terimler_proje_hazir', gecerliDil);
-
-    terimlerData.forEach((terim) => {
-      // Çapraz Linkleme: Aynı sayfa türündeki diğer 3 terimi bul
-      const ilgiliIcerikler = terimlerData
-        .filter((t) => t.seo_url !== terim.seo_url && t.sayfa_turu === terim.sayfa_turu)
-        .slice(0, 3);
-
-      paths.push({
-        params: { lang: dilParam, seo_url: terim.seo_url },
-        props: { terim, ilgiliIcerikler, gecerliDil },
-      });
-    });
-  });
-
-  return paths;
-}
-
-const { terim, ilgiliIcerikler, gecerliDil } = Astro.props;
-const lang = gecerliDil;
+// 🚀 SSR MİMARİSİ: getStaticPaths YOK! Veriyi URL'den anında çekiyoruz.
+const { lang = 'tr', seo_url } = Astro.params;
 const t = useTranslations(lang);
 const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+// Tıklanan dili ve terimi veritabanından anında buluyoruz
+const terimlerData = veriGetir('terimler_proje_hazir', lang);
+const terim = terimlerData.find(t => t.seo_url === seo_url);
+
+// 🛡️ GÜVENLİK KALKANI: Eğer terim bulunamazsa, ÇÖKME! Terimler ana listesine at.
+if (!terim) {
+  return Astro.redirect(`${langPrefix}/terimler`);
+}
+
+// Çapraz Linkleme: Aynı sayfa türündeki diğer 3 terimi bul
+const ilgiliIcerikler = terimlerData
+  .filter((t) => t.seo_url !== terim.seo_url && t.sayfa_turu === terim.sayfa_turu)
+  .slice(0, 3);
 
 // GOOGLE İÇİN GİZLİ SÖZLÜK ŞEMASI (Global SEO)
 const terimSchema = {
@@ -105,7 +94,7 @@ const terimSchema = {
         <section class="mt-20 pt-16 border-t border-black/10 dark:border-white/10 transition-colors duration-500">
           <div class="text-center mb-10">
             <h3 class="text-2xl md:text-3xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white transition-colors duration-500">
-              {lang === 'tr' ? 'Bu Kavramla Bağlantılı Terimler' : 'Related Terms'}
+              {t('section.terimler')}
             </h3>
             <p class="text-[#57534E] dark:text-[#94A3B8] mt-3 font-light">
               {lang === 'tr' ? 'Manevi lügatınızı genişletmeye devam edin' : 'Continue expanding your spiritual vocabulary'}

@@ -3,38 +3,28 @@ import Layout from '../../../layouts/Layout.astro';
 import { veriGetir } from '../../../utils/veriMotoru';
 import { useTranslations } from '../../../i18n/ui';
 
-// 7 Dil ve 114 Sure için Çapraz Sayfa Üretimi (Matrix Routing)
-export function getStaticPaths() {
-  const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
-  const paths = [];
-
-  diller.forEach(dilParam => {
-    const gecerliDil = dilParam || 'tr';
-    const kuranData = veriGetir('kuran_proje_hazir', gecerliDil);
-
-    kuranData.forEach((sure) => {
-      // Önceki ve sonraki sureleri bulmak için güvenlik filtresi
-      const ilgiliIcerikler = kuranData
-        .filter((s) => s.sure_no !== sure.sure_no)
-        .slice(sure.sure_no, sure.sure_no + 3);
-
-      const guvenliIcerikler = ilgiliIcerikler.length > 0 ? ilgiliIcerikler : kuranData.slice(0, 3);
-
-      paths.push({
-        params: { lang: dilParam, seo_url: sure.seo_url },
-        props: { sure, ilgiliIcerikler: guvenliIcerikler, gecerliDil },
-      });
-    });
-  });
-
-  return paths;
-}
-
-const { sure, ilgiliIcerikler, gecerliDil } = Astro.props;
-const lang = gecerliDil;
+// 🚀 SSR MİMARİSİ: getStaticPaths YOK! Veriyi URL'den anında çekiyoruz.
+const { lang = 'tr', seo_url } = Astro.params;
 const t = useTranslations(lang);
 const langPrefix = lang === 'tr' ? '' : `/${lang}`;
 
+// Tıklanan dildeki Kur'an verisini çekiyoruz
+const kuranData = veriGetir('kuran_proje_hazir', lang);
+const sure = kuranData.find(s => s.seo_url === seo_url);
+
+// 🛡️ GÜVENLİK KALKANI: Eğer sure bulunamazsa, ÇÖKME! Ana sayfaya at.
+if (!sure) {
+  return Astro.redirect(`${langPrefix}/`);
+}
+
+// İlgili içerikler (Sıradaki 3 sureyi getirme zekası)
+const ilgiliIcerikler = kuranData
+  .filter((s) => s.sure_no !== sure.sure_no)
+  .slice(sure.sure_no, sure.sure_no + 3);
+
+const guvenliIcerikler = ilgiliIcerikler.length > 0 ? ilgiliIcerikler : kuranData.slice(0, 3);
+
+// GOOGLE SEO ŞEMASI
 const sureSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -47,7 +37,7 @@ const sureSchema = {
 };
 ---
 
-<Layout title={`${sure.sure_adi} | ${t('section.kuran')}`} schema={sureSchema} description={sure.seo_meta_aciklama} canonicalURL={`https://islamscompass.com${langPrefix}/kuran/${sure.seo_url}`} lang={lang}>
+<Layout title={`${sure.sure_adi} | ${t('section.kuran')}`} schema={sureSchema} description={sure.seo_meta_aciklama} canonicalURL={`https://islamiccompass.org${langPrefix}/kuran/${sure.seo_url}`} lang={lang}>
   
   <style is:global>
     html {
@@ -131,10 +121,10 @@ const sureSchema = {
         </div>
       )}
 
-      {ilgiliIcerikler.length > 0 && (
+      {guvenliIcerikler.length > 0 && (
         <section class="mt-20 pt-16 border-t border-black/10 dark:border-white/10 transition-colors duration-500">
           <div class="grid md:grid-cols-3 gap-6">
-            {ilgiliIcerikler.map((ilgili) => (
+            {guvenliIcerikler.map((ilgili) => (
               <a href={`${langPrefix}/kuran/${ilgili.seo_url}`} class="group block p-6 md:p-8 rounded-[2rem] bg-[#F5F2E9] dark:bg-[#111827]/30 border border-black/5 dark:border-white/5 hover:bg-[#EAE5D9] dark:hover:bg-[#111827]/50 transition-all duration-500 hover:-translate-y-2">
                 <span class="text-[#D4AF37] text-[10px] font-bold tracking-[0.2em] uppercase mb-4 block">
                   {ilgili.sure_no}
@@ -154,7 +144,7 @@ const sureSchema = {
     </article>
   </main>
 
-  <script>
+  <script is:inline>
     // AlQuran.cloud API Entegrasyonu
     document.addEventListener('DOMContentLoaded', () => {
       const playBtn = document.getElementById('play-audio-btn');
@@ -162,7 +152,6 @@ const sureSchema = {
       const playIcon = document.getElementById('play-icon');
       const pauseIcon = document.getElementById('pause-icon');
       const loadingIcon = document.getElementById('loading-icon');
-      const audioText = document.getElementById('audio-text');
       
       let isPlaying = false;
       let audioLoaded = false;
