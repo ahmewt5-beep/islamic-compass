@@ -3,35 +3,24 @@ import Layout from '../../../layouts/Layout.astro';
 import { veriGetir } from '../../../utils/veriMotoru';
 import { useTranslations } from '../../../i18n/ui';
 
-// 7 Dil x Tüm Alimler için Çapraz Sayfa Üretimi
-export function getStaticPaths() {
-  const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
-  const paths = [];
-
-  diller.forEach(dilParam => {
-    const gecerliDil = dilParam || 'tr';
-    const alimlerData = veriGetir('alimler_proje_hazir', gecerliDil);
-
-    alimlerData.forEach((alim) => {
-      // Çapraz Linkleme: Aynı sayfa türündeki (Örn: Biyografi) diğer 3 alimi/eseri bul
-      const ilgiliIcerikler = alimlerData
-        .filter((a) => a.seo_url !== alim.seo_url && a.sayfa_turu === alim.sayfa_turu)
-        .slice(0, 3);
-
-      paths.push({
-        params: { lang: dilParam, seo_url: alim.seo_url },
-        props: { alim, ilgiliIcerikler, gecerliDil },
-      });
-    });
-  });
-
-  return paths;
-}
-
-const { alim, ilgiliIcerikler, gecerliDil } = Astro.props;
-const lang = gecerliDil;
+// 🚀 SSR MİMARİSİ: getStaticPaths YOK! Veriyi URL'den anında çekiyoruz.
+const { lang = 'tr', seo_url } = Astro.params;
 const t = useTranslations(lang);
 const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+// Tıklanan dili ve alimi veritabanından anında buluyoruz
+const alimlerData = veriGetir('alimler_proje_hazir', lang);
+const alim = alimlerData.find(a => a.seo_url === seo_url);
+
+// 🛡️ GÜVENLİK KALKANI: Eğer alim bulunamazsa, ÇÖKME! Ana sayfaya at.
+if (!alim) {
+  return Astro.redirect(`${langPrefix}/`);
+}
+
+// Çapraz Linkleme: Aynı sayfa türündeki diğer 3 alimi bul
+const ilgiliIcerikler = alimlerData
+  .filter((a) => a.seo_url !== alim.seo_url && a.sayfa_turu === alim.sayfa_turu)
+  .slice(0, 3);
 
 // GOOGLE İÇİN GİZLİ MAKALE ŞEMASI (Global SEO)
 const alimSchema = {

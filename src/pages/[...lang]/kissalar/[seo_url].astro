@@ -3,74 +3,31 @@ import Layout from '../../../layouts/Layout.astro';
 import { veriGetir } from '../../../utils/veriMotoru';
 import { useTranslations } from '../../../i18n/ui';
 
-// 7 Dil x Tüm Kıssalar için Çapraz Sayfa Üretimi (ZIRHLI VE TEKİLLEŞTİRİLMİŞ)
-export function getStaticPaths() {
-  const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
-  let paths = [];
-
-  diller.forEach(dilParam => {
-    const gecerliDil = dilParam || 'tr';
-    const kissalarData = veriGetir('kissalar_proje_hazir', gecerliDil);
-
-    // 🚀 NETLIFY ZAMAN AŞIMI ÇÖZÜMÜ: BENZERSİZ URL FİLTRESİ
-    const benzersizKissalar = [];
-    const gorulenUrller = new Set();
-
-    kissalarData.forEach((kissa) => {
-      // Eğer bu seo_url'yi daha önce GÖRMEDİYSEK listeye ekle
-      if (kissa.seo_url && !gorulenUrller.has(kissa.seo_url)) {
-        gorulenUrller.add(kissa.seo_url);
-        benzersizKissalar.push(kissa);
-      }
-    });
-
-    // Artık o devasa hatalı liste yerine, süzülmüş tertemiz liste üzerinde döngü kuruyoruz
-    benzersizKissalar.forEach((kissa) => {
-      // İlgili içerikleri de bu temizlenmiş listeden seçiyoruz
-      const ilgiliIcerikler = benzersizKissalar
-        .filter((k) => k.seo_url !== kissa.seo_url && k.kategori === kissa.kategori)
-        .slice(0, 3);
-
-      paths.push({
-        params: { lang: dilParam, seo_url: kissa.seo_url },
-        props: { kissa, ilgiliIcerikler, gecerliDil },
-      });
-    });
-  });
-
-  return paths;
-}
-
-const { kissa, ilgiliIcerikler, gecerliDil } = Astro.props;
-const lang = gecerliDil;
+// 🚀 SSR MİMARİSİ: getStaticPaths YOK!
+const { lang = 'tr', seo_url } = Astro.params;
 const t = useTranslations(lang);
 const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+const kissalarData = veriGetir('kissalar_proje_hazir', lang);
+const kissa = kissalarData.find(k => k.seo_url === seo_url);
+
+// 🛡️ GÜVENLİK KALKANI
+if (!kissa) {
+  return Astro.redirect(`${langPrefix}/`);
+}
+
+const ilgiliIcerikler = kissalarData
+  .filter((k) => k.seo_url !== kissa.seo_url && k.kategori === kissa.kategori)
+  .slice(0, 3);
 
 // GOOGLE MAKALE ŞEMASI (SEO GÜCÜ)
 const kissaSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "image": "https://islamiccompass.org/og-image.jpg",
-  "author": {
-    "@type": "Organization",
-    "name": "Islamic Compass"
-  },
-  "datePublished": "2024-01-01T00:00:00Z",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Islamic Compass",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://islamiccompass.org/favicon.svg"
-    }
-  },
   "headline": kissa.baslik,
   "description": kissa.seo_meta_aciklama || kissa.sayfa_giris_yazisi,
-  "inLanguage": lang,
-  "author": {
-    "@type": "Organization",
-    "name": t('hero.title')
-  }
+  "inLanguage": lang
 };
 ---
 
@@ -123,15 +80,6 @@ const kissaSchema = {
             </div>
           </div>
         </section>
-      )}
-
-      {kissa.kaynak && (
-        <footer class="mt-10 pt-10 border-t border-black/5 dark:border-white/10 text-center transition-colors duration-500">
-          <h3 class="text-[#D4AF37] font-bold mb-4 text-xs tracking-[0.2em] uppercase">Source</h3>
-          <p class="text-[#57534E] dark:text-[#94A3B8] leading-relaxed text-base max-w-2xl mx-auto transition-colors duration-500">
-            {kissa.kaynak}
-          </p>
-        </footer>
       )}
 
       {ilgiliIcerikler.length > 0 && (

@@ -2,46 +2,38 @@
 import Layout from '../../../layouts/Layout.astro';
 import { useTranslations } from '../../../i18n/ui';
 
-export function getStaticPaths() {
-  const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
-  const paths = [];
-
-  // BÜTÜN DİNİ GÜNLER VE KANDİLLER
-  const diniGunler = [
-    { ad: "Kadir Gecesi", seo_url: "kadir-gecesine-ne-kadar-kaldi", tarih: "2026-03-16T00:00:00", aciklama: "Bin aydan daha hayırlı olan Kadir Gecesi, Kur'an-ı Kerim'in indirilmeye başlandığı mübarek gecedir." },
-    { ad: "Ramazan Bayramı Arefesi", seo_url: "ramazan-bayrami-arefesine-ne-kadar-kaldi", tarih: "2026-03-19T00:00:00", aciklama: "Ramazan ayının son günü olan Arefe, bir aylık manevi arınmanın zirvesi, tutulan oruçların sonu ve bayram sevincinin ilk müjdecisidir." },
-    { ad: "Ramazan Bayramı", seo_url: "ramazan-bayramina-ne-kadar-kaldi", tarih: "2026-03-20T00:00:00", aciklama: "Müminlerin bir aylık sabır ve ibadetlerinin mükafatı olan Ramazan Bayramı, kardeşliğin, sevincin ve yardımlaşmanın zirveye ulaştığı müstesna günlerdir." },
-    { ad: "Kurban Bayramı Arefesi", seo_url: "kurban-bayrami-arefesine-ne-kadar-kaldi", tarih: "2026-05-26T00:00:00", aciklama: "Hacıların Arafat'ta vakfeye durduğu, günahların affedildiği ve Zilhicce ayının en faziletli günü olan Kurban Bayramı Arefesi, duaların en çok kabul edildiği anlardandır." },
-    { ad: "Kurban Bayramı", seo_url: "kurban-bayramina-ne-kadar-kaldi", tarih: "2026-05-27T00:00:00", aciklama: "Hz. İbrahim'in teslimiyeti ve Hz. İsmail'in itaatinin sembolü olan Kurban Bayramı, Allah'a yakınlaşmanın ve yoksulları sevindirmenin en büyük vesilesidir." },
-    { ad: "Hicri Yılbaşı", seo_url: "hicri-yilbasina-ne-kadar-kaldi", tarih: "2026-06-16T00:00:00", aciklama: "Peygamber Efendimiz'in (s.a.v) Mekke'den Medine'ye kutlu hicretini esas alan Hicri Takvimin ilk günü, İslam aleminin manevi yeni yılıdır." },
-    { ad: "Aşure Günü", seo_url: "asure-gunune-ne-kadar-kaldi", tarih: "2026-06-25T00:00:00", aciklama: "Muharrem ayının onuncu günü olan Aşure Günü, tarihte birçok peygamberin kurtuluşa erdiği, aynı zamanda Hz. Hüseyin'in Kerbela'da şehit edildiği derin manalar taşıyan bir gündür." },
-    { ad: "Mevlid Kandili", seo_url: "mevlid-kandiline-ne-kadar-kaldi", tarih: "2026-08-26T00:00:00", aciklama: "Alemlere rahmet olarak gönderilen Peygamber Efendimiz Hz. Muhammed'in (s.a.v) dünyaya teşrif ettiği bu mübarek gece, salavatlar ve dualarla idrak edilir." },
-    { ad: "Üç Ayların Başlangıcı", seo_url: "uc-aylara-ne-kadar-kaldi", tarih: "2026-12-10T00:00:00", aciklama: "Rahmet, bereket ve mağfiret iklimi olan Recep, Şaban ve Ramazan aylarının başlangıcıdır." },
-    { ad: "Regaib Kandili", seo_url: "regaib-kandiline-ne-kadar-kaldi", tarih: "2026-12-17T00:00:00", aciklama: "Üç ayların ilk kandili olan Regaib Kandili, Allah'ın rahmetinin ve lütfunun sağanak sağanak yağdığı, duaların geri çevrilmediği müstesna bir gecedir." },
-    { ad: "Miraç Kandili", seo_url: "mirac-kandiline-ne-kadar-kaldi", tarih: "2027-01-10T00:00:00", aciklama: "Peygamber Efendimiz'in Mescid-i Haram'dan Mescid-i Aksa'ya, oradan da semaya yükseltildiği Miraç Gecesi." },
-    { ad: "Berat Kandili", seo_url: "berat-kandiline-ne-kadar-kaldi", tarih: "2027-01-28T00:00:00", aciklama: "Şaban ayının 15. gecesi olan Berat Kandili, günahlardan arınma, temize çıkma ve ilahi affa mazhar olma gecesidir." },
-    { ad: "Ramazan Ayı", seo_url: "ramazan-ayina-ne-kadar-kaldi", tarih: "2027-02-14T00:00:00", aciklama: "On bir ayın sultanı, rahmet, mağfiret ve cehennemden kurtuluş ayı olan Ramazan-ı Şerif, Kur'an'ın indirildiği aydır." }
-  ];
-
-  diller.forEach(dilParam => {
-    const gecerliDil = dilParam || 'tr';
-    
-    diniGunler.forEach((gun) => {
-      const digerGunler = diniGunler.filter(g => g.seo_url !== gun.seo_url);
-      paths.push({
-        params: { lang: dilParam, seo_url: gun.seo_url },
-        props: { gun, digerGunler, gecerliDil },
-      });
-    });
-  });
-
-  return paths;
-}
-
-const { gun, digerGunler, gecerliDil } = Astro.props;
-const lang = gecerliDil;
+// 🚀 SSR MİMARİSİ: getStaticPaths YOK! URL'den parametreyi anında okuyoruz.
+const { lang = 'tr', seo_url } = Astro.params;
 const t = useTranslations(lang);
 const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+// BÜTÜN DİNİ GÜNLER VE KANDİLLER
+const diniGunler = [
+  { ad: "Kadir Gecesi", seo_url: "kadir-gecesine-ne-kadar-kaldi", tarih: "2026-03-16T00:00:00", aciklama: "Bin aydan daha hayırlı olan Kadir Gecesi, Kur'an-ı Kerim'in indirilmeye başlandığı mübarek gecedir." },
+  { ad: "Ramazan Bayramı Arefesi", seo_url: "ramazan-bayrami-arefesine-ne-kadar-kaldi", tarih: "2026-03-19T00:00:00", aciklama: "Ramazan ayının son günü olan Arefe, bir aylık manevi arınmanın zirvesi, tutulan oruçların sonu ve bayram sevincinin ilk müjdecisidir." },
+  { ad: "Ramazan Bayramı", seo_url: "ramazan-bayramina-ne-kadar-kaldi", tarih: "2026-03-20T00:00:00", aciklama: "Müminlerin bir aylık sabır ve ibadetlerinin mükafatı olan Ramazan Bayramı, kardeşliğin, sevincin ve yardımlaşmanın zirveye ulaştığı müstesna günlerdir." },
+  { ad: "Kurban Bayramı Arefesi", seo_url: "kurban-bayrami-arefesine-ne-kadar-kaldi", tarih: "2026-05-26T00:00:00", aciklama: "Hacıların Arafat'ta vakfeye durduğu, günahların affedildiği ve Zilhicce ayının en faziletli günü olan Kurban Bayramı Arefesi, duaların en çok kabul edildiği anlardandır." },
+  { ad: "Kurban Bayramı", seo_url: "kurban-bayramina-ne-kadar-kaldi", tarih: "2026-05-27T00:00:00", aciklama: "Hz. İbrahim'in teslimiyeti ve Hz. İsmail'in itaatinin sembolü olan Kurban Bayramı, Allah'a yakınlaşmanın ve yoksulları sevindirmenin en büyük vesilesidir." },
+  { ad: "Hicri Yılbaşı", seo_url: "hicri-yilbasina-ne-kadar-kaldi", tarih: "2026-06-16T00:00:00", aciklama: "Peygamber Efendimiz'in (s.a.v) Mekke'den Medine'ye kutlu hicretini esas alan Hicri Takvimin ilk günü, İslam aleminin manevi yeni yılıdır." },
+  { ad: "Aşure Günü", seo_url: "asure-gunune-ne-kadar-kaldi", tarih: "2026-06-25T00:00:00", aciklama: "Muharrem ayının onuncu günü olan Aşure Günü, tarihte birçok peygamberin kurtuluşa erdiği, aynı zamanda Hz. Hüseyin'in Kerbela'da şehit edildiği derin manalar taşıyan bir gündür." },
+  { ad: "Mevlid Kandili", seo_url: "mevlid-kandiline-ne-kadar-kaldi", tarih: "2026-08-26T00:00:00", aciklama: "Alemlere rahmet olarak gönderilen Peygamber Efendimiz Hz. Muhammed'in (s.a.v) dünyaya teşrif ettiği bu mübarek gece, salavatlar ve dualarla idrak edilir." },
+  { ad: "Üç Ayların Başlangıcı", seo_url: "uc-aylara-ne-kadar-kaldi", tarih: "2026-12-10T00:00:00", aciklama: "Rahmet, bereket ve mağfiret iklimi olan Recep, Şaban ve Ramazan aylarının başlangıcıdır." },
+  { ad: "Regaib Kandili", seo_url: "regaib-kandiline-ne-kadar-kaldi", tarih: "2026-12-17T00:00:00", aciklama: "Üç ayların ilk kandili olan Regaib Kandili, Allah'ın rahmetinin ve lütfunun sağanak sağanak yağdığı, duaların geri çevrilmediği müstesna bir gecedir." },
+  { ad: "Miraç Kandili", seo_url: "mirac-kandiline-ne-kadar-kaldi", tarih: "2027-01-10T00:00:00", aciklama: "Peygamber Efendimiz'in Mescid-i Haram'dan Mescid-i Aksa'ya, oradan da semaya yükseltildiği Miraç Gecesi." },
+  { ad: "Berat Kandili", seo_url: "berat-kandiline-ne-kadar-kaldi", tarih: "2027-01-28T00:00:00", aciklama: "Şaban ayının 15. gecesi olan Berat Kandili, günahlardan arınma, temize çıkma ve ilahi affa mazhar olma gecesidir." },
+  { ad: "Ramazan Ayı", seo_url: "ramazan-ayina-ne-kadar-kaldi", tarih: "2027-02-14T00:00:00", aciklama: "On bir ayın sultanı, rahmet, mağfiret ve cehennemden kurtuluş ayı olan Ramazan-ı Şerif, Kur'an'ın indirildiği aydır." }
+];
+
+// O anki URL'de aranan dini günü buluyoruz
+const gun = diniGunler.find(g => g.seo_url === seo_url);
+
+// 🛡️ GÜVENLİK KALKANI: Eğer gün bulunamazsa (yanlış link), ÇÖKME! Ana sayfaya at.
+if (!gun) {
+  return Astro.redirect(`${langPrefix}/`);
+}
+
+// Diğer günleri sayfada listelemek için filtreliyoruz
+const digerGunler = diniGunler.filter(g => g.seo_url !== gun.seo_url);
 
 // BU SAYFAYA ÖZEL MİNİ ÇEVİRİ SÖZLÜĞÜ (UI Zekası)
 const widgetUI = {

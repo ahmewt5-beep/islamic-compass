@@ -2,32 +2,23 @@
 import Layout from '../../../layouts/Layout.astro';
 import { veriGetir } from '../../../utils/veriMotoru';
 
-// 7 Dil ve 99 İsim için Çapraz Sayfa Üretimi (Matrix Routing)
-export function getStaticPaths() {
-  const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
-  const paths = [];
+// 🚀 SSR MİMARİSİ: getStaticPaths YOK!
+const { lang = 'tr', seo_url } = Astro.params;
+const langPrefix = lang === 'tr' ? '' : `/${lang}`;
 
-  diller.forEach(dilParam => {
-    const gecerliDil = dilParam || 'tr';
-    const esmaData = veriGetir('esmaul_husna_proje_hazir', gecerliDil);
+// Tıklanan dili ve esmayı anında buluyoruz
+const esmaData = veriGetir('esmaul_husna_proje_hazir', lang);
+const currentIndex = esmaData.findIndex(e => e.seo_url === seo_url);
 
-    esmaData.forEach((esma, index) => {
-      const onceki = index === 0 ? esmaData[esmaData.length - 1] : esmaData[index - 1];
-      const sonraki = index === esmaData.length - 1 ? esmaData[0] : esmaData[index + 1];
-
-      paths.push({
-        params: { lang: dilParam, seo_url: esma.seo_url },
-        props: { esma, onceki, sonraki, gecerliDil },
-      });
-    });
-  });
-
-  return paths;
+// 🛡️ GÜVENLİK KALKANI: Eğer isim bulunamazsa ÇÖKME! Ana sayfaya at.
+if (currentIndex === -1) {
+  return Astro.redirect(`${langPrefix}/`);
 }
 
-const { esma, onceki, sonraki, gecerliDil } = Astro.props;
-const lang = gecerliDil;
-const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+const esma = esmaData[currentIndex];
+// Önceki ve Sonraki esmayı bulma zekası (Başa/Sona sarma mantığı ile)
+const onceki = currentIndex === 0 ? esmaData[esmaData.length - 1] : esmaData[currentIndex - 1];
+const sonraki = currentIndex === esmaData.length - 1 ? esmaData[0] : esmaData[currentIndex + 1];
 
 // Google için SEO Şeması
 const schema = {

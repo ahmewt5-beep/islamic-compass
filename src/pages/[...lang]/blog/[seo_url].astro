@@ -3,35 +3,24 @@ import Layout from '../../../layouts/Layout.astro';
 import { veriGetir } from '../../../utils/veriMotoru';
 import { useTranslations } from '../../../i18n/ui';
 
-// 7 Dil x Tüm Blog Yazıları için Çapraz Sayfa Üretimi
-export function getStaticPaths() {
-  const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
-  const paths = [];
-
-  diller.forEach(dilParam => {
-    const gecerliDil = dilParam || 'tr';
-    const blogData = veriGetir('blog_proje_hazir', gecerliDil);
-
-    blogData.forEach((yazi) => {
-      // Çapraz Linkleme: Rastgele 2 içerik (Kategori olmadığı için)
-      const ilgiliIcerikler = blogData
-        .filter((y) => y.seo_url !== yazi.seo_url)
-        .slice(0, 2);
-
-      paths.push({
-        params: { lang: dilParam, seo_url: yazi.seo_url },
-        props: { yazi, ilgiliIcerikler, gecerliDil },
-      });
-    });
-  });
-
-  return paths;
-}
-
-const { yazi, ilgiliIcerikler, gecerliDil } = Astro.props;
-const lang = gecerliDil;
+// 🚀 SSR MİMARİSİ: getStaticPaths YOK! Veriyi URL'den anında çekiyoruz.
+const { lang = 'tr', seo_url } = Astro.params;
 const t = useTranslations(lang);
 const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+// Tıklanan dili ve blog yazısını veritabanından anında buluyoruz
+const blogData = veriGetir('blog_proje_hazir', lang);
+const yazi = blogData.find(y => y.seo_url === seo_url);
+
+// 🛡️ GÜVENLİK KALKANI: Eğer yazı bulunamazsa, ÇÖKME! Blog ana sayfasına geri at.
+if (!yazi) {
+  return Astro.redirect(`${langPrefix}/blog`);
+}
+
+// Çapraz Linkleme: Rastgele 2 içerik (Mevcut yazı hariç)
+const ilgiliIcerikler = blogData
+  .filter((y) => y.seo_url !== yazi.seo_url)
+  .slice(0, 2);
 
 // GOOGLE İÇİN GİZLİ MAKALE ŞEMASI (BlogPosting)
 const makaleSchema = {
@@ -48,7 +37,6 @@ const makaleSchema = {
 };
 
 // İçerikteki "Giriş" başlığını kaldırıyoruz (Tüm dillerdeki varyasyonlarına karşı güvenli)
-// Not: Çeviride Introduction, مقدمة vs olabileceği için daha jenerik bir silme yapılabilir ama Türkçe için korundu.
 const temizIcerik = (yazi.icerik_html || "").replace(/<h2[^>]*>Giriş<\/h2>/i, '');
 ---
 

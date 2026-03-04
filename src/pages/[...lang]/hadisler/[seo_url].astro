@@ -2,28 +2,18 @@
 import Layout from '../../../layouts/Layout.astro';
 import { veriGetir } from '../../../utils/veriMotoru';
 
-export function getStaticPaths() {
-  const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
-  const paths = [];
-
-  diller.forEach(dilParam => {
-    const gecerliDil = dilParam || 'tr';
-    const hadisData = veriGetir('hadisler_proje_hazir', gecerliDil);
-
-    hadisData.forEach((kategori) => {
-      paths.push({
-        params: { lang: dilParam, seo_url: kategori.seo_url },
-        props: { kategori, gecerliDil },
-      });
-    });
-  });
-
-  return paths;
-}
-
-const { kategori, gecerliDil } = Astro.props;
-const lang = gecerliDil;
+// 🚀 SSR MİMARİSİ: getStaticPaths YOK!
+const { lang = 'tr', seo_url } = Astro.params;
 const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+// Tıklanan dili ve kategoriyi anında buluyoruz
+const hadisData = veriGetir('hadisler_proje_hazir', lang);
+const kategori = hadisData.find(k => k.seo_url === seo_url);
+
+// 🛡️ GÜVENLİK KALKANI
+if (!kategori) {
+  return Astro.redirect(`${langPrefix}/`);
+}
 
 const schema = {
   "@context": "https://schema.org",

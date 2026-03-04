@@ -3,35 +3,24 @@ import Layout from '../../../layouts/Layout.astro';
 import { veriGetir } from '../../../utils/veriMotoru';
 import { useTranslations } from '../../../i18n/ui';
 
-// 7 Dil x Tüm Dualar için Çapraz Sayfa Üretimi
-export function getStaticPaths() {
-  const diller = [undefined, 'en', 'ar', 'id', 'ur', 'fr', 'ru'];
-  const paths = [];
-
-  diller.forEach(dilParam => {
-    const gecerliDil = dilParam || 'tr';
-    const dualarData = veriGetir('dualar_proje_hazir', gecerliDil);
-
-    dualarData.forEach((dua) => {
-      // Aynı kategorideki diğer 3 duayı buluyoruz
-      const ilgiliIcerikler = dualarData
-        .filter((d) => d.seo_url !== dua.seo_url && d.kategori === dua.kategori)
-        .slice(0, 3);
-
-      paths.push({
-        params: { lang: dilParam, seo_url: dua.seo_url },
-        props: { dua, ilgiliIcerikler, gecerliDil },
-      });
-    });
-  });
-
-  return paths;
-}
-
-const { dua, ilgiliIcerikler, gecerliDil } = Astro.props;
-const lang = gecerliDil;
+// 🚀 SSR MİMARİSİ: getStaticPaths YOK! Veriyi URL'den anında çekiyoruz.
+const { lang = 'tr', seo_url } = Astro.params;
 const t = useTranslations(lang);
 const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+// Tıklanan dili ve duayı veritabanından anında buluyoruz
+const dualarData = veriGetir('dualar_proje_hazir', lang);
+const dua = dualarData.find(d => d.seo_url === seo_url);
+
+// 🛡️ GÜVENLİK KALKANI: Eğer dua bulunamazsa (yanlış link vs.), ÇÖKME! Ana sayfaya geri at.
+if (!dua) {
+  return Astro.redirect(`${langPrefix}/`);
+}
+
+// O an ekranda olan dua için ilgili içerikleri buluyoruz
+const ilgiliIcerikler = dualarData
+  .filter((d) => d.seo_url !== dua.seo_url && d.kategori === dua.kategori)
+  .slice(0, 3);
 
 // GOOGLE FAQ ŞEMASI - Her dile göre otomatik çevrilir
 const duaSchema = {
