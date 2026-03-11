@@ -24,6 +24,32 @@ const {
 // Dil öneki (Örn: "/en", "/ar"). Eğer Türkçe ise önek yok (boş string).
 const langPrefix = lang === 'tr' ? '' : `/${lang}`;
 
+// 🌟 YENİ: GOOGLE'I İKNA EDECEK HREFLANG (DİL) MOTORU
+// Projenizdeki 7 dili buraya tanımlıyoruz
+const supportedLangs = ['tr', 'en', 'ar', 'ru', 'fr', 'id', 'ur'];
+const currentPath = Astro.url.pathname;
+
+function getHrefLangUrl(targetLang) {
+  let pathWithoutLang = currentPath;
+  
+  // Eğer mevcut dil Türkçe değilse ve URL'de dil öneki varsa onu URL'den temizliyoruz
+  if (lang !== 'tr') {
+    if (currentPath.startsWith(`/${lang}/`)) {
+      pathWithoutLang = currentPath.substring(`/${lang}`.length);
+    } else if (currentPath === `/${lang}`) {
+      pathWithoutLang = '/';
+    }
+  }
+
+  // Temizlenen URL'nin başına hedef dili ekliyoruz (Türkçe ise öneksiz)
+  if (targetLang === 'tr') {
+    return `https://islamiccompass.org${pathWithoutLang}`;
+  } else {
+    const cleanPath = pathWithoutLang === '/' ? '' : pathWithoutLang;
+    return `https://islamiccompass.org/${targetLang}${cleanPath}`;
+  }
+}
+
 // YENİ: ARAMA MOTORU İÇİN O ANKİ DİLDEKİ VERİLERİ (JSON) DİNAMİK OLARAK ÇEKİYORUZ
 const kuranData = veriGetir('kuran_proje_hazir', lang);
 const dualarData = veriGetir('dualar_proje_hazir', lang);
@@ -50,6 +76,12 @@ const searchData = [
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="yandex-verification" content="e38a97956432f5ea" />
+    
+    {supportedLangs.map(l => (
+      <link rel="alternate" hreflang={l} href={getHrefLangUrl(l)} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={getHrefLangUrl('tr')} />
+    
     {canonicalURL && <link rel="canonical" href={canonicalURL} />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     
