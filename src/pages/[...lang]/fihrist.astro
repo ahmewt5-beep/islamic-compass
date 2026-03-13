@@ -18,33 +18,49 @@ const langPrefix = lang === 'tr' ? '' : `/${lang}`;
 const isRtl = lang === 'ar' || lang === 'ur';
 
 // Verileri Çok Dilli Motorumuzdan Çekiyoruz
-const kuranData = veriGetir('kuran_proje_hazir', lang);
-const dualarData = veriGetir('dualar_proje_hazir', lang);
-const alimlerData = veriGetir('alimler_proje_hazir', lang);
-const kissalarData = veriGetir('kissalar_proje_hazir', lang);
-const terimlerData = veriGetir('terimler_proje_hazir', lang);
+const kuranData = veriGetir('kuran_proje_hazir', lang) || [];
+const dualarData = veriGetir('dualar_proje_hazir', lang) || [];
+const alimlerData = veriGetir('alimler_proje_hazir', lang) || [];
+const kissalarData = veriGetir('kissalar_proje_hazir', lang) || [];
+const terimlerData = veriGetir('terimler_proje_hazir', lang) || [];
+
+// 🚀 YENİ EKLENEN VERİLER
+const mezheplerData = veriGetir('mezhepler_proje_hazir', lang) || [];
+const mezhepDualarData = veriGetir('mezhep_dualar_proje_hazir', lang) || [];
+
+// 🌍 MEZHEPLER İÇİN FİHRİST ETİKET SÖZLÜĞÜ (Tasarımı bozmamak için buraya ekliyoruz)
+const typeMezhep = {
+  tr: 'Mezhep & İmam', en: 'Sect & Imam', ar: 'المذهب والإمام',
+  ru: 'Мазхаб и Имам', fr: 'Madhhab & Imam', id: 'Mazhab & Imam', ur: 'مسلک اور امام'
+}[lang] || 'Mezhep & İmam';
+
+const typeKarsilastirmaliDua = {
+  tr: 'Karşılaştırmalı Fıkıh', en: 'Comparative Fiqh', ar: 'الفقه المقارن',
+  ru: 'Сравнительный фикх', fr: 'Fiqh Comparé', id: 'Fikih Komparatif', ur: 'تقابلی فقہ'
+}[lang] || 'Karşılaştırmalı Fıkıh';
 
 // Tüm verileri o anki dildeki URL önekleriyle bir havuzda toplayalım
 const allItems = [
-  ...kuranData.map(item => ({ title: item.sure_adi, url: `${langPrefix}/kuran/${item.seo_url}`, type: t('section.kuran') })),
+  ...kuranData.map(item => ({ title: item.sure_adi || item.baslik || 'Sure', url: `${langPrefix}/kuran/${item.seo_url}`, type: t('section.kuran') })),
   ...dualarData.map(item => ({ title: item.baslik, url: `${langPrefix}/dualar/${item.seo_url}`, type: t('section.dualar') })),
-  ...alimlerData.map(item => ({ title: item.sayfa_basligi, url: `${langPrefix}/alimler/${item.seo_url}`, type: t('section.alimler') })),
+  ...alimlerData.map(item => ({ title: item.sayfa_basligi || item.alim_adi, url: `${langPrefix}/alimler/${item.seo_url}`, type: t('section.alimler') })),
   ...kissalarData.map(item => ({ title: item.baslik, url: `${langPrefix}/kissalar/${item.seo_url}`, type: t('section.kissalar') })),
-  ...terimlerData.map(item => ({ title: item.terim_adi, url: `${langPrefix}/terimler/${item.seo_url}`, type: t('section.terimler') }))
+  ...terimlerData.map(item => ({ title: item.terim_adi, url: `${langPrefix}/terimler/${item.seo_url}`, type: t('section.terimler') })),
+  
+  // 🚀 YENİ VERİLERİ HAVUZA ATIYORUZ
+  ...mezheplerData.map(item => ({ title: `${item.imam_adi} (${item.mezhep_adi})`, url: `${langPrefix}/mezhepler/${item.seo_url}`, type: typeMezhep })),
+  ...mezhepDualarData.map(item => ({ title: `${item.dua_adi} (Mezheplere Göre)`, url: `${langPrefix}/mezhep-dualar/${item.seo_url}`, type: typeKarsilastirmaliDua }))
 ];
 
-// O DİLE ÖZEL ALFABETİK SIRALAMA (Örn: Rusça için Kiril, Arapça için Elifba)
+// O DİLE ÖZEL ALFABETİK SIRALAMA
 const localeForSort = lang === 'tr' ? 'tr-TR' : lang;
 allItems.sort((a, b) => a.title.localeCompare(b.title, localeForSort));
 
-// Baş harflere göre gruplama (A, B, C veya الأبجدية)
+// Baş harflere göre gruplama
 const groupedItems = {};
 allItems.forEach(item => {
-  // İlk harfi al, o dilde büyük harfe çevir
   let firstLetter = item.title.charAt(0).toLocaleUpperCase(localeForSort);
   
-  // Eğer karakter harf değilse (Sayı vs) '#' altına atalım
-  // Farklı alfabeler (Arapça, Kiril vb) için genişletilmiş regex
   if (!firstLetter.match(/[\p{L}]/u)) firstLetter = '#';
   
   if (!groupedItems[firstLetter]) {
@@ -53,15 +69,18 @@ allItems.forEach(item => {
   groupedItems[firstLetter].push(item);
 });
 
-// Harfleri sıralayalım (O dildeki sıraya göre)
+// Harfleri sıralayalım
 const sortedLetters = Object.keys(groupedItems).sort((a, b) => a.localeCompare(b, localeForSort));
 
 // Fihrist sayfası için özel çeviriler
 const ui = {
-  tr: { badge: 'Kapsamlı İndeks', desc: "Gönül Pusulam'da yer alan tüm sureler, dualar, alimler, kıssalar ve tasavvufi kavramların alfabetik tam listesi." },
-  en: { badge: 'Comprehensive Index', desc: "The complete alphabetical list of all surahs, prayers, scholars, stories, and concepts available on Islam's Compass." },
-  ar: { badge: 'الفهرس الشامل', desc: 'القائمة الأبجدية الكاملة لجميع السور والأدعية والعلماء والقصص والمفاهيم.' },
-  // Diğer diller varsayılan olarak İngilizceyi kullanabilir
+  tr: { badge: 'Kapsamlı İndeks', desc: "Gönül Pusulam'da yer alan tüm sureler, dualar, alimler, kıssalar, tasavvufi kavramlar ve mezheplerin alfabetik tam listesi." },
+  en: { badge: 'Comprehensive Index', desc: "The complete alphabetical list of all surahs, prayers, scholars, stories, concepts, and sects available on Islam's Compass." },
+  ar: { badge: 'الفهرس الشامل', desc: 'القائمة الأبجدية الكاملة لجميع السور والأدعية والعلماء والقصص والمفاهيم والمذاهب.' },
+  ru: { badge: 'Комплексный индекс', desc: 'Полный алфавитный список всех сур, молитв, ученых, историй, концепций и мазхабов.' },
+  fr: { badge: 'Index Complet', desc: 'La liste alphabétique complète de toutes les sourates, prières, savants, histoires, concepts et écoles.' },
+  id: { badge: 'Indeks Komprehensif', desc: 'Daftar alfabet lengkap dari semua surah, doa, ulama, kisah, konsep, dan mazhab.' },
+  ur: { badge: 'جامع انڈیکس', desc: 'تمام سورتوں، دعاؤں، علماء، قصوں، تصورات اور مسالک کی مکمل حروف تہجی کی فہرست۔' }
 }[lang] || { badge: 'Comprehensive Index', desc: "The complete alphabetical list of all content." };
 ---
 

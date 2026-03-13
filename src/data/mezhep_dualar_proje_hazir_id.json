@@ -1,0 +1,219 @@
+[
+    {
+        "dua_adi": "Doa Tahiyyat",
+        "seo_url": "tahiyyat-duasi-mezheplere-gore",
+        "ortak_tarihce": "Doa Tahiyyat bukanlah sekadar zikir dalam hukum Islam dan tradisi tasawuf, melainkan merupakan simbol dialog tertinggi antara hamba dengan Sang Pencipta dan Utusan-Nya yang didasarkan pada peristiwa 'Miraç'. Menurut riwayat, ketika Nabi Muhammad (s.a.w) mencapai Sidratul Muntaha, Dia menyapa Allah Yang Maha Tinggi dengan mengatakan 'Et-tehiyyâtü lillâhi ve's-salevâtü ve't-tayyibât' (Segala bentuk penghormatan, doa, dan semua kebaikan adalah milik Allah). Sebagai balasan, Allah Yang Maha Tinggi menjawab, 'Es-selâmü aleyke eyyühe'n-nebiyyü ve rahmetullâhi ve berekâtüh' (Wahai Nabi, salam, rahmat Allah dan berkah-Nya semoga tercurah kepadamu). Nabi Muhammad kemudian menambahkan dalam salam ilahi ini dengan menyertakan umatnya dan para malaikat, 'Es-selâmü aleynâ ve alâ ıbâdillâhi's-sâlihîn' (Salam untuk kami dan atas hamba-hamba Allah yang saleh). Malaikat Jibril (a.s) dan malaikat lainnya yang menyaksikan dialog luar biasa ini kemudian menguatkan momen spiritual ini dengan mengucapkan Kalimat Syahadat. Semua mazhab fiqh telah bersepakat (ijma) bahwa doa ini harus dibaca dalam setiap duduk shalat (ka'de), namun karena adanya perbedaan lafaz yang diriwayatkan dari Nabi Muhammad kepada para sahabat, muncul perbedaan kata dan penekanan di antara mazhab-mazhab.",
+        "mezhepler": {
+            "hanefi": {
+                "arapca": "اَلتَّحِيَّاتُ لِلّٰهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، اَلسَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، اَلسَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ.",
+                "okunus": "Et-tehiyyâtü lillâhi ve's-salevâtü ve't-tayyibât. Es-selâmü aleyke eyyühe'n-nebiyyü ve rahmetullâhi ve berekâtüh. Es-selâmü aleynâ ve alâ ıbâdillâhi's-sâlihîn. Eşhedü en lâ ilâhe illallâh, ve eşhedü enne Muhammeden abdühû ve resûlüh.",
+                "meal": "Semua doa, salam, ibadah fisik dan finansial adalah milik Allah. Wahai Nabi! Salam, rahmat Allah dan berkah-Nya semoga tercurah kepadamu. Salam untuk kami dan atas semua hamba Allah yang saleh. Aku bersaksi bahwa tidak ada ilah selain Allah. Dan aku bersaksi bahwa Muhammad adalah hamba dan utusan-Nya.",
+                "aciklama": "Imam Abu Hanifah mengambil teks yang diriwayatkan oleh sahabat Abdullah bin Mas'ud (r.a), yang merupakan guru terbesar dari aliran Kufah. Ibn Mas'ud menekankan kepastian lafaz ini dengan mengatakan, 'Rasulullah mengajarkan Tahiyyat kepadaku seolah-olah mengajarkan satu surah dari Al-Qur'an'. Menurut fiqh Hanafi, membaca teks ini secara lengkap dan sempurna dalam setiap duduk shalat adalah wajib."
+            },
+            "safii": {
+                "arapca": "اَلتَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلّٰهِ، اَلسَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، اَلسَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللّٰهِ.",
+                "okunus": "Et-tehiyyâtü'l-mübârekâtü's-salevâtü't-tayyibâtü lillâh. Es-selâmü aleyke eyyühe'n-nebiyyü ve rahmetullâhi ve berekâtüh. Es-selâmü aleynâ ve alâ ıbâdillâhi's-sâlihîn. Eşhedü en lâ ilâhe illallâh, ve eşhedü enne Muhammeden resûlullâh.",
+                "meal": "Doa-doa yang paling diberkati dan terbaik, serta ibadah yang baik adalah milik Allah. Wahai Nabi! Salam, rahmat Allah dan berkah-Nya semoga tercurah kepadamu. Salam untuk kami dan atas semua hamba Allah yang saleh. Aku bersaksi bahwa tidak ada ilah selain Allah. Dan aku bersaksi bahwa Muhammad adalah utusan Allah.",
+                "aciklama": "Imam Syafi'i lebih memilih riwayat dari sahabat Abdullah bin Abbas (r.a) yang dikenal dengan kedalaman ilmunya dan gelar 'Tercümanul Qur'an'. Dalam teks ini, berbeda dengan riwayat Hanafi, kata 'el-Mübârekât' muncul di awal dan kata-kata dihubungkan tanpa huruf penghubung (dan), langsung dalam bentuk frasa deskriptif. Dalam metodologi Syafi'i, membaca Tahiyyat adalah salah satu dari rukun shalat pada duduk terakhir."
+            },
+            "maliki": {
+                "arapca": "اَلتَّحِيَّاتُ لِلّٰهِ الزَّاكِيَاتُ لِلّٰهِ الطَّيِّبَاتُ الصَّلَوَاتُ لِلّٰهِ، اَلسَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، اَلسَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ، وَحْدَهُ لَا شَرِيكَ لَهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ.",
+                "okunus": "Et-tehiyyâtü lillâh, ez-zâkiyâtü lillâh, et-tayyibâtü's-salevâtü lillâh. Es-selâmü aleyke eyyühe'n-nebiyyü ve rahmetullâhi ve berekâtüh. Es-selâmü aleynâ ve alâ ıbâdillâhi's-sâlihîn. Eşhedü en lâ ilâhe illallâh, vahdehû lâ şerîke leh, ve eşhedü enne Muhammeden abdühû ve resûlüh.",
+                "meal": "Semua salam dan penghormatan adalah milik Allah. Amal yang suci dan bersih adalah milik Allah. Doa-doa dan ibadah yang terbaik adalah milik Allah. Wahai Nabi! Salam, rahmat Allah dan berkah-Nya semoga tercurah kepadamu. Salam untuk kami dan atas hamba-hamba Allah yang saleh. Aku bersaksi bahwa tidak ada ilah selain Allah, Dia Maha Esa dan tidak ada sekutu bagi-Nya. Dan aku bersaksi bahwa Muhammad adalah hamba dan utusan-Nya.",
+                "aciklama": "Imam Malik, berdasarkan prinsip metodologi fiqh 'Amal-i Ahl-i Medine' (praktik masyarakat Madinah), menganggap lafaz yang diajarkan oleh Hz. Umar (r.a) di Masjid Nabawi kepada masyarakat Madinah sebagai riwayat yang paling utama (afdal). Dalam riwayat ini, penambahan kata 'ez-Zâkiyât' (amal yang bersih dan suci) dan penekanan tauhid dengan ungkapan 'vahdehû lâ şerîke leh' adalah karakteristik dari mazhab Maliki."
+            },
+            "hanbeli": {
+                "arapca": "اَلتَّحِيَّاتُ لِلّٰهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، اَلسَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، اَلسَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ.",
+                "okunus": "Et-tehiyyâtü lillâhi ve's-salevâtü ve't-tayyibât. Es-selâmü aleyke eyyühe'n-nebiyyü ve rahmetullâhi ve berekâtüh. Es-selâmü aleynâ ve alâ ıbâdillâhi's-sâlihîn. Eşhedü en lâ ilâhe illallâh, ve eşhedü enne Muhammeden abdühû ve resûlüh.",
+                "meal": "Semua doa, salam, ibadah fisik dan finansial adalah milik Allah. Wahai Nabi! Salam, rahmat Allah dan berkah-Nya semoga tercurah kepadamu. Salam untuk kami dan atas semua hamba Allah yang saleh. Aku bersaksi bahwa tidak ada ilah selain Allah. Dan aku bersaksi bahwa Muhammad adalah hamba dan utusan-Nya.",
+                "aciklama": "Dalam mazhab Hanbali, keterikatan yang ketat pada otoritas hadis mutlak adalah prinsip dasar. Imam Ahmad bin Hanbal, sama seperti Abu Hanifah, juga lebih memilih riwayat Ibn Mas'ud (r.a) yang memiliki rantai sanad dan tingkat keabsahan tertinggi. Teksnya sama persis dengan mazhab Hanafi. Menurut mazhab Hanbali, membaca Tahiyyat pada duduk pertama adalah wajib, sedangkan membacanya pada duduk terakhir yang menyelesaikan shalat adalah farz (rukun)."
+            }
+        }
+    },
+    {
+        "dua_adi": "Doa Kunut Witir",
+        "seo_url": "vitir-kunut-duasi-mezheplere-gore",
+        "ortak_tarihce": "'Kunut', dalam bahasa, berarti tunduk dengan khusyuk, diam, berdiri, dan berdoa. Sebagai istilah fiqh, ini adalah membaca doa untuk berlindung dan memohon kepada Allah dengan mengangkat tangan (atau tanpa mengangkat) sebelum atau setelah ruku dalam shalat. Shalat Witir adalah salah satu ibadah terkuat yang tidak pernah ditinggalkan oleh Nabi Muhammad selama hidupnya, yang menerangi akhir malam. Membaca Kunut dalam shalat Witir adalah sesuatu yang disepakati oleh para sahabat, tetapi ada perbedaan antar mazhab mengenai kapan doa ini dibaca dalam setahun dan dalam rakaat mana.",
+        "mezhepler": {
+            "hanefi": {
+                "arapca": "اَللّٰهُمَّ إِنَّا نَسْتَعِينُكَ وَنَسْتَغْفِرُكَ وَنَسْتَهْدِيكَ، وَنُؤْمِنُ بِكَ وَنَتُوبُ إِلَيْكَ وَنَتَوَكَّلُ عَلَيْكَ، وَنُثْنِي عَلَيْكَ الْخَيْرَ كُلَّهُ نَشْكُرُكَ وَلَا نَكْفُرُكَ، وَنَخْلَعُ وَنَتْرُكُ مَنْ يَفْجُرُكَ.\nاَللّٰهُمَّ إِيَّاكَ نَعْبُدُ وَلَكَ نُصَلِّي وَنَسْجُدُ، وَإِلَيْكَ نَسْعَى وَنَحْفِدُ، نَرْجُو رَحْمَتَكَ وَنَخْشَى عَذَابَكَ، إِنَّ عَذَابَكَ بِالْكُفَّارِ مُلْحِقٌ.",
+                "okunus": "Allâhümme innâ neste'înüke ve nesteğfirüke ve nestehdîk. Ve nü'minü bike ve netûbü ileyk ve netevekkelü aleyk. Ve nüsnî aleyke'l-hayra küllehû neşkürüke ve lâ nekfürük. Ve nahleu ve netrukü men yefcürük.\nAllâhümme iyyâke na'büdü ve leke nüsallî ve nescüd. Ve ileyke nes'â ve nahfid. Nercû rahmeteke ve nahşâ azâbek. İnne azâbeke bi'l-küffâri mülhık.",
+                "meal": "Ya Allah! Kami meminta pertolongan kepada-Mu, kami meminta pengampunan atas dosa-dosa kami dan kami berharap agar Engkau memberi petunjuk kepada kami. Kami beriman kepada-Mu, kami bertaubat kepada-Mu dan kami berserah diri kepada-Mu. Kami memuji-Mu dengan segala kebaikan. Kami bersyukur kepada-Mu dan tidak menjadi orang yang tidak bersyukur. Kami meninggalkan dan menjauh dari orang-orang yang durhaka kepada-Mu dan yang melampaui batas.\nYa Allah! Hanya kepada-Mu kami beribadah, hanya untuk ridha-Mu kami shalat dan sujud. Kami berlari menuju rahmat-Mu dan tunduk kepada perintah-Mu. Kami berharap akan rahmat-Mu yang tak terhingga dan kami takut akan azab-Mu. Sesungguhnya azab-Mu yang benar pasti akan menimpa orang-orang kafir.",
+                "aciklama": "Dalam mazhab Hanafi, shalat Witir adalah wajib dan pada 365 hari dalam setahun, doa Kunut ini dibaca dengan mengangkat takbir *sebelum* ruku pada rakaat ketiga shalat."
+            },
+            "safii": {
+                "arapca": "اَللّٰهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ، وَعَافِنِي فِيمَنْ عَافَيْتَ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ، وَبَارِكْ لِي فِيمَا أَعْطَيْتَ، وَقِنِي شَرَّ مَا قَضَيْتَ، إِنَّكَ تَقْضِي وَلَا يُقْضَى عَلَيْكَ، وَإِنَّهُ لَا يَذِلُّ مَنْ وَالَيْتَ، وَلَا يَعِزُّ مَنْ عَادَيْتَ، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ، فَلَكَ الْحَمْدُ عَلَى مَا قَضَيْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ، وَصَلَّى اللّٰهُ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الْأُمِّيِّ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ.",
+                "okunus": "Allâhümmehdinî fîmen hedeyt. Ve a'finî fîmen a'feyt. Ve tevelleni fîmen tevelleyt. Ve bârik lî fîmâ a'teyt. Ve kınî şerra mâ kadeyt. İnneke takdî ve lâ yukdâ aleyk. Ve innehû lâ yezillü men vâleyt. Ve lâ ye'ızzü men âdeyt. Tebârakte rabbenâ ve teâleyt. Feleke'l-hamdü alâ mâ kadeyt. Estağfiruke ve etûbü ileyk. Ve sallallâhü alâ seyyidinâ Muhammedini'n-nebiyyi'l-ümmiyyi ve alâ âlihî ve sahbihî ve sellem.",
+                "meal": "Ya Allah! Berikanlah aku petunjuk di antara orang-orang yang Engkau beri petunjuk. Berikanlah kesehatan di antara orang-orang yang Engkau beri kesehatan. Jadikanlah aku teman di antara orang-orang yang Engkau jadikan teman. Berkahilah nikmat-nikmat yang Engkau berikan kepadaku. Lindungilah aku dari keburukan apa yang Engkau tetapkan. Sesungguhnya Engkaulah yang memberikan keputusan, tidak ada yang dapat memutuskan terhadap-Mu. Siapa yang Engkau jadikan teman tidak akan pernah terhina. Siapa yang Engkau jadikan musuh tidak akan pernah terhormat. Wahai Tuhan kami! Engkau Maha Suci dari segala kekurangan dan Engkau Maha Tinggi. Segala puji bagi-Mu atas keputusan-Mu. Aku memohon ampunan kepada-Mu dan aku bertaubat kepada-Mu. Semoga salawat dan salam Allah tercurah kepada Nabi kami Muhammad, keluarganya, dan para sahabatnya.",
+                "aciklama": "Dalam mazhab Syafi'i, doa Kunut dalam shalat Witir hanya dibaca pada separuh kedua bulan Ramadhan (mulai dari malam ke-15) pada rakaat terakhir *setelah* ruku."
+            },
+            "maliki": {
+                "arapca": "[Bu mezhepte okunmaz]",
+                "okunus": "[Maliki fıkhında Vitir namazında Kunut duası okuma uygulaması yoktur.]",
+                "meal": "[Bidang ini dibiarkan kosong sesuai dengan kaidah fiqh.]",
+                "aciklama": "Dalam fiqh Maliki, shalat Witir adalah sunnah muakkadah yang dilakukan setelah shalat Isya dengan satu rakaat tunggal. Menurut kaidah Imam Malik, doa Kunut tidak dibaca dalam shalat Witir. Dalam mazhab Maliki, satu-satunya tempat doa Kunut adalah dalam shalat Subuh yang dilakukan setiap hari tanpa pengecualian. Oleh karena itu, tidak ada teks yang ditetapkan untuk shalat Witir dalam fiqh Maliki."
+            },
+            "hanbeli": {
+                "arapca": "اَللّٰهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ، وَعَافِنِي فِيمَنْ عَافَيْتَ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ، وَبَارِكْ لِي فِيمَا أَعْطَيْتَ، وَقِنِي شَرَّ مَا قَضَيْتَ، إِنَّكَ تَقْضِي وَلَا يُقْضَى عَلَيْكَ، وَإِنَّهُ لَا يَذِلُّ مَنْ وَالَيْتَ، وَلَا يَعِزُّ مَنْ عَادَيْتَ، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ.",
+                "okunus": "Allâhümmehdinî fîmen hedeyt. Ve a'finî fîmen a'feyt. Ve tevelleni fîmen tevelleyt. Ve bârik lî fîmâ a'teyt. Ve kınî şerra mâ kadeyt. İnneke takdî ve lâ yukdâ aleyk. Ve innehû lâ yezillü men vâleyt. Ve lâ ye'ızzü men âdeyt. Tebârakte rabbenâ ve teâleyt.",
+                "meal": "Ya Allah! Berikanlah aku petunjuk di antara orang-orang yang Engkau beri petunjuk. Berikanlah kesehatan di antara orang-orang yang Engkau beri kesehatan. Jadikanlah aku teman di antara orang-orang yang Engkau jadikan teman. Berkahilah nikmat-nikmat yang Engkau berikan kepadaku. Lindungilah aku dari keburukan apa yang Engkau tetapkan. Sesungguhnya Engkaulah yang memberikan keputusan, tidak ada yang dapat memutuskan terhadap-Mu. Siapa yang Engkau jadikan teman tidak akan pernah terhina. Siapa yang Engkau jadikan musuh tidak akan pernah terhormat. Wahai Tuhan kami! Engkau Maha Suci dari segala kekurangan dan Engkau Maha Tinggi.",
+                "aciklama": "Dalam mazhab Hanbali, membaca doa Kunut dalam shalat Witir adalah sunnah sepanjang tahun, setiap malam. Doa ini dibaca pada rakaat terakhir *setelah* ruku."
+            }
+        }
+    },
+    {
+        "dua_adi": "Doa Kunut Shalat Subuh",
+        "seo_url": "sabah-namazi-kunut-duasi-mezheplere-gore",
+        "ortak_tarihce": "Masalah membaca Kunut dalam shalat subuh adalah salah satu perdebatan akademis yang paling mendalam dalam sejarah hukum Islam. Nabi Muhammad (s.a.w) membaca Kunut selama sebulan dalam shalat subuh untuk mendoakan keburukan kepada para zalim setelah tragedi Bi'r-i Maune di mana 70 sahabat penghafal Al-Qur'an syahid, hal ini dibuktikan dengan hadis yang sahih. Namun, setelah sebulan, apakah Nabi Muhammad menghentikan praktik ini sepenuhnya (Hanafi/Hanbali), ataukah ia terus melakukannya sepanjang hidupnya hingga wafat (Syafi'i/Maliki) menjadi perbedaan ijtihad antar mazhab.",
+        "mezhepler": {
+            "hanefi": {
+                "arapca": "اَللّٰهُمَّ إِنَّا نَسْتَعِينُكَ وَنَسْتَغْفِرُكَ... (Kunut-u Nevâzil Metni)",
+                "okunus": "Allâhümme innâ neste'înüke... [Sadece olağanüstü durumlarda Vitir Kunut'u veya özel beddua metinleri okunur]",
+                "meal": "Ya Allah! Kami memohon pertolongan kepada-Mu... [Tidak dibaca pada hari-hari biasa dalam shalat subuh.]",
+                "aciklama": "Menurut mazhab Hanafi, Kunut tidak dibaca dalam shalat subuh pada hari-hari biasa. Namun, ketika terjadi perang, wabah penyakit, atau bencana besar (situasi Kunut-u Nawazil), Kunut hanya dapat dibaca secara terbuka oleh imam setelah ruku dalam shalat subuh yang dilakukan secara berjamaah. Dalam hal ini, biasanya teks yang dibaca adalah dari Witir."
+            },
+            "safii": {
+                "arapca": "اَللّٰهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ، وَعَافِنِي فِيمَنْ عَافَيْتَ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ، وَبَارِكْ لِي فِيمَا أَعْطَيْتَ، وَقِنِي شَرَّ مَا قَضَيْتَ، إِنَّكَ تَقْضِي وَلَا يُقْضَى عَلَيْكَ، وَإِنَّهُ لَا يَذِلُّ مَنْ وَالَيْتَ، وَلَا يَعِزُّ مَنْ عَادَيْتَ، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ، فَلَكَ الْحَمْدُ عَلَى مَا قَضَيْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ، وَصَلَّى اللّٰهُ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الْأُمِّيِّ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ.",
+                "okunus": "Allâhümmehdinî fîmen hedeyt. Ve a'finî fîmen a'feyt. Ve tevelleni fîmen tevelleyt. Ve bârik lî fîmâ a'teyt. Ve kınî şerra mâ kadeyt. İnneke takdî ve lâ yukdâ aleyk. Ve innehû lâ yezillü men vâleyt. Ve lâ ye'ızzü men âdeyt. Tebârakte rabbenâ ve teâleyt. Feleke'l-hamdü alâ mâ kadeyt. Estağfiruke ve etûbü ileyk. Ve sallallâhü alâ seyyidinâ Muhammedini'n-nebiyyi'l-ümmiyyi ve alâ âlihî ve sahbihî ve sellem.",
+                "meal": "Ya Allah! Berikanlah hidayah kepada saya di antara orang-orang yang Engkau beri hidayah. Berikanlah kesehatan kepada saya di antara orang-orang yang Engkau beri kesehatan. Jadikanlah saya teman di antara orang-orang yang Engkau jadikan teman. Berkahilah nikmat yang Engkau berikan kepadaku. Lindungilah saya dari kejahatan apa yang Engkau tetapkan. Sesungguhnya, keputusan adalah milik-Mu, tidak ada yang dapat memutuskan terhadap-Mu. Siapa yang Engkau jadikan teman tidak akan pernah terhina. Siapa yang Engkau musuhi tidak akan pernah terhormat. Wahai Tuhan kami! Engkau Maha Suci dari segala kekurangan dan Maha Tinggi. Segala puji bagi-Mu atas keputusan yang Engkau berikan. Aku memohon ampunan kepada-Mu dan bertaubat kepada-Mu. Semoga salawat dan salam Allah tercurah kepada Nabi Muhammad, keluarganya, dan para sahabatnya.",
+                "aciklama": "Para Syafi'i berpegang pada hadis 'Nabi Muhammad terus membaca Kunut dalam shalat subuh hingga beliau wafat'. Dalam shalat fardhu subuh, Kunut dibaca setelah bangkit dari ruku pada rakaat kedua. Jika ditinggalkan, maka diperlukan sujud sahwi."
+            },
+            "maliki": {
+                "arapca": "اَللّٰهُمَّ إِنَّا نَسْتَعِينُكَ وَنَسْتَغْفِرُكَ، وَنُؤْمِنُ بِكَ وَنَتَوَكَّلُ عَلَيْكَ، وَنُثْنِي عَلَيْكَ الْخَيْرَ كُلَّهُ نَشْكُرُكَ وَلَا نَكْفُرُكَ، وَنَخْلَعُ وَنَتْرُكُ مَنْ يَفْجُرُكَ.\nاَللّٰهُمَّ إِيَّاكَ نَعْبُدُ وَلَكَ نُصَلِّي وَنَسْجُدُ، وَإِلَيْكَ نَسْعَى وَنَحْفِدُ، نَرْجُو رَحْمَتَكَ وَنَخْشَى عَذَابَكَ الْجِدَّ، إِنَّ عَذَابَكَ بِالْكُفَّارِ مُلْحِقٌ.",
+                "okunus": "Allâhümme innâ neste'înüke ve nesteğfiruk. Ve nü'minü bike ve netevekkelü aleyk. Ve nüsnî aleyke'l-hayra küllehû neşkürüke ve lâ nekfürük. Ve nahleu ve netrukü men yefcürük.\nAllâhümme iyyâke na'büdü ve leke nüsallî ve nescüd. Ve ileyke nes'â ve nahfid. Nercû rahmeteke ve nahşâ azâbeke'l-cidd. İnne azâbeke bi'l-küffâri mülhık.",
+                "meal": "Ya Allah! Kami memohon pertolongan kepada-Mu dan memohon ampunan atas dosa-dosa kami. Kami beriman kepada-Mu dan bertawakkal kepada-Mu. Kami memuji-Mu dengan segala kebaikan. Kami bersyukur kepada-Mu dan tidak mengingkari nikmat-Mu. Kami meninggalkan dan menjauh dari orang-orang yang durhaka kepada-Mu dan yang melampaui batas.\nYa Allah! Hanya kepada-Mu kami menyembah, hanya untuk ridha-Mu kami shalat dan sujud. Kami berlari menuju rahmat-Mu dan tunduk kepada perintah-Mu. Kami berharap akan rahmat-Mu yang tiada batas dan takut akan azab-Mu yang nyata dan keras. Sesungguhnya azab-Mu yang hak akan pasti menimpa orang-orang kafir.",
+                "aciklama": "Mazhab Maliki juga memutuskan bahwa Kunut harus dibaca setiap hari. Namun, mereka membaca Kunut sebelum ruku (setelah membaca Al-Qur'an) dan mengangkat suara saat membacanya adalah makruh; membacanya secara pelan (hafi) adalah sunnah."
+            },
+            "hanbeli": {
+                "arapca": "[Sadece Felaket Anlarında Kunut-u Nevâzil Okunur]",
+                "okunus": "[Normal günlerde Sabah namazında okunmaz.]",
+                "meal": "[Bidang ini dibiarkan kosong sesuai dengan kaidah fikih.]",
+                "aciklama": "Mazhab Hanbali, seperti mazhab Hanafi, tidak menerima bahwa Kunut harus dibaca dalam shalat subuh pada hari-hari biasa. Hanya dalam keadaan bencana yang sangat mengguncang masyarakat Islam (Nawazil), Kunut-u Nawazil dapat dibaca dalam shalat subuh dengan perintah pemimpin negara."
+            }
+        }
+    },
+    {
+        "dua_adi": "Iftitah (Doa Pembukaan): Sübhaneke dan Veccehtü",
+        "seo_url": "iftitah-duasi-subhaneke-veccehtu-mezheplere-gore",
+        "ortak_tarihce": "Dalam shalat, doa yang dibaca segera setelah takbir Iftitah (Pembukaan), sebelum surat Al-Fatiha, disebut dalam fikih sebagai 'Sena' (Pujian) atau 'Teveccüh'. Pada saat pertama kali seorang hamba berdiri di hadapan Penciptanya, alih-alih langsung meminta sesuatu, ia terlebih dahulu mengungkapkan kebesaran, kesempurnaan, dan keesaan-Nya, yang merupakan manifestasi tertinggi dari etika Islam. Abu Hurairah (r.a) yang melihat Nabi Muhammad (s.a.w) membaca sesuatu dengan diam saat memulai shalat bertanya, 'Wahai utusan Allah, apa yang kau baca antara takbir dan bacaan?' Setelah itu, doa Iftitah disampaikan kepada umat. Namun, riwayat Iftitah yang berasal dari sahabat yang berbeda seperti Aisyah, Umar, Ali, dan Ibn Umar, telah menentukan preferensi mazhab dalam hal ini.",
+        "mezhepler": {
+            "hanefi": {
+                "arapca": "سُبْحَانَكَ اللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلٰهَ غَيْرُكَ.",
+                "okunus": "Sübhânekellâhümme ve bi-hamdik. Ve tebârakesmük. Ve teâlâ ceddük. Ve lâ ilâhe ğayruk.",
+                "meal": "Ya Allah! Aku mensucikan-Mu dari segala sifat yang kurang, dan aku memuji-Mu. Nama-Mu sangat diberkahi. Kemuliaan, kebesaran, dan kekuasaan-Mu sangat tinggi. Tidak ada ilah selain Engkau.",
+                "aciklama": "Mazhab Hanafi memilih doa 'Sübhaneke' yang diriwayatkan dari Aisyah dan Anas bin Malik (r.a), yang juga diajarkan oleh Umar di Masjid Nabawi dari mimbar kepada jemaah. Menurut Abu Hanifah, teks ini adalah doa yang paling utama (afdhal) untuk memulai shalat karena mengandung kata-kata pujian dan penyucian Allah dengan cara yang paling ringkas. Doa sunnah ini dibaca dengan diam (hafi) segera setelah takbir. Dalam shalat jenazah, kalimat 'Ve celle senâük' (Pujian-Mu sangat tinggi) ditambahkan ke dalam teks."
+            },
+            "safii": {
+                "arapca": "وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيفًا مُسْلِمًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ، إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلّٰهِ رَبِّ الْعَالَمِينَ، لَا شَرِيكَ لَهُ، وَبِذٰلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ.",
+                "okunus": "Veccehtü vechiye lillezî fetaras-semâvâti vel-arda hanîfen müslimen ve mâ ene minel-müşrikîn. İnne salâtî ve nüsükî ve mahyâye ve memâtî lillâhi rabbil-âlemîn. Lâ şerîke leh, ve bi-zâlike ümirtü ve ene minel-müslimîn.",
+                "meal": "Ben, hakka yönelen bir müslüman olarak yüzümü gökleri ve yeri yoktan var eden Allah'a çevirdim ve ben müşriklerden değilim. Şüphesiz benim namazım, ibadetlerim, diriliğim ve ölümüm alemlerin Rabbi olan Allah içindir. O'nun hiçbir ortağı yoktur. Bana böyle emrolundu ve ben Müslümanlardanım.",
+                "aciklama": "Şafii mezhebi, Hz. Ali'den (r.a) Müslim'de rivayet edilen ve Kur'an-ı Kerim'deki En'âm Suresi 79. ve 162-163. ayetlerinin muazzam bir terkibi olan 'Veccehtü' duasını esas alır. İmam Şafii'ye göre, kulun tüm benliğiyle Allah'a yöneldiğini (teveccüh) ve şirkten arındığını ilan eden bu ayet kaynaklı metin, namazın ruhuna en uygun iftitah duasıdır. Tekbirden sonra sessizce okunması müekked bir sünnettir."
+            },
+            "maliki": {
+                "arapca": "[Farz namazlarda okunmaz]",
+                "okunus": "[Maliki fıkhına göre farz namazlarda doğrudan Fatiha'ya geçilir.]",
+                "meal": "[Bu alan fıkhi usul gereği boş bırakılmıştır.]",
+                "aciklama": "Maliki fıkhında namazın en önemli ve sarsılmaz rüknü 'Fatiha' suresidir. İmam Malik'in Medine ehlinin ameline dayanan kuvvetli usulüne göre; iftitah tekbiri ile Fatiha suresinin arasına başka herhangi bir zikir veya dua koymak (Sübhaneke veya Veccehtü dahil) farz namazlarda 'Mekruh' kabul edilir. Maliki mezhebine mensup biri 'Allahu Ekber' der demez hiçbir sena (övgü) veya euzü-besmele çekmeksizin doğrudan 'Elhamdülillahi Rabbil Alemin' diyerek kıraate başlar. Sadece nafile (sünnet) namazlarda isteyen Veccehtü okuyabilir."
+            },
+            "hanbeli": {
+                "arapca": "سُبْحَانَكَ اللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلٰهَ غَيْرُكَ.",
+                "okunus": "Sübhânekellâhümme ve bi-hamdik. Ve tebârakesmük. Ve teâlâ ceddük. Ve lâ ilâhe ğayruk.",
+                "meal": "Allah'ım! Seni her türlü noksan sıfatlardan tenzih eder, sana hamdederim. Senin adın ne mübarektir. Senin şanın, azametin ve kudretin ne yücedir. Senden başka hiçbir ilah yoktur.",
+                "aciklama": "Hanbeli mezhebi, tıpkı Hanefi mezhebi gibi İftitah duası olarak 'Sübhaneke' metnini kabul etmiştir. İmam Ahmed bin Hanbel, Hz. Ömer'in cemaate öğrettiği rivayeti sened bakımından en güvenilir bulmuş ve Veccehtü duasına tercih etmiştir. Ancak Hanbeli fıkhına göre kişi dilerse Veccehtü duasını da okuyabilir, her iki uygulamanın da Hz. Peygamber'den sadır olduğuna inanılır, fakat efdal olan Sübhaneke'dir."
+            }
+        }
+    },
+    {
+        "dua_adi": "Tasbih Ruku",
+        "seo_url": "ruku-tesbihati-mezheplere-gore",
+        "ortak_tarihce": "Ruku (menunduk), hamba yang merasakan ketidakberdayaan di hadapan Penciptanya dan secara fisik menunjukkan kerendahan hati adalah salah satu rukun shalat yang paling penting. Ketika ayat 'Fe sebbih bismi rabbikel azîm' (Maka bertasbihlah dengan nama Tuhanmu yang Maha Agung) yang terdapat di akhir Surah Al-Waqi'ah diturunkan, Nabi Muhammad (s.a.w) memberi perintah kepada para sahabatnya, 'Lakukan ini dalam ruku kalian.' Sejak saat itu, seluruh umat Islam mengikuti perintah ilahi ini dengan menyebut nama 'Azîm' (Maha Agung) dalam ruku mereka sebagai praktik bersama. Namun, jumlah tasbih, kewajiban, dan penambahan kata bervariasi menurut metode pemahaman hadis dari berbagai mazhab.",
+        "mezhepler": {
+            "hanefi": {
+                "arapca": "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+                "okunus": "Sübhâne Rabbiye'l-Azîm",
+                "meal": "Aku mensucikan Tuhanku yang Maha Agung dari segala kekurangan.",
+                "aciklama": "Menurut mazhab Hanafi, membaca tasbih ini dalam ruku adalah sunnah. Membacanya setidaknya tiga kali dianggap lebih utama. Membaca lima atau tujuh kali dengan angka ganjil juga dianjurkan. Jika seseorang shalat berjamaah di belakang imam, ketika imam bangkit dari ruku, meskipun orang tersebut belum sempat menyelesaikan tasbihnya, ia harus segera bangkit mengikuti imam."
+            },
+            "safii": {
+                "arapca": "سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ",
+                "okunus": "Sübhâne Rabbiye'l-Azîm ve bi-hamdihî",
+                "meal": "Aku mensucikan Tuhanku yang Maha Agung dari segala kekurangan dan aku memuji-Nya.",
+                "aciklama": "Mazhab Syafi'i menganggap riwayat Ukbah bin Amir (r.a) yang terdapat dalam Abu Dawud lebih sahih dan menambahkan frasa 'dan bi-hamdihî' (dan dengan pujian-Nya) di akhir teks. Menurut fikih Syafi'i, membaca tasbih ini tiga kali adalah sunnah. Jika ditinggalkan, tidak memerlukan sujud sahwi, tetapi mengurangi kesempurnaan shalat."
+            },
+            "maliki": {
+                "arapca": "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+                "okunus": "Sübhâne Rabbiye'l-Azîm",
+                "meal": "Aku mensucikan Tuhanku yang Maha Agung dari segala kekurangan.",
+                "aciklama": "Dalam fikih Maliki, teks tasbih ruku sama dengan Hanafi. Namun, dalam metode Maliki, tidak ada syarat untuk membatasi tasbih ini dengan jumlah tertentu (misalnya, harus dibaca tiga kali). Seseorang dapat membaca sebanyak yang diinginkan selama berada dalam ruku, sampai hatinya merasa puas. Yang sunnah adalah berzikir cukup untuk mencapai ketenangan tubuh (tuma'ninah)."
+            },
+            "hanbeli": {
+                "arapca": "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+                "okunus": "Sübhâne Rabbiye'l-Azîm",
+                "meal": "Aku mensucikan Tuhanku yang Maha Agung dari segala kekurangan.",
+                "aciklama": "Perbedaan terbesar yang membedakan mazhab Hanbali dalam tasbih ruku dan sujud dari tiga mazhab lainnya adalah 'Hukum' (kewajiban). Menurut fikih Hanbali, menyebut 'Subhânâ Rabbiye'l-Azîm' setidaknya sekali dalam ruku adalah salah satu dari hal-hal yang wajib dalam shalat. Jika dilupakan dan ditinggalkan, memerlukan sujud sahwi, tetapi jika ditinggalkan dengan sengaja, shalat menjadi batal. Membaca tiga kali adalah sunnah."
+            }
+        }
+    },
+    {
+        "dua_adi": "Secde Tesbihatı",
+        "seo_url": "secde-tesbihati-mezheplere-gore",
+        "ortak_tarihce": "Secde, filosofi ibadah Islam didefinisikan sebagai 'saat di mana hamba paling dekat dengan Tuhannya'. Tesbihat dari tempat spiritual yang unik ini, di mana kepala yang merupakan puncak kesombongan menyentuh tanah yang merupakan titik terjauh dari kesombongan, juga ditentukan dengan perintah langsung dari Al-Qur'an. Ketika ayat pertama dari Surah A'lâ, 'Sebbihısme rabbikel a'lâ' (Menyucikanlah nama Rabbmu yang Maha Tinggi) diturunkan, Nabi Muhammad (s.a.w) bersabda, 'Lakukan ini dalam sujudmu'. Sifat 'Azîm' (Besar) yang ada di ruku, digantikan dalam sujud dengan pujian yang melampaui batas ruang dan waktu, yaitu sifat 'A'lâ' (Yang Maha Tinggi / Lebih Utama dari Segalanya).",
+        "mezhepler": {
+            "hanefi": {
+                "arapca": "سُبْحَانَ رَبِّيَ الْأَعْلَى",
+                "okunus": "Sübhâne Rabbiye'l-A'lâ",
+                "meal": "Aku menyucikan Rabbku yang Maha Tinggi dari segala kekurangan.",
+                "aciklama": "Menurut mazhab Hanafi, membaca tesbihat ini dalam sujud adalah sunnah yang kuat. Sama seperti di ruku, harus dibaca setidaknya tiga kali. Menurut fikih Imam Abu Hanifah, meskipun keadaan sujud adalah salah satu saat di mana pintu doa terbuka lebar, melakukan doa pribadi dalam sujud pada shalat wajib (seperti 'Ya Rabb, berikan aku uang, ampuni aku, dll.') tidak dianggap sah, hanya tesbihat yang terkenal ini yang dilakukan."
+            },
+            "safii": {
+                "arapca": "سُبْحَانَ رَبِّيَ الْأَعْلَى وَبِحَمْدِهِ",
+                "okunus": "Sübhâne Rabbiye'l-A'lâ ve bi-hamdihî",
+                "meal": "Aku menyucikan Rabbku yang Maha Tinggi dari segala kekurangan dan memuji-Nya.",
+                "aciklama": "Fikih Syafi'i menganggap menambahkan frasa 'dan dengan puji-Nya' di akhir teks dalam sujud sebagai sunnah, sama seperti di ruku. Fleksibilitas paling mencolok dari mazhab Syafi'i dalam hal sujud adalah membuka ruang fikih yang luas bagi seseorang untuk melakukan doa pribadi dalam bahasa Arab (duniawi atau ukhrawi) setelah melakukan tesbihat ini, bahkan dalam shalat wajib."
+            },
+            "maliki": {
+                "arapca": "سُبْحَانَ رَبِّيَ الْأَعْلَى",
+                "okunus": "Sübhâne Rabbiye'l-A'lâ",
+                "meal": "Aku menyucikan Rabbku yang Maha Tinggi dari segala kekurangan.",
+                "aciklama": "Dalam mazhab Maliki, teks tesbihat sujud sama dengan Hanafi dan tidak ada batasan jumlah. Menurut Imam Malik, yang terpenting dalam sujud bukan hanya menyucikan dengan lidah, tetapi juga menempatkan dahi dan hidung dengan kokoh di tanah, serta anggota tubuh yang tenang. Maliki juga menganggap sunnah untuk berdoa dalam bahasa Arab setelah tesbihat dalam sujud, sama seperti Syafi'i."
+            },
+            "hanbeli": {
+                "arapca": "سُبْحَانَ رَبِّيَ الْأَعْلَى",
+                "okunus": "Sübhâne Rabbiye'l-A'lâ",
+                "meal": "Aku menyucikan Rabbku yang Maha Tinggi dari segala kekurangan.",
+                "aciklama": "Struktur fikih Hanbali yang absolut dan kaku juga terlihat dalam sujud. Menurut Hanbali, mengatakan 'Sübhâne Rabbiye'l-A'lâ' setidaknya sekali dalam sujud adalah wajib dalam shalat (tidak bisa diabaikan). Jika terlupakan, harus melakukan sujud sahwi. Jumlah yang sunnah adalah tiga kali."
+            }
+        }
+    },
+    {
+        "dua_adi": "Tasbih Setelah Shalat (Ayat Kursi dan Zikir 33 Kali)",
+        "seo_url": "namaz-sonrasi-tesbihat-ve-zikirler-mezheplere-gore",
+        "ortak_tarihce": "Asal usul tasbih setelah shalat berakar pada salah satu peristiwa sosiologis yang paling naif dan emosional dalam sejarah Islam. Suatu hari, para Muhajirin yang miskin datang kepada Nabi Muhammad (s.a.w) dan berkata: 'Wahai Utusan Allah! Saudara-saudara kaya kami juga shalat dan berpuasa seperti kami. Namun, mereka memiliki harta; mereka memberi sedekah, memerdekakan budak, dan mereka mengungguli kami dalam pahala.' Untuk menghilangkan kesedihan yang polos ini, Utusan Rahmat memberikan kabar gembira yang luar biasa: 'Akan saya ajarkan kepada kalian sesuatu yang jika kalian melakukannya, kalian akan mengejar orang-orang yang mengungguli kalian, dan orang-orang setelah kalian tidak akan dapat mengejar kalian. Setelah setiap shalat wajib, ucapkan 33 kali Subhanallah, 33 kali Alhamdulillah, 33 kali Allahu Akbar, dan pada yang ke seratus bacalah Kalimat Tauhid. Barangsiapa yang melakukan ini, dosanya akan diampuni meskipun sebanyak buih di lautan.' Berdasarkan perintah universal yang terdapat dalam Sahih Muslim ini, seluruh umat Islam menjadikan tasbih ini sebagai mahkota, meskipun teksnya tetap sama, cara pelaksanaannya secara berjamaah atau individu dibentuk sesuai dengan selera fikih masing-masing mazhab.",
+        "mezhepler": {
+            "hanefi": {
+                "arapca": "اَللّٰهُ لَا إِلٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ، لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ، لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ، مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ، يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ، وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ، وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ، وَلَا يَئُودُهُ حِفْظُهُمَا، وَهُوَ الْعَلِيُّ الْعَظِيمُ.\nسُبْحَانَ اللّٰهِ (33) اَلْحَمْدُ لِلّٰهِ (33) اَللّٰهُ أَكْبَرُ (33)\nلَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+                "okunus": "Allâhü lâ ilâhe illâ hüve'l-hayyü'l-kayyûm, lâ te'huzühû sinetün velâ nevm, lehû mâ fi's-semâvâti ve mâ fi'l-ard, men-ze'l-lezî yeşfeu ındehû illâ bi-iznih, ya'lemü mâ beyne eydîhim ve mâ halfehüm, velâ yühîtûne bi-şey'in min ılmihî illâ bimâ şâ', vesia kürsiyyühü's-semâvâti ve'l-ard, velâ yeûdühû hıfzuhümâ, ve hüve'l-aliyyü'l-azîm.\nSübhânallâh (33 defa), Elhamdülillâh (33 defa), Allâhü Ekber (33 defa).\nLâ ilâhe illallâhü vahdehû lâ şerîke leh, lehü'l-mülkü ve lehü'l-hamdü ve hüve alâ külli şey'in kadîr.",
+                "meal": "Allah, tidak ada ilah selain Dia; Dia hidup, dan segala sesuatu bergantung kepada-Nya. Dia tidak mengantuk dan tidak tidur. Apa yang ada di langit dan di bumi adalah milik-Nya. Siapa yang dapat memberi syafaat di sisi-Nya tanpa izin-Nya? Dia mengetahui apa yang di depan mereka dan apa yang di belakang mereka. Mereka tidak dapat memahami sesuatu dari ilmu-Nya kecuali apa yang Dia kehendaki. Kursi-Nya meliputi langit dan bumi. Memelihara keduanya tidak memberatkan-Nya. Dia Maha Tinggi, Maha Besar.\nAllah suci dari sifat-sifat yang kurang. Segala puji bagi Allah. Allah adalah Yang Maha Besar. Tidak ada ilah selain Allah, Dia Esa, tidak ada sekutu bagi-Nya. Kerajaan adalah milik-Nya, pujian adalah milik-Nya. Dia berkuasa atas segala sesuatu.",
+                "aciklama": "Dasar usul fikih Hanafi adalah tasbih dilakukan secara tersembunyi (hafi) dan individu. Namun, dalam proses sejarah, terutama di wilayah Seljuk dan Ottoman, untuk memastikan jamaah tidak melupakan dan tidak meninggalkan zikir yang luar biasa ini, serta untuk menciptakan harmoni yang luar biasa di masjid, lembaga 'Muazzin' telah berkembang. Muazzin mengarahkan jamaah dengan mengucapkan 'Alâ Rasûlinâ salavât' dan tasbih dilakukan secara berkelompok di akhir shalat (setelah sunnah juga dilaksanakan), ini telah diterima dalam praktik Hanafi dan menjadi tradisi yang sangat estetis dengan memperhatikan maslahat umat."
+            },
+            "safii": {
+                "arapca": "اَللّٰهُ لَا إِلٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ... [Metin Ortaktır]\nسُبْحَانَ اللّٰهِ (33) اَلْحَمْدُ لِلّٰهِ (33) اَللّٰهُ أَكْبَرُ (33)\nلَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+                "okunus": "Allâhü lâ ilâhe illâ hüve'l-hayyü'l-kayyûm... \nSübhânallâh (33 defa), Elhamdülillâh (33 defa), Allâhü Ekber (33 defa).\nLâ ilâhe illallâhü vahdehû lâ şerîke leh, lehü'l-mülkü ve lehü'l-hamdü ve hüve alâ külli şey'in kadîr.",
+                "meal": "[Teks Bersama]",
+                "aciklama": "Imam Syafi'i, dalam karya agungnya 'Al-Um', menetapkan bahwa zikir setelah shalat dilakukan secara individu dengan suara yang dapat didengar oleh diri sendiri (secara tersembunyi), bukan secara berjamaah dengan suara keras. Dalam fikih Syafi'i, melakukan tasbih dengan perintah muazzin tidak umum. Hanya dibolehkan bagi imam untuk membaca zikir dengan suara keras dalam waktu singkat untuk mengajarkan jamaah. Selain itu, dalam usul Syafi'i, setelah imam menyelesaikan shalat wajib dan memberi salam, ia segera berbalik ke arah kanan atau menghadap jamaah, dan setiap orang menyelesaikan tasbihnya dalam ketenangan secara individu."
+            },
+            "maliki": {
+                "arapca": "اَللّٰهُ لَا إِلٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ... [Metin Ortaktır]\nسُبْحَانَ اللّٰهِ (33) اَلْحَمْدُ لِلّٰهِ (33) اَللّٰهُ أَكْبَرُ (33)\nلَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+                "okunus": "Allâhü lâ ilâhe illâ hüve'l-hayyü'l-kayyûm... \nSübhânallâh (33 defa), Elhamdülillâh (33 defa), Allâhü Ekber (33 defa).\nLâ ilâhe illallâhü vahdehû lâ şerîke leh, lehü'l-mülkü ve lehü'l-hamdü ve hüve alâ külli şey'in kadîr.",
+                "meal": "[Teks Bersama]",
+                "aciklama": "Dalam fikih Maliki, praktik tasbih sangat sederhana dan sepenuhnya individu. Menurut usul yang didasarkan pada praktik penduduk Madinah oleh Imam Malik, imam dianggap sangat makruh jika menunggu di mihrab dengan wajah menghadap kiblat setelah melaksanakan shalat wajib. Setelah imam memberi salam, ia segera berbalik kepada jamaah dan jamaah mulai berzikir dengan menyebar atau kembali ke tempat masing-masing. Tidak ada praktik tasbih secara berjamaah. Tasbih yang luar biasa ini sepenuhnya dilakukan dengan tulus, khusyuk, dan secara individu dengan menghitung ruas jari tangan kanan."
+            },
+            "hanbeli": {
+                "arapca": "اَللّٰهُ لَا إِلٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ... [Metin Ortaktır]\nسُبْحَانَ اللّٰهِ (33) اَلْحَمْدُ لِلّٰهِ (33) اَللّٰهُ أَكْبَرُ (33)\nلَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+                "okunus": "Allâhü lâ ilâhe illâ hüve'l-hayyü'l-kayyûm... \nSübhânallâh (33 defa), Elhamdülillâh (33 defa), Allâhü Ekber (33 defa).\nLâ ilâhe illallâhü vahdehû lâ şerîke leh, lehü'l-mülkü ve lehü'l-hamdü ve hüve alâ külli şey'in kadîr.",
+                "meal": "[Teks Bersama]",
+                "aciklama": "Fikih Hanbali adalah mazhab yang paling ketat dan sederhana dalam mengikuti nash (hadis). Usul ini memberikan perhatian besar pada pemisahan antara shalat sunnah dan wajib dalam hal tempat. Segera setelah shalat wajib, seseorang harus berpindah tempat, keluar dari saf, atau pulang untuk melaksanakan shalat sunnah dan melakukan tasbih. Tasbih yang dilakukan secara berjamaah dengan suara keras berdasarkan perintah imam atau muazzin dianggap sebagai bid'ah yang diciptakan kemudian dan ditolak dengan tegas. Sesuai dengan prinsip kepribadian ibadah, setiap orang harus melakukan tasbihnya secara diam-diam sendiri."
+            }
+        }
+    }
+]

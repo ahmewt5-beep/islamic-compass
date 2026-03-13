@@ -26,13 +26,16 @@ const t = useTranslations(lang);
 const langPrefix = lang === 'tr' ? '' : `/${lang}`;
 
 // Verileri doğrudan dosyadan değil, "Zeki Veri Motorumuzdan" O DİLE ÖZEL çekiyoruz
-const kuranData = veriGetir('kuran_proje_hazir', lang);
-const dualarData = veriGetir('dualar_proje_hazir', lang);
-const alimlerData = veriGetir('alimler_proje_hazir', lang);
-const kissalarData = veriGetir('kissalar_proje_hazir', lang);
-const terimlerData = veriGetir('terimler_proje_hazir', lang);
-const esmaData = veriGetir('esmaul_husna_proje_hazir', lang);
-const hadisData = veriGetir('hadisler_proje_hazir', lang);
+const kuranData = veriGetir('kuran_proje_hazir', lang) || [];
+const dualarData = veriGetir('dualar_proje_hazir', lang) || [];
+const alimlerData = veriGetir('alimler_proje_hazir', lang) || [];
+const kissalarData = veriGetir('kissalar_proje_hazir', lang) || [];
+const terimlerData = veriGetir('terimler_proje_hazir', lang) || [];
+const esmaData = veriGetir('esmaul_husna_proje_hazir', lang) || [];
+const hadisData = veriGetir('hadisler_proje_hazir', lang) || [];
+
+// 🚀 YENİ: Mezhepler verisini çekiyoruz
+const mezheplerData = veriGetir('mezhepler_proje_hazir', lang) || [];
 
 // Vitrin için verileri hazırlıyoruz
 const vitrinKuran = kuranData
@@ -44,6 +47,9 @@ const vitrinKissalar = kissalarData.slice(0, 3);
 const vitrinTerimler = terimlerData.slice(0, 3);
 const vitrinEsma = esmaData.slice(0, 4); 
 const vitrinHadis = hadisData.slice(0, 3); 
+
+// 🚀 YENİ: 4 Mezhep İmamını vitrine hazırlıyoruz
+const vitrinMezhepler = mezheplerData.slice(0, 4);
 ---
 
 <Layout title={`${t('hero.title')} | ${t('hero.badge')}`} canonicalURL="https://islamiccompass.org/" lang={lang}>
@@ -183,6 +189,31 @@ const vitrinHadis = hadisData.slice(0, 3);
         ))}
       </div>
     </div>
+
+    {vitrinMezhepler.length > 0 && (
+      <div class="max-w-6xl mx-auto px-6 w-full mt-24">
+        <div class="flex items-center justify-between mb-8 border-b border-black/10 dark:border-white/10 pb-4 transition-colors duration-500">
+          <h2 class="text-3xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white transition-colors duration-500">{t('section.mezhepler')}</h2>
+          <a href={`${langPrefix}/mezhepler`} class="text-[#D4AF37] hover:text-[#1C1917] dark:hover:text-white transition-colors text-sm font-medium uppercase tracking-wider">{t('section.alimler.link') || 'Tümünü Gör'} &rarr;</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {vitrinMezhepler.map((mezhep) => (
+            <a href={`${langPrefix}/mezhepler/${mezhep.seo_url}`} class="group block bg-[#F5F2E9] dark:bg-[#111827]/30 border border-black/5 dark:border-white/5 rounded-[2rem] p-8 hover:bg-[#EAE5D9] dark:hover:bg-[#111827]/50 transition-all duration-500 hover:-translate-y-1">
+              <span class="inline-block px-3 py-1 bg-[#FDFBF7] dark:bg-[#0B1120] text-[#D4AF37] text-[10px] font-bold tracking-[0.2em] uppercase rounded-full mb-6 border border-[#D4AF37]/20">
+                {mezhep.mezhep_adi}
+              </span>
+              <h3 class="text-xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-4 group-hover:text-[#D4AF37] dark:group-hover:text-[#D4AF37] transition-colors line-clamp-2">
+                {mezhep.imam_adi}
+              </h3>
+              <p class="text-[#57534E] dark:text-[#94A3B8] text-sm line-clamp-3 leading-relaxed transition-colors duration-500 font-light">
+                {mezhep.genel_ozellikler}
+              </p>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
 
     <div class="max-w-6xl mx-auto px-6 w-full mt-24">
       <div class="flex items-center justify-between mb-8 border-b border-black/10 dark:border-white/10 pb-4 transition-colors duration-500">

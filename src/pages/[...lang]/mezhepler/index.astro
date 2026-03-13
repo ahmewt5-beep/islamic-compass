@@ -1,0 +1,139 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { veriGetir } from '../../../utils/veriMotoru';
+import { useTranslations } from '../../../i18n/ui';
+
+const { lang = 'tr' } = Astro.params;
+const t = useTranslations(lang);
+const langPrefix = lang === 'tr' ? '' : `/${lang}`;
+
+const mezhepler = veriGetir('mezhepler_proje_hazir', lang) || [];
+const karsilastirmaliDualar = veriGetir('mezhep_dualar_proje_hazir', lang) || [];
+
+const bgColors = [
+  'from-[#D4AF37]/20 to-[#D4AF37]/5', 
+  'from-emerald-600/20 to-emerald-600/5', 
+  'from-blue-600/20 to-blue-600/5', 
+  'from-rose-600/20 to-rose-600/5' 
+];
+
+// 🌍 SAYFA İÇİ OTOMATİK ÇEVİRİ SÖZLÜĞÜ
+const uiTitle = {
+  tr: 'Mezhepler ve Fıkıh',
+  en: 'Islamic Sects and Fiqh',
+  ar: 'المذاهب والفقه',
+  ru: 'Исламские мазхабы и фикх',
+  fr: 'Écoles Islamiques et Fiqh',
+  id: 'Mazhab Islam dan Fikih',
+  ur: 'اسلامی مسالک اور فقہ'
+}[lang] || 'Mezhepler ve Fıkıh';
+
+const uiSubtitle = {
+  tr: 'Dört büyük İslam imamının destansı hayatları, fıkıh usulleri ve mezhepler arası zarif farklılıklar.',
+  en: 'The epic lives, jurisprudential methods of the four great Imams of Islam, and elegant differences between sects.',
+  ar: 'الحياة الملحمية للأئمة الأربعة العظام، أصول الفقه، والاختلافات الدقيقة بين المذاهب.',
+  ru: 'Эпические жизни четырех великих имамов ислама, методы фикха и изящные различия между мазхабами.',
+  fr: 'La vie épique des quatre grands imams de l\'Islam, leurs méthodes jurisprudentielles et les élégantes différences entre les écoles.',
+  id: 'Kisah hidup epik dari empat Imam besar Islam, metode fikih, dan perbedaan yang elegan antar mazhab.',
+  ur: 'اسلام کے چار عظیم اماموں کی شاندار زندگی، اصول فقہ اور مسالک کے درمیان خوبصورت اختلافات۔'
+}[lang] || 'Dört büyük İslam imamının destansı hayatları, fıkıh usulleri ve mezhepler arası zarif farklılıklar.';
+
+const uiBiyografiOku = {
+  tr: 'Biyografiyi Oku',
+  en: 'Read Biography',
+  ar: 'اقرأ السيرة',
+  ru: 'Читать биографию',
+  fr: 'Lire la Biographie',
+  id: 'Baca Biografi',
+  ur: 'سوانح حیات پڑھیں'
+}[lang] || 'Biyografiyi Oku';
+
+const uiKarsilastirmaliDualar = {
+  tr: 'Karşılaştırmalı Mezhep Duaları',
+  en: 'Comparative Sect Prayers',
+  ar: 'الأدعية المقارنة بين المذاهب',
+  ru: 'Сравнительные молитвы мазхабов',
+  fr: 'Prières Comparées des Madhhabs',
+  id: 'Doa Mazhab Komparatif',
+  ur: 'مسالک کی تقابلی دعائیں'
+}[lang] || 'Karşılaştırmalı Mezhep Duaları';
+
+const uiFarkliliklar = {
+  tr: 'Aynı ibadetteki rahmet dolu farklılıklar.',
+  en: 'Merciful differences in the same act of worship.',
+  ar: 'اختلافات رحيمة في نفس العبادة.',
+  ru: 'Различия, полные милости, в одном и том же поклонении.',
+  fr: 'Des différences pleines de miséricorde dans un même acte d\'adoration.',
+  id: 'Perbedaan penuh rahmat dalam ibadah yang sama.',
+  ur: 'ایک ہی عبادت میں رحمت سے بھرپور اختلافات۔'
+}[lang] || 'Aynı ibadetteki rahmet dolu farklılıklar.';
+---
+
+<Layout title={`${uiTitle} | Islamic Compass`} description={uiSubtitle}>
+  
+  <main class="py-16 md:py-24 px-5">
+    <div class="max-w-6xl mx-auto">
+      
+      <header class="text-center mb-20 relative">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-['Playfair_Display'] font-semibold text-[#1C1917] dark:text-white mb-6">
+          {uiTitle}
+        </h1>
+        <p class="text-[#57534E] dark:text-[#94A3B8] text-lg max-w-2xl mx-auto font-light leading-relaxed">
+          {uiSubtitle}
+        </p>
+      </header>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-24">
+        {mezhepler.map((mezhep, index) => (
+          <a href={`${langPrefix}/mezhepler/${mezhep.seo_url}`} class="group relative block overflow-hidden rounded-[2.5rem] bg-white dark:bg-[#111827] border border-black/5 dark:border-white/5 shadow-xl hover:-translate-y-2 transition-all duration-500">
+            <div class={`absolute inset-0 bg-gradient-to-br ${bgColors[index % 4]} opacity-50 group-hover:opacity-100 transition-opacity duration-500`}></div>
+            
+            <div class="relative p-10 md:p-12 flex flex-col h-full z-10">
+              <span class="text-[#D4AF37] text-xs font-bold tracking-[0.2em] uppercase mb-4">
+                {mezhep.mezhep_adi}
+              </span>
+              <h2 class="text-3xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-6 group-hover:text-[#D4AF37] transition-colors">
+                {mezhep.imam_adi}
+              </h2>
+              <p class="text-[#57534E] dark:text-[#94A3B8] text-sm md:text-base line-clamp-3 font-light leading-relaxed mb-8">
+                {mezhep.genel_ozellikler}
+              </p>
+              
+              <div class="mt-auto inline-flex items-center text-[#1C1917] dark:text-white text-xs font-bold tracking-widest uppercase group-hover:text-[#D4AF37] transition-colors">
+                {uiBiyografiOku} <svg class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      {karsilastirmaliDualar.length > 0 && (
+        <section class="border-t border-black/5 dark:border-white/5 pt-20">
+          <header class="text-center mb-12">
+            <h2 class="text-3xl font-['Playfair_Display'] font-bold text-[#1C1917] dark:text-white mb-4">
+              {uiKarsilastirmaliDualar}
+            </h2>
+            <p class="text-[#94A3B8] font-light">{uiFarkliliklar}</p>
+          </header>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            {karsilastirmaliDualar.map((dua) => (
+              <a href={`${langPrefix}/mezhep-dualar/${dua.seo_url}`} class="group block p-8 rounded-3xl bg-[#FDFBF7] dark:bg-[#0f1523] border border-black/5 dark:border-white/5 hover:border-[#D4AF37]/50 transition-all duration-300">
+                <div class="w-10 h-10 rounded-full bg-[#D4AF37]/10 flex items-center justify-center mb-6">
+                  <svg class="w-5 h-5 text-[#D4AF37]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold text-[#1C1917] dark:text-white mb-2 group-hover:text-[#D4AF37] transition-colors">
+                  {dua.dua_adi}
+                </h3>
+                <p class="text-sm text-[#94A3B8] line-clamp-2 font-light">
+                  {dua.ortak_tarihce}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+    </div>
+  </main>
+</Layout>

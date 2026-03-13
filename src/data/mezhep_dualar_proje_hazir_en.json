@@ -1,0 +1,219 @@
+[
+    {
+        "dua_adi": "Tahiyyat Prayer",
+        "seo_url": "tahiyyat-duasi-mezheplere-gore",
+        "ortak_tarihce": "The Tahiyyat prayer is not an ordinary remembrance in Islamic jurisprudence and Sufi tradition, but rather a symbol of the highest dialogue between the servant and the Creator and His Messenger, founded directly on the event of 'Miraj'. According to narrations, when the Prophet Muhammad (peace be upon him) reached Sidrat al-Muntaha, he greeted Allah by saying 'At-tahiyyātu lillāhi wa's-salawātu wa't-tayyibāt' (All greetings, prayers, and all good things belong to Allah). In response, Allah greeted him with 'As-salāmu ʿalayka ayyuhā'n-nabiyyū wa raḥmatullāhi wa barakātuh' (O Prophet, peace, Allah's mercy, and blessings be upon you). The Prophet then included his community and the angels in this divine greeting by saying 'As-salāmu ʿalaynā wa ʿalā ʿibādillāhi's-ṣāliḥīn' (Peace be upon us and upon the righteous servants of Allah). Witnessing this magnificent dialogue, Gabriel (peace be upon him) and the other angels crowned this spiritual tableau by bearing witness to the Shahada. All schools of Islamic jurisprudence have unanimously agreed on the necessity of reciting this prayer during the sitting positions (qa'dah) of the prayers, but due to the different narrations of wording transmitted from the Prophet to the companions, variations in wording and emphasis have emerged among the schools.",
+        "mezhepler": {
+            "hanefi": {
+                "arapca": "اَلتَّحِيَّاتُ لِلّٰهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، اَلسَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، اَلسَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ.",
+                "okunus": "Et-tehiyyâtü lillâhi ve's-salevâtü ve't-tayyibât. Es-selâmü aleyke eyyühe'n-nebiyyü ve rahmetullâhi ve berekâtüh. Es-selâmü aleynâ ve alâ ıbâdillâhi's-sâlihîn. Eşhedü en lâ ilâhe illallâh, ve eşhedü enne Muhammeden abdühû ve resûlüh.",
+                "meal": "All prayers, salutations, bodily and financial acts of worship belong to Allah. O Prophet! Peace, Allah's mercy, and blessings be upon you. Peace be upon us and upon all of Allah's righteous servants. I bear witness that there is no deity but Allah. I also bear witness that Muhammad is His servant and messenger.",
+                "aciklama": "Imam Abu Hanifa based his text on the narration of the companion Abdullah ibn Mas'ud (may Allah be pleased with him), who is the greatest master of the Kufa school. Ibn Mas'ud emphasized the certainty of these words by saying, 'The Messenger of Allah taught me the Tahiyyat as if he were teaching me a chapter from the Qur'an.' According to Hanafi jurisprudence, it is obligatory to recite this text fully and completely in every sitting of the prayer."
+            },
+            "safii": {
+                "arapca": "اَلتَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلّٰهِ، اَلسَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، اَلسَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللّٰهِ.",
+                "okunus": "Et-tehiyyâtü'l-mübârekâtü's-salevâtü't-tayyibâtü lillâh. Es-selâmü aleyke eyyühe'n-nebiyyü ve rahmetullâhi ve berekâtüh. Es-selâmü aleynâ ve alâ ıbâdillâhi's-sâlihîn. Eşhedü en lâ ilâhe illallâh, ve eşhedü enne Muhammeden resûlullâh.",
+                "meal": "The most blessed and beautiful salutations, the highest prayers, and pure acts of worship belong to Allah. O Prophet! Peace, Allah's mercy, and blessings be upon you. Peace be upon us and upon all of Allah's righteous servants. I bear witness that there is no deity but Allah. And I bear witness that Muhammad is the messenger of Allah.",
+                "aciklama": "Imam Shafi'i preferred the narration of the companion Abdullah ibn Abbas (may Allah be pleased with him), known for his depth of knowledge and as 'the Interpreter of the Qur'an'. In this text, unlike the Hanafi narration, the word 'al-Mubārakāt' appears at the beginning, and the words are connected directly as adjectival phrases without the conjunction (and). In Shafi'i methodology, reciting the Tahiyyat in the last sitting is one of the obligatory acts (rukn) of the prayer."
+            },
+            "maliki": {
+                "arapca": "اَلتَّحِيَّاتُ لِلّٰهِ الزَّاكِيَاتُ لِلّٰهِ الطَّيِّبَاتُ الصَّلَوَاتُ لِلّٰهِ، اَلسَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، اَلسَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ، وَحْدَهُ لَا شَرِيكَ لَهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ.",
+                "okunus": "Et-tehiyyâtü lillâh, ez-zâkiyâtü lillâh, et-tayyibâtü's-salevâtü lillâh. Es-selâmü aleyke eyyühe'n-nebiyyü ve rahmetullâhi ve berekâtüh. Es-selâmü aleynâ ve alâ ıbâdillâhi's-sâlihîn. Eşhedü en lâ ilâhe illallâh, vahdehû lâ şerîke leh, ve eşhedü enne Muhammeden abdühû ve resûlüh.",
+                "meal": "All salutations and respects belong to Allah. Pure and purified deeds belong to Allah. The most beautiful prayers and acts of worship belong to Allah. O Prophet! Peace, Allah's mercy, and blessings be upon you. Peace be upon us and upon Allah's righteous servants. I bear witness that there is no deity but Allah, He is One and has no partners. And I bear witness that Muhammad is His servant and messenger.",
+                "aciklama": "Imam Malik, in accordance with the principle of 'Amal Ahl al-Madina' (the practice of the people of Medina), regarded the words taught by Umar ibn al-Khattab (may Allah be pleased with him) from the pulpit in the Prophet's Mosque as the most superior (afdal) narration. The addition of the term 'az-Zākiyāt' (pure and purified deeds) and the strengthening of the emphasis on monotheism with the phrase 'waḥdahu lā sharīka lahu' is a characteristic feature of the Maliki school."
+            },
+            "hanbeli": {
+                "arapca": "اَلتَّحِيَّاتُ لِلّٰهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، اَلسَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، اَلسَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ.",
+                "okunus": "Et-tehiyyâtü lillâhi ve's-salevâtü ve't-tayyibât. Es-selâmü aleyke eyyühe'n-nebiyyü ve rahmetullâhi ve berekâtüh. Es-selâmü aleynâ ve alâ ıbâdillâhi's-sâlihîn. Eşhedü en lâ ilâhe illallâh, ve eşhedü enne Muhammeden abdühû ve resûlüh.",
+                "meal": "All prayers, salutations, bodily and financial acts of worship belong to Allah. O Prophet! Peace, Allah's mercy, and blessings be upon you. Peace be upon us and upon all of Allah's righteous servants. I bear witness that there is no deity but Allah. I also bear witness that Muhammad is His servant and messenger.",
+                "aciklama": "In the Hanbali school, strict adherence to absolute hadith authority is fundamental. Imam Ahmad ibn Hanbal, like Abu Hanifa, preferred the narration of Ibn Mas'ud (may Allah be pleased with him), which has the highest chain of transmission and authenticity. The text is identical to that of the Hanafi school. According to the Hanbali school, reciting the Tahiyyat in the first sitting is obligatory, while reciting it in the last sitting that concludes the prayer is mandatory (rukn)."
+            }
+        }
+    },
+    {
+        "dua_adi": "Witr Qunoot Dua",
+        "seo_url": "vitir-kunut-duasi-mezheplere-gore",
+        "ortak_tarihce": "'Qunoot' means to bow in humility, to be silent, to stand, and to pray. As a legal term, it refers to reciting a supplication for seeking refuge and pleading to Allah while standing, either raising the hands (or not) before or after the bowing in prayer. The Witr prayer is one of the strongest acts of worship that the Prophet Muhammad (peace be upon him) never abandoned throughout his life, illuminating the end of the night. Reciting Qunoot in the Witr prayer is established by the consensus of the companions, but there are differences among the schools of thought regarding when during the year it should be recited and in which unit of prayer it should be included.",
+        "mezhepler": {
+            "hanefi": {
+                "arapca": "اَللّٰهُمَّ إِنَّا نَسْتَعِينُكَ وَنَسْتَغْفِرُكَ وَنَسْتَهْدِيكَ، وَنُؤْمِنُ بِكَ وَنَتُوبُ إِلَيْكَ وَنَتَوَكَّلُ عَلَيْكَ، وَنُثْنِي عَلَيْكَ الْخَيْرَ كُلَّهُ نَشْكُرُكَ وَلَا نَكْفُرُكَ، وَنَخْلَعُ وَنَتْرُكُ مَنْ يَفْجُرُكَ.\nاَللّٰهُمَّ إِيَّاكَ نَعْبُدُ وَلَكَ نُصَلِّي وَنَسْجُدُ، وَإِلَيْكَ نَسْعَى وَنَحْفِدُ، نَرْجُو رَحْمَتَكَ وَنَخْشَى عَذَابَكَ، إِنَّ عَذَابَكَ بِالْكُفَّارِ مُلْحِقٌ.",
+                "okunus": "Allâhümme innâ neste'înüke ve nesteğfirüke ve nestehdîk. Ve nü'minü bike ve netûbü ileyk ve netevekkelü aleyk. Ve nüsnî aleyke'l-hayra küllehû neşkürüke ve lâ nekfürük. Ve nahleu ve netrukü men yefcürük.\nAllâhümme iyyâke na'büdü ve leke nüsallî ve nescüd. Ve ileyke nes'â ve nahfid. Nercû rahmeteke ve nahşâ azâbek. İnne azâbeke bi'l-küffâri mülhık.",
+                "meal": "O Allah! We seek Your help, we ask for Your forgiveness for our sins, and we wish for Your guidance. We believe in You, we repent to You, and we place our trust in You. We praise You with all good things. We give thanks to You and do not show ingratitude. We abandon and separate ourselves from those who disobey You and transgress.",
+                "aciklama": "In the Hanafi school, the Witr prayer is obligatory, and on all 365 days of the year, the Qunoot supplications are recited after raising the hands *before* the bowing in the 3rd unit of prayer."
+            },
+            "safii": {
+                "arapca": "اَللّٰهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ، وَعَافِنِي فِيمَنْ عَافَيْتَ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ، وَبَارِكْ لِي فِيمَا أَعْطَيْتَ، وَقِنِي شَرَّ مَا قَضَيْتَ، إِنَّكَ تَقْضِي وَلَا يُقْضَى عَلَيْكَ، وَإِنَّهُ لَا يَذِلُّ مَنْ وَالَيْتَ، وَلَا يَعِزُّ مَنْ عَادَيْتَ، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ، فَلَكَ الْحَمْدُ عَلَى مَا قَضَيْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ، وَصَلَّى اللّٰهُ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الْأُمِّيِّ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ.",
+                "okunus": "Allâhümmehdinî fîmen hedeyt. Ve a'finî fîmen a'feyt. Ve tevelleni fîmen tevelleyt. Ve bârik lî fîmâ a'teyt. Ve kınî şerra mâ kadeyt. İnneke takdî ve lâ yukdâ aleyk. Ve innehû lâ yezillü men vâleyt. Ve lâ ye'ızzü men âdeyt. Tebârakte rabbenâ ve teâleyt. Feleke'l-hamdü alâ mâ kadeyt. Estağfiruke ve etûbü ileyk. Ve sallallâhü alâ seyyidinâ Muhammedini'n-nebiyyi'l-ümmiyyi ve alâ âlihî ve sahbihî ve sellem.",
+                "meal": "O Allah! Grant me guidance among those whom You have guided. Grant me well-being among those whom You have granted well-being. Make me a friend among those whom You have taken as friends. Make the blessings You have given me fruitful. Protect me from the evil of what You have decreed. Indeed, You are the One who decrees, and no one can decree against You. Whoever You take as a friend will never be humiliated. Whoever You are an enemy to will never be honored. O our Lord! You are free from imperfections and exalted. All praise is due to You for the decrees You have given. I seek forgiveness from You and I repent to You. May Allah's blessings and peace be upon our unlettered Prophet Muhammad, his family, and his companions.",
+                "aciklama": "In the Shafi'i school, the Qunoot supplication in the Witr prayer is recited only during the second half of Ramadan (starting from the 15th night) after the bowing in the last unit."
+            },
+            "maliki": {
+                "arapca": "[Bu mezhepte okunmaz]",
+                "okunus": "[Maliki fıkhında Vitir namazında Kunut duası okuma uygulaması yoktur.]",
+                "meal": "[This field has been left blank according to legal methodology.]",
+                "aciklama": "In Maliki jurisprudence, the Witr prayer is an independent confirmed Sunnah consisting of 1 (single) unit prayed after the Isha prayer. According to Imam Malik's methodology, Qunoot is not recited in the Witr prayer. In the Maliki school, the only place for the Qunoot supplication is in the obligatory Fajr prayer, which is performed without exception every day. Therefore, there is no specific text allocated for the Witr prayer in Maliki jurisprudence."
+            },
+            "hanbeli": {
+                "arapca": "اَللّٰهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ، وَعَافِنِي فِيمَنْ عَافَيْتَ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ، وَبَارِكْ لِي فِيمَا أَعْطَيْتَ، وَقِنِي شَرَّ مَا قَضَيْتَ، إِنَّكَ تَقْضِي وَلَا يُقْضَى عَلَيْكَ، وَإِنَّهُ لَا يَذِلُّ مَنْ وَالَيْتَ، وَلَا يَعِزُّ مَنْ عَادَيْتَ، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ.",
+                "okunus": "Allâhümmehdinî fîmen hedeyt. Ve a'finî fîmen a'feyt. Ve tevelleni fîmen tevelleyt. Ve bârik lî fîmâ a'teyt. Ve kınî şerra mâ kadeyt. İnneke takdî ve lâ yukdâ aleyk. Ve innehû lâ yezillü men vâleyt. Ve lâ ye'ızzü men âdeyt. Tebârakte rabbenâ ve teâleyt.",
+                "meal": "O Allah! Grant me guidance among those whom You have guided. Grant me well-being among those whom You have granted well-being. Make me a friend among those whom You have taken as friends. Make the blessings You have given me fruitful. Protect me from the evil of what You have decreed. Indeed, You are the One who decrees, and no one can decree against You. Whoever You take as a friend will never be humiliated. Whoever You are an enemy to will never be honored. O our Lord! You are free from imperfections and exalted.",
+                "aciklama": "In the Hanbali school, reciting the Qunoot supplication in the Witr prayer is Sunnah throughout the entire year, every night. The supplication is recited after the bowing in the last unit."
+            }
+        }
+    },
+    {
+        "dua_adi": "Dua of Kunut for Fajr Prayer",
+        "seo_url": "sabah-namazi-kunut-duasi-mezheplere-gore",
+        "ortak_tarihce": "The issue of whether Kunut is recited in the Fajr prayer is one of the most profound academic discussions in the history of Islamic jurisprudence. It is authentically reported that the Prophet Muhammad (peace be upon him) recited Kunut for a month in the Fajr prayers to invoke curses upon the oppressors after the martyrdom of 70 memorizing companions in the incident of Bi'r-i Maune. However, whether the Prophet completely abandoned this practice after a month (Hanafi/Hanbali) or continued it throughout his life until his death (Shafi'i/Maliki) has led to differences in ijtihad among the schools of thought.",
+        "mezhepler": {
+            "hanefi": {
+                "arapca": "اَللّٰهُمَّ إِنَّا نَسْتَعِينُكَ وَنَسْتَغْفِرُكَ... (Kunut-u Nevâzil Metni)",
+                "okunus": "Allâhümme innâ neste'înüke... [Sadece olağanüstü durumlarda Vitir Kunut'u veya özel beddua metinleri okunur]",
+                "meal": "O Allah! We seek Your help... [It is not recited in Fajr prayer on normal days.]",
+                "aciklama": "According to the Hanafi school, Kunut is not recited in the Fajr prayer on normal days. However, in cases of war, epidemic disease, or a major calamity (Kunut of Novelties), it may be recited aloud by the imam only in the Fajr prayers performed in congregation after the bowing. In this case, the text usually recited is from the Witr prayer."
+            },
+            "safii": {
+                "arapca": "اَللّٰهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ، وَعَافِنِي فِيمَنْ عَافَيْتَ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ، وَبَارِكْ لِي فِيمَا أَعْطَيْتَ، وَقِنِي شَرَّ مَا قَضَيْتَ، إِنَّكَ تَقْضِي وَلَا يُقْضَى عَلَيْكَ، وَإِنَّهُ لَا يَذِلُّ مَنْ وَالَيْتَ، وَلَا يَعِزُّ مَنْ عَادَيْتَ، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ، فَلَكَ الْحَمْدُ عَلَى مَا قَضَيْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ، وَصَلَّى اللّٰهُ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الْأُمِّيِّ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ.",
+                "okunus": "Allâhümmehdinî fîmen hedeyt. Ve a'finî fîmen a'feyt. Ve tevelleni fîmen tevelleyt. Ve bârik lî fîmâ a'teyt. Ve kınî şerra mâ kadeyt. İnneke takdî ve lâ yukdâ aleyk. Ve innehû lâ yezillü men vâleyt. Ve lâ ye'ızzü men âdeyt. Tebârakte rabbenâ ve teâleyt. Feleke'l-hamdü alâ mâ kadeyt. Estağfiruke ve etûbü ileyk. Ve sallallâhü alâ seyyidinâ Muhammedini'n-nebiyyi'l-ümmiyyi ve alâ âlihî ve sahbihî ve sellem.",
+                "meal": "O Allah! Grant me guidance among those whom You have guided. Grant me well-being among those whom You have granted well-being. Make me a friend among those whom You have taken as friends. Bless the bounties You have given me. Protect me from the evil of what You have decreed. Indeed, the judgment belongs to You, and no one can judge against You. Whoever You take as a friend will never be humiliated. Whoever You are an enemy to will never be honored. O our Lord! You are free from all imperfections and exalted. All praise is due to You for the judgments You have given. I seek forgiveness from You and repent to You. May Allah's blessings and peace be upon our Prophet Muhammad, his family, and his companions.",
+                "aciklama": "The Shafi'is base their practice on the hadith that states, 'The Prophet continued to recite Kunut in the Fajr prayer until he departed from this world.' It is recited after rising from bowing in the second rak'ah of the Fajr prayer. Abandoning it requires a prostration of forgetfulness."
+            },
+            "maliki": {
+                "arapca": "اَللّٰهُمَّ إِنَّا نَسْتَعِينُكَ وَنَسْتَغْفِرُكَ، وَنُؤْمِنُ بِكَ وَنَتَوَكَّلُ عَلَيْكَ، وَنُثْنِي عَلَيْكَ الْخَيْرَ كُلَّهُ نَشْكُرُكَ وَلَا نَكْفُرُكَ، وَنَخْلَعُ وَنَتْرُكُ مَنْ يَفْجُرُكَ.\nاَللّٰهُمَّ إِيَّاكَ نَعْبُدُ وَلَكَ نُصَلِّي وَنَسْجُدُ، وَإِلَيْكَ نَسْعَى وَنَحْفِدُ، نَرْجُو رَحْمَتَكَ وَنَخْشَى عَذَابَكَ الْجِدَّ، إِنَّ عَذَابَكَ بِالْكُفَّارِ مُلْحِقٌ.",
+                "okunus": "Allâhümme innâ neste'înüke ve nesteğfiruk. Ve nü'minü bike ve netevekkelü aleyk. Ve nüsnî aleyke'l-hayra küllehû neşkürüke ve lâ nekfürük. Ve nahleu ve netrukü men yefcürük.\nAllâhümme iyyâke na'büdü ve leke nüsallî ve nescüd. Ve ileyke nes'â ve nahfid. Nercû rahmeteke ve nahşâ azâbeke'l-cidd. İnne azâbeke bi'l-küffâri mülhık.",
+                "meal": "O Allah! We seek Your help and ask for Your forgiveness for our sins. We believe in You and place our trust in You. We praise You with all good things. We give thanks to You and do not show ingratitude. We abandon and distance ourselves from those who disobey You and exceed the limits. O Allah! We worship only You, we pray and prostrate only for Your pleasure. We rush towards Your mercy and submit to Your command. We hope for Your infinite mercy and fear Your true and severe punishment. Surely, Your rightful punishment will certainly reach the disbelievers.",
+                "aciklama": "The Malikis have also ruled that Kunut should be recited every day. However, they recite Kunut before bowing (after the recitation) and raising the voice is discouraged; it is recommended to recite it quietly."
+            },
+            "hanbeli": {
+                "arapca": "[Sadece Felaket Anlarında Kunut-u Nevâzil Okunur]",
+                "okunus": "[Normal günlerde Sabah namazında okunmaz.]",
+                "meal": "[This field has been left blank according to jurisprudential principles.]",
+                "aciklama": "The Hanbali school, like the Hanafi school, does not accept the absolute recitation of Kunut in the Fajr prayer on normal days. Kunut of Novelties may only be recited in the Fajr prayers upon the command of the head of state in cases of calamities that deeply shake the Islamic community."
+            }
+        }
+    },
+    {
+        "dua_adi": "Opening (Iftitah) Prayer: Subhanaka and Wajjhtu",
+        "seo_url": "iftitah-duasi-subhaneke-veccehtu-mezheplere-gore",
+        "ortak_tarihce": "In prayer, the supplication recited immediately after the opening Takbir and before Surah Al-Fatiha is referred to in jurisprudence as 'Sena' (Praise) or 'Teveccüh'. In that first moment when the servant stands before their Creator, expressing His glory, perfection, and oneness before directly asking for anything is the highest manifestation of Islamic etiquette. Abu Huraira (may Allah be pleased with him), who saw the Prophet Muhammad (peace be upon him) silently reciting something at the beginning of the prayer, asked, 'May my mother and father be sacrificed for you, O Messenger of Allah, what do you recite between the Takbir and the recitation?' Following this, the Iftitah supplications were transmitted to the community. However, independent narrations of the Iftitah from various companions such as Aisha, Umar, Ali, and Ibn Umar have determined the preferences of the schools of thought on this matter.",
+        "mezhepler": {
+            "hanefi": {
+                "arapca": "سُبْحَانَكَ اللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلٰهَ غَيْرُكَ.",
+                "okunus": "Sübhânekellâhümme ve bi-hamdik. Ve tebârakesmük. Ve teâlâ ceddük. Ve lâ ilâhe ğayruk.",
+                "meal": "O Allah! I glorify You from all imperfections and I praise You. Blessed is Your name. How exalted is Your glory, majesty, and power. There is no deity but You.",
+                "aciklama": "The Hanafi school prefers the 'Subhanaka' supplication, which is narrated from Aisha and Anas ibn Malik (may Allah be pleased with them) as the Iftitah prayer, and which Umar also taught to the congregation from the pulpit in the Prophet's Mosque. According to Abu Hanifa, this text is the most superior (afdhal) supplication to begin the prayer because it contains the words of praise and glorification of Allah in the most concise manner. This Sunnah supplication is recited silently (khafi) immediately after the Takbir. In funeral prayers, the phrase 'Wa jalla sanauk' (Your praise is exalted) is added to the text."
+            },
+            "safii": {
+                "arapca": "وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيفًا مُسْلِمًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ، إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلّٰهِ رَبِّ الْعَالَمِينَ، لَا شَرِيكَ لَهُ، وَبِذٰلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ.",
+                "okunus": "Veccehtü vechiye lillezî fetaras-semâvâti vel-arda hanîfen müslimen ve mâ ene minel-müşrikîn. İnne salâtî ve nüsükî ve mahyâye ve memâtî lillâhi rabbil-âlemîn. Lâ şerîke leh, ve bi-zâlike ümirtü ve ene minel-müslimîn.",
+                "meal": "Ben, hakka yönelen bir müslüman olarak yüzümü gökleri ve yeri yoktan var eden Allah'a çevirdim ve ben müşriklerden değilim. Şüphesiz benim namazım, ibadetlerim, diriliğim ve ölümüm alemlerin Rabbi olan Allah içindir. O'nun hiçbir ortağı yoktur. Bana böyle emrolundu ve ben Müslümanlardanım.",
+                "aciklama": "Şafii mezhebi, Hz. Ali'den (r.a) Müslim'de rivayet edilen ve Kur'an-ı Kerim'deki En'âm Suresi 79. ve 162-163. ayetlerinin muazzam bir terkibi olan 'Veccehtü' duasını esas alır. İmam Şafii'ye göre, kulun tüm benliğiyle Allah'a yöneldiğini (teveccüh) ve şirkten arındığını ilan eden bu ayet kaynaklı metin, namazın ruhuna en uygun iftitah duasıdır. Tekbirden sonra sessizce okunması müekked bir sünnettir."
+            },
+            "maliki": {
+                "arapca": "[Farz namazlarda okunmaz]",
+                "okunus": "[Maliki fıkhına göre farz namazlarda doğrudan Fatiha'ya geçilir.]",
+                "meal": "[Bu alan fıkhi usul gereği boş bırakılmıştır.]",
+                "aciklama": "Maliki fıkhında namazın en önemli ve sarsılmaz rüknü 'Fatiha' suresidir. İmam Malik'in Medine ehlinin ameline dayanan kuvvetli usulüne göre; iftitah tekbiri ile Fatiha suresinin arasına başka herhangi bir zikir veya dua koymak (Sübhaneke veya Veccehtü dahil) farz namazlarda 'Mekruh' kabul edilir. Maliki mezhebine mensup biri 'Allahu Ekber' der demez hiçbir sena (övgü) veya euzü-besmele çekmeksizin doğrudan 'Elhamdülillahi Rabbil Alemin' diyerek kıraate başlar. Sadece nafile (sünnet) namazlarda isteyen Veccehtü okuyabilir."
+            },
+            "hanbeli": {
+                "arapca": "سُبْحَانَكَ اللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلٰهَ غَيْرُكَ.",
+                "okunus": "Sübhânekellâhümme ve bi-hamdik. Ve tebârakesmük. Ve teâlâ ceddük. Ve lâ ilâhe ğayruk.",
+                "meal": "Allah'ım! Seni her türlü noksan sıfatlardan tenzih eder, sana hamdederim. Senin adın ne mübarektir. Senin şanın, azametin ve kudretin ne yücedir. Senden başka hiçbir ilah yoktur.",
+                "aciklama": "Hanbeli mezhebi, tıpkı Hanefi mezhebi gibi İftitah duası olarak 'Sübhaneke' metnini kabul etmiştir. İmam Ahmed bin Hanbel, Hz. Ömer'in cemaate öğrettiği rivayeti sened bakımından en güvenilir bulmuş ve Veccehtü duasına tercih etmiştir. Ancak Hanbeli fıkhına göre kişi dilerse Veccehtü duasını da okuyabilir, her iki uygulamanın da Hz. Peygamber'den sadır olduğuna inanılır, fakat efdal olan Sübhaneke'dir."
+            }
+        }
+    },
+    {
+        "dua_adi": "Ruku Supplication",
+        "seo_url": "ruku-tesbihati-mezheplere-gore",
+        "ortak_tarihce": "Ruku (bowing) is one of the most important pillars of prayer where the servant feels his helplessness before his Creator and physically demonstrates humility. When the verse 'So glorify the name of your Lord, the Most Great' (Surah Al-Waqi'a) was revealed, the Prophet Muhammad (peace be upon him) instructed his companions to 'do this in your ruku'. Consequently, the entire Muslim community adopted the practice of reciting the name 'Azim' (The Most Great) in ruku in compliance with this divine command. However, the number of recitations, its obligatory nature, and the addition of words differ according to the methodologies of hadith interpretation among the schools of thought.",
+        "mezhepler": {
+            "hanefi": {
+                "arapca": "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+                "okunus": "Sübhâne Rabbiye'l-Azîm",
+                "meal": "I glorify my Lord, the Most High and Exalted, from all deficiencies.",
+                "aciklama": "According to the Hanafi school, reciting this glorification in ruku is a Sunnah. It is preferable to recite it at least three times. Reciting it five or seven times in odd numbers is also recommended. If one is praying in congregation behind an imam, when the imam rises from ruku, the individual must immediately rise even if they have not completed their recitation."
+            },
+            "safii": {
+                "arapca": "سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ",
+                "okunus": "Sübhâne Rabbiye'l-Azîm ve bi-hamdihî",
+                "meal": "I glorify my Lord, the Most High and Exalted, from all deficiencies and I praise Him.",
+                "aciklama": "The Shafi'i school considers the narration of Uqbah bin Amir (may Allah be pleased with him) mentioned in Abu Dawood to be more authentic and has added the phrase 'and with His praise' (wa bi-hamdihī) at the end of the text. According to Shafi'i jurisprudence, reciting this glorification three times is a Sunnah. Its omission does not require a prostration of forgetfulness, but it detracts from the completeness of the prayer."
+            },
+            "maliki": {
+                "arapca": "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+                "okunus": "Sübhâne Rabbiye'l-Azîm",
+                "meal": "I glorify my Lord, the Most High and Exalted, from all deficiencies.",
+                "aciklama": "In Maliki jurisprudence, the text of the ruku supplication is the same as that of the Hanafis. However, the Maliki methodology does not impose a specific number for these recitations (for example, it is not required to recite it three times). A person can recite as much as they wish during the time they remain in ruku, until their heart is satisfied. It is Sunnah to recite enough to achieve complete stillness (tuma'nina) of the body."
+            },
+            "hanbeli": {
+                "arapca": "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+                "okunus": "Sübhâne Rabbiye'l-Azîm",
+                "meal": "I glorify my Lord, the Most High and Exalted, from all deficiencies.",
+                "aciklama": "The greatest distinction of the Hanbali school in the supplications of ruku and prostration compared to the other three schools is the 'ruling' (obligatory nature). According to Hanbali jurisprudence, saying 'Subhana Rabbiyal Azim' at least once in ruku is one of the obligatory acts of prayer. If forgotten and omitted, a prostration of forgetfulness is required; if intentionally omitted, the prayer is invalidated. Reciting it three times is a Sunnah."
+            }
+        }
+    },
+    {
+        "dua_adi": "Prostration Tasbih",
+        "seo_url": "secde-tesbihati-mezheplere-gore",
+        "ortak_tarihce": "Prostration is defined in the philosophy of Islamic worship as 'the moment when the servant is closest to their Lord.' The tasbih of this unique spiritual station, where the head, the peak of arrogance, touches the ground, the farthest point from arrogance, has been determined by the direct command of the Qur'an. When the first verse of Surah Al-A'la, 'Sabbih Isma Rabbika Al-A'la' (Glorify the name of your Lord, the Most High) was revealed, the Prophet Muhammad (peace be upon him) said, 'Do this in your prostrations.' The attribute 'Azîm' (The Great) in bowing gives way to a praise that transcends the limits of space and time in prostration, the attribute 'A'lâ' (The Most High / Superior to All).",
+        "mezhepler": {
+            "hanefi": {
+                "arapca": "سُبْحَانَ رَبِّيَ الْأَعْلَى",
+                "okunus": "Sübhâne Rabbiye'l-A'lâ",
+                "meal": "I glorify my Lord, the Most High, from all deficiencies.",
+                "aciklama": "According to the Hanafi school, reciting this tasbih in prostration is a strong Sunnah. Just like in bowing, it is required to be recited at least three times. According to Imam Abu Hanifa's jurisprudence, although the state of prostration is one of the moments when the doors of supplication are most open, making personal supplications (e.g., 'My Lord, grant me wealth, forgive me, etc.') in the prostrations of obligatory prayers, even in Arabic, is not considered permissible; only this famous tasbih is performed."
+            },
+            "safii": {
+                "arapca": "سُبْحَانَ رَبِّيَ الْأَعْلَى وَبِحَمْدِهِ",
+                "okunus": "Sübhâne Rabbiye'l-A'lâ ve bi-hamdihî",
+                "meal": "I glorify my Lord, the Most High, from all deficiencies and I praise Him.",
+                "aciklama": "The Shafi'i jurisprudence considers it a Sunnah to add the phrase 'wa bi-hamdihî' at the end of the text in prostration, just as in bowing. The most distinctive flexibility of the Shafi'i school regarding prostration is that it opens a wide legal space for a person to make their personal supplications (worldly or otherworldly) in Arabic, as they feel after performing these tasbihs, even in obligatory prayers."
+            },
+            "maliki": {
+                "arapca": "سُبْحَانَ رَبِّيَ الْأَعْلَى",
+                "okunus": "Sübhâne Rabbiye'l-A'lâ",
+                "meal": "I glorify my Lord, the Most High, from all deficiencies.",
+                "aciklama": "In the Maliki school, the text of the prostration tasbih is the same as that of the Hanafis, and there is no limit to the number. According to Imam Malik, the essence of prostration is not only to glorify with the tongue but also for the forehead and nose to firmly rest on the ground, and for the limbs to be at rest. Like the Shafi'is, Malikis also consider it commendable to make supplications in Arabic after the tasbih in prostration."
+            },
+            "hanbeli": {
+                "arapca": "سُبْحَانَ رَبِّيَ الْأَعْلَى",
+                "okunus": "Sübhâne Rabbiye'l-A'lâ",
+                "meal": "I glorify my Lord, the Most High, from all deficiencies.",
+                "aciklama": "The absolute textualist and rule-based structure of Hanbali jurisprudence is also evident in prostration. According to Hanbalis, saying 'Subhânâ Rabbiye'l-A'lâ' at least once in prostration is obligatory (it is a must for the prayer). Forgetting it requires a prostration of forgetfulness. The Sunnah amount is three times."
+            }
+        }
+    },
+    {
+        "dua_adi": "Post-Prayer Dhikr (Ayat al-Kursi and 33 Repetitions)",
+        "seo_url": "namaz-sonrasi-tesbihat-ve-zikirler-mezheplere-gore",
+        "ortak_tarihce": "The origin of the post-prayer dhikr is based on one of the most innocent and emotional sociological events in Islamic history. One day, the poorer immigrants came to the Prophet Muhammad (peace be upon him) and said: 'O Messenger of Allah! Our wealthy brothers are praying and fasting just like us. However, they have wealth; they give charity, free slaves, and they surpass us in rewards.' To alleviate this innocent sadness, the Messenger of Mercy gave them this magnificent good news: 'Let me teach you something that when you do it, you will catch up with those who surpass you, and those who come after you will not catch up with you. After every obligatory prayer, say Subhanallah 33 times, Alhamdulillah 33 times, Allahu Akbar 33 times, and on the hundredth, recite the Kalima al-Tawhid. The sins of the one who does this will be forgiven, even if they are as numerous as the foam of the sea.' Based on this universal command mentioned in Sahih Muslim, the entire Muslim community has cherished this dhikr, and although the text remains common, the way it is performed collectively or individually has shaped according to the jurisprudential preferences of the schools of thought.",
+        "mezhepler": {
+            "hanefi": {
+                "arapca": "اَللّٰهُ لَا إِلٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ، لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ، لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ، مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ، يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ، وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ، وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ، وَلَا يَئُودُهُ حِفْظُهُمَا، وَهُوَ الْعَلِيُّ الْعَظِيمُ.\nسُبْحَانَ اللّٰهِ (33) اَلْحَمْدُ لِلّٰهِ (33) اَللّٰهُ أَكْبَرُ (33)\nلَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+                "okunus": "Allâhü lâ ilâhe illâ hüve'l-hayyü'l-kayyûm, lâ te'huzühû sinetün velâ nevm, lehû mâ fi's-semâvâti ve mâ fi'l-ard, men-ze'l-lezî yeşfeu ındehû illâ bi-iznih, ya'lemü mâ beyne eydîhim ve mâ halfehüm, velâ yühîtûne bi-şey'in min ılmihî illâ bimâ şâ', vesia kürsiyyühü's-semâvâti ve'l-ard, velâ yeûdühû hıfzuhümâ, ve hüve'l-aliyyü'l-azîm.\nSübhânallâh (33 defa), Elhamdülillâh (33 defa), Allâhü Ekber (33 defa).\nLâ ilâhe illallâhü vahdehû lâ şerîke leh, lehü'l-mülkü ve lehü'l-hamdü ve hüve alâ külli şey'in kadîr.",
+                "meal": "Allah, there is no deity but Him; He is the Ever-Living, and everything's existence depends on Him. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursi extends over the heavens and the earth, and their preservation does not tire Him. He is the Most High, the Most Great.\nAllah is free from any deficiencies. All praise is due to Allah. Allah is the Greatest. There is no deity but Allah; He is One, and He has no partners. The dominion belongs to Him, and all praise is for Him. He has power over all things.",
+                "aciklama": "The fundamental principle of Hanafi jurisprudence regarding dhikr is that it is to be performed secretly (hafi) and individually. However, throughout history, especially in the Seljuk and Ottoman regions, the institution of 'Muezzin' developed to ensure that the congregation does not abandon or forget this magnificent dhikr and to create a harmonious atmosphere in the mosque. The muezzin guiding the congregation by saying 'Alâ Rasûlinâ salavât' and the dhikr being performed collectively at the very end of the prayer (after the sunnah prayers) has become an aesthetically pleasing tradition that has been institutionalized with the consideration of the community's welfare in Hanafi practice."
+            },
+            "safii": {
+                "arapca": "اَللّٰهُ لَا إِلٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ... [Metin Ortaktır]\nسُبْحَانَ اللّٰهِ (33) اَلْحَمْدُ لِلّٰهِ (33) اَللّٰهُ أَكْبَرُ (33)\nلَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+                "okunus": "Allâhü lâ ilâhe illâ hüve'l-hayyü'l-kayyûm... \nSübhânallâh (33 defa), Elhamdülillâh (33 defa), Allâhü Ekber (33 defa).\nLâ ilâhe illallâhü vahdehû lâ şerîke leh, lehü'l-mülkü ve lehü'l-hamdü ve hüve alâ külli şey'in kadîr.",
+                "meal": "[Metin Ortaktır]",
+                "aciklama": "İmam Şafii, başyapıtı 'El-Ümm' adlı eserinde, namaz sonrası zikirlerin cemaatle sesli yapılmasını değil, herkesin kendi duyacağı bir sesle (gizlice) bireysel yapmasını kurala bağlamıştır. Şafii fıkhında müezzin komutuyla tesbih çekmek yaygın değildir. Sadece imamın, cemaate zikri öğretmek amacıyla kısa bir süre sesli okuması caiz görülmüştür. Ayrıca Şafii usulünde imam, farzı bitirip selam verdikten hemen sonra kıbleden yüzünü sağ tarafına veya cemaate döner, tesbihatı bireysel bir sükunet içinde herkes kendi başına tamamlar."
+            },
+            "maliki": {
+                "arapca": "اَللّٰهُ لَا إِلٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ... [Metin Ortaktır]\nسُبْحَانَ اللّٰهِ (33) اَلْحَمْدُ لِلّٰهِ (33) اَللّٰهُ أَكْبَرُ (33)\nلَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+                "okunus": "Allâhü lâ ilâhe illâ hüve'l-hayyü'l-kayyûm... \nSübhânallâh (33 defa), Elhamdülillâh (33 defa), Allâhü Ekber (33 defa).\nLâ ilâhe illallâhü vahdehû lâ şerîke leh, lehü'l-mülkü ve lehü'l-hamdü ve hüve alâ külli şey'in kadîr.",
+                "meal": "[Metin Ortaktır]",
+                "aciklama": "Maliki fıkhında tesbihat uygulaması son derece sade ve bütünüyle bireyseldir. İmam Malik'in Medine ehli tatbikatına dayanan usulüne göre, imamın farz namazı kıldırdıktan sonra mihrapta yüzü kıbleye dönük halde beklemesi şiddetle mekruh sayılmıştır. İmam selam verdikten hemen sonra cemaate döner ve cemaat de dağılarak veya kendi yerine çekilerek zikre başlar. Toplu tesbihat uygulaması yoktur. Sağ elin parmak boğumları sayılarak bu muazzam tesbihat tamamen içten, huşu ile ve bireysel olarak yerine getirilir."
+            },
+            "hanbeli": {
+                "arapca": "اَللّٰهُ لَا إِلٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ... [Metin Ortaktır]\nسُبْحَانَ اللّٰهِ (33) اَلْحَمْدُ لِلّٰهِ (33) اَللّٰهُ أَكْبَرُ (33)\nلَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+                "okunus": "Allâhü lâ ilâhe illâ hüve'l-hayyü'l-kayyûm... \nSübhânallâh (33 defa), Elhamdülillâh (33 defa), Allâhü Ekber (33 defa).\nLâ ilâhe illallâhü vahdehû lâ şerîke leh, lehü'l-mülkü ve lehü'l-hamdü ve hüve alâ külli şey'in kadîr.",
+                "meal": "[Metin Ortaktır]",
+                "aciklama": "Hanbeli fıkhı, naslara (hadislere) en katı ve yalın şekilde bağlı olan ekoldür. Bu usul, sünnet ile farz namazların mekân olarak birbirinden ayrılmasına büyük bir önem atfeder. Farz kılındıktan hemen sonra kişi yerini değiştirerek, saftan çıkarak veya evine giderek sünnetleri kılar ve tesbihatını yapar. Tesbihatın imam veya müezzin komutuyla koro halinde sesli yapılması Hanbeli usulünde sonradan uydurulmuş bir bid'at sayılarak kesin bir dille reddedilir. İbadetin şahsiliği ilkesi gereği, herkes tesbihatını sessizce kendi kendine yapmalıdır."
+            }
+        }
+    }
+]

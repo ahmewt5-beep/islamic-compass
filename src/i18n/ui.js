@@ -4,6 +4,7 @@
     'nav.esma': 'Esmaül Hüsna',
     'nav.blog': 'Blog',
     'nav.fihrist': 'A-Z Fihrist',
+    'nav.mezhepler': 'Mezhepler', // 🚀 YENİ EKLENDİ
     'search.placeholder': 'Sure, Esmaül Hüsna, dua veya alim arayın...',
     'search.empty': 'Aramak istediğiniz kelimeyi yazmaya başlayın.',
     'search.notfound': 'Sonuç bulunamadı. Başka bir kelime deneyin.',
@@ -25,6 +26,7 @@
     'section.kissalar.link': 'Tümünü Gör',
     'section.terimler': 'Maneviyat Sözlüğü',
     'section.terimler.link': 'Tümünü Gör',
+    'section.mezhepler': 'Mezhepler ve Fıkıh', // 🚀 YENİ EKLENDİ
     'widget.countdown': 'Tüm dini günleri görmek için tıklayın'
   },
   en: {
@@ -32,6 +34,7 @@
     'nav.esma': '99 Names of Allah',
     'nav.blog': 'Blog',
     'nav.fihrist': 'A-Z Index',
+    'nav.mezhepler': 'Sects', // 🚀 YENİ EKLENDİ
     'search.placeholder': 'Search Surah, Dua, Scholar...',
     'search.empty': 'Start typing to search.',
     'search.notfound': 'No results found. Try another word.',
@@ -53,6 +56,7 @@
     'section.kissalar.link': 'View All',
     'section.terimler': 'Spiritual Dictionary',
     'section.terimler.link': 'View All',
+    'section.mezhepler': 'Islamic Sects & Fiqh', // 🚀 YENİ EKLENDİ
     'widget.countdown': 'Click to see all Islamic dates'
   },
   ar: {
@@ -60,6 +64,7 @@
     'nav.esma': 'أسماء الله الحسنى',
     'nav.blog': 'المدونة',
     'nav.fihrist': 'فهرس أ-ي',
+    'nav.mezhepler': 'المذاهب', // 🚀 YENİ EKLENDİ
     'search.placeholder': 'ابحث عن سورة، دعاء، عالم...',
     'search.empty': 'ابدأ بالكتابة للبحث.',
     'search.notfound': 'لم يتم العثور على نتائج. جرب كلمة أخرى.',
@@ -80,6 +85,7 @@
     'section.kissalar.link': 'عرض الكل',
     'section.terimler': 'القاموس الروحي',
     'section.terimler.link': 'عرض الكل',
+    'section.mezhepler': 'المذاهب والفقه', // 🚀 YENİ EKLENDİ
     'widget.countdown': 'انقر لرؤية جميع التواريخ الإسلامية'
   },
   id: {
@@ -87,6 +93,7 @@
     'nav.esma': 'Asmaul Husna',
     'nav.blog': 'Blog',
     'nav.fihrist': 'Indeks A-Z',
+    'nav.mezhepler': 'Mazhab', // 🚀 YENİ EKLENDİ
     'search.placeholder': 'Cari Surah, Doa, Ulama...',
     'search.empty': 'Mulai mengetik untuk mencari.',
     'search.notfound': 'Tidak ada hasil. Coba kata lain.',
@@ -107,6 +114,7 @@
     'section.kissalar.link': 'Lihat Semua',
     'section.terimler': 'Kamus Spiritual',
     'section.terimler.link': 'Lihat Semua',
+    'section.mezhepler': 'Mazhab & Fikih', // 🚀 YENİ EKLENDİ
     'widget.countdown': 'Klik untuk melihat tanggal Islam'
   },
   ur: {
@@ -114,6 +122,7 @@
     'nav.esma': 'اسماء الحسنیٰ',
     'nav.blog': 'بلاگ',
     'nav.fihrist': 'اے-زیڈ انڈیکس',
+    'nav.mezhepler': 'مسالک', // 🚀 YENİ EKLENDİ
     'search.placeholder': 'سورہ، دعا، عالم تلاش کریں...',
     'search.empty': 'تلاش کے لیے ٹائپ کرنا شروع کریں۔',
     'search.notfound': 'کوئی نتیجہ نہیں ملا۔ دوسرا لفظ آزمائیں۔',
@@ -134,6 +143,7 @@
     'section.kissalar.link': 'سب دیکھیں',
     'section.terimler': 'روحانی لغت',
     'section.terimler.link': 'سب دیکھیں',
+    'section.mezhepler': 'مسالک اور فقہ', // 🚀 YENİ EKLENDİ
     'widget.countdown': 'اسلامی تاریخیں دیکھنے کے لیے کلک کریں'
   },
   fr: {
@@ -141,6 +151,7 @@
     'nav.esma': 'Les 99 Noms',
     'nav.blog': 'Blog',
     'nav.fihrist': 'Index A-Z',
+    'nav.mezhepler': 'Madhhabs', // 🚀 YENİ EKLENDİ
     'search.placeholder': 'Chercher Sourate, Invocation...',
     'search.empty': 'Commencez à taper pour chercher.',
     'search.notfound': 'Aucun résultat. Essayez un autre mot.',
@@ -161,6 +172,7 @@
     'section.kissalar.link': 'Voir Tout',
     'section.terimler': 'Dictionnaire Spirituel',
     'section.terimler.link': 'Voir Tout',
+    'section.mezhepler': 'Écoles et Fiqh', // 🚀 YENİ EKLENDİ
     'widget.countdown': 'Voir toutes les dates islamiques'
   },
   ru: {
@@ -168,6 +180,7 @@
     'nav.esma': 'Имена Аллаха',
     'nav.blog': 'Блог',
     'nav.fihrist': 'А-Я Индекс',
+    'nav.mezhepler': 'Мазхабы', // 🚀 YENİ EKLENDİ
     'search.placeholder': 'Поиск суры, дуа, ученого...',
     'search.empty': 'Начните вводить текст для поиска.',
     'search.notfound': 'Ничего не найдено.',
@@ -188,6 +201,7 @@
     'section.kissalar.link': 'Смотреть все',
     'section.terimler': 'Духовный словарь',
     'section.terimler.link': 'Смотреть все',
+    'section.mezhepler': 'Мазхабы и Фикх', // 🚀 YENİ EKLENDİ
     'widget.countdown': 'Нажмите, чтобы увидеть исламские даты'
   }
 };
@@ -200,6 +214,6 @@ export function getLangFromUrl(url) {
 
 export function useTranslations(lang) {
   return function t(key) {
-    return ui[lang][key] || ui['tr'][key];
+    return ui[lang]?.[key] || ui['tr'][key];
   }
 }

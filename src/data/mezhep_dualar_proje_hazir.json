@@ -1,0 +1,219 @@
+[
+  {
+    "dua_adi": "Tahiyyat Duası",
+    "seo_url": "tahiyyat-duasi-mezheplere-gore",
+    "ortak_tarihce": "Tahiyyat duası, İslam fıkhında ve tasavvuf geleneğinde sıradan bir zikir değil, doğrudan 'Miraç' hadisesiyle temellendirilen, kul ile Yaratıcı ve O'nun Elçisi arasındaki en yüce diyaloğun sembolüdür. Rivayetlere göre Hz. Peygamber (s.a.v) Sidretü'l-Münteha'ya ulaştığında Yüce Allah'ı 'Et-tehiyyâtü lillâhi ve's-salevâtü ve't-tayyibât' (Her türlü hürmet, dua ve bütün iyilikler Allah'a mahsustur) diyerek selamlamıştır. Buna mukabil Yüce Allah, 'Es-selâmü aleyke eyyühe'n-nebiyyü ve rahmetullâhi ve berekâtüh' (Ey Nebi, selam, Allah'ın rahmeti ve bereketi senin üzerine olsun) şeklinde mukabelede bulunmuştur. Hz. Peygamber ise bu ilahi selama ümmetini ve melekleri de katarak 'Es-selâmü aleynâ ve alâ ıbâdillâhi's-sâlihîn' (Selam bizim ve Allah'ın salih kullarının üzerine olsun) demiştir. Bu muazzam diyaloğa şahit olan Cebrail (a.s) ve diğer melekler ise Kelime-i Şehadet getirerek bu manevi tabloyu taçlandırmışlardır. Tüm fıkıh mezhepleri bu duanın namazların oturuşlarında (ka'de) okunmasının gerekliliği üzerinde icma etmiş (birleşmiş), ancak Hz. Peygamber'den sahabelere aktarılan farklı lafız rivayetlerinden dolayı mezhepler arasında kelime ve vurgu farklılıkları ortaya çıkmıştır.",
+    "mezhepler": {
+      "hanefi": {
+        "arapca": "اَلتَّحِيَّاتُ لِلّٰهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، اَلسَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، اَلسَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ.",
+        "okunus": "Et-tehiyyâtü lillâhi ve's-salevâtü ve't-tayyibât. Es-selâmü aleyke eyyühe'n-nebiyyü ve rahmetullâhi ve berekâtüh. Es-selâmü aleynâ ve alâ ıbâdillâhi's-sâlihîn. Eşhedü en lâ ilâhe illallâh, ve eşhedü enne Muhammeden abdühû ve resûlüh.",
+        "meal": "Bütün dualar, senalar, bedeni ve mali ibadetler Allah'a mahsustur. Ey Peygamber! Selam, Allah'ın rahmeti ve bereketi senin üzerine olsun. Selam bizim üzerimize ve Allah'ın bütün salih kullarının üzerine olsun. Şahitlik ederim ki Allah'tan başka ilah yoktur. Yine şahitlik ederim ki Muhammed, O'nun kulu ve elçisidir.",
+        "aciklama": "İmam-ı Azam Ebu Hanife, Kûfe ekolünün en büyük üstadı olan sahabî Abdullah bin Mes'ud'un (r.a) rivayet ettiği metni esas almıştır. İbn Mes'ud, 'Resulullah bana Kur'an'dan bir sure öğretir gibi Tahiyyat'ı öğretti' diyerek bu lafızların kesinliğini vurgulamıştır. Hanefi fıkhına göre bu metnin namazın her oturuşunda tam ve eksiksiz okunması vaciptir."
+      },
+      "safii": {
+        "arapca": "اَلتَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلّٰهِ، اَلسَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، اَلسَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللّٰهِ.",
+        "okunus": "Et-tehiyyâtü'l-mübârekâtü's-salevâtü't-tayyibâtü lillâh. Es-selâmü aleyke eyyühe'n-nebiyyü ve rahmetullâhi ve berekâtüh. Es-selâmü aleynâ ve alâ ıbâdillâhi's-sâlihîn. Eşhedü en lâ ilâhe illallâh, ve eşhedü enne Muhammeden resûlullâh.",
+        "meal": "En bereketli ve en güzel tehiyyeler, en yüce dualar ve tayyib ibadetler Allah'a mahsustur. Ey Peygamber! Selam, Allah'ın rahmeti ve bereketi senin üzerine olsun. Selam bizim üzerimize ve Allah'ın bütün salih kullarının üzerine olsun. Şahitlik ederim ki Allah'tan başka ilah yoktur. Ve şahitlik ederim ki Muhammed Allah'ın elçisidir.",
+        "aciklama": "İmam Şafii, ilmi derinliği ve 'Tercümanü'l-Kur'an' sıfatıyla bilinen sahabî Abdullah bin Abbas'ın (r.a) rivayetini tercih etmiştir. Bu metinde Hanefi rivayetinden farklı olarak en başta 'el-Mübârekât' kelimesi yer alır ve kelimeler birbirine atıf harfi (ve) olmadan, doğrudan sıfat tamlaması şeklinde bağlanır. Şafii usulünde Tahiyyat'ı okumak son oturuşta namazın farzlarından (rükünlerinden) biridir."
+      },
+      "maliki": {
+        "arapca": "اَلتَّحِيَّاتُ لِلّٰهِ الزَّاكِيَاتُ لِلّٰهِ الطَّيِّبَاتُ الصَّلَوَاتُ لِلّٰهِ، اَلسَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، اَلسَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ، وَحْدَهُ لَا شَرِيكَ لَهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ.",
+        "okunus": "Et-tehiyyâtü lillâh, ez-zâkiyâtü lillâh, et-tayyibâtü's-salevâtü lillâh. Es-selâmü aleyke eyyühe'n-nebiyyü ve rahmetullâhi ve berekâtüh. Es-selâmü aleynâ ve alâ ıbâdillâhi's-sâlihîn. Eşhedü en lâ ilâhe illallâh, vahdehû lâ şerîke leh, ve eşhedü enne Muhammeden abdühû ve resûlüh.",
+        "meal": "Bütün selamlar, hürmetler Allah'a aittir. Tertemiz, arınmış ameller Allah'a aittir. En güzel dualar ve ibadetler Allah'a aittir. Ey Peygamber! Selam, Allah'ın rahmeti ve bereketi senin üzerine olsun. Selam bizim üzerimize ve Allah'ın salih kullarının üzerine olsun. Şahitlik ederim ki Allah'tan başka ilah yoktur, O tektir ve ortağı yoktur. Ve şahitlik ederim ki Muhammed O'nun kulu ve elçisidir.",
+        "aciklama": "İmam Malik, fıkıh metodolojisi olan 'Amel-i Ehl-i Medine' (Medine halkının uygulaması) ilkesi gereği, Hz. Ömer'in (r.a) Mescid-i Nebevi'de minberden Medine halkına öğrettiği bu lafızları en üstün (eftal) rivayet kabul etmiştir. Bu rivayette 'ez-Zâkiyât' (temiz ve arınmış ameller) kelimesinin eklenmesi ve tevhid vurgusunun 'vahdehû lâ şerîke leh' ibaresiyle güçlendirilmesi, Maliki mezhebinin karakteristik özelliğidir."
+      },
+      "hanbeli": {
+        "arapca": "اَلتَّحِيَّاتُ لِلّٰهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، اَلسَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، اَلسَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ.",
+        "okunus": "Et-tehiyyâtü lillâhi ve's-salevâtü ve't-tayyibât. Es-selâmü aleyke eyyühe'n-nebiyyü ve rahmetullâhi ve berekâtüh. Es-selâmü aleynâ ve alâ ıbâdillâhi's-sâlihîn. Eşhedü en lâ ilâhe illallâh, ve eşhedü enne Muhammeden abdühû ve resûlüh.",
+        "meal": "Bütün dualar, senalar, bedeni ve mali ibadetler Allah'a mahsustur. Ey Peygamber! Selam, Allah'ın rahmeti ve bereketi senin üzerine olsun. Selam bizim üzerimize ve Allah'ın bütün salih kullarının üzerine olsun. Şahitlik ederim ki Allah'tan başka ilah yoktur. Yine şahitlik ederim ki Muhammed, O'nun kulu ve elçisidir.",
+        "aciklama": "Hanbeli mezhebinde mutlak hadis otoritesine olan katı bağlılık esastır. İmam Ahmed bin Hanbel de tıpkı Ebu Hanife gibi, senet zinciri ve sıhhat derecesi en yüksek olan İbn Mes'ud (r.a) rivayetini tercih etmiştir. Metin Hanefi mezhebiyle birebir aynıdır. Hanbeli mezhebine göre ilk oturuşta Tahiyyat okumak vacip, namazı bitiren son oturuşta okumak ise farzdır (rükündür)."
+      }
+    }
+  },
+  {
+    "dua_adi": "Vitir Kunut Duası",
+    "seo_url": "vitir-kunut-duasi-mezheplere-gore",
+    "ortak_tarihce": "'Kunut', sözlükte huşu ile boyun eğmek, susmak, ayakta durmak ve dua etmek manalarına gelir. Fıkhi bir terim olarak ise namazın rükuundan önce veya sonra, ayaktayken elleri kaldırarak (veya kaldırmayarak) Allah'a sığınma ve yakarış duası okumaktır. Vitir namazı, Hz. Peygamber'in ömrü boyunca asla terk etmediği, gecenin sonunu nurlandıran en kuvvetli ibadetlerden biridir. Vitir namazında Kunut okumak sahabe icmasıyla sabittir, ancak bu duanın yılın hangi döneminde okunacağı ve hangi rekatta yer alacağı hususunda mezhepler arası farklılıklar vardır.",
+    "mezhepler": {
+      "hanefi": {
+        "arapca": "اَللّٰهُمَّ إِنَّا نَسْتَعِينُكَ وَنَسْتَغْفِرُكَ وَنَسْتَهْدِيكَ، وَنُؤْمِنُ بِكَ وَنَتُوبُ إِلَيْكَ وَنَتَوَكَّلُ عَلَيْكَ، وَنُثْنِي عَلَيْكَ الْخَيْرَ كُلَّهُ نَشْكُرُكَ وَلَا نَكْفُرُكَ، وَنَخْلَعُ وَنَتْرُكُ مَنْ يَفْجُرُكَ.\nاَللّٰهُمَّ إِيَّاكَ نَعْبُدُ وَلَكَ نُصَلِّي وَنَسْجُدُ، وَإِلَيْكَ نَسْعَى وَنَحْفِدُ، نَرْجُو رَحْمَتَكَ وَنَخْشَى عَذَابَكَ، إِنَّ عَذَابَكَ بِالْكُفَّارِ مُلْحِقٌ.",
+        "okunus": "Allâhümme innâ neste'înüke ve nesteğfirüke ve nestehdîk. Ve nü'minü bike ve netûbü ileyk ve netevekkelü aleyk. Ve nüsnî aleyke'l-hayra küllehû neşkürüke ve lâ nekfürük. Ve nahleu ve netrukü men yefcürük.\nAllâhümme iyyâke na'büdü ve leke nüsallî ve nescüd. Ve ileyke nes'â ve nahfid. Nercû rahmeteke ve nahşâ azâbek. İnne azâbeke bi'l-küffâri mülhık.",
+        "meal": "Allah'ım! Biz senden yardım isteriz, günahlarımızı bağışlamanı isteriz ve bize hidayet etmeni dileriz. Sana inanır, sana tövbe eder ve sana tevekkül ederiz. Bütün hayırlarla seni övgüyle anarız. Sana şükreder, nankörlük etmeyiz. Sana isyan edenleri, haddi aşanları terk eder ve onlardan ayrılırız.\nAllah'ım! Biz ancak sana ibadet ederiz, sadece senin rızan için namaz kılar ve secde ederiz. Senin rahmetine koşar, emrine boyun eğeriz. Senin sonsuz rahmetini umar, senin azabından korkarız. Şüphesiz senin hak olan azabın kafirlere mutlaka ulaşacaktır.",
+        "aciklama": "Hanefi mezhebinde Vitir namazı vaciptir ve yılın 365 günü, namazın 3. rekatında rükudan *önce* tekbir getirilerek bu Kunut duaları okunur."
+      },
+      "safii": {
+        "arapca": "اَللّٰهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ، وَعَافِنِي فِيمَنْ عَافَيْتَ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ، وَبَارِكْ لِي فِيمَا أَعْطَيْتَ، وَقِنِي شَرَّ مَا قَضَيْتَ، إِنَّكَ تَقْضِي وَلَا يُقْضَى عَلَيْكَ، وَإِنَّهُ لَا يَذِلُّ مَنْ وَالَيْتَ، وَلَا يَعِزُّ مَنْ عَادَيْتَ، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ، فَلَكَ الْحَمْدُ عَلَى مَا قَضَيْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ، وَصَلَّى اللّٰهُ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الْأُمِّيِّ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ.",
+        "okunus": "Allâhümmehdinî fîmen hedeyt. Ve a'finî fîmen a'feyt. Ve tevelleni fîmen tevelleyt. Ve bârik lî fîmâ a'teyt. Ve kınî şerra mâ kadeyt. İnneke takdî ve lâ yukdâ aleyk. Ve innehû lâ yezillü men vâleyt. Ve lâ ye'ızzü men âdeyt. Tebârakte rabbenâ ve teâleyt. Feleke'l-hamdü alâ mâ kadeyt. Estağfiruke ve etûbü ileyk. Ve sallallâhü alâ seyyidinâ Muhammedini'n-nebiyyi'l-ümmiyyi ve alâ âlihî ve sahbihî ve sellem.",
+        "meal": "Allah'ım! Hidayet verdiklerinin arasında bana da hidayet ver. Afiyet bahşettiklerinin arasında bana da afiyet ver. Dost edindiklerinin arasında beni de dost edin. Bana verdiğin nimetleri bereketli kıl. Hükmettiğin şeylerin şerrinden beni koru. Şüphesiz hükmü sen verirsin, sana karşı hüküm verilemez. Senin dost edindiğin kimse asla zelil olmaz. Düşman olduğun kimse de asla aziz olamaz. Ey Rabbimiz! Sen eksikliklerden münezzeh ve yücesin. Verdiğin hükümlerden dolayı hamd sanadır. Senden bağışlanma diler, sana tövbe ederim. Allah'ın salat ve selamı, Ümmi Peygamber Efendimiz Muhammed'e, onun ailesine ve ashabının üzerine olsun.",
+        "aciklama": "Şafii mezhebinde Vitir namazında Kunut duası, sadece Ramazan ayının ikinci yarısında (15. gecesinden itibaren) son rekatta rükudan *sonra* okunur."
+      },
+      "maliki": {
+        "arapca": "[Bu mezhepte okunmaz]",
+        "okunus": "[Maliki fıkhında Vitir namazında Kunut duası okuma uygulaması yoktur.]",
+        "meal": "[Bu alan fıkhi usul gereği boş bırakılmıştır.]",
+        "aciklama": "Maliki fıkhında Vitir namazı yatsıdan sonra kılınan müstakil 1 (tek) rekatlık müekked bir sünnettir. İmam Malik'in usulüne göre Vitir namazında Kunut okunmaz. Maliki mezhebinde Kunut duasının tek yeri, istisnasız her gün kılınan Sabah namazının farzıdır. Bu yüzden Maliki fıkhında Vitir namazı için tahsis edilmiş bir metin bulunmamaktadır."
+      },
+      "hanbeli": {
+        "arapca": "اَللّٰهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ، وَعَافِنِي فِيمَنْ عَافَيْتَ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ، وَبَارِكْ لِي فِيمَا أَعْطَيْتَ، وَقِنِي شَرَّ مَا قَضَيْتَ، إِنَّكَ تَقْضِي وَلَا يُقْضَى عَلَيْكَ، وَإِنَّهُ لَا يَذِلُّ مَنْ وَالَيْتَ، وَلَا يَعِزُّ مَنْ عَادَيْتَ، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ.",
+        "okunus": "Allâhümmehdinî fîmen hedeyt. Ve a'finî fîmen a'feyt. Ve tevelleni fîmen tevelleyt. Ve bârik lî fîmâ a'teyt. Ve kınî şerra mâ kadeyt. İnneke takdî ve lâ yukdâ aleyk. Ve innehû lâ yezillü men vâleyt. Ve lâ ye'ızzü men âdeyt. Tebârakte rabbenâ ve teâleyt.",
+        "meal": "Allah'ım! Hidayet verdiklerinin arasında bana da hidayet ver. Afiyet bahşettiklerinin arasında bana da afiyet ver. Dost edindiklerinin arasında beni de dost edin. Bana verdiğin nimetleri bereketli kıl. Hükmettiğin şeylerin şerrinden beni koru. Şüphesiz hükmü sen verirsin, sana karşı hüküm verilemez. Senin dost edindiğin kimse asla zelil olmaz. Düşman olduğun kimse de asla aziz olamaz. Ey Rabbimiz! Sen eksikliklerden münezzeh ve yücesin.",
+        "aciklama": "Hanbeli mezhebinde Vitir namazında Kunut duasını okumak yılın tamamında, her gece sünnettir. Dua, son rekatta rükudan *sonra* okunur."
+      }
+    }
+  },
+  {
+    "dua_adi": "Sabah Namazı Kunut Duası",
+    "seo_url": "sabah-namazi-kunut-duasi-mezheplere-gore",
+    "ortak_tarihce": "Sabah namazında Kunut okunup okunmayacağı konusu, İslam hukuk tarihindeki en köklü akademik tartışmalardan biridir. Hz. Peygamber'in (s.a.v), Bi'r-i Maune faciasında 70 hafız sahabenin şehit edilmesi üzerine bir ay boyunca sabah namazlarında zalimlere beddua etmek için Kunut okuduğu sahih hadislerle sabittir. Ancak bir ayın sonunda Hz. Peygamber'in bu uygulamayı tamamen terk mi ettiği (Hanefi/Hanbeli), yoksa vefatına kadar ömür boyu devam mı ettiği (Şafii/Maliki) hususu mezhepler arası içtihat farkını doğurmuştur.",
+    "mezhepler": {
+      "hanefi": {
+        "arapca": "اَللّٰهُمَّ إِنَّا نَسْتَعِينُكَ وَنَسْتَغْفِرُكَ... (Kunut-u Nevâzil Metni)",
+        "okunus": "Allâhümme innâ neste'înüke... [Sadece olağanüstü durumlarda Vitir Kunut'u veya özel beddua metinleri okunur]",
+        "meal": "Allah'ım! Biz senden yardım isteriz... [Normal günlerde sabah namazında okunmaz.]",
+        "aciklama": "Hanefi mezhebine göre normal günlerde sabah namazında Kunut okunmaz. Ancak savaş, salgın hastalık veya büyük bir felaket geldiğinde (Kunut-u Nevâzil durumu), sadece cemaatle kılınan sabah namazlarında imam tarafından rükudan sonra açıktan okunabilir. Bu durumda genellikle Vitir'deki metin okunur."
+      },
+      "safii": {
+        "arapca": "اَللّٰهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ، وَعَافِنِي فِيمَنْ عَافَيْتَ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ، وَبَارِكْ لِي فِيمَا أَعْطَيْتَ، وَقِنِي شَرَّ مَا قَضَيْتَ، إِنَّكَ تَقْضِي وَلَا يُقْضَى عَلَيْكَ، وَإِنَّهُ لَا يَذِلُّ مَنْ وَالَيْتَ، وَلَا يَعِزُّ مَنْ عَادَيْتَ، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ، فَلَكَ الْحَمْدُ عَلَى مَا قَضَيْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ، وَصَلَّى اللّٰهُ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الْأُمِّيِّ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ.",
+        "okunus": "Allâhümmehdinî fîmen hedeyt. Ve a'finî fîmen a'feyt. Ve tevelleni fîmen tevelleyt. Ve bârik lî fîmâ a'teyt. Ve kınî şerra mâ kadeyt. İnneke takdî ve lâ yukdâ aleyk. Ve innehû lâ yezillü men vâleyt. Ve lâ ye'ızzü men âdeyt. Tebârakte rabbenâ ve teâleyt. Feleke'l-hamdü alâ mâ kadeyt. Estağfiruke ve etûbü ileyk. Ve sallallâhü alâ seyyidinâ Muhammedini'n-nebiyyi'l-ümmiyyi ve alâ âlihî ve sahbihî ve sellem.",
+        "meal": "Allah'ım! Hidayet verdiklerinin arasında bana da hidayet ver. Afiyet bahşettiklerinin arasında bana da afiyet ver. Dost edindiklerinin arasında beni de dost edin. Bana verdiğin nimetleri bereketli kıl. Hükmettiğin şeylerin şerrinden beni koru. Şüphesiz hükmü sen verirsin, sana karşı hüküm verilemez. Senin dost edindiğin kimse asla zelil olmaz. Düşman olduğun kimse de asla aziz olamaz. Ey Rabbimiz! Sen eksikliklerden münezzeh ve yücesin. Verdiğin hükümlerden dolayı hamd sanadır. Senden bağışlanma diler, sana tövbe ederim. Allah'ın salat ve selamı, Ümmi Peygamber Efendimiz Muhammed'e, onun ailesine ve ashabının üzerine olsun.",
+        "aciklama": "Şafiiler, 'Hz. Peygamber dünyadan ayrılana kadar sabah namazında Kunut okumaya devam etti' hadisini esas alır. Sabah namazının farzında, ikinci rekatta rükudan kalkıldıktan *sonra* okunur. Terk edilmesi sehiv secdesi gerektirir."
+      },
+      "maliki": {
+        "arapca": "اَللّٰهُمَّ إِنَّا نَسْتَعِينُكَ وَنَسْتَغْفِرُكَ، وَنُؤْمِنُ بِكَ وَنَتَوَكَّلُ عَلَيْكَ، وَنُثْنِي عَلَيْكَ الْخَيْرَ كُلَّهُ نَشْكُرُكَ وَلَا نَكْفُرُكَ، وَنَخْلَعُ وَنَتْرُكُ مَنْ يَفْجُرُكَ.\nاَللّٰهُمَّ إِيَّاكَ نَعْبُدُ وَلَكَ نُصَلِّي وَنَسْجُدُ، وَإِلَيْكَ نَسْعَى وَنَحْفِدُ، نَرْجُو رَحْمَتَكَ وَنَخْشَى عَذَابَكَ الْجِدَّ، إِنَّ عَذَابَكَ بِالْكُفَّارِ مُلْحِقٌ.",
+        "okunus": "Allâhümme innâ neste'înüke ve nesteğfiruk. Ve nü'minü bike ve netevekkelü aleyk. Ve nüsnî aleyke'l-hayra küllehû neşkürüke ve lâ nekfürük. Ve nahleu ve netrukü men yefcürük.\nAllâhümme iyyâke na'büdü ve leke nüsallî ve nescüd. Ve ileyke nes'â ve nahfid. Nercû rahmeteke ve nahşâ azâbeke'l-cidd. İnne azâbeke bi'l-küffâri mülhık.",
+        "meal": "Allah'ım! Biz senden yardım isteriz ve günahlarımızı bağışlamanı dileriz. Sana inanır ve sana tevekkül ederiz. Bütün hayırlarla seni övgüyle anarız. Sana şükreder, nankörlük etmeyiz. Sana isyan edenleri, haddi aşanları terk eder ve onlardan ayrılırız.\nAllah'ım! Biz ancak sana ibadet ederiz, sadece senin rızan için namaz kılar ve secde ederiz. Senin rahmetine koşar, emrine boyun eğeriz. Senin sonsuz rahmetini umar, senin gerçek ve çetin azabından korkarız. Şüphesiz senin hak olan azabın kafirlere mutlaka ulaşacaktır.",
+        "aciklama": "Malikiler de her gün Kunut okunması gerektiğine hükmetmiştir. Ancak Kunut'u rükudan *önce* (Kıraat bittikten sonra) okurlar ve sesi yükseltmek mekruhtur; gizli (hafi) okunması müstehaptır."
+      },
+      "hanbeli": {
+        "arapca": "[Sadece Felaket Anlarında Kunut-u Nevâzil Okunur]",
+        "okunus": "[Normal günlerde Sabah namazında okunmaz.]",
+        "meal": "[Bu alan fıkhi usul gereği boş bırakılmıştır.]",
+        "aciklama": "Hanbeli mezhebi, tıpkı Hanefi mezhebi gibi normal günlerde sabah namazında mutlak surette Kunut okunmasını kabul etmez. Sadece İslam toplumunu derinden sarsan bir bela hallerinde (Nevâzil) devlet başkanının emriyle sabah namazlarında Kunut-u Nevâzil okunabilir."
+      }
+    }
+  },
+  {
+    "dua_adi": "İftitah (Başlama) Duası: Sübhaneke ve Veccehtü",
+    "seo_url": "iftitah-duasi-subhaneke-veccehtu-mezheplere-gore",
+    "ortak_tarihce": "Namazda İftitah (Başlama) tekbirinden hemen sonra, Fatiha suresinden önce okunan duaya fıkıhta 'Sena' (Övgü) veya 'Teveccüh' adı verilir. Kulun, Yaratıcısının huzuruna çıktığı o ilk anda, doğrudan bir şeyler istemek yerine önce O'nun yüceliğini, kusursuzluğunu ve birliğini dile getirmesi, İslam'ın edep anlayışının en yüksek tecellisidir. Hz. Peygamber'in (s.a.v) namaza başlarken sessizce bir şeyler okuduğunu gören Ebu Hureyre (r.a) 'Anam babam sana feda olsun ey Allah'ın Elçisi, tekbir ile kıraat arasında ne okuyorsun?' diye sormuş, bunun üzerine İftitah duaları ümmete intikal etmiştir. Ancak Hz. Aişe, Hz. Ömer, Hz. Ali ve İbn Ömer gibi farklı sahabelerden gelen birbirinden bağımsız iftitah rivayetleri, mezheplerin bu konudaki tercihlerini belirlemiştir.",
+    "mezhepler": {
+      "hanefi": {
+        "arapca": "سُبْحَانَكَ اللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلٰهَ غَيْرُكَ.",
+        "okunus": "Sübhânekellâhümme ve bi-hamdik. Ve tebârakesmük. Ve teâlâ ceddük. Ve lâ ilâhe ğayruk.",
+        "meal": "Allah'ım! Seni her türlü noksan sıfatlardan tenzih eder, sana hamdederim. Senin adın ne mübarektir. Senin şanın, azametin ve kudretin ne yücedir. Senden başka hiçbir ilah yoktur.",
+        "aciklama": "Hanefi mezhebi, İftitah duası olarak Hz. Aişe ve Enes bin Malik'ten (r.a) rivayet edilen, Hz. Ömer'in de Mescid-i Nebevi'de minberden cemaate öğrettiği 'Sübhaneke' duasını tercih etmiştir. Ebu Hanife'ye göre bu metin, Allah'ı övgü ve tenzih kelimelerini en özlü şekilde barındırdığı için namaza başlamak adına en efdal (üstün) duadır. Sünnet olan bu dua, tekbirden hemen sonra sessizce (hafi) okunur. Cenaze namazlarında ise metne 'Ve celle senâük' (Senin övgün ne yücedir) ibaresi eklenir."
+      },
+      "safii": {
+        "arapca": "وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيفًا مُسْلِمًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ، إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلّٰهِ رَبِّ الْعَالَمِينَ، لَا شَرِيكَ لَهُ، وَبِذٰلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ.",
+        "okunus": "Veccehtü vechiye lillezî fetaras-semâvâti vel-arda hanîfen müslimen ve mâ ene minel-müşrikîn. İnne salâtî ve nüsükî ve mahyâye ve memâtî lillâhi rabbil-âlemîn. Lâ şerîke leh, ve bi-zâlike ümirtü ve ene minel-müslimîn.",
+        "meal": "Ben, hakka yönelen bir müslüman olarak yüzümü gökleri ve yeri yoktan var eden Allah'a çevirdim ve ben müşriklerden değilim. Şüphesiz benim namazım, ibadetlerim, diriliğim ve ölümüm alemlerin Rabbi olan Allah içindir. O'nun hiçbir ortağı yoktur. Bana böyle emrolundu ve ben Müslümanlardanım.",
+        "aciklama": "Şafii mezhebi, Hz. Ali'den (r.a) Müslim'de rivayet edilen ve Kur'an-ı Kerim'deki En'âm Suresi 79. ve 162-163. ayetlerinin muazzam bir terkibi olan 'Veccehtü' duasını esas alır. İmam Şafii'ye göre, kulun tüm benliğiyle Allah'a yöneldiğini (teveccüh) ve şirkten arındığını ilan eden bu ayet kaynaklı metin, namazın ruhuna en uygun iftitah duasıdır. Tekbirden sonra sessizce okunması müekked bir sünnettir."
+      },
+      "maliki": {
+        "arapca": "[Farz namazlarda okunmaz]",
+        "okunus": "[Maliki fıkhına göre farz namazlarda doğrudan Fatiha'ya geçilir.]",
+        "meal": "[Bu alan fıkhi usul gereği boş bırakılmıştır.]",
+        "aciklama": "Maliki fıkhında namazın en önemli ve sarsılmaz rüknü 'Fatiha' suresidir. İmam Malik'in Medine ehlinin ameline dayanan kuvvetli usulüne göre; iftitah tekbiri ile Fatiha suresinin arasına başka herhangi bir zikir veya dua koymak (Sübhaneke veya Veccehtü dahil) farz namazlarda 'Mekruh' kabul edilir. Maliki mezhebine mensup biri 'Allahu Ekber' der demez hiçbir sena (övgü) veya euzü-besmele çekmeksizin doğrudan 'Elhamdülillahi Rabbil Alemin' diyerek kıraate başlar. Sadece nafile (sünnet) namazlarda isteyen Veccehtü okuyabilir."
+      },
+      "hanbeli": {
+        "arapca": "سُبْحَانَكَ اللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلٰهَ غَيْرُكَ.",
+        "okunus": "Sübhânekellâhümme ve bi-hamdik. Ve tebârakesmük. Ve teâlâ ceddük. Ve lâ ilâhe ğayruk.",
+        "meal": "Allah'ım! Seni her türlü noksan sıfatlardan tenzih eder, sana hamdederim. Senin adın ne mübarektir. Senin şanın, azametin ve kudretin ne yücedir. Senden başka hiçbir ilah yoktur.",
+        "aciklama": "Hanbeli mezhebi, tıpkı Hanefi mezhebi gibi İftitah duası olarak 'Sübhaneke' metnini kabul etmiştir. İmam Ahmed bin Hanbel, Hz. Ömer'in cemaate öğrettiği rivayeti sened bakımından en güvenilir bulmuş ve Veccehtü duasına tercih etmiştir. Ancak Hanbeli fıkhına göre kişi dilerse Veccehtü duasını da okuyabilir, her iki uygulamanın da Hz. Peygamber'den sadır olduğuna inanılır, fakat efdal olan Sübhaneke'dir."
+      }
+    }
+  },
+  {
+    "dua_adi": "Rükû Tesbihatı",
+    "seo_url": "ruku-tesbihati-mezheplere-gore",
+    "ortak_tarihce": "Rükû (eğilme), kulun Yaratıcısı karşısında acziyetini hissettiği ve fiziki olarak tevazu gösterdiği en önemli namaz rükünlerinden biridir. Kur'an-ı Kerim'de Vakıa Suresi'nin sonunda yer alan 'Fe sebbih bismi rabbikel azîm' (O halde Yüce Rabbinin adını tesbih et/yücelt) ayeti nazil olduğunda, Hz. Peygamber (s.a.v) sahabelerine 'Bunu rükûlarınızda yapınız' talimatını vermiştir. Bunun üzerine tüm İslam ümmeti rükûda bu ilahi emre uyarak 'Azîm' (Yüce/Ulu) ismini zikretmeyi ortak bir pratik haline getirmiştir. Ancak tesbihatın sayısı, farziyeti ve kelime eklemeleri mezheplerin hadis anlama usullerine göre farklılaşmıştır.",
+    "mezhepler": {
+      "hanefi": {
+        "arapca": "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+        "okunus": "Sübhâne Rabbiye'l-Azîm",
+        "meal": "Ulu ve Yüce olan Rabbimi her türlü noksanlıktan tenzih ederim.",
+        "aciklama": "Hanefi mezhebine göre rükûda bu tesbihi okumak sünnettir. En az üç defa okunması efdal kabul edilmiştir. Tek sayılar olmak üzere beş veya yedi defa okumak da müstehaptır. İmam arkasında cemaatle kılıyorsa, imam rükûdan kalktığında kişi tesbihini üçleyememiş olsa bile imama uyarak derhal kalkmalıdır."
+      },
+      "safii": {
+        "arapca": "سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ",
+        "okunus": "Sübhâne Rabbiye'l-Azîm ve bi-hamdihî",
+        "meal": "Ulu ve Yüce olan Rabbimi her türlü noksanlıktan tenzih eder ve O'na hamdederim.",
+        "aciklama": "Şafii mezhebi, Ebu Davud'da geçen Ukbe bin Amir (r.a) rivayetini daha sahih ve ziyadeli bularak metnin sonuna 've bi-hamdihî' (ve O'na hamd ile) ibaresini eklemiştir. Şafii fıkhına göre de bu tesbihi üç defa okumak sünnettir. Terk edilmesi sehiv secdesi gerektirmez ancak namazın kemaline noksanlık getirir."
+      },
+      "maliki": {
+        "arapca": "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+        "okunus": "Sübhâne Rabbiye'l-Azîm",
+        "meal": "Ulu ve Yüce olan Rabbimi her türlü noksanlıktan tenzih ederim.",
+        "aciklama": "Maliki fıkhında da rükû tesbihatı metni Hanefilerle aynıdır. Ancak Maliki usulünde bu tesbihleri belirli bir sayı ile (örneğin illa üç defa okunacak diye) sınırlandırmak şart koşulmamıştır. Kişi rükûda kaldığı süre boyunca dilediği kadar, kalbi tatmin olana dek okuyabilir. Sünnet olan, bedenin tamamen sükunete ermesi (tuma'nine) sağlanacak kadar zikretmektir."
+      },
+      "hanbeli": {
+        "arapca": "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+        "okunus": "Sübhâne Rabbiye'l-Azîm",
+        "meal": "Ulu ve Yüce olan Rabbimi her türlü noksanlıktan tenzih ederim.",
+        "aciklama": "Hanbeli mezhebini rükû ve secde tesbihatında diğer üç mezhepten ayıran en büyük fark 'Hüküm' (farziyet) durumudur. Hanbeli fıkhına göre rükûda en az bir defa 'Sübhâne Rabbiye'l-Azîm' demek namazın Vaciplerinden (şartlarından) biridir. Unutularak terk edilirse sehiv secdesi gerekir, kasten terk edilirse namaz bozulur. Üç defa okumak ise sünnettir."
+      }
+    }
+  },
+  {
+    "dua_adi": "Secde Tesbihatı",
+    "seo_url": "secde-tesbihati-mezheplere-gore",
+    "ortak_tarihce": "Secde, İslam ibadet felsefesinde 'kulun Rabbine en yakın olduğu an' olarak tanımlanır. Kibrin zirvesi olan başın, kibrin en uzak noktası olan toprağa değdiği bu eşsiz manevi durağın tesbihatı da, Kur'an'ın doğrudan emriyle belirlenmiştir. A'lâ Suresi'nin ilk ayeti olan 'Sebbihısme rabbikel a'lâ' (Yüce Rabbinin adını tesbih et) ayeti nazil olduğunda, Hz. Peygamber (s.a.v) 'Bunu secdelerinizde yapınız' buyurmuştur. Rükûdaki 'Azîm' (Büyük) sıfatı yerini, secdede artık mekânın ve zamanın sınırlarını aşan bir övgüye, 'A'lâ' (En Yüce / Her Şeyden Üstün) sıfatına bırakır.",
+    "mezhepler": {
+      "hanefi": {
+        "arapca": "سُبْحَانَ رَبِّيَ الْأَعْلَى",
+        "okunus": "Sübhâne Rabbiye'l-A'lâ",
+        "meal": "En Yüce olan Rabbimi her türlü noksanlıktan tenzih ederim.",
+        "aciklama": "Hanefi mezhebine göre secdede bu tesbihi okumak kuvvetli bir sünnettir. Tıpkı rükûda olduğu gibi en az üç defa okunması gereklidir. İmam Ebu Hanife'nin fıkhına göre, secde hali dua kapılarının en açık olduğu anlardan biri olsa da, farz namazların secdelerinde Arapça dahi olsa kişisel dua etmek (Rabbim bana para ver, beni affet vb.) meşru görülmez, sadece bu meşhur tesbihat yapılır."
+      },
+      "safii": {
+        "arapca": "سُبْحَانَ رَبِّيَ الْأَعْلَى وَبِحَمْدِهِ",
+        "okunus": "Sübhâne Rabbiye'l-A'lâ ve bi-hamdihî",
+        "meal": "En Yüce olan Rabbimi her türlü noksanlıktan tenzih eder ve O'na hamdederim.",
+        "aciklama": "Şafii fıkhı, rükûda olduğu gibi secdede de metnin sonuna 've bi-hamdihî' ibaresini eklemeyi sünnet kabul etmiştir. Şafii mezhebinin secde konusundaki en ayırt edici esnekliği; kişinin farz namazlarda dahi olsa secdede bu tesbihatları yaptıktan sonra içinden geldiği gibi Arapça olarak kendi kişisel dualarını (dünyevi veya uhrevi) edebilmesine geniş bir fıkhi alan açmasıdır."
+      },
+      "maliki": {
+        "arapca": "سُبْحَانَ رَبِّيَ الْأَعْلَى",
+        "okunus": "Sübhâne Rabbiye'l-A'lâ",
+        "meal": "En Yüce olan Rabbimi her türlü noksanlıktan tenzih ederim.",
+        "aciklama": "Maliki mezhebinde secde tesbihatı metin olarak Hanefilerle aynıdır ve sayı sınırı yoktur. İmam Malik'e göre secdede aslolan sadece dil ile tesbih etmek değil, alnın ve burnun yere sağlamca yerleşmesi, organların sükun bulmasıdır. Malikiler de Şafiiler gibi, secdede tesbihattan sonra Arapça dua edilmesini müstehap kabul ederler."
+      },
+      "hanbeli": {
+        "arapca": "سُبْحَانَ رَبِّيَ الْأَعْلَى",
+        "okunus": "Sübhâne Rabbiye'l-A'lâ",
+        "meal": "En Yüce olan Rabbimi her türlü noksanlıktan tenzih ederim.",
+        "aciklama": "Hanbeli fıkhının o mutlak nassçı ve kuralcı yapısı secdede de kendini gösterir. Hanbelilere göre secdede en az bir defa 'Sübhâne Rabbiye'l-A'lâ' demek namazın vacibidir (olmazsa olmazıdır). Unutulması sehiv secdesi gerektirir. Sünnet olan miktarı ise üç defadır."
+      }
+    }
+  },
+  {
+    "dua_adi": "Namaz Sonrası Tesbihatı (Ayet-el Kürsi ve 33'lü Zikirler)",
+    "seo_url": "namaz-sonrasi-tesbihat-ve-zikirler-mezheplere-gore",
+    "ortak_tarihce": "Namaz sonrası tesbihatın kökeni, İslam tarihinin en naif ve duygusal sosyolojik olaylarından birine dayanır. Muhacirlerin fakir olanları bir gün Hz. Peygamber'e (s.a.v) gelerek şunları söylediler: 'Ey Allah'ın Elçisi! Zengin kardeşlerimiz de bizim gibi namaz kılıyor, oruç tutuyorlar. Ancak onların malları var; sadaka veriyorlar, köle azat ediyorlar ve bizi sevapça geçiyorlar.' Bu masum hüznü gidermek isteyen Rahmet Elçisi, onlara şu muazzam müjdeyi verdi: 'Size öyle bir şey öğreteyim ki, onu yaptığınızda sizi geçenlere yetişirsiniz, sizden sonrakiler de size yetişemez. Her farz namazın ardında 33 defa Sübhanallah, 33 defa Elhamdülillah, 33 defa Allahu Ekber deyin ve yüzüncüde Kelime-i Tevhid okuyun. Bunu yapanın günahları deniz köpüğü kadar olsa affedilir.' Sahih-i Müslim'de geçen bu evrensel emir üzerine tüm İslam ümmeti bu tesbihatı baş tacı etmiş, metin ortak kalsa da cemaatle veya bireysel yapılma şekli mezheplerin fıkhî zevklerine göre şekillenmiştir.",
+    "mezhepler": {
+      "hanefi": {
+        "arapca": "اَللّٰهُ لَا إِلٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ، لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ، لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ، مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ، يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ، وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ، وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ، وَلَا يَئُودُهُ حِفْظُهُمَا، وَهُوَ الْعَلِيُّ الْعَظِيمُ.\nسُبْحَانَ اللّٰهِ (33) اَلْحَمْدُ لِلّٰهِ (33) اَللّٰهُ أَكْبَرُ (33)\nلَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+        "okunus": "Allâhü lâ ilâhe illâ hüve'l-hayyü'l-kayyûm, lâ te'huzühû sinetün velâ nevm, lehû mâ fi's-semâvâti ve mâ fi'l-ard, men-ze'l-lezî yeşfeu ındehû illâ bi-iznih, ya'lemü mâ beyne eydîhim ve mâ halfehüm, velâ yühîtûne bi-şey'in min ılmihî illâ bimâ şâ', vesia kürsiyyühü's-semâvâti ve'l-ard, velâ yeûdühû hıfzuhümâ, ve hüve'l-aliyyü'l-azîm.\nSübhânallâh (33 defa), Elhamdülillâh (33 defa), Allâhü Ekber (33 defa).\nLâ ilâhe illallâhü vahdehû lâ şerîke leh, lehü'l-mülkü ve lehü'l-hamdü ve hüve alâ külli şey'in kadîr.",
+        "meal": "Allah, O'ndan başka ilah yoktur; diridir, her şeyin varlığı O'na bağlıdır. Ne uyuklama tutar O'nu ne de uyku. Göklerde ve yerde ne varsa hepsi O'nundur. O'nun izni olmadan katında kim şefaat edebilir? Onların önlerindekini ve arkalarındakini bilir. O'nun ilminden, kendi dilediği kadarı dışında hiçbir şeyi kavrayamazlar. O'nun kürsüsü gökleri ve yeri kaplamıştır. Onları korumak O'na ağır gelmez. O, çok yücedir, çok büyüktür.\nAllah noksan sıfatlardan münezzehtir. Hamd Allah'a mahsustur. Allah en büyüktür. Allah'tan başka ilah yoktur, O tektir, ortağı yoktur. Mülk O'nundur, hamd O'nadır. O, her şeye hakkıyla gücü yetendir.",
+        "aciklama": "Hanefi fıkhının temel usulünde tesbihatın aslı gizli (hafi) ve bireysel yapılmasıdır. Ancak tarihsel süreçte, özellikle Selçuklu ve Osmanlı coğrafyasında, cemaatin bu muazzam zikri terk etmemesi, unutmaması ve camide muazzam bir ahenk oluşması için 'Müezzinlik' müessesesi gelişmiştir. Müezzinin 'Alâ Rasûlinâ salavât' diyerek cemaati yönlendirmesi ve tesbihatın namazın en sonunda (sünnetler de kılındıktan sonra) koro halinde yapılması, Hanefi tatbikatında kabul görmüş, ümmetin maslahatı gözetilerek kurumsallaşmış çok estetik bir gelenektir."
+      },
+      "safii": {
+        "arapca": "اَللّٰهُ لَا إِلٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ... [Metin Ortaktır]\nسُبْحَانَ اللّٰهِ (33) اَلْحَمْدُ لِلّٰهِ (33) اَللّٰهُ أَكْبَرُ (33)\nلَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+        "okunus": "Allâhü lâ ilâhe illâ hüve'l-hayyü'l-kayyûm... \nSübhânallâh (33 defa), Elhamdülillâh (33 defa), Allâhü Ekber (33 defa).\nLâ ilâhe illallâhü vahdehû lâ şerîke leh, lehü'l-mülkü ve lehü'l-hamdü ve hüve alâ külli şey'in kadîr.",
+        "meal": "[Metin Ortaktır]",
+        "aciklama": "İmam Şafii, başyapıtı 'El-Ümm' adlı eserinde, namaz sonrası zikirlerin cemaatle sesli yapılmasını değil, herkesin kendi duyacağı bir sesle (gizlice) bireysel yapmasını kurala bağlamıştır. Şafii fıkhında müezzin komutuyla tesbih çekmek yaygın değildir. Sadece imamın, cemaate zikri öğretmek amacıyla kısa bir süre sesli okuması caiz görülmüştür. Ayrıca Şafii usulünde imam, farzı bitirip selam verdikten hemen sonra kıbleden yüzünü sağ tarafına veya cemaate döner, tesbihatı bireysel bir sükunet içinde herkes kendi başına tamamlar."
+      },
+      "maliki": {
+        "arapca": "اَللّٰهُ لَا إِلٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ... [Metin Ortaktır]\nسُبْحَانَ اللّٰهِ (33) اَلْحَمْدُ لِلّٰهِ (33) اَللّٰهُ أَكْبَرُ (33)\nلَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+        "okunus": "Allâhü lâ ilâhe illâ hüve'l-hayyü'l-kayyûm... \nSübhânallâh (33 defa), Elhamdülillâh (33 defa), Allâhü Ekber (33 defa).\nLâ ilâhe illallâhü vahdehû lâ şerîke leh, lehü'l-mülkü ve lehü'l-hamdü ve hüve alâ külli şey'in kadîr.",
+        "meal": "[Metin Ortaktır]",
+        "aciklama": "Maliki fıkhında tesbihat uygulaması son derece sade ve bütünüyle bireyseldir. İmam Malik'in Medine ehli tatbikatına dayanan usulüne göre, imamın farz namazı kıldırdıktan sonra mihrapta yüzü kıbleye dönük halde beklemesi şiddetle mekruh sayılmıştır. İmam selam verdikten hemen sonra cemaate döner ve cemaat de dağılarak veya kendi yerine çekilerek zikre başlar. Toplu tesbihat uygulaması yoktur. Sağ elin parmak boğumları sayılarak bu muazzam tesbihat tamamen içten, huşu ile ve bireysel olarak yerine getirilir."
+      },
+      "hanbeli": {
+        "arapca": "اَللّٰهُ لَا إِلٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ... [Metin Ortaktır]\nسُبْحَانَ اللّٰهِ (33) اَلْحَمْدُ لِلّٰهِ (33) اَللّٰهُ أَكْبَرُ (33)\nلَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+        "okunus": "Allâhü lâ ilâhe illâ hüve'l-hayyü'l-kayyûm... \nSübhânallâh (33 defa), Elhamdülillâh (33 defa), Allâhü Ekber (33 defa).\nLâ ilâhe illallâhü vahdehû lâ şerîke leh, lehü'l-mülkü ve lehü'l-hamdü ve hüve alâ külli şey'in kadîr.",
+        "meal": "[Metin Ortaktır]",
+        "aciklama": "Hanbeli fıkhı, naslara (hadislere) en katı ve yalın şekilde bağlı olan ekoldür. Bu usul, sünnet ile farz namazların mekân olarak birbirinden ayrılmasına büyük bir önem atfeder. Farz kılındıktan hemen sonra kişi yerini değiştirerek, saftan çıkarak veya evine giderek sünnetleri kılar ve tesbihatını yapar. Tesbihatın imam veya müezzin komutuyla koro halinde sesli yapılması Hanbeli usulünde sonradan uydurulmuş bir bid'at sayılarak kesin bir dille reddedilir. İbadetin şahsiliği ilkesi gereği, herkes tesbihatını sessizce kendi kendine yapmalıdır."
+      }
+    }
+  }
+]
