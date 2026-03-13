@@ -1,0 +1,23 @@
+[33m9ad0826[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Add wrangler config for deployment
+[33m3c6cad8[m Fix: Stable cloudflare adapter version
+[33m08b72d3[m Sync lock file with cloudflare adapter v12
+[33m63bae1d[m Migr22ation to Cloudflare Pages
+[33m55c6084[m Migr2ation to Cloudflare Pages
+[33me5ff1b9[m Migration to Cloudflare Pages
+[33m4317cf6[m feat: Kur'an s21312aşyfas23ı SSR 343moduna geçirildi, Mishary Rashid ses desteği korundu 🚀
+[33me5c80bd[m feat: Kur'an saşyfas23ı 232323SSR 343moduna geçirildi, Mishary Rashid ses desteği korundu 🚀
+[33m48c628d[m feat: yandex ve bing meta kodları eklendi�
+[33mf87cb35[m feat: Kur'an saşyfas23ı SSR 343moduna geçirildi, Mishary Rashid ses desteği korundu 🚀
+[33m427b72e[m feat: Kur'an saşyfas23ı SSR 343moduna geçirildi, Mishary Rashid ses desteği korundu 🚀
+[33m9256403[m feat: Kur'an saşyfas23ı SSR moduna geçirildi, Mishary Rashid ses desteği korundu 🚀
+[33m8c1c1fc[m feat: Dinamik SSR Sitemap motoru eklendi 🚀
+[33m2f9a088[m feat: Kur'an saşyfası SSR moduna geçirildi, Mishary Rashid ses desteği korundu 🚀
+[33mf58c89b[m feat: Kur'an saşyfası SSR moduna geçirildi, Mishary Rashid ses desteği korundu 🚀
+[33mfa38fd3[m feat: Dinamik SSR Sitemap motoru eklendi 🚀
+[33m3419ef8[m feat: Kur'an sayfası SSR moduna geçirildi, Mishary Rashid ses desteği korundu 🚀
+[33m2b5fd0e[m fix: Tüm sayfalar SSR moduna geçirildi, Statik yükler temizlendi 🚀
+[33m1f4c146[m fix: fs modülü kaldırıldı, Vercel RAM bellek (Glob) zekasına geçildi 🚀
+[33mf2b8e1e[m feat: Gerçek SSR Aktif Edildi, getStaticPaths çöpe atıldı 🚀
+[33m838a50d[m feat: Vercel SSR Adaptörü eklendi, derleme süresi saniyelere düşürüldü 🚀
+[33mac2bad6[m fix: Kıssalar sonsuz döngü ve zaman aşımı hatası giderildi 🚀
+[33m34f846f[m feat: Kusursuz ve %100 Güvenli İlk Yükleme
